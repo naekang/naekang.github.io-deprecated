@@ -1,5 +1,414 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-28T17:46:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hydejack</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">What’s New in Hydejack 9.1?</title><link href="http://localhost:4000/blog/example/2021-02-13-whats-new-in-hydejack-9-1/" rel="alternate" type="text/html" title="What’s New in Hydejack 9.1?" /><published>2021-02-13T00:00:00+09:00</published><updated>2021-02-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/whats-new-in-hydejack-9-1</id><content type="html" xml:base="http://localhost:4000/blog/example/2021-02-13-whats-new-in-hydejack-9-1/">&lt;p&gt;What’s New in Hydejack 9.1?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-31T00:13:54+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hydejack</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">What’s NAS?</title><link href="http://localhost:4000/blog/example/2021-10-29-NAS-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-1%ED%83%84/" rel="alternate" type="text/html" title="What’s NAS?" /><published>2021-10-29T00:00:00+09:00</published><updated>2021-10-29T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/NAS-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-1%ED%83%84</id><content type="html" xml:base="http://localhost:4000/blog/example/2021-10-29-NAS-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-1%ED%83%84/">&lt;p&gt;What’s NAS?&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#nas란-무엇인가&quot; id=&quot;markdown-toc-nas란-무엇인가&quot;&gt;NAS란 무엇인가?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#nas의-구입-이유&quot; id=&quot;markdown-toc-nas의-구입-이유&quot;&gt;NAS의 구입 이유?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#나스-제조업체의-선정&quot; id=&quot;markdown-toc-나스-제조업체의-선정&quot;&gt;나스 제조업체의 선정&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#시놀로지-나스의-모델-선정&quot; id=&quot;markdown-toc-시놀로지-나스의-모델-선정&quot;&gt;시놀로지 나스의 모델 선정&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#시놀로지-ds220-공식-스펙&quot; id=&quot;markdown-toc-시놀로지-ds220-공식-스펙&quot;&gt;시놀로지 DS220+ 공식 스펙&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#시놀로지-ds220-추가-구성-상품&quot; id=&quot;markdown-toc-시놀로지-ds220-추가-구성-상품&quot;&gt;시놀로지 DS220+ 추가 구성 상품&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#나스에-대한-이해를-위한-기본-용어-정리&quot; id=&quot;markdown-toc-나스에-대한-이해를-위한-기본-용어-정리&quot;&gt;나스에 대한 이해를 위한 기본 용어 정리&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;nas란-무엇인가&quot;&gt;NAS란 무엇인가?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;NAS(Network Attached Storage)란 가정 또는 사무실 네트워크에 연결되는 저장장치로 문서, 사진, 음악, 비디오 등 모든 파일을 저장할 수 있는 LAN으로 연결하는 외장 하드디스크이다.&lt;/li&gt;
+  &lt;li&gt;네이버 클라우드, ICloud 등의 클라우드 서비스와 유사하나, NAS는 개인이 용도에 따라 맞춤형으로 구축할 수 있다.&lt;/li&gt;
+  &lt;li&gt;네트워크로 연결되기 때문에 웹이나 앱을 통해 언제 어디서든 파일에 엑세스하여 사용이 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;nas의-구입-이유&quot;&gt;NAS의 구입 이유?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;del&gt;사실 유튜버 ITSub님의 영상을 정주행하다가 시놀로지 나스에 관심이 생기게 된 부분이 가장 컸다.&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;현재 집에 윈도우 컴퓨터 2대, 맥북 1대, 태블릿 등을 사용하고 있다. 그러다보니 필요한 파일들이 너무 분산되어 있어 찾으려면 한참을 뒤적거려야한다는 단점이 있었다. 또한 윈도우 컴퓨터의 경우 512GB SSD를 사용하고 있는데 일반적인 파일들이 용량을 너무 많이 잡아먹어 항상 용량이 부족한 상태이다.&lt;/li&gt;
+  &lt;li&gt;날밤새며 열심히 작업한 파일들을 두고 출근했을 때의 심정은…&lt;/li&gt;
+  &lt;li&gt;티스토리 블로그를 작성하다보니 뭔가 나만의 공간이 필요했다. 워드프레스에 도전해봤는데 생각보다 너무 어렵기도 했고 호스팅 업체를 찾으니 가격적으로 너무 부담이 됬다.&lt;/li&gt;
+  &lt;li&gt;이 모든 것들을 해결할 수 있는 것이 &lt;strong&gt;NAS&lt;/strong&gt;가 아닐까?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;나스-제조업체의-선정&quot;&gt;나스 제조업체의 선정&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;나스의 여러 제조업체를 나열한 뒤 나의 상황과 가장 잘 맞는 &lt;strong&gt;시놀로지&lt;/strong&gt;와 &lt;strong&gt;IPTIME&lt;/strong&gt; 두 군데를 선정하였다.&lt;/li&gt;
+  &lt;li&gt;물론 가격적인 측면을 두고 보자면 IPTIME을 선택하는게 맞았지만 시놀로지의 편의성을 높인 UI 등 소프트웨어적인 지원 측면에서 보니 시놀로지의 가격이 터무니 없이 비싸지만은 않았던거 같다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;시놀로지-나스의-모델-선정&quot;&gt;시놀로지 나스의 모델 선정&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;아직 학생인 나에게 가격은 가장 중요한 요소로 다가올 수 밖에 없었다. IPTIME을 버리고 시놀로지로 온 이상 이제는 이 좁아진 선택범위 안에서 가성비 제품을 찾아야 했다.&lt;/li&gt;
+  &lt;li&gt;시놀로지는 입문자용인 J시리즈와 부가적인 기능이 있는 +시리즈가 있다. 여기서 DS220+는 시놀로지 NAS제품군들 중 상대적으로 저렴한 축에 속하면서 성능은 어느정도 보장되는 &lt;del&gt;가성비&lt;/del&gt; 제품이라고 볼 수 있을거 같아 선택하게되었다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;시놀로지-ds220-공식-스펙&quot;&gt;시놀로지 DS220+ 공식 스펙&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;속성&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;세부정보&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;CPU&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Intel Celeron J4025 듀얼코어 2.0GHZ(최대 속도 2.9GHZ)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;메모리&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2GB DDR4(최대 6GB까지 확장 가능)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;드라이브 베이&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;최대 내부 원시 용량&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;32TB(16TB * 2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;외부 포트&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1GbE LAN 포트 * 2 / USB 3.0포트 2개&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;크기&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;165mm * 108mm * 232.2mm&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;무게&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1.30kg&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;예약 전원&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;사용 가능&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;작동 온도&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0℃ ~ 40℃&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;보관 온도&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-20℃ ~ 60℃&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;시놀로지-ds220-추가-구성-상품&quot;&gt;시놀로지 DS220+ 추가 구성 상품&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;나스에 일반적인 PC HDD를 장착해도 상관은 없다고 한다. 하지만 안정성과 신뢰성을 생각한다면 NAS 전용 HDD를 선택하는 것이 맞다고 생각하여, 나스 전용 HDD를 구매하게 되었다.&lt;/li&gt;
+  &lt;li&gt;일반적으로 나스 HDD는 기본 4TB부터 시작하며 가장 저렴한 제품은 대략 14만원 선에서 시작하게 된다.&lt;/li&gt;
+  &lt;li&gt;나는 쿠팡에서 가장 저렴한 제품 + 배송이 빠른 제품을 선택하였다.
+&lt;img src=&quot;/assets/img/blog/nas-hdd-coupang.png&quot; alt=&quot;도시바 HDD N300 HDD 4TB&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;나스에-대한-이해를-위한-기본-용어-정리&quot;&gt;나스에 대한 이해를 위한 기본 용어 정리&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;나스에 대해 알아보다 보니 전문 용어들이 많이 등장하였다. 물론 컴퓨터과학부 학생으로서 언젠간 배웠던 기억이 어렴풋이 나지만 정확한 개념이 이해가 안가 다시 공부하고 정리해보았다.&lt;/li&gt;
+  &lt;li&gt;RAID(Redundant Array of Inexpensive/Independent Disk)
+    &lt;ul&gt;
+      &lt;li&gt;여러개의 저장 장치를 묶어서 하나의 고용량/고성능 저장장치처럼 사용하는 기술을 말한다.&lt;/li&gt;
+      &lt;li&gt;컴퓨터 구성품들 중 기계적인 특성으로 인해 상대적으로 속도가 느린 하드디스크를 보완하기 위해 만든 기술이다.&lt;/li&gt;
+      &lt;li&gt;RAID Level: 물론 RAID 0, 1, 2, 3 등 다양한 레벨이 존재하지만 NAS에 사용되는 기술인 0과 1에 대해서만 정리하였다.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;RAID 0&lt;/strong&gt;
+            &lt;ul&gt;
+              &lt;li&gt;흔히 String 방식이라고 한다.&lt;/li&gt;
+              &lt;li&gt;구성된 모든 디스크에 데이터를 똑같이 분할하여 저장하는 방식이다. 따라서 최소 2개 이상의 디스크가 필요하며 전체 디스크를 모두 사용하므로 성능은 디스크 수에 정비례한다.&lt;/li&gt;
+              &lt;li&gt;위에서 말한 것과 같이 모든 디스크를 하나의 디스크처럼 인식하기 때문에 하나의 디스크에 에러가 발생하면 전체 디스크에 문제가 생기게 된다.&lt;/li&gt;
+              &lt;li&gt;이는 성능과 용량은 최대한으로 사용가능하지만 안정성이 매우 떨어진다는 단점이 있다.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;RAID 1&lt;/strong&gt;
+            &lt;ul&gt;
+              &lt;li&gt;흔히 Mirroring 방식이라고 한다.&lt;/li&gt;
+              &lt;li&gt;쓰기 작업의 경우 모든 디스크에 똑같이 복제해야 하므로 단일 디스크에 비해 더 많은 시간이 소요될 수는 있으나 이렇게 한번 기록한 후에 읽기 작업을 할 때는 디스크 개수에 비례해 성능이 향상된다. 또한 디스크마다 동일한 데이터가 복제되어 있으므로 안정성이 높다.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Btfrs(B-tree file system)&lt;/strong&gt; vs &lt;strong&gt;EXT4(Fourth Extended File System)&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;나스를 설치하는 과정에서 파일시스템을 둘 중 하나 선택하는 창이 나오게 된다.&lt;/li&gt;
+      &lt;li&gt;Btrfs는 데이터 관리 및 안정성을 강화한 최신 파일시스템으로 2013년 이후 안정화되어 사용되고 있다.&lt;/li&gt;
+      &lt;li&gt;장점
+        &lt;ul&gt;
+          &lt;li&gt;실시간 오류 정정 기능과 스냅샷을 이용하여 볼륨 복원이 가능하여 장애 복원성이 좋다.&lt;/li&gt;
+          &lt;li&gt;압축 기능 제공과 SSD 드라이브에 최적화 되어 있어 탁월한 읽기/쓰기 성능을 제공한다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;단점
+        &lt;ul&gt;
+          &lt;li&gt;스냅샷 이미지의 저장을 위해 디스크 공간을 추가적으로 사용한다.&lt;/li&gt;
+          &lt;li&gt;스냅샷 이미지 생성과 디스크 단편화 문제로 자동 조각 모음을 처리할 때 성능 저하가 발생할 수 있다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;EXT4는 EXT3 파일 시스템의 향상된 버전으로 2008년 이후 꾸준히 사용되는 범용적인 파일 시스템이다.
+        &lt;ul&gt;
+          &lt;li&gt;장점
+            &lt;ul&gt;
+              &lt;li&gt;데스크톱과 워크스테이션 등에서 오랫동안 검증을 받아왔다.&lt;/li&gt;
+              &lt;li&gt;Btrfs보다 범용적인 파일시스템으로 호환성이 좋고 다른 파일 시스템보다 CPU 사용율이 낮다.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;단점
+            &lt;ul&gt;
+              &lt;li&gt;디스크 블록 지연 할당에 의한 데이터 유실 가능성이 있다. EXT4는 성능의 향상을 위해 데이터를 디스크에 즉시 기록하지 않기 때문이다.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;다음 편에서는 NAS 세팅에 대해 다뤄보도록 하겠다.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="example" /><summary type="html">What’s NAS?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What’s Database System?</title><link href="http://localhost:4000/blog/example/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/" rel="alternate" type="text/html" title="What’s Database System?" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5</id><content type="html" xml:base="http://localhost:4000/blog/example/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/">&lt;p&gt;What’s Database System?&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템&quot; id=&quot;markdown-toc-데이터베이스-시스템&quot;&gt;데이터베이스 시스템&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터베이스의-특징&quot; id=&quot;markdown-toc-데이터베이스의-특징&quot;&gt;데이터베이스의 특징&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템의-구성요소&quot; id=&quot;markdown-toc-데이터베이스-시스템의-구성요소&quot;&gt;데이터베이스 시스템의 구성요소&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터베이스&quot; id=&quot;markdown-toc-데이터베이스&quot;&gt;데이터베이스&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#dbms&quot; id=&quot;markdown-toc-dbms&quot;&gt;DBMS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터베이스-사용자&quot; id=&quot;markdown-toc-데이터베이스-사용자&quot;&gt;데이터베이스 사용자&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#하드웨어&quot; id=&quot;markdown-toc-하드웨어&quot;&gt;하드웨어&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템의-요구사항&quot; id=&quot;markdown-toc-데이터베이스-시스템의-요구사항&quot;&gt;데이터베이스 시스템의 요구사항&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#화일시스템을-사용한-기존의-데이터-관리&quot; id=&quot;markdown-toc-화일시스템을-사용한-기존의-데이터-관리&quot;&gt;화일시스템을 사용한 기존의 데이터 관리&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#화일-시스템의-단점&quot; id=&quot;markdown-toc-화일-시스템의-단점&quot;&gt;화일 시스템의 단점&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#dbms를-사용한-데이터베이스-관리&quot; id=&quot;markdown-toc-dbms를-사용한-데이터베이스-관리&quot;&gt;DBMS를 사용한 데이터베이스 관리&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#dbms의-장점&quot; id=&quot;markdown-toc-dbms의-장점&quot;&gt;DBMS의 장점&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#dbms-선정-시-고려-사항&quot; id=&quot;markdown-toc-dbms-선정-시-고려-사항&quot;&gt;DBMS 선정 시 고려 사항&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#dbms의-단점&quot; id=&quot;markdown-toc-dbms의-단점&quot;&gt;DBMS의 단점&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터-모델&quot; id=&quot;markdown-toc-데이터-모델&quot;&gt;데이터 모델&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터-모델의-분류&quot; id=&quot;markdown-toc-데이터-모델의-분류&quot;&gt;데이터 모델의 분류&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#계층-dbms&quot; id=&quot;markdown-toc-계층-dbms&quot;&gt;계층 DBMS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#네트워크-dbms&quot; id=&quot;markdown-toc-네트워크-dbms&quot;&gt;네트워크 DBMS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;데이터베이스-시스템&quot;&gt;데이터베이스 시스템&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;컴퓨터를 사용하여 정보를 수집하고 분석하는데 데이터베이스 기술이 활용되고 있음&lt;/li&gt;
+  &lt;li&gt;정보와 데이터는 서로 다름
+    &lt;ul&gt;
+      &lt;li&gt;데이터(Data): 현실 세계에서 측정하고 수집한 사실이나 값&lt;/li&gt;
+      &lt;li&gt;정보(Information): 어떠한 목적이나 의도에 맞게 데이터를 가공한 것&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;데이터베이스(Database)의 정의
+    &lt;ul&gt;
+      &lt;li&gt;데이터베이스는 조직체의 응용 시스템들이 공유해서 사용하는 운영 데이터(Operational data)들이 구조적으로 통합된 모임&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;예시
+    &lt;ul&gt;
+      &lt;li&gt;대학에서 데이터베이스에 학생들에 관해 신상 정보, 수강 과목, 성적 등을 기록하고, 각 학과에 개설되어 있는 과목들에 관한 정보를 유지하고, 교수에 관해서 신상 정보, 담당 과목, 급여 정보를 유지한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;데이터베이스의-특징&quot;&gt;데이터베이스의 특징&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스는 데이터의 대규모 저장소로서, 여러 부서에 속하는 여러 사용자에 의해 동시에 사용됨&lt;/li&gt;
+  &lt;li&gt;모든 데이터가 중복을 최소화하면서 통합됨&lt;/li&gt;
+  &lt;li&gt;데이터베이스는 한 조직체의 운영 데이터뿐 아니라 그 데이터에 관한 설명(&lt;strong&gt;데이터베이스 스키마&lt;/strong&gt; 또는 &lt;strong&gt;메타데이터(metadata)&lt;/strong&gt;)까지 포함
+    &lt;ul&gt;
+      &lt;li&gt;메타데이터(Metadata): 시스템 카탈로그의 중립적인 표현&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;프로그램과 데이터 간의 독립성이 제공됨&lt;/li&gt;
+  &lt;li&gt;효율적으로 접근이 가능하고 질의를 할 수 있음&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;데이터베이스 관리시스템(DBMS, Database Management System)&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;데이터베이스를 정의하고, 질의어를 지원하고, 리포트를 생성하는 등의 작업을 수행하는 소프트웨어&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;데이터베이스 스키마&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;전체적인 데이터베이스 구조를 뜻하며 자주 변경되지는 않음&lt;/li&gt;
+      &lt;li&gt;데이터베이스의 모든 가능한 상태를 미리 정의&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;내포(intension)&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;데이터베이스 상태&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;특정 시점의 데이터베이스의 내용을 의미하며, 시간이 지남에 따라 계속 바뀜&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;외연(extension)&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;데이터베이스-시스템의-구성요소&quot;&gt;데이터베이스 시스템의 구성요소&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/database-1-7.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;560&quot; height=&quot;560&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;데이터베이스&quot;&gt;데이터베이스&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;조직체의 응용 시스템들이 공유해서 사용하는 운영 데이터들이 구조적으로 통합된 모임&lt;/li&gt;
+  &lt;li&gt;시스템 카탈로그와 저장된 데이터베이스로 구분할 수 있음&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;시스템 카탈로그(System Catalog)&lt;/strong&gt;는 저장된 데이터베이스의 스키마 정보를 유지&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dbms&quot;&gt;DBMS&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;사용자가 새로운 데이터베이스를 생성하고, 데이터베이스의 구조를 명시할 수 있게 하고, 사용자가 데이터를 효율적으로 질의하고 수정할 수 있도록 하며, 시스템의 고장이나 권한이 없는 사용자로부터 데이터를 안전하게 보호하며, 동시에 여러 사용자가 데이터베이스를 접근하는 것을 제어하는 소프트웨어 패키지&lt;/li&gt;
+  &lt;li&gt;데이터베이스 언어라고 부르는 특별한 프로그래밍 언어를 한 개 이상 제공&lt;/li&gt;
+  &lt;li&gt;SQL은 여러 DBMS에서 제공되는 사실상의 표준 데이터베이스 언어&lt;/li&gt;
+  &lt;li&gt;컴퓨터시스템에서 DBMS의 위치
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;/assets/img/blog/database-1-9.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;460&quot; height=&quot;460&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;데이터베이스-사용자&quot;&gt;데이터베이스 사용자&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스 사용자는 여러 부류로 나눌 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;하드웨어&quot;&gt;하드웨어&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스는 디스크와 같은 보조 기억 장치에 저장되며, DBMS에서 원하는 정보를 찾기 위해서는 디스크의 블록들을 주기억장치로 읽어들어야 하며, 계산이나 비교 연산들을 수행하기 위해 중앙 처리 장치가 사용됨&lt;/li&gt;
+  &lt;li&gt;DBMS 자체도 주기억 장치에 적재되어 실행되어야 함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;데이터베이스-시스템의-요구사항&quot;&gt;데이터베이스 시스템의 요구사항&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스 독립성&lt;/li&gt;
+  &lt;li&gt;효율적인 데이터 접근&lt;/li&gt;
+  &lt;li&gt;데이터에 대한 동시 접근&lt;/li&gt;
+  &lt;li&gt;백업과 회복&lt;/li&gt;
+  &lt;li&gt;중복을 줄이거나 제어하며 일관성 유지&lt;/li&gt;
+  &lt;li&gt;데이터 무결성&lt;/li&gt;
+  &lt;li&gt;데이터 보안&lt;/li&gt;
+  &lt;li&gt;쉬운 질의어&lt;/li&gt;
+  &lt;li&gt;다양한 사용자 인터페이스&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;화일시스템을-사용한-기존의-데이터-관리&quot;&gt;화일시스템을 사용한 기존의 데이터 관리&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;화일 시스템은 DBMS가 등장하지 않았을 때인 1960년대부터 사용되어 있음&lt;/li&gt;
+  &lt;li&gt;화일의 기본적인 구성요소는 순차적인 레코드들&lt;/li&gt;
+  &lt;li&gt;한 레코드는 연관된 필드들의 모임&lt;/li&gt;
+  &lt;li&gt;화일을 접근하는 방식이 응용 프로그램 내에 상세하게 표현되므로 데이터에 대한 응용 프로그램의 의존도가 높음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;화일-시스템의-단점&quot;&gt;화일 시스템의 단점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터가 많은 화일에 중복해서 저장됨&lt;/li&gt;
+  &lt;li&gt;다수 사용자들을 위한 동시성 제어가 제공되지 않음&lt;/li&gt;
+  &lt;li&gt;검색하려는 데이터를 쉽게 명시하는 질의어가 제공되지 않음&lt;/li&gt;
+  &lt;li&gt;보안 조치가 미흡&lt;/li&gt;
+  &lt;li&gt;회복 기능이 없음&lt;/li&gt;
+  &lt;li&gt;프로그램-데이터 독립성이 없으므로 유지보수 비용이 많이 소요됨&lt;/li&gt;
+  &lt;li&gt;화일을 검색하거나 갱신하는 절차가 상대적으로 복잡하기 때문에 프로그래머의 생산성이 낮음&lt;/li&gt;
+  &lt;li&gt;데이터의 공유와 융통성이 부족&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dbms를-사용한-데이터베이스-관리&quot;&gt;DBMS를 사용한 데이터베이스 관리&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;여러 사용자와 응용 프로그램들이 데이터베이스를 공유&lt;/li&gt;
+  &lt;li&gt;사용자의 질의를 빠르게 수행할 수 있는 인덱스 등의 접근 경로를 DBMS가 자동적으로 선택하여 수행&lt;/li&gt;
+  &lt;li&gt;권한이 없는 사용자로부터 데이터베이스를 보호&lt;/li&gt;
+  &lt;li&gt;여러 사용자에 적합한 다양한 인터페이스 제공&lt;/li&gt;
+  &lt;li&gt;데이터간의 복잡한 관계를 표현하며, 무결성 제약조건을 DBMS가 자동적으로 유지&lt;/li&gt;
+  &lt;li&gt;시스템이 고장 나면 데이터베이스를 고장 전의 일관된 상태로 회복시킴&lt;/li&gt;
+  &lt;li&gt;프로그램에 영향을 주지 않으면서 데이터베이스 구조를 변경할 수 있음&lt;/li&gt;
+  &lt;li&gt;프로그램-데이터 독립성(Program-data independence)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dbms의-장점&quot;&gt;DBMS의 장점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;중복성과 불일치가 감소&lt;/strong&gt;됨&lt;/li&gt;
+  &lt;li&gt;시스템을 개발하고 &lt;strong&gt;유지하는 비용이 감소&lt;/strong&gt;됨&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;표준화&lt;/strong&gt;를 시행하기가 용이&lt;/li&gt;
+  &lt;li&gt;보안이 향상됨&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;무결성&lt;/strong&gt;이 향상됨&lt;/li&gt;
+  &lt;li&gt;조직체의 요구사항을 식별할 수 있음&lt;/li&gt;
+  &lt;li&gt;다양한 유형의 고장으로부터 데이터베이스를 회복할 수 있음&lt;/li&gt;
+  &lt;li&gt;데이터베이스의 공유와 &lt;strong&gt;동시 접근&lt;/strong&gt;이 가능함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dbms-선정-시-고려-사항&quot;&gt;DBMS 선정 시 고려 사항&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;기술적 요인
+    &lt;ul&gt;
+      &lt;li&gt;DBMS에 사용되고 있는 데이터 모델, DBMS가 지원하는 사용자 인터페이스, 프로그래밍 언어, 응용 개발 도구, 저장 구조, 성능, 접근 방법 등&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;경제적 요인
+    &lt;ul&gt;
+      &lt;li&gt;소프트웨어와 하드웨어 구입 비용, 유지 보수 비용, 직원들의 교육 지원 등&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dbms의-단점&quot;&gt;DBMS의 단점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;추가적인 하드웨어 구입 비용이 들고, DBMS 자체의 구입 비용도 상당히 비쌈&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;직원들의 교육 비용&lt;/strong&gt;도 많이 소용됨&lt;/li&gt;
+  &lt;li&gt;비밀과 프라이버시 노출 등의 단점이 존재할 수 있음&lt;/li&gt;
+  &lt;li&gt;초기의 투자 비용이 너무 클 때, 오버헤드가 너무 클 때, 응용이 단순하고 잘 정의되었으며 변경되지 않을 것으로 예상될 때, 엄격한 실시간 처리 요구사항이 있을 때, 데이터에 대한 다수 사용자의 접근이 필요하지 않을 때는 DBMS를 사용하지 않는 것이 바람직&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;데이터-모델&quot;&gt;데이터 모델&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스의 구조를 기술하는데 사용되는 개념들의 집합인 구조(데이터 타입과 관계), 이 구조 위에서 동작하는 연산자들, 무결성 제약조건들&lt;/li&gt;
+  &lt;li&gt;사용자에게 내부 저장 방식의 세세한 사항은 숨기면서 데이터에 대한 직관적인 뷰를 제공하는 동시에 이들 간의 사상을 제공&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;데이터-모델의-분류&quot;&gt;데이터 모델의 분류&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;고수준 또는 개념적 데이터 모델(Conceptual Data Model)
+    &lt;ul&gt;
+      &lt;li&gt;사람이 인식하는 것과 유사하게 데이터베이스의 전체적인 논리적 구조를 명시
+        &lt;ul&gt;
+          &lt;li&gt;ex. 엔티티-관계(ER, Entity-Relationship) 데이터 모델과 객체 지향 데이터 모델&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;표현(구현) 데이터 모델(Representation(implementation) Data Model)
+    &lt;ul&gt;
+      &lt;li&gt;최종 사용자가 이해하는 개념이면서 컴퓨터 내에서 데이터가 조작되는 방식과 멀리 떨어져 있지는 않음
+        &lt;ul&gt;
+          &lt;li&gt;ex. 계층 데이터 모델(Hierarchical Data Model), 네트워크 데이터 모델(Network Data Model), 관계 데이터 모델(Relational Data Model)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;저수준 또는 물리적인 데이터 모델(Physical Data Model)
+    &lt;ul&gt;
+      &lt;li&gt;데이터베이스에 데이터가 어떻게 저장되는가를 기술&lt;/li&gt;
+      &lt;li&gt;ex. Unfying, ISAM, VSAM 등&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;계층-dbms&quot;&gt;계층 DBMS&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;1960년대 후반에 최초의 계층 DBMS가 등장(예: IBM사의 IMS)&lt;/li&gt;
+  &lt;li&gt;트리 구조를 기반으로 하는 계층 데이터 모델을 사용한 DBMS&lt;/li&gt;
+  &lt;li&gt;계층 데이터 모델은 네트워크 데이터 모델의 특별한 사례&lt;/li&gt;
+  &lt;li&gt;장점
+    &lt;ul&gt;
+      &lt;li&gt;어떤 유형의 응용에 대해서는 빠른 속도와 높은 효율성을 제공&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;단점
+    &lt;ul&gt;
+      &lt;li&gt;어떻게 데이터를 접근하는가를 미리 응용 프로그램에 정의해야 함 -&amp;gt; 몰락의 가장 큰 원인&lt;/li&gt;
+      &lt;li&gt;데이터베이스가 생성될 때 각각의 관계를 명시적으로 정의해야 함&lt;/li&gt;
+      &lt;li&gt;레코드들이 링크로 연결되어 있으므로 레코드 구조를 변경하기 어려움&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;네트워크-dbms&quot;&gt;네트워크 DBMS&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;1960년대 초에 Charles Bachman이 하니웰(Honeywell)사에서 최초의 네트워크 DBMS인 IDS를 개발&lt;/li&gt;
+  &lt;li&gt;레코드들이 노드로, 레코드들 사이의 관계가 간선으로 표현되는 그래프를 기반으로 하는 네트워크 데이터 모델을 사용&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="example" /><summary type="html">What’s Database System?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What’s New in Hydejack 9.1?</title><link href="http://localhost:4000/blog/example/2021-02-13-whats-new-in-hydejack-9-1/" rel="alternate" type="text/html" title="What’s New in Hydejack 9.1?" /><published>2021-02-13T00:00:00+09:00</published><updated>2021-02-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/whats-new-in-hydejack-9-1</id><content type="html" xml:base="http://localhost:4000/blog/example/2021-02-13-whats-new-in-hydejack-9-1/">&lt;p&gt;What’s New in Hydejack 9.1?&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#stripe-ified-design&quot; id=&quot;markdown-toc-stripe-ified-design&quot;&gt;Stripe-ified Design&lt;/a&gt;&lt;/li&gt;
@@ -93,7 +502,7 @@ For more, see &lt;a href=&quot;https://getclaps.app/&quot;&gt;the dedicated webs
 
 &lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
 
-&lt;p&gt;&lt;span&gt;Photo by &lt;a href=&quot;https://unsplash.com/@jjying?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;JJ Ying&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="example" /><summary type="html">What’s New in Hydejack 9.1?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Hydejack 9</title><link href="http://localhost:4000/blog/example/2020-07-03-introducing-hydejack-9/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+09:00</published><updated>2020-07-03T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/introducing-hydejack-9</id><content type="html" xml:base="http://localhost:4000/blog/example/2020-07-03-introducing-hydejack-9/">&lt;p class=&quot;lead&quot;&gt;Version 9 is the most complete version of Hydejack yet.&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Photo by &lt;a href=&quot;https://unsplash.com/@jjying?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;JJ Ying&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="example" /><summary type="html">What’s New in Hydejack 9.1?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Hydejack 9</title><link href="http://localhost:4000/blog/example/2020-07-03-introducing-hydejack-9/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+09:00</published><updated>2020-07-03T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/introducing-hydejack-9</id><content type="html" xml:base="http://localhost:4000/blog/example/2020-07-03-introducing-hydejack-9/">&lt;p class=&quot;lead&quot;&gt;Version 9 is the most complete version of Hydejack yet.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;#linking-in-style&quot;&gt;Modernized&lt;/a&gt; &lt;a href=&quot;#whats-in-the-cards&quot;&gt;design&lt;/a&gt;, &lt;a href=&quot;#ready-for-the-big-screen&quot;&gt;big headlines&lt;/a&gt;, big new features: &lt;a href=&quot;#built-in-search&quot;&gt;Built-In Search&lt;/a&gt;, &lt;a href=&quot;#sticky-table-of-contents&quot;&gt;Sticky Table of Contents&lt;/a&gt;, and &lt;a href=&quot;#auto-hiding-navbar&quot;&gt;Auto-Hiding Navbar&lt;/a&gt;. That &lt;a href=&quot;#and-much-more&quot;&gt;and more&lt;/a&gt; is Hydejack 9.&lt;/p&gt;
 
@@ -182,7 +591,7 @@ The source code is available on &lt;a href=&quot;https://github.com/hydecorp/hyd
   If you’re technically inclined, you can adopt the code located in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes/js/search-worker.js&lt;/code&gt; to your needs. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="example" /><summary type="html">Version 9 is the most complete version of Hydejack yet.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content III</title><link href="http://localhost:4000/blog/example/2018-06-01-example-content-iii/" rel="alternate" type="text/html" title="Example Content III" /><published>2018-06-01T00:00:00+09:00</published><updated>2018-06-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/example-content-iii</id><content type="html" xml:base="http://localhost:4000/blog/example/2018-06-01-example-content-iii/">&lt;p&gt;Hydejack offers a few additional features to markup your markdown.
+&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="example" /><summary type="html">Version 9 is the most complete version of Hydejack yet.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content III</title><link href="http://localhost:4000/blog/example/2018-06-01-example-content-iii/" rel="alternate" type="text/html" title="Example Content III" /><published>2018-06-01T00:00:00+09:00</published><updated>2018-06-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/example-content-iii</id><content type="html" xml:base="http://localhost:4000/blog/example/2018-06-01-example-content-iii/">&lt;p&gt;Hydejack offers a few additional features to markup your markdown.
 Don’t worry, these are merely CSS classes added with kramdown’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{:...}&lt;/code&gt; syntax,
 so that your content remains compatible with other Jekyll themes.&lt;/p&gt;
 
@@ -372,7 +781,7 @@ A caption to an image.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;faded-text&quot;&gt;Faded text&lt;/h2&gt;
-&lt;p class=&quot;faded&quot;&gt;I’m faded, faded, faded.&lt;/p&gt;</content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="example" /><summary type="html">Hydejack offers a few additional features to markup your markdown. Don’t worry, these are merely CSS classes added with kramdown’s {:...} syntax, so that your content remains compatible with other Jekyll themes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content II</title><link href="http://localhost:4000/blog/example/2017-11-23-example-content-ii/" rel="alternate" type="text/html" title="Example Content II" /><published>2017-11-23T00:00:00+09:00</published><updated>2017-11-23T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/example-content-ii</id><content type="html" xml:base="http://localhost:4000/blog/example/2017-11-23-example-content-ii/">&lt;p&gt;There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.&lt;/p&gt;
+&lt;p class=&quot;faded&quot;&gt;I’m faded, faded, faded.&lt;/p&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="example" /><summary type="html">Hydejack offers a few additional features to markup your markdown. Don’t worry, these are merely CSS classes added with kramdown’s {:...} syntax, so that your content remains compatible with other Jekyll themes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content II</title><link href="http://localhost:4000/blog/example/2017-11-23-example-content-ii/" rel="alternate" type="text/html" title="Example Content II" /><published>2017-11-23T00:00:00+09:00</published><updated>2017-11-23T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/example-content-ii</id><content type="html" xml:base="http://localhost:4000/blog/example/2017-11-23-example-content-ii/">&lt;p&gt;There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.&lt;/p&gt;
 
 &lt;p&gt;There should be whitespace between paragraphs.&lt;/p&gt;
 
@@ -555,7 +964,7 @@ A caption to an image.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The final element.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="example" /><summary type="html">There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content</title><link href="http://localhost:4000/blog/example/2012-02-07-example-content/" rel="alternate" type="text/html" title="Example Content" /><published>2012-02-07T00:00:00+09:00</published><updated>2012-02-07T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/example-content</id><content type="html" xml:base="http://localhost:4000/blog/example/2012-02-07-example-content/">&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="example" /><summary type="html">There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content</title><link href="http://localhost:4000/blog/example/2012-02-07-example-content/" rel="alternate" type="text/html" title="Example Content" /><published>2012-02-07T00:00:00+09:00</published><updated>2012-02-07T00:00:00+09:00</updated><id>http://localhost:4000/blog/example/example-content</id><content type="html" xml:base="http://localhost:4000/blog/example/2012-02-07-example-content/">&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
@@ -687,4 +1096,4 @@ A caption to an image.&lt;/p&gt;
   &lt;/tfoot&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;</content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="example" /><summary type="html">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</summary></entry></feed>
+&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="example" /><summary type="html">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</summary></entry></feed>

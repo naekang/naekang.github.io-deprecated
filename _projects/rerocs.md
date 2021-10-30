@@ -1,11 +1,10 @@
 ---
 layout: project
-title: '@qwtel'
+title: '컴과길'
 caption: How I use Hydejack on my personal site.
 description: >
-  This is how I use Hydejack on my personal site. 
-  Much of the development is informed from my experience of using it myself, creating a tight feedback loop.
-date: 1 Jun 2020
+  컴퓨터과학부 17학번 동기들이 모여서 만든 사이트
+date: 1 July 2021 ~
 image: 
   path: /assets/img/projects/qwtel.jpg
   srcset: 
@@ -14,7 +13,7 @@ image:
     480w:  /assets/img/projects/qwtel@0,25x.jpg
 links:
   - title: Link
-    url: https://qwtel.com/
+    url: https://cs-roadmap.com/
 accent_color: '#4fb1ba'
 accent_image:
   background: '#193747'

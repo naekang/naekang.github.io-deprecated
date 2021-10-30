@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>What’s Database System? | Hydejack</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="What’s Database System?" />
+<meta name="author" content="Jinho Kim" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="데이터베이스 수업 1장 ppt 내용." />
+<meta property="og:description" content="데이터베이스 수업 1장 ppt 내용." />
+<link rel="canonical" href="http://localhost:4000/blog/example/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/" />
+<meta property="og:url" content="http://localhost:4000/blog/example/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/" />
+<meta property="og:site_name" content="Hydejack" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/jj-ying.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-10-28T00:00:00+09:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/jj-ying.jpg" />
+<meta property="twitter:title" content="What’s Database System?" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/example/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/"},"image":"http://localhost:4000/assets/img/blog/jj-ying.jpg","author":{"@type":"Person","name":"Jinho Kim"},"@type":"BlogPosting","url":"http://localhost:4000/blog/example/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/","description":"데이터베이스 수업 1장 ppt 내용.","headline":"What’s Database System?","dateModified":"2021-10-28T00:00:00+09:00","datePublished":"2021-10-28T00:00:00+09:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Jinho Kim"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hydejack">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Hydejack">
+
+
+  <meta name="theme-color" content="rgb(8,46,57)">
+
+
+<meta name="generator" content="Hydejack v9.1.4" />
+
+
+<link rel="alternate" href="http://localhost:4000/blog/example/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hydejack" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+<link rel="dns-prefetch" href="/assets/js/search-worker-9.1.4.js" as="worker" id="_hrefSearch">
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script");n.src=e,t&&a(n,"load",t,{once:!0});t=c.scripts[0];return t.parentNode.insertBefore(n,t),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._advertise = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2021-10-31T00:13:54+09:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.4.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-color-highlight: rgba(204,204,204,0.1);--accent-color-darkened: #b9b9b9;--theme-color: #ccc;--dark-mode-body-bg: #2d2d2d;--dark-mode-border-color: #393939}
+
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+<script>
+  window._sunrise = 6;
+  window._sunset =  18;
+  !function(e,s){var d="light-mode",o="dark-mode",a=(new Date).getHours();"matchMedia"in e&&e.matchMedia("(prefers-color-scheme)")||(o=(e=a<=e._sunrise||a>=e._sunset?o:d)==o?d:o,s.body.classList.add(e),s.body.classList.remove(o))}(window,document);
+
+</script>
+
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/">blog</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/example/">example</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        <span>2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5</span>
+      
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-blog-example-데이터베이스-1장" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        What’s Database System?
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2021-10-28T00:00:00+09:00">28 Oct 2021</time> in <a href="/blog/example/" class="flip-title">Example</a> 
+      </span>
+      
+        
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="/assets/img/blog/jj-ying.jpg"
+  
+  alt="What’s Database System?"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      데이터베이스 수업 1장 ppt 내용.
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p>What’s Database System?</p>
+
+<ul id="markdown-toc">
+  <li><a href="#데이터베이스-시스템" id="markdown-toc-데이터베이스-시스템">데이터베이스 시스템</a></li>
+  <li><a href="#데이터베이스의-특징" id="markdown-toc-데이터베이스의-특징">데이터베이스의 특징</a></li>
+  <li><a href="#데이터베이스-시스템의-구성요소" id="markdown-toc-데이터베이스-시스템의-구성요소">데이터베이스 시스템의 구성요소</a></li>
+  <li><a href="#데이터베이스" id="markdown-toc-데이터베이스">데이터베이스</a></li>
+  <li><a href="#dbms" id="markdown-toc-dbms">DBMS</a></li>
+  <li><a href="#데이터베이스-사용자" id="markdown-toc-데이터베이스-사용자">데이터베이스 사용자</a></li>
+  <li><a href="#하드웨어" id="markdown-toc-하드웨어">하드웨어</a></li>
+  <li><a href="#데이터베이스-시스템의-요구사항" id="markdown-toc-데이터베이스-시스템의-요구사항">데이터베이스 시스템의 요구사항</a></li>
+  <li><a href="#화일시스템을-사용한-기존의-데이터-관리" id="markdown-toc-화일시스템을-사용한-기존의-데이터-관리">화일시스템을 사용한 기존의 데이터 관리</a></li>
+  <li><a href="#화일-시스템의-단점" id="markdown-toc-화일-시스템의-단점">화일 시스템의 단점</a></li>
+  <li><a href="#dbms를-사용한-데이터베이스-관리" id="markdown-toc-dbms를-사용한-데이터베이스-관리">DBMS를 사용한 데이터베이스 관리</a></li>
+  <li><a href="#dbms의-장점" id="markdown-toc-dbms의-장점">DBMS의 장점</a></li>
+  <li><a href="#dbms-선정-시-고려-사항" id="markdown-toc-dbms-선정-시-고려-사항">DBMS 선정 시 고려 사항</a></li>
+  <li><a href="#dbms의-단점" id="markdown-toc-dbms의-단점">DBMS의 단점</a></li>
+  <li><a href="#데이터-모델" id="markdown-toc-데이터-모델">데이터 모델</a></li>
+  <li><a href="#데이터-모델의-분류" id="markdown-toc-데이터-모델의-분류">데이터 모델의 분류</a></li>
+  <li><a href="#계층-dbms" id="markdown-toc-계층-dbms">계층 DBMS</a></li>
+  <li><a href="#네트워크-dbms" id="markdown-toc-네트워크-dbms">네트워크 DBMS</a></li>
+</ul>
+
+<h2 id="데이터베이스-시스템">데이터베이스 시스템</h2>
+<ul>
+  <li>컴퓨터를 사용하여 정보를 수집하고 분석하는데 데이터베이스 기술이 활용되고 있음</li>
+  <li>정보와 데이터는 서로 다름
+    <ul>
+      <li>데이터(Data): 현실 세계에서 측정하고 수집한 사실이나 값</li>
+      <li>정보(Information): 어떠한 목적이나 의도에 맞게 데이터를 가공한 것</li>
+    </ul>
+  </li>
+  <li>데이터베이스(Database)의 정의
+    <ul>
+      <li>데이터베이스는 조직체의 응용 시스템들이 공유해서 사용하는 운영 데이터(Operational data)들이 구조적으로 통합된 모임</li>
+    </ul>
+  </li>
+  <li>예시
+    <ul>
+      <li>대학에서 데이터베이스에 학생들에 관해 신상 정보, 수강 과목, 성적 등을 기록하고, 각 학과에 개설되어 있는 과목들에 관한 정보를 유지하고, 교수에 관해서 신상 정보, 담당 과목, 급여 정보를 유지한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="데이터베이스의-특징">데이터베이스의 특징</h2>
+<ul>
+  <li>데이터베이스는 데이터의 대규모 저장소로서, 여러 부서에 속하는 여러 사용자에 의해 동시에 사용됨</li>
+  <li>모든 데이터가 중복을 최소화하면서 통합됨</li>
+  <li>데이터베이스는 한 조직체의 운영 데이터뿐 아니라 그 데이터에 관한 설명(<strong>데이터베이스 스키마</strong> 또는 <strong>메타데이터(metadata)</strong>)까지 포함
+    <ul>
+      <li>메타데이터(Metadata): 시스템 카탈로그의 중립적인 표현</li>
+    </ul>
+  </li>
+  <li>프로그램과 데이터 간의 독립성이 제공됨</li>
+  <li>효율적으로 접근이 가능하고 질의를 할 수 있음</li>
+  <li><strong>데이터베이스 관리시스템(DBMS, Database Management System)</strong>
+    <ul>
+      <li>데이터베이스를 정의하고, 질의어를 지원하고, 리포트를 생성하는 등의 작업을 수행하는 소프트웨어</li>
+    </ul>
+  </li>
+  <li><strong>데이터베이스 스키마</strong>
+    <ul>
+      <li>전체적인 데이터베이스 구조를 뜻하며 자주 변경되지는 않음</li>
+      <li>데이터베이스의 모든 가능한 상태를 미리 정의</li>
+      <li><strong>내포(intension)</strong></li>
+    </ul>
+  </li>
+  <li><strong>데이터베이스 상태</strong>
+    <ul>
+      <li>특정 시점의 데이터베이스의 내용을 의미하며, 시간이 지남에 따라 계속 바뀜</li>
+      <li><strong>외연(extension)</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="데이터베이스-시스템의-구성요소">데이터베이스 시스템의 구성요소</h2>
+<p><img src="/assets/img/blog/database-1-7.png" alt="Download Buttons" class="border lead" width="560" height="560" loading="lazy" /></p>
+
+<h2 id="데이터베이스">데이터베이스</h2>
+<ul>
+  <li>조직체의 응용 시스템들이 공유해서 사용하는 운영 데이터들이 구조적으로 통합된 모임</li>
+  <li>시스템 카탈로그와 저장된 데이터베이스로 구분할 수 있음</li>
+  <li><strong>시스템 카탈로그(System Catalog)</strong>는 저장된 데이터베이스의 스키마 정보를 유지</li>
+</ul>
+
+<h2 id="dbms">DBMS</h2>
+<ul>
+  <li>사용자가 새로운 데이터베이스를 생성하고, 데이터베이스의 구조를 명시할 수 있게 하고, 사용자가 데이터를 효율적으로 질의하고 수정할 수 있도록 하며, 시스템의 고장이나 권한이 없는 사용자로부터 데이터를 안전하게 보호하며, 동시에 여러 사용자가 데이터베이스를 접근하는 것을 제어하는 소프트웨어 패키지</li>
+  <li>데이터베이스 언어라고 부르는 특별한 프로그래밍 언어를 한 개 이상 제공</li>
+  <li>SQL은 여러 DBMS에서 제공되는 사실상의 표준 데이터베이스 언어</li>
+  <li>컴퓨터시스템에서 DBMS의 위치
+    <ul>
+      <li><img src="/assets/img/blog/database-1-9.png" alt="Download Buttons" class="border lead" width="460" height="460" loading="lazy" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="데이터베이스-사용자">데이터베이스 사용자</h2>
+<ul>
+  <li>데이터베이스 사용자는 여러 부류로 나눌 수 있음</li>
+</ul>
+
+<h2 id="하드웨어">하드웨어</h2>
+<ul>
+  <li>데이터베이스는 디스크와 같은 보조 기억 장치에 저장되며, DBMS에서 원하는 정보를 찾기 위해서는 디스크의 블록들을 주기억장치로 읽어들어야 하며, 계산이나 비교 연산들을 수행하기 위해 중앙 처리 장치가 사용됨</li>
+  <li>DBMS 자체도 주기억 장치에 적재되어 실행되어야 함</li>
+</ul>
+
+<h2 id="데이터베이스-시스템의-요구사항">데이터베이스 시스템의 요구사항</h2>
+<ul>
+  <li>데이터베이스 독립성</li>
+  <li>효율적인 데이터 접근</li>
+  <li>데이터에 대한 동시 접근</li>
+  <li>백업과 회복</li>
+  <li>중복을 줄이거나 제어하며 일관성 유지</li>
+  <li>데이터 무결성</li>
+  <li>데이터 보안</li>
+  <li>쉬운 질의어</li>
+  <li>다양한 사용자 인터페이스</li>
+</ul>
+
+<h2 id="화일시스템을-사용한-기존의-데이터-관리">화일시스템을 사용한 기존의 데이터 관리</h2>
+<ul>
+  <li>화일 시스템은 DBMS가 등장하지 않았을 때인 1960년대부터 사용되어 있음</li>
+  <li>화일의 기본적인 구성요소는 순차적인 레코드들</li>
+  <li>한 레코드는 연관된 필드들의 모임</li>
+  <li>화일을 접근하는 방식이 응용 프로그램 내에 상세하게 표현되므로 데이터에 대한 응용 프로그램의 의존도가 높음</li>
+</ul>
+
+<h2 id="화일-시스템의-단점">화일 시스템의 단점</h2>
+<ul>
+  <li>데이터가 많은 화일에 중복해서 저장됨</li>
+  <li>다수 사용자들을 위한 동시성 제어가 제공되지 않음</li>
+  <li>검색하려는 데이터를 쉽게 명시하는 질의어가 제공되지 않음</li>
+  <li>보안 조치가 미흡</li>
+  <li>회복 기능이 없음</li>
+  <li>프로그램-데이터 독립성이 없으므로 유지보수 비용이 많이 소요됨</li>
+  <li>화일을 검색하거나 갱신하는 절차가 상대적으로 복잡하기 때문에 프로그래머의 생산성이 낮음</li>
+  <li>데이터의 공유와 융통성이 부족</li>
+</ul>
+
+<h2 id="dbms를-사용한-데이터베이스-관리">DBMS를 사용한 데이터베이스 관리</h2>
+<ul>
+  <li>여러 사용자와 응용 프로그램들이 데이터베이스를 공유</li>
+  <li>사용자의 질의를 빠르게 수행할 수 있는 인덱스 등의 접근 경로를 DBMS가 자동적으로 선택하여 수행</li>
+  <li>권한이 없는 사용자로부터 데이터베이스를 보호</li>
+  <li>여러 사용자에 적합한 다양한 인터페이스 제공</li>
+  <li>데이터간의 복잡한 관계를 표현하며, 무결성 제약조건을 DBMS가 자동적으로 유지</li>
+  <li>시스템이 고장 나면 데이터베이스를 고장 전의 일관된 상태로 회복시킴</li>
+  <li>프로그램에 영향을 주지 않으면서 데이터베이스 구조를 변경할 수 있음</li>
+  <li>프로그램-데이터 독립성(Program-data independence)</li>
+</ul>
+
+<h2 id="dbms의-장점">DBMS의 장점</h2>
+<ul>
+  <li><strong>중복성과 불일치가 감소</strong>됨</li>
+  <li>시스템을 개발하고 <strong>유지하는 비용이 감소</strong>됨</li>
+  <li><strong>표준화</strong>를 시행하기가 용이</li>
+  <li>보안이 향상됨</li>
+  <li><strong>무결성</strong>이 향상됨</li>
+  <li>조직체의 요구사항을 식별할 수 있음</li>
+  <li>다양한 유형의 고장으로부터 데이터베이스를 회복할 수 있음</li>
+  <li>데이터베이스의 공유와 <strong>동시 접근</strong>이 가능함</li>
+</ul>
+
+<h2 id="dbms-선정-시-고려-사항">DBMS 선정 시 고려 사항</h2>
+<ul>
+  <li>기술적 요인
+    <ul>
+      <li>DBMS에 사용되고 있는 데이터 모델, DBMS가 지원하는 사용자 인터페이스, 프로그래밍 언어, 응용 개발 도구, 저장 구조, 성능, 접근 방법 등</li>
+    </ul>
+  </li>
+  <li>경제적 요인
+    <ul>
+      <li>소프트웨어와 하드웨어 구입 비용, 유지 보수 비용, 직원들의 교육 지원 등</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="dbms의-단점">DBMS의 단점</h2>
+<ul>
+  <li>추가적인 하드웨어 구입 비용이 들고, DBMS 자체의 구입 비용도 상당히 비쌈</li>
+  <li><strong>직원들의 교육 비용</strong>도 많이 소용됨</li>
+  <li>비밀과 프라이버시 노출 등의 단점이 존재할 수 있음</li>
+  <li>초기의 투자 비용이 너무 클 때, 오버헤드가 너무 클 때, 응용이 단순하고 잘 정의되었으며 변경되지 않을 것으로 예상될 때, 엄격한 실시간 처리 요구사항이 있을 때, 데이터에 대한 다수 사용자의 접근이 필요하지 않을 때는 DBMS를 사용하지 않는 것이 바람직</li>
+</ul>
+
+<h2 id="데이터-모델">데이터 모델</h2>
+<ul>
+  <li>데이터베이스의 구조를 기술하는데 사용되는 개념들의 집합인 구조(데이터 타입과 관계), 이 구조 위에서 동작하는 연산자들, 무결성 제약조건들</li>
+  <li>사용자에게 내부 저장 방식의 세세한 사항은 숨기면서 데이터에 대한 직관적인 뷰를 제공하는 동시에 이들 간의 사상을 제공</li>
+</ul>
+
+<h2 id="데이터-모델의-분류">데이터 모델의 분류</h2>
+<ul>
+  <li>고수준 또는 개념적 데이터 모델(Conceptual Data Model)
+    <ul>
+      <li>사람이 인식하는 것과 유사하게 데이터베이스의 전체적인 논리적 구조를 명시
+        <ul>
+          <li>ex. 엔티티-관계(ER, Entity-Relationship) 데이터 모델과 객체 지향 데이터 모델</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>표현(구현) 데이터 모델(Representation(implementation) Data Model)
+    <ul>
+      <li>최종 사용자가 이해하는 개념이면서 컴퓨터 내에서 데이터가 조작되는 방식과 멀리 떨어져 있지는 않음
+        <ul>
+          <li>ex. 계층 데이터 모델(Hierarchical Data Model), 네트워크 데이터 모델(Network Data Model), 관계 데이터 모델(Relational Data Model)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>저수준 또는 물리적인 데이터 모델(Physical Data Model)
+    <ul>
+      <li>데이터베이스에 데이터가 어떻게 저장되는가를 기술</li>
+      <li>ex. Unfying, ISAM, VSAM 등</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="계층-dbms">계층 DBMS</h2>
+<ul>
+  <li>1960년대 후반에 최초의 계층 DBMS가 등장(예: IBM사의 IMS)</li>
+  <li>트리 구조를 기반으로 하는 계층 데이터 모델을 사용한 DBMS</li>
+  <li>계층 데이터 모델은 네트워크 데이터 모델의 특별한 사례</li>
+  <li>장점
+    <ul>
+      <li>어떤 유형의 응용에 대해서는 빠른 속도와 높은 효율성을 제공</li>
+    </ul>
+  </li>
+  <li>단점
+    <ul>
+      <li>어떻게 데이터를 접근하는가를 미리 응용 프로그램에 정의해야 함 -&gt; 몰락의 가장 큰 원인</li>
+      <li>데이터베이스가 생성될 때 각각의 관계를 명시적으로 정의해야 함</li>
+      <li>레코드들이 링크로 연결되어 있으므로 레코드 구조를 변경하기 어려움</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="네트워크-dbms">네트워크 DBMS</h2>
+<ul>
+  <li>1960년대 초에 Charles Bachman이 하니웰(Honeywell)사에서 최초의 네트워크 DBMS인 IDS를 개발</li>
+  <li>레코드들이 노드로, 레코드들 사이의 관계가 간선으로 표현되는 그래프를 기반으로 하는 네트워크 데이터 모델을 사용</li>
+</ul>
+
+  
+</article>
+
+
+
+  <clap-button class="mb6" ></clap-button>
+  
+  
+    <p class="message centered border-radius" >
+      <span style="display:block;margin-bottom:.5rem;">This is a preview of <a href="https://getclaps.app">Clap Button</a>, a new feedback and analytics tools for Hydejack, built by yours truly.</span>
+      <span style="display:block;margin-bottom:.5rem;">You can try it out on <code>localhost</code> for free, but it will be removed (together with this message) when building with <code>JEKYLL_ENV=production</code>.</span>
+      <span style="display:block;margin-bottom:.5rem;">To use Clap Button on your site, get a <a href="https://getclaps.app#pricing">subscription</a><br/>and set <code>clap_button: true</code> in your config file.</span>
+    </p>
+  
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="https://placehold.it/128x128"
+    srcset="https://placehold.it/128x128 1x,https://placehold.it/256x256 2x"
+    
+  
+  alt="<firstname> <lastname>"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Open <code class="language-plaintext highlighter-rouge">_data/authors.yml</code> to edit this text.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/<username>" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/<username>" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  <aside class="other-projects related mb0" role="complementary">  <h2>Related Posts</h2>  <div class="columns">          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/example/2021-10-29-NAS-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-1%ED%83%84/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/jj-ying.jpg"    alt="What’s NAS?"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/example/2021-10-29-NAS-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-1%ED%83%84/" class="flip-title">What’s NAS?</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      나스 입문자의 좌충우돌 설치기 1탄    </p>      <a class="fill-card no-hover" href="/blog/example/2021-10-29-NAS-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-1%ED%83%84/" tabindex="-1"><span class="sr-only">Continue reading What’s NAS?</span></a></article>              </div>          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/example/2021-02-13-whats-new-in-hydejack-9-1/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/jj-ying.jpg"    alt="What’s New in Hydejack 9.1?"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/example/2021-02-13-whats-new-in-hydejack-9-1/" class="flip-title">What’s New in Hydejack 9.1?</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      Version 9.1 provides minor design changes, new features, and closes multiple issues.    </p>      <a class="fill-card no-hover" href="/blog/example/2021-02-13-whats-new-in-hydejack-9-1/" tabindex="-1"><span class="sr-only">Continue reading What’s New in Hydejack 9.1?</span></a></article>              </div>      </div></aside>
+
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/example/2021-10-29-NAS-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-1%ED%83%84/" class="flip-title"><span>What’s NAS?</span></a>  <time class="faded fine" datetime="2021-10-29T00:00:00+09:00">29 Oct 2021</time></li>          <li class="h4">  <a href="/blog/example/2021-02-13-whats-new-in-hydejack-9-1/" class="flip-title"><span>What’s New in Hydejack 9.1?</span></a>  <time class="faded fine" datetime="2021-02-13T00:00:00+09:00">13 Feb 2021</time></li>          <li class="h4">  <a href="/blog/example/2018-06-01-example-content-iii/" class="flip-title"><span>Example Content III</span></a>  <time class="faded fine" datetime="2018-06-01T00:00:00+09:00">01 Jun 2018</time></li>      </ul></aside>
+
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2021. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/CHANGELOG/">CHANGELOG</a>
+      
+    
+    </small></nav>
+  
+  
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar invert" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg " style="background:url('/assets/img/blog/jj-ying.jpg') center/cover"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/logo.png" class="avatar" alt="Hydejack" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Hydejack</h2></a>
+    
+    
+      <p class="">
+        Change <code class="language-plaintext highlighter-rouge">tagline</code> in <code class="language-plaintext highlighter-rouge">_config.yml</code>
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/blog/"
+          class="sidebar-nav-item "
+          
+        >
+          Blog
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/projects/"
+          class="sidebar-nav-item "
+          
+        >
+          Projects
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/resume/"
+          class="sidebar-nav-item "
+          
+        >
+          Résumé*
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/docs/"
+          class="sidebar-nav-item "
+          
+        >
+          Documentation
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/<username>" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/<username>" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.4.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.4.js" nomodule defer></script>
+  
+
+  
+
+  <script type="module">
+    if ('serviceWorker' in navigator) {
+      /**/
+      navigator.serviceWorker.getRegistration()
+        .then(r => r.unregister())
+        .catch(() => {});
+      /**/
+    }
+  </script>
+<!--<![endif]-->
+  
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <clap-config>
+    <clap-text at="1">Keep going!</clap-text>
+    <clap-text at="2">Keep going ×2!</clap-text>
+    <clap-text at="3">Give me more!</clap-text>
+    <clap-text at="5">Thank you, thank you</clap-text>
+    <clap-text at="7">Far too kind!</clap-text>
+    <clap-text at="10">Never gonna give me up?</clap-text>
+    <clap-text at="14">Never gonna let me down?</clap-text>
+    <clap-text at="20">Turn around and desert me!</clap-text>
+    <clap-text at="30">You're an addict!</clap-text>
+    <clap-text at="40">Son of a clapper!</clap-text>
+    <clap-text at="50">No way</clap-text>
+    <clap-text at="60">Go back to work!</clap-text>
+    <clap-text at="70">This is getting out of <em>hand</em></clap-text>
+    <clap-text at="80">Unbelievable</clap-text>
+    <clap-text at="90">PREPOSTEROUS</clap-text>
+    <clap-text at="100">I N S A N I T Y</clap-text>
+    <clap-text at="185"><span style="font-family:monospace">FEED ME A STRAY CAT</span></clap-text>
+  </clap-config>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+  
+  
+    <template id="_dark-mode-template">
+  <button id="_dark-mode" class="nav-btn no-hover" >
+    <span class="sr-only">Dark Mode</span>
+    <span class="icon-brightness-contrast"></span>
+  </button>
+</template>
+
+  
+  
+    <template id="_search-template">
+  <button id="_search" class="nav-btn no-hover">
+    <label class="sr-only" for="_search-input">Search</label>
+    <span class="icon-search"></span>
+  </button>
+  <div id="_search-box">
+    <div class="nav-btn">
+      <span class="icon-search"></span>
+    </div>
+    <input 
+      id="_search-input"
+      type="search"
+      class="form-control form-control-lg nav-btn"
+      placeholder="Build with JEKYLL_ENV=production to enable search."
+    />
+    <button type="reset" class="nav-btn no-hover">
+      <span class="sr-only">Close</span>
+      <span class="icon-cross"></span>
+    </button>
+  </div>
+  <div id="_hits"></div>
+</template>
+
+  
+</div>
+
+</body>
+</html>

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Thank You!
+title: Hauling-IT
 sitemap: false
 ---
 
-Thank you for buying the PRO version of Hydejack! 🎉
+Thank you for visiting Hauling-IT blog! 🎉
 
 More than one year ago I was looking for a blogging platform but couldn't find it:
 One that would let me write posts in markdown with my own editor,
