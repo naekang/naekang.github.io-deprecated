@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-01T01:47:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-01T23:56:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
 </subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">TDD란?</title><link href="http://localhost:4000/blog/update/computer-science/wooahan-techcourse/2021-11-01-TDD%EB%9E%80/" rel="alternate" type="text/html" title="TDD란?" /><published>2021-11-01T00:00:00+09:00</published><updated>2021-11-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/wooahan-techcourse/TDD%EB%9E%80</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/wooahan-techcourse/2021-11-01-TDD%EB%9E%80/">&lt;p&gt;TDD에 대해 알아보자&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -78,7 +78,186 @@
   &lt;li&gt;R: Repeatable (반복 가능하게)&lt;/li&gt;
   &lt;li&gt;S: Self-Validating (자가 검증하는)&lt;/li&gt;
   &lt;li&gt;T: Timely (적시에)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;wooahan-techcourse&quot;]" /><category term="computer-science" /><category term="wooahan-techcourse" /><summary type="html">TDD에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/tdd-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/tdd-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cache란 무엇인가</title><link href="http://localhost:4000/blog/update/computer-science/wooahan-techcourse/2021-10-31-Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/" rel="alternate" type="text/html" title="Cache란 무엇인가" /><published>2021-10-31T00:00:00+09:00</published><updated>2021-10-31T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/wooahan-techcourse/Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/wooahan-techcourse/2021-10-31-Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/">&lt;p&gt;Cache에 대해 알아보자&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;wooahan-techcourse&quot;]" /><category term="computer-science" /><category term="wooahan-techcourse" /><summary type="html">TDD에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/tdd-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/tdd-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">기본 자료형</title><link href="http://localhost:4000/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/" rel="alternate" type="text/html" title="기본 자료형" /><published>2021-11-01T00:00:00+09:00</published><updated>2021-11-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/algorithm/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/">&lt;blockquote&gt;
+  &lt;p&gt;데이터를 어떻게 표현하느냐가 프로그래밍의 핵심이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#기본-자료형-부트캠프&quot; id=&quot;markdown-toc-기본-자료형-부트캠프&quot;&gt;기본 자료형 부트캠프&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#자바-비트shift-연산자&quot; id=&quot;markdown-toc-자바-비트shift-연산자&quot;&gt;자바 비트(Shift) 연산자&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#자바-비트-논리-연산자&quot; id=&quot;markdown-toc-자바-비트-논리-연산자&quot;&gt;자바 비트 논리 연산자&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#기본-자료형-문제를-풀기-전-알아야-하는-내용&quot; id=&quot;markdown-toc-기본-자료형-문제를-풀기-전-알아야-하는-내용&quot;&gt;기본 자료형 문제를 풀기 전 알아야 하는 내용&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#기본-자료형-이해하기&quot; id=&quot;markdown-toc-기본-자료형-이해하기&quot;&gt;기본 자료형 이해하기&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#문제41-패리티-계산하기&quot; id=&quot;markdown-toc-문제41-패리티-계산하기&quot;&gt;문제4.1 패리티 계산하기&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#무식한-방법&quot; id=&quot;markdown-toc-무식한-방법&quot;&gt;무식한 방법&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;기본-자료형-부트캠프&quot;&gt;기본 자료형 부트캠프&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;정수에서 1로 세팅된 비트의 개수 찾는 프로그램&lt;/li&gt;
+  &lt;li&gt;최하위 비트부터 시작하여 한번에 한 비트씩 테스트
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;countBits&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numBits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;numBits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numBits&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;시간 복잡도는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;O(n)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;자바-비트shift-연산자&quot;&gt;자바 비트(Shift) 연산자&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;연산식&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x &amp;lt;&amp;lt; y&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;정수 x의 각 비트를 y만큼 왼쪽으로 이동 (빈자리는 0으로 채움)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x &amp;gt;&amp;gt; y&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;정수 x의 각 비트를 y만큼 오른쪽으로 이동 (빈자리는 정수 a의 최상위 부호비트와 같은 값으로 채위짐)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x &amp;gt;&amp;gt;&amp;gt; y&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;정수 x의 각 비트를 y만큼 오른쪽으로 이동 (빈자리는 0으로 채워짐)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2 &amp;lt;&amp;lt; 3
+    00000000 00000000 00000000 00000010 -&amp;gt; 2
+ 00000000000 00000000 00000000 00010??? -&amp;gt; 16
+
+-16 &amp;gt;&amp;gt; 3
+11111111 11111111 11111111 11110000 -&amp;gt; -16
+11111111 11111111 11111111 11111110 000 -&amp;gt; -2
+
+-16 &amp;gt;&amp;gt;&amp;gt; 3
+11111111 11111111 11111111 11110000 -&amp;gt; -16
+00011111 11111111 11111111 11111110 000 -&amp;gt; 536870910
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;자바-비트-논리-연산자&quot;&gt;자바 비트 논리 연산자&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;연산식&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;논리&lt;/th&gt;
+      &lt;th&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;AND&lt;/td&gt;
+      &lt;td&gt;두 비트 모두 1일 경우에만 결과가 1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;OR&lt;/td&gt;
+      &lt;td&gt;두 비트 중 하나만 1일 경우에만 결과가 1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;XOR&lt;/td&gt;
+      &lt;td&gt;두 비트 중 하나는 1이고 다른 하나가 0일 경우에만 결과가 1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;NOT&lt;/td&gt;
+      &lt;td&gt;비트 반전(보수)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;기본-자료형-문제를-풀기-전-알아야-하는-내용&quot;&gt;기본 자료형 문제를 풀기 전 알아야 하는 내용&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;비트 연산&lt;/strong&gt;, 특히 XOR&lt;/li&gt;
+  &lt;li&gt;하드웨어랑 무관하게 &lt;strong&gt;마스크&lt;/strong&gt;의 사용법&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;1로 세팅된 하위 비트의 값을 최적의 방법으로 지울 수 있어야 함&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;부호&lt;/strong&gt;의 여부와 부호가 있을 경우 &lt;strong&gt;시프트 연산&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;입력이 작은 경우 &lt;strong&gt;연산 결과를 캐싱&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;교환법칙과 결합법칙&lt;/strong&gt;에 대해 잘 알고 있어야 &lt;strong&gt;병렬&lt;/strong&gt; 연산 수행이나 &lt;strong&gt;연산 순서&lt;/strong&gt;를 바꿀 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;기본-자료형-이해하기&quot;&gt;기본 자료형 이해하기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;비트 연산 잘 다루기&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integer.MIN_VALUE&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FLOAT.MAX_VALUE&lt;/code&gt; 등과 같은 숫자 타입의 최댓값과 최솟값 사용법
+    &lt;ul&gt;
+      &lt;li&gt;모든 경우에 Math 클래스를 사용할 수 있는 것이 아니기 때문에 직접 대소 비교를 하며 max, min을 찾아야 하는 경우&lt;/li&gt;
+      &lt;li&gt;max, min의 초기값을 0 또는 대소비교에 영향을 주지 않는 숫자를 택하여 초기화&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;박스 타입의 인스턴스 만드는 방법
+    &lt;ul&gt;
+      &lt;li&gt;문자열을 숫자로 변환하는 방법 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integer.parseInt&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;값을 비교할 때 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Double.compare(x, 1.23) == 0&lt;/code&gt;과 같이 박스 타입의 정적 메서드 사용
+    &lt;ul&gt;
+      &lt;li&gt;부동 소수점의 양수 무한대, 음수 무한대, NaN에 대해 보다 탄력적으로 동작&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Math의 핵심 메서드에는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;abs&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ceil&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;floor&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;min&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;max&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pow&lt;/code&gt; 등이 존재&lt;/li&gt;
+  &lt;li&gt;자동 박싱의 한계
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AutoBoxing&lt;/code&gt;이란 자바 컴파일러가 primitive data type을 그에 상응하는 wrapper class로 자동 변환 시켜주는 것&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Unboxing&lt;/code&gt;은 자바 컴파일러가 wrapper class를 primitive data type으로 자동 변환 시켜주는 것&lt;/li&gt;
+      &lt;li&gt;기본 타입과 박싱된 타입의 차이
+        &lt;ul&gt;
+          &lt;li&gt;기본 타입은 값만 가지고 있지만 박싱된 타입은 값 + 식별성이라는 속성을 가짐 ➜ 박싱된 타입의 두 인스턴스는 값이 같아도 다르다고 식별될 수 있음&lt;/li&gt;
+          &lt;li&gt;기본 타입의 값은 NULL을 허용하지만 박싱된 타입은 허용하지 않음&lt;/li&gt;
+          &lt;li&gt;기본 타입이 박싱된 타입보다 시간과 메모리 사용면에서 효율적&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;정수, 문자, 문자열간의 변환 방법
+    &lt;ul&gt;
+      &lt;li&gt;정수 ➜ 문자열: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String.valueOf(number)&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&quot; + number&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integer.toString(number)&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;문자열 ➜ 정수: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integer.parseInt(String str)&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integer.valueOf(str).intValue()&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Random의 핵심 메서드 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nextInt()&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nextDouble()&lt;/code&gt;등이 있음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;문제41-패리티-계산하기&quot;&gt;문제4.1 패리티 계산하기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;2진수의 패리티(parity)는 1로 세팅된 비트의 개수가 홀수면 1, 짝수면 0&lt;/li&gt;
+  &lt;li&gt;주로 데이터를 저장하거나 네트워크 통신 시 오류 확인 용도로 사용&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lookup table&lt;/code&gt; 이용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;무식한-방법&quot;&gt;무식한 방법&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1로 세팅된 모든 비트의 개수를 세기
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;parity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;algorithm&quot;]" /><category term="computer-science" /><category term="algorithm" /><summary type="html">데이터를 어떻게 표현하느냐가 프로그래밍의 핵심이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cache란 무엇인가</title><link href="http://localhost:4000/blog/update/computer-science/wooahan-techcourse/2021-10-31-Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/" rel="alternate" type="text/html" title="Cache란 무엇인가" /><published>2021-10-31T00:00:00+09:00</published><updated>2021-10-31T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/wooahan-techcourse/Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/wooahan-techcourse/2021-10-31-Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/">&lt;p&gt;Cache에 대해 알아보자&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#사전-지식&quot; id=&quot;markdown-toc-사전-지식&quot;&gt;사전 지식&lt;/a&gt;    &lt;ul&gt;
@@ -384,24 +563,56 @@
 &lt;/blockquote&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;review&quot;, &quot;nas&quot;]" /><category term="review" /><category term="nas" /><summary type="html">나스 알아보기</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What’s Database System?</title><link href="http://localhost:4000/blog/update/database/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/" rel="alternate" type="text/html" title="What’s Database System?" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5</id><content type="html" xml:base="http://localhost:4000/blog/update/database/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/">&lt;p&gt;What’s Database System?&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템&quot; id=&quot;markdown-toc-데이터베이스-시스템&quot;&gt;데이터베이스 시스템&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터베이스의-특징&quot; id=&quot;markdown-toc-데이터베이스의-특징&quot;&gt;데이터베이스의 특징&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템의-구성요소&quot; id=&quot;markdown-toc-데이터베이스-시스템의-구성요소&quot;&gt;데이터베이스 시스템의 구성요소&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터베이스&quot; id=&quot;markdown-toc-데이터베이스&quot;&gt;데이터베이스&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#dbms&quot; id=&quot;markdown-toc-dbms&quot;&gt;DBMS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터베이스-사용자&quot; id=&quot;markdown-toc-데이터베이스-사용자&quot;&gt;데이터베이스 사용자&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#하드웨어&quot; id=&quot;markdown-toc-하드웨어&quot;&gt;하드웨어&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템의-요구사항&quot; id=&quot;markdown-toc-데이터베이스-시스템의-요구사항&quot;&gt;데이터베이스 시스템의 요구사항&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#화일시스템을-사용한-기존의-데이터-관리&quot; id=&quot;markdown-toc-화일시스템을-사용한-기존의-데이터-관리&quot;&gt;화일시스템을 사용한 기존의 데이터 관리&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#화일-시스템의-단점&quot; id=&quot;markdown-toc-화일-시스템의-단점&quot;&gt;화일 시스템의 단점&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#dbms를-사용한-데이터베이스-관리&quot; id=&quot;markdown-toc-dbms를-사용한-데이터베이스-관리&quot;&gt;DBMS를 사용한 데이터베이스 관리&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#dbms의-장점&quot; id=&quot;markdown-toc-dbms의-장점&quot;&gt;DBMS의 장점&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#dbms-선정-시-고려-사항&quot; id=&quot;markdown-toc-dbms-선정-시-고려-사항&quot;&gt;DBMS 선정 시 고려 사항&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#dbms의-단점&quot; id=&quot;markdown-toc-dbms의-단점&quot;&gt;DBMS의 단점&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터-모델&quot; id=&quot;markdown-toc-데이터-모델&quot;&gt;데이터 모델&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터-모델의-분류&quot; id=&quot;markdown-toc-데이터-모델의-분류&quot;&gt;데이터 모델의 분류&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#계층-dbms&quot; id=&quot;markdown-toc-계층-dbms&quot;&gt;계층 DBMS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#네트워크-dbms&quot; id=&quot;markdown-toc-네트워크-dbms&quot;&gt;네트워크 DBMS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템&quot; id=&quot;markdown-toc-데이터베이스-시스템&quot;&gt;데이터베이스 시스템&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터베이스의-특징&quot; id=&quot;markdown-toc-데이터베이스의-특징&quot;&gt;데이터베이스의 특징&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템의-구성요소&quot; id=&quot;markdown-toc-데이터베이스-시스템의-구성요소&quot;&gt;데이터베이스 시스템의 구성요소&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터베이스&quot; id=&quot;markdown-toc-데이터베이스&quot;&gt;데이터베이스&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#dbms&quot; id=&quot;markdown-toc-dbms&quot;&gt;DBMS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터베이스-사용자&quot; id=&quot;markdown-toc-데이터베이스-사용자&quot;&gt;데이터베이스 사용자&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#하드웨어&quot; id=&quot;markdown-toc-하드웨어&quot;&gt;하드웨어&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템의-요구사항&quot; id=&quot;markdown-toc-데이터베이스-시스템의-요구사항&quot;&gt;데이터베이스 시스템의 요구사항&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#화일시스템을-사용한-기존의-데이터-관리&quot; id=&quot;markdown-toc-화일시스템을-사용한-기존의-데이터-관리&quot;&gt;화일시스템을 사용한 기존의 데이터 관리&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#화일-시스템의-단점&quot; id=&quot;markdown-toc-화일-시스템의-단점&quot;&gt;화일 시스템의 단점&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#dbms를-사용한-데이터베이스-관리&quot; id=&quot;markdown-toc-dbms를-사용한-데이터베이스-관리&quot;&gt;DBMS를 사용한 데이터베이스 관리&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#dbms의-장점&quot; id=&quot;markdown-toc-dbms의-장점&quot;&gt;DBMS의 장점&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#dbms-선정-시-고려-사항&quot; id=&quot;markdown-toc-dbms-선정-시-고려-사항&quot;&gt;DBMS 선정 시 고려 사항&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#dbms의-단점&quot; id=&quot;markdown-toc-dbms의-단점&quot;&gt;DBMS의 단점&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터-모델&quot; id=&quot;markdown-toc-데이터-모델&quot;&gt;데이터 모델&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터-모델의-분류&quot; id=&quot;markdown-toc-데이터-모델의-분류&quot;&gt;데이터 모델의 분류&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#계층-dbms&quot; id=&quot;markdown-toc-계층-dbms&quot;&gt;계층 DBMS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#네트워크-dbms&quot; id=&quot;markdown-toc-네트워크-dbms&quot;&gt;네트워크 DBMS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#관계-dbms&quot; id=&quot;markdown-toc-관계-dbms&quot;&gt;관계 DBMS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#객체-지향-dbms&quot; id=&quot;markdown-toc-객체-지향-dbms&quot;&gt;객체 지향 DBMS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#객체-관계-dbms&quot; id=&quot;markdown-toc-객체-관계-dbms&quot;&gt;객체 관계 DBMS&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#dbms-언어&quot; id=&quot;markdown-toc-dbms-언어&quot;&gt;DBMS 언어&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터-정의어ddl-data-definition-language&quot; id=&quot;markdown-toc-데이터-정의어ddl-data-definition-language&quot;&gt;데이터 정의어(DDL: Data Definition Language)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터-조작어dml-data-manipulate-language&quot; id=&quot;markdown-toc-데이터-조작어dml-data-manipulate-language&quot;&gt;데이터 조작어(DML: Data Manipulate Language)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터-제어어dcl-data-control-language&quot; id=&quot;markdown-toc-데이터-제어어dcl-data-control-language&quot;&gt;데이터 제어어(DCL: Data Control Language)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#dbms-사용자&quot; id=&quot;markdown-toc-dbms-사용자&quot;&gt;DBMS 사용자&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터베이스-관리자dba-database-administator&quot; id=&quot;markdown-toc-데이터베이스-관리자dba-database-administator&quot;&gt;데이터베이스 관리자(DBA: Database Administator)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#응용-프로그래머&quot; id=&quot;markdown-toc-응용-프로그래머&quot;&gt;응용 프로그래머&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#최종-사용자end-user&quot; id=&quot;markdown-toc-최종-사용자end-user&quot;&gt;최종 사용자(end user)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터베이스-설계자database-designer&quot; id=&quot;markdown-toc-데이터베이스-설계자database-designer&quot;&gt;데이터베이스 설계자(Database Designer)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#오퍼레이터&quot; id=&quot;markdown-toc-오퍼레이터&quot;&gt;오퍼레이터&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ansisparc-아키텍처와-데이터-독립성&quot; id=&quot;markdown-toc-ansisparc-아키텍처와-데이터-독립성&quot;&gt;ANSI/SPARC 아키텍처와 데이터 독립성&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#ansisparc-아키텍처&quot; id=&quot;markdown-toc-ansisparc-아키텍처&quot;&gt;ANSI/SPARC 아키텍처&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#외부-단계&quot; id=&quot;markdown-toc-외부-단계&quot;&gt;외부 단계&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;데이터베이스-시스템&quot;&gt;데이터베이스 시스템&lt;/h2&gt;
@@ -425,7 +636,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;데이터베이스의-특징&quot;&gt;데이터베이스의 특징&lt;/h2&gt;
+&lt;h3 id=&quot;데이터베이스의-특징&quot;&gt;데이터베이스의 특징&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;데이터베이스는 데이터의 대규모 저장소로서, 여러 부서에 속하는 여러 사용자에 의해 동시에 사용됨&lt;/li&gt;
   &lt;li&gt;모든 데이터가 중복을 최소화하면서 통합됨&lt;/li&gt;
@@ -456,7 +667,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;데이터베이스-시스템의-구성요소&quot;&gt;데이터베이스 시스템의 구성요소&lt;/h2&gt;
+&lt;h3 id=&quot;데이터베이스-시스템의-구성요소&quot;&gt;데이터베이스 시스템의 구성요소&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/blog/database-1-7.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;560&quot; height=&quot;560&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;데이터베이스&quot;&gt;데이터베이스&lt;/h2&gt;
@@ -466,7 +677,7 @@
   &lt;li&gt;&lt;strong&gt;시스템 카탈로그(System Catalog)&lt;/strong&gt;는 저장된 데이터베이스의 스키마 정보를 유지&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;dbms&quot;&gt;DBMS&lt;/h2&gt;
+&lt;h3 id=&quot;dbms&quot;&gt;DBMS&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;사용자가 새로운 데이터베이스를 생성하고, 데이터베이스의 구조를 명시할 수 있게 하고, 사용자가 데이터를 효율적으로 질의하고 수정할 수 있도록 하며, 시스템의 고장이나 권한이 없는 사용자로부터 데이터를 안전하게 보호하며, 동시에 여러 사용자가 데이터베이스를 접근하는 것을 제어하는 소프트웨어 패키지&lt;/li&gt;
   &lt;li&gt;데이터베이스 언어라고 부르는 특별한 프로그래밍 언어를 한 개 이상 제공&lt;/li&gt;
@@ -478,18 +689,18 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;데이터베이스-사용자&quot;&gt;데이터베이스 사용자&lt;/h2&gt;
+&lt;h3 id=&quot;데이터베이스-사용자&quot;&gt;데이터베이스 사용자&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;데이터베이스 사용자는 여러 부류로 나눌 수 있음&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;하드웨어&quot;&gt;하드웨어&lt;/h2&gt;
+&lt;h3 id=&quot;하드웨어&quot;&gt;하드웨어&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;데이터베이스는 디스크와 같은 보조 기억 장치에 저장되며, DBMS에서 원하는 정보를 찾기 위해서는 디스크의 블록들을 주기억장치로 읽어들어야 하며, 계산이나 비교 연산들을 수행하기 위해 중앙 처리 장치가 사용됨&lt;/li&gt;
   &lt;li&gt;DBMS 자체도 주기억 장치에 적재되어 실행되어야 함&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;데이터베이스-시스템의-요구사항&quot;&gt;데이터베이스 시스템의 요구사항&lt;/h2&gt;
+&lt;h3 id=&quot;데이터베이스-시스템의-요구사항&quot;&gt;데이터베이스 시스템의 요구사항&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;데이터베이스 독립성&lt;/li&gt;
   &lt;li&gt;효율적인 데이터 접근&lt;/li&gt;
@@ -510,7 +721,7 @@
   &lt;li&gt;화일을 접근하는 방식이 응용 프로그램 내에 상세하게 표현되므로 데이터에 대한 응용 프로그램의 의존도가 높음&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;화일-시스템의-단점&quot;&gt;화일 시스템의 단점&lt;/h2&gt;
+&lt;h3 id=&quot;화일-시스템의-단점&quot;&gt;화일 시스템의 단점&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;데이터가 많은 화일에 중복해서 저장됨&lt;/li&gt;
   &lt;li&gt;다수 사용자들을 위한 동시성 제어가 제공되지 않음&lt;/li&gt;
@@ -534,7 +745,7 @@
   &lt;li&gt;프로그램-데이터 독립성(Program-data independence)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;dbms의-장점&quot;&gt;DBMS의 장점&lt;/h2&gt;
+&lt;h3 id=&quot;dbms의-장점&quot;&gt;DBMS의 장점&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;중복성과 불일치가 감소&lt;/strong&gt;됨&lt;/li&gt;
   &lt;li&gt;시스템을 개발하고 &lt;strong&gt;유지하는 비용이 감소&lt;/strong&gt;됨&lt;/li&gt;
@@ -546,7 +757,7 @@
   &lt;li&gt;데이터베이스의 공유와 &lt;strong&gt;동시 접근&lt;/strong&gt;이 가능함&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;dbms-선정-시-고려-사항&quot;&gt;DBMS 선정 시 고려 사항&lt;/h2&gt;
+&lt;h3 id=&quot;dbms-선정-시-고려-사항&quot;&gt;DBMS 선정 시 고려 사항&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;기술적 요인
     &lt;ul&gt;
@@ -560,7 +771,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;dbms의-단점&quot;&gt;DBMS의 단점&lt;/h2&gt;
+&lt;h3 id=&quot;dbms의-단점&quot;&gt;DBMS의 단점&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;추가적인 하드웨어 구입 비용이 들고, DBMS 자체의 구입 비용도 상당히 비쌈&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;직원들의 교육 비용&lt;/strong&gt;도 많이 소용됨&lt;/li&gt;
@@ -574,7 +785,7 @@
   &lt;li&gt;사용자에게 내부 저장 방식의 세세한 사항은 숨기면서 데이터에 대한 직관적인 뷰를 제공하는 동시에 이들 간의 사상을 제공&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;데이터-모델의-분류&quot;&gt;데이터 모델의 분류&lt;/h2&gt;
+&lt;h3 id=&quot;데이터-모델의-분류&quot;&gt;데이터 모델의 분류&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;고수준 또는 개념적 데이터 모델(Conceptual Data Model)
     &lt;ul&gt;
@@ -602,7 +813,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;계층-dbms&quot;&gt;계층 DBMS&lt;/h2&gt;
+&lt;h3 id=&quot;계층-dbms&quot;&gt;계층 DBMS&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;1960년대 후반에 최초의 계층 DBMS가 등장(예: IBM사의 IMS)&lt;/li&gt;
   &lt;li&gt;트리 구조를 기반으로 하는 계층 데이터 모델을 사용한 DBMS&lt;/li&gt;
@@ -616,15 +827,152 @@
     &lt;ul&gt;
       &lt;li&gt;어떻게 데이터를 접근하는가를 미리 응용 프로그램에 정의해야 함 -&amp;gt; 몰락의 가장 큰 원인&lt;/li&gt;
       &lt;li&gt;데이터베이스가 생성될 때 각각의 관계를 명시적으로 정의해야 함&lt;/li&gt;
-      &lt;li&gt;레코드들이 링크로 연결되어 있으므로 레코드 구조를 변경하기 어려움&lt;/li&gt;
+      &lt;li&gt;레코드들이 링크로 연결되어 있으므로 레코드 구조를 변경하기 어려움
+&lt;img src=&quot;/assets/img/blog/database-1-34.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;360&quot; height=&quot;360&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;네트워크-dbms&quot;&gt;네트워크 DBMS&lt;/h2&gt;
+&lt;h3 id=&quot;네트워크-dbms&quot;&gt;네트워크 DBMS&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;1960년대 초에 Charles Bachman이 하니웰(Honeywell)사에서 최초의 네트워크 DBMS인 IDS를 개발&lt;/li&gt;
   &lt;li&gt;레코드들이 노드로, 레코드들 사이의 관계가 간선으로 표현되는 그래프를 기반으로 하는 네트워크 데이터 모델을 사용&lt;/li&gt;
+  &lt;li&gt;네트워크 DBMS에서도 레코드들이 링크로 연결되어 있으므로 레코드 구조를 변경하기 어려움
+&lt;img src=&quot;/assets/img/blog/database-1-36.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;360&quot; height=&quot;360&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;관계-dbms&quot;&gt;관계 DBMS&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1970년에 E.F.Codd가 IBM 연구소에서 관계 데이터 모델을 제안&lt;/li&gt;
+  &lt;li&gt;미국 IBM 연구소에서 진행된 System R과 캘리포니아버클리애뎅서 진행된 Ingres 프로젝트&lt;/li&gt;
+  &lt;li&gt;장점
+    &lt;ul&gt;
+      &lt;li&gt;모델이 간단하여 이해하기 쉬움&lt;/li&gt;
+      &lt;li&gt;사용자는 자신이 원하는 것(what)만 명시하고, 데이터가 어디에 있는지, 어떻게 접근해야 하는지는 DBMS가 결정&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex) MS SQL Server, Oracle, Sybase, DB2, MySQL
+&lt;img src=&quot;/assets/img/blog/database-1-38.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;360&quot; height=&quot;360&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;객체-지향-dbms&quot;&gt;객체 지향 DBMS&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1980년대 후반 들어 새로운 데이터 모델인 객체 지향 데이터 모델이 등장&lt;/li&gt;
+  &lt;li&gt;객체 지향 프로그래밍 패러다임을 기반으로 하는 데이터 모델&lt;/li&gt;
+  &lt;li&gt;장점
+    &lt;ul&gt;
+      &lt;li&gt;데이터와 프로그램을 그룹화하고, 복잡한 객체들을 이해하기 쉬우며, 유지와 변경이 용이함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex) ONTOS, OpenODB, GemStone 등&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;객체-관계-dbms&quot;&gt;객체 관계 DBMS&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1980년대 후반에 관계 DBMS에 객체 지향 개념을 통합한 객체 관계 데이터 모델이 제안됨&lt;/li&gt;
+  &lt;li&gt;ex) 오라클, Informaix Universal Server 등&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dbms-언어&quot;&gt;DBMS 언어&lt;/h2&gt;
+
+&lt;h3 id=&quot;데이터-정의어ddl-data-definition-language&quot;&gt;데이터 정의어(DDL: Data Definition Language)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;사용자는 데이터 정의어를 사용하여 데이터베이스 스키마 정의&lt;/li&gt;
+  &lt;li&gt;데이터 정의어로 명시된 문장이 입력되면 DBMS는 사용자가 정의한 스키마에 대한 명세를 시스템 카탈로그 또는 데이터 사전에 저장&lt;/li&gt;
+  &lt;li&gt;데이터 정의어의 기본적인 기능
+    &lt;ul&gt;
+      &lt;li&gt;CREATE TABLE&lt;/li&gt;
+      &lt;li&gt;ALTER TABLE&lt;/li&gt;
+      &lt;li&gt;DROP TABLE&lt;/li&gt;
+      &lt;li&gt;CREATE INDEX&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;데이터-조작어dml-data-manipulate-language&quot;&gt;데이터 조작어(DML: Data Manipulate Language)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;사용자는 데이터 조작어를 사용하여 데이터베이스 내의 원하는 데이터를 검색하고, 수정하고, 삽입하고, 삭제함&lt;/li&gt;
+  &lt;li&gt;관계 DBMS에서 사용되는 SQL은 대표적인 비절차적 언어&lt;/li&gt;
+  &lt;li&gt;대부분의 데이터 조작어는 SUM, COUNT, AVG와 같은 내장 함수들을 갖고 있음&lt;/li&gt;
+  &lt;li&gt;데이터 조작어는 단말기에서 대화식으로 입력되어 수행되거나 C, 코볼 등의 고급 프로그래밍 언어로 작성된 프로그램에 내포되어 사용됨&lt;/li&gt;
+  &lt;li&gt;데이터 조작어의 기본적인 기능
+    &lt;ul&gt;
+      &lt;li&gt;SELECT&lt;/li&gt;
+      &lt;li&gt;UPDATE&lt;/li&gt;
+      &lt;li&gt;DELETE&lt;/li&gt;
+      &lt;li&gt;INSERT&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/database-1-49.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;360&quot; height=&quot;360&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;데이터-제어어dcl-data-control-language&quot;&gt;데이터 제어어(DCL: Data Control Language)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;사용자는 데이터 제어어를 사용하여 데이터베이스 트랜잭션을 명시하고 권한을 부여하거나 취소&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dbms-사용자&quot;&gt;DBMS 사용자&lt;/h2&gt;
+
+&lt;h3 id=&quot;데이터베이스-관리자dba-database-administator&quot;&gt;데이터베이스 관리자(DBA: Database Administator)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스 관리자는 조직의 여러 부분의 상이한 요구를 만족시키기 위해 일관성 있는 데이터베이스 스키마를 생성하고 유지하는 사람&lt;/li&gt;
+  &lt;li&gt;역할
+    &lt;ul&gt;
+      &lt;li&gt;데이터베이스 스키마의 생성과 변경&lt;/li&gt;
+      &lt;li&gt;무결성 제약조건을 명시&lt;/li&gt;
+      &lt;li&gt;사용자의 권한을 허용하거나 취소하고, 사용자의 역할을 관리&lt;/li&gt;
+      &lt;li&gt;저장 구조와 접근 방법(물리적 스키마) 정의&lt;/li&gt;
+      &lt;li&gt;백업과 회복&lt;/li&gt;
+      &lt;li&gt;표준화 시행&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;응용-프로그래머&quot;&gt;응용 프로그래머&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스 위에서 특정 응용(예, 고객 관리, 인사 관리, 재고 관리 등)이나 인터페이스를 구현하는 사람&lt;/li&gt;
+  &lt;li&gt;고급 프로그래밍 언어인 C, 코볼 등으로 응용 프로그램을 개발하면서 데이터베이스를 접근하는 부분은 내포된 데이터 조작어를 사용&lt;/li&gt;
+  &lt;li&gt;이들이 작성한 프로그램은 최종 사용자들이 반복 수행하므로 &lt;strong&gt;기작성 트랜잭션(Canned transaction)&lt;/strong&gt;이라 부름&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;최종-사용자end-user&quot;&gt;최종 사용자(end user)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;질의하거나 갱신하거나 보고서를 생성하기 위해서 데이터베이스를 사용하는 사람&lt;/li&gt;
+  &lt;li&gt;최종 사용자는 다시 데이터베이스 질의어를 사용하여 매번 다른 정보를 찾는 캐주얼 사용자와 기작성 트랜잭션을 주로 반복해서 수행하는 초보 사용자로 구분&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;데이터베이스-설계자database-designer&quot;&gt;데이터베이스 설계자(Database Designer)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;ERWin 등의 CASE 도구들을 이용해서 데이터베이스 설계를 담당&lt;/li&gt;
+  &lt;li&gt;데이터베이스의 일관성을 유지하기 위해 정규화를 수행&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;오퍼레이터&quot;&gt;오퍼레이터&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;DBMS가 운영되고 있는 컴퓨터 시스템과 전산실을 관리하는 사람&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ansisparc-아키텍처와-데이터-독립성&quot;&gt;ANSI/SPARC 아키텍처와 데이터 독립성&lt;/h2&gt;
+
+&lt;h3 id=&quot;ansisparc-아키텍처&quot;&gt;ANSI/SPARC 아키텍처&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;현재의 대부분의 상용 DBMS 구현에서 사용되는 일반적인 아키텍처는 1978년에 제안된 &lt;strong&gt;ANSI/SPARC 아키텍처&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;3단계
+    &lt;ul&gt;
+      &lt;li&gt;외부 단계(external level): 각 사용자의 뷰&lt;/li&gt;
+      &lt;li&gt;개념 단계(conceptual level): 사용자 공동체의 뷰&lt;/li&gt;
+      &lt;li&gt;내부 단계(internal level): 물리적 또는 저장 뷰
+&lt;img src=&quot;/assets/img/blog/database-1-57.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;360&quot; height=&quot;360&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;외부-단계&quot;&gt;외부 단계&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스의 각 사용자가 갖는 뷰&lt;/li&gt;
+  &lt;li&gt;여러 부류의 사용자를 위해 동일한 개념 단계로부터 다수의 서로 다른 뷰가 제공될 수 있음&lt;/li&gt;
+  &lt;li&gt;일반적으로, 최종 사용자와 응용&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;update&quot;, &quot;database&quot;]" /><category term="update" /><category term="database" /><summary type="html">What’s Database System?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What’s New in Hydejack 9.1?</title><link href="http://localhost:4000/blog/update/2021-02-13-whats-new-in-hydejack-9-1/" rel="alternate" type="text/html" title="What’s New in Hydejack 9.1?" /><published>2021-02-13T00:00:00+09:00</published><updated>2021-02-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/whats-new-in-hydejack-9-1</id><content type="html" xml:base="http://localhost:4000/blog/update/2021-02-13-whats-new-in-hydejack-9-1/">&lt;p&gt;What’s New in Hydejack 9.1?&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
