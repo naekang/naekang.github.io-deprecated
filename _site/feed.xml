@@ -1,5 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-05T16:34:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-04T00:00:00+09:00</published><updated>2021-11-04T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-2</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/">&lt;p&gt;자바의 정석 Chapter2&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-05T17:36:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-05T00:00:00+09:00</published><updated>2021-11-05T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-3</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/">&lt;p&gt;자바의 정석 Chapter2&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#진법&quot; id=&quot;markdown-toc-진법&quot;&gt;진법&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#10진법과-2진법&quot; id=&quot;markdown-toc-10진법과-2진법&quot;&gt;10진법과 2진법&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#비트bit와-바이트byte&quot; id=&quot;markdown-toc-비트bit와-바이트byte&quot;&gt;비트(bit)와 바이트(byte)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;진법&quot;&gt;진법&lt;/h2&gt;
+
+&lt;h3 id=&quot;10진법과-2진법&quot;&gt;10진법과 2진법&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1946년 개발된 에니악은 10진법을 사용하도록 설계되었으나 전기회로는 전압이 불안정하여 전압을 10단계로 나누어 처리하는데 한계 존재&lt;/li&gt;
+  &lt;li&gt;1950년 개발된 에드박은 전기가 흐르면 1, 흐르지 않으면 0으로 동작하도록 설계 ➜ 성공적&lt;/li&gt;
+  &lt;li&gt;2진수는 10진수를 완벽히 표현가능하며 연산 역시 동일&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;비트bit와-바이트byte&quot;&gt;비트(bit)와 바이트(byte)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;비트(bit, binary digit): 한 자리의 2진수, 컴퓨터가 값을 저장할 수 있는 최소단위&lt;/li&gt;
+  &lt;li&gt;바이트(byte): 1비트는 너무 작은 단위이기 때문에 1비트 8개를 묶어 바이트 정의&lt;/li&gt;
+  &lt;li&gt;워드(word): CPU가 한 번에 처리할 수 있는 데이터의 크기
+    &lt;ul&gt;
+      &lt;li&gt;32비트 CPU에서 1워드는 32비트(4바이트), 64비트 CPU에서는 64비트(8바이트)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;n비트로 표현할 수 있는 10진수
+값의 개수: 2^n
+값의 범위: 0 ~ 2^n-1&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-04T00:00:00+09:00</published><updated>2021-11-04T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-2</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/">&lt;p&gt;자바의 정석 Chapter2&lt;/p&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#변수variable란&quot; id=&quot;markdown-toc-변수variable란&quot;&gt;변수(variable)란?&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#변수의-선언과-초기화&quot; id=&quot;markdown-toc-변수의-선언과-초기화&quot;&gt;변수의 선언과 초기화&lt;/a&gt;&lt;/li&gt;
@@ -526,99 +559,7 @@ binNum=10, 2
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;두 자리 정수를 하나 입력해주세요.&amp;gt;22
 입력내용: 22
 num=22
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자료구조와 알고리즘</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="alternate" type="text/html" title="자료구조와 알고리즘" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#자료구조란-무엇일까&quot; id=&quot;markdown-toc-자료구조란-무엇일까&quot;&gt;자료구조란 무엇일까?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자료구조를-배우는-이유&quot; id=&quot;markdown-toc-자료구조를-배우는-이유&quot;&gt;자료구조를 배우는 이유&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#알고리즘이란-무엇일까&quot; id=&quot;markdown-toc-알고리즘이란-무엇일까&quot;&gt;알고리즘이란 무엇일까?&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#연습-문제&quot; id=&quot;markdown-toc-연습-문제&quot;&gt;연습 문제&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;자료구조란-무엇일까&quot;&gt;자료구조란 무엇일까?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;자료구조: 특정한 문제 및 목표를 해결하기 위해 여러 요소를 모아 조직화된 데이터를 이루는 것
-    &lt;ul&gt;
-      &lt;li&gt;선형 구조: 데이터를 일렬로 나열 / 인접 요소들 간 하나의 요소만 존재&lt;/li&gt;
-      &lt;li&gt;비선형 구조: 데이터를 계층 구조화 / 인접 요소들 간 다수의 요소들이 존재&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;자료구조를-배우는-이유&quot;&gt;자료구조를 배우는 이유&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;여러 흩어진 요소들을 하나의 조직으로 구성하고 가장 효율적인 방법으로 데이터를 관리하고 저장하기 위해&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;알고리즘이란-무엇일까&quot;&gt;알고리즘이란 무엇일까?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;주어진 문제를 해결하기 위한 일련의 과정 및 논리적인 방법&lt;/li&gt;
-  &lt;li&gt;알고리즘과 자료구조는 효율적인 결과 도출을 위해 함께 사용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;연습-문제&quot;&gt;연습 문제&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;네 개의 값 중 최소값을 찾는 메서드
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Practice01_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;minValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// min 값을 data1로 초기화&lt;/span&gt;
-
-          &lt;span class=&quot;c1&quot;&gt;// min값이 data2보다 큰 경우 min을 data2로 갱신&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-          &lt;span class=&quot;c1&quot;&gt;// min값이 data3보다 큰 경우 min을 data3으로 갱신&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-          &lt;span class=&quot;c1&quot;&gt;// min값이 data4보다 큰 경우 min을 data4로 갱신&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;중복을 포함한 다섯 개의 값 중 최댓값을 구하는 메서드
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;maxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// max값을 data1로 초기화&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data2보다 작은 경우 max값을 data2로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data3보다 작은 경우 max값을 data3으로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data4보다 작은 경우 max값을 data4로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data5보다 작은 경우 max값을 data5로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;datastructure&quot;]" /><category term="computer-science" /><category term="datastructure" /><summary type="html">자바를 이용해 자료구조와 알고리즘에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">배열</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" rel="alternate" type="text/html" title="배열" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EB%B0%B0%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">배열</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" rel="alternate" type="text/html" title="배열" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EB%B0%B0%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#배열이란&quot; id=&quot;markdown-toc-배열이란&quot;&gt;배열이란?&lt;/a&gt;&lt;/li&gt;
@@ -923,7 +864,99 @@ num=22
 &lt;ul&gt;
   &lt;li&gt;범위 주석: ‘/&lt;em&gt;‘와 ‘&lt;/em&gt;/’사이의 내용은 주석으로 간주&lt;/li&gt;
   &lt;li&gt;한 줄 주석: ‘//’부터 라인 끝까지의 내용은 주석으로 간주&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">기본 자료형</title><link href="http://localhost:4000/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/" rel="alternate" type="text/html" title="기본 자료형" /><published>2021-11-01T00:00:00+09:00</published><updated>2021-11-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/algorithm/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/">&lt;blockquote&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자료구조와 알고리즘</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="alternate" type="text/html" title="자료구조와 알고리즘" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#자료구조란-무엇일까&quot; id=&quot;markdown-toc-자료구조란-무엇일까&quot;&gt;자료구조란 무엇일까?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#자료구조를-배우는-이유&quot; id=&quot;markdown-toc-자료구조를-배우는-이유&quot;&gt;자료구조를 배우는 이유&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#알고리즘이란-무엇일까&quot; id=&quot;markdown-toc-알고리즘이란-무엇일까&quot;&gt;알고리즘이란 무엇일까?&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#연습-문제&quot; id=&quot;markdown-toc-연습-문제&quot;&gt;연습 문제&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;자료구조란-무엇일까&quot;&gt;자료구조란 무엇일까?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;자료구조: 특정한 문제 및 목표를 해결하기 위해 여러 요소를 모아 조직화된 데이터를 이루는 것
+    &lt;ul&gt;
+      &lt;li&gt;선형 구조: 데이터를 일렬로 나열 / 인접 요소들 간 하나의 요소만 존재&lt;/li&gt;
+      &lt;li&gt;비선형 구조: 데이터를 계층 구조화 / 인접 요소들 간 다수의 요소들이 존재&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;자료구조를-배우는-이유&quot;&gt;자료구조를 배우는 이유&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;여러 흩어진 요소들을 하나의 조직으로 구성하고 가장 효율적인 방법으로 데이터를 관리하고 저장하기 위해&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;알고리즘이란-무엇일까&quot;&gt;알고리즘이란 무엇일까?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;주어진 문제를 해결하기 위한 일련의 과정 및 논리적인 방법&lt;/li&gt;
+  &lt;li&gt;알고리즘과 자료구조는 효율적인 결과 도출을 위해 함께 사용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;연습-문제&quot;&gt;연습 문제&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;네 개의 값 중 최소값을 찾는 메서드
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Practice01_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;minValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// min 값을 data1로 초기화&lt;/span&gt;
+
+          &lt;span class=&quot;c1&quot;&gt;// min값이 data2보다 큰 경우 min을 data2로 갱신&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+          &lt;span class=&quot;c1&quot;&gt;// min값이 data3보다 큰 경우 min을 data3으로 갱신&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+          &lt;span class=&quot;c1&quot;&gt;// min값이 data4보다 큰 경우 min을 data4로 갱신&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;중복을 포함한 다섯 개의 값 중 최댓값을 구하는 메서드
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;maxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// max값을 data1로 초기화&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;// max값이 data2보다 작은 경우 max값을 data2로 갱신&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;// max값이 data3보다 작은 경우 max값을 data3으로 갱신&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;// max값이 data4보다 작은 경우 max값을 data4로 갱신&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;// max값이 data5보다 작은 경우 max값을 data5로 갱신&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;datastructure&quot;]" /><category term="computer-science" /><category term="datastructure" /><summary type="html">자바를 이용해 자료구조와 알고리즘에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">기본 자료형</title><link href="http://localhost:4000/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/" rel="alternate" type="text/html" title="기본 자료형" /><published>2021-11-01T00:00:00+09:00</published><updated>2021-11-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/algorithm/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/">&lt;blockquote&gt;
   &lt;p&gt;데이터를 어떻게 표현하느냐가 프로그래밍의 핵심이다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1513,417 +1546,4 @@ num=22
 
 &lt;blockquote&gt;
   &lt;p&gt;다음 편에서는 NAS 세팅에 대해 다뤄보도록 하겠다.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;review&quot;, &quot;nas&quot;]" /><category term="review" /><category term="nas" /><summary type="html">나스 알아보기</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What’s Database System?</title><link href="http://localhost:4000/blog/update/database/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/" rel="alternate" type="text/html" title="What’s Database System?" /><published>2021-10-28T00:00:00+09:00</published><updated>2021-10-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5</id><content type="html" xml:base="http://localhost:4000/blog/update/database/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/">&lt;p&gt;What’s Database System?&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템&quot; id=&quot;markdown-toc-데이터베이스-시스템&quot;&gt;데이터베이스 시스템&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#데이터베이스의-특징&quot; id=&quot;markdown-toc-데이터베이스의-특징&quot;&gt;데이터베이스의 특징&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템의-구성요소&quot; id=&quot;markdown-toc-데이터베이스-시스템의-구성요소&quot;&gt;데이터베이스 시스템의 구성요소&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터베이스&quot; id=&quot;markdown-toc-데이터베이스&quot;&gt;데이터베이스&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#dbms&quot; id=&quot;markdown-toc-dbms&quot;&gt;DBMS&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#데이터베이스-사용자&quot; id=&quot;markdown-toc-데이터베이스-사용자&quot;&gt;데이터베이스 사용자&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#하드웨어&quot; id=&quot;markdown-toc-하드웨어&quot;&gt;하드웨어&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#데이터베이스-시스템의-요구사항&quot; id=&quot;markdown-toc-데이터베이스-시스템의-요구사항&quot;&gt;데이터베이스 시스템의 요구사항&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#화일시스템을-사용한-기존의-데이터-관리&quot; id=&quot;markdown-toc-화일시스템을-사용한-기존의-데이터-관리&quot;&gt;화일시스템을 사용한 기존의 데이터 관리&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#화일-시스템의-단점&quot; id=&quot;markdown-toc-화일-시스템의-단점&quot;&gt;화일 시스템의 단점&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#dbms를-사용한-데이터베이스-관리&quot; id=&quot;markdown-toc-dbms를-사용한-데이터베이스-관리&quot;&gt;DBMS를 사용한 데이터베이스 관리&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#dbms의-장점&quot; id=&quot;markdown-toc-dbms의-장점&quot;&gt;DBMS의 장점&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#dbms-선정-시-고려-사항&quot; id=&quot;markdown-toc-dbms-선정-시-고려-사항&quot;&gt;DBMS 선정 시 고려 사항&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#dbms의-단점&quot; id=&quot;markdown-toc-dbms의-단점&quot;&gt;DBMS의 단점&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터-모델&quot; id=&quot;markdown-toc-데이터-모델&quot;&gt;데이터 모델&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#데이터-모델의-분류&quot; id=&quot;markdown-toc-데이터-모델의-분류&quot;&gt;데이터 모델의 분류&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#계층-dbms&quot; id=&quot;markdown-toc-계층-dbms&quot;&gt;계층 DBMS&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#네트워크-dbms&quot; id=&quot;markdown-toc-네트워크-dbms&quot;&gt;네트워크 DBMS&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#관계-dbms&quot; id=&quot;markdown-toc-관계-dbms&quot;&gt;관계 DBMS&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#객체-지향-dbms&quot; id=&quot;markdown-toc-객체-지향-dbms&quot;&gt;객체 지향 DBMS&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#객체-관계-dbms&quot; id=&quot;markdown-toc-객체-관계-dbms&quot;&gt;객체 관계 DBMS&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#dbms-언어&quot; id=&quot;markdown-toc-dbms-언어&quot;&gt;DBMS 언어&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#데이터-정의어ddl-data-definition-language&quot; id=&quot;markdown-toc-데이터-정의어ddl-data-definition-language&quot;&gt;데이터 정의어(DDL: Data Definition Language)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#데이터-조작어dml-data-manipulate-language&quot; id=&quot;markdown-toc-데이터-조작어dml-data-manipulate-language&quot;&gt;데이터 조작어(DML: Data Manipulate Language)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#데이터-제어어dcl-data-control-language&quot; id=&quot;markdown-toc-데이터-제어어dcl-data-control-language&quot;&gt;데이터 제어어(DCL: Data Control Language)&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#dbms-사용자&quot; id=&quot;markdown-toc-dbms-사용자&quot;&gt;DBMS 사용자&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#데이터베이스-관리자dba-database-administator&quot; id=&quot;markdown-toc-데이터베이스-관리자dba-database-administator&quot;&gt;데이터베이스 관리자(DBA: Database Administator)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#응용-프로그래머&quot; id=&quot;markdown-toc-응용-프로그래머&quot;&gt;응용 프로그래머&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#최종-사용자end-user&quot; id=&quot;markdown-toc-최종-사용자end-user&quot;&gt;최종 사용자(end user)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#데이터베이스-설계자database-designer&quot; id=&quot;markdown-toc-데이터베이스-설계자database-designer&quot;&gt;데이터베이스 설계자(Database Designer)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#오퍼레이터&quot; id=&quot;markdown-toc-오퍼레이터&quot;&gt;오퍼레이터&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#ansisparc-아키텍처와-데이터-독립성&quot; id=&quot;markdown-toc-ansisparc-아키텍처와-데이터-독립성&quot;&gt;ANSI/SPARC 아키텍처와 데이터 독립성&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#ansisparc-아키텍처&quot; id=&quot;markdown-toc-ansisparc-아키텍처&quot;&gt;ANSI/SPARC 아키텍처&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#외부-단계&quot; id=&quot;markdown-toc-외부-단계&quot;&gt;외부 단계&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;데이터베이스-시스템&quot;&gt;데이터베이스 시스템&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;컴퓨터를 사용하여 정보를 수집하고 분석하는데 데이터베이스 기술이 활용되고 있음&lt;/li&gt;
-  &lt;li&gt;정보와 데이터는 서로 다름
-    &lt;ul&gt;
-      &lt;li&gt;데이터(Data): 현실 세계에서 측정하고 수집한 사실이나 값&lt;/li&gt;
-      &lt;li&gt;정보(Information): 어떠한 목적이나 의도에 맞게 데이터를 가공한 것&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;데이터베이스(Database)의 정의
-    &lt;ul&gt;
-      &lt;li&gt;데이터베이스는 조직체의 응용 시스템들이 공유해서 사용하는 운영 데이터(Operational data)들이 구조적으로 통합된 모임&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;예시
-    &lt;ul&gt;
-      &lt;li&gt;대학에서 데이터베이스에 학생들에 관해 신상 정보, 수강 과목, 성적 등을 기록하고, 각 학과에 개설되어 있는 과목들에 관한 정보를 유지하고, 교수에 관해서 신상 정보, 담당 과목, 급여 정보를 유지한다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;데이터베이스의-특징&quot;&gt;데이터베이스의 특징&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스는 데이터의 대규모 저장소로서, 여러 부서에 속하는 여러 사용자에 의해 동시에 사용됨&lt;/li&gt;
-  &lt;li&gt;모든 데이터가 중복을 최소화하면서 통합됨&lt;/li&gt;
-  &lt;li&gt;데이터베이스는 한 조직체의 운영 데이터뿐 아니라 그 데이터에 관한 설명(&lt;strong&gt;데이터베이스 스키마&lt;/strong&gt; 또는 &lt;strong&gt;메타데이터(metadata)&lt;/strong&gt;)까지 포함
-    &lt;ul&gt;
-      &lt;li&gt;메타데이터(Metadata): 시스템 카탈로그의 중립적인 표현&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;프로그램과 데이터 간의 독립성이 제공됨&lt;/li&gt;
-  &lt;li&gt;효율적으로 접근이 가능하고 질의를 할 수 있음&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;데이터베이스 관리시스템(DBMS, Database Management System)&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;데이터베이스를 정의하고, 질의어를 지원하고, 리포트를 생성하는 등의 작업을 수행하는 소프트웨어&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;데이터베이스 스키마&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;전체적인 데이터베이스 구조를 뜻하며 자주 변경되지는 않음&lt;/li&gt;
-      &lt;li&gt;데이터베이스의 모든 가능한 상태를 미리 정의&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;내포(intension)&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;데이터베이스 상태&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;특정 시점의 데이터베이스의 내용을 의미하며, 시간이 지남에 따라 계속 바뀜&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;외연(extension)&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;데이터베이스-시스템의-구성요소&quot;&gt;데이터베이스 시스템의 구성요소&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/database-1-7.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;560&quot; height=&quot;560&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;데이터베이스&quot;&gt;데이터베이스&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;조직체의 응용 시스템들이 공유해서 사용하는 운영 데이터들이 구조적으로 통합된 모임&lt;/li&gt;
-  &lt;li&gt;시스템 카탈로그와 저장된 데이터베이스로 구분할 수 있음&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;시스템 카탈로그(System Catalog)&lt;/strong&gt;는 저장된 데이터베이스의 스키마 정보를 유지&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;dbms&quot;&gt;DBMS&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;사용자가 새로운 데이터베이스를 생성하고, 데이터베이스의 구조를 명시할 수 있게 하고, 사용자가 데이터를 효율적으로 질의하고 수정할 수 있도록 하며, 시스템의 고장이나 권한이 없는 사용자로부터 데이터를 안전하게 보호하며, 동시에 여러 사용자가 데이터베이스를 접근하는 것을 제어하는 소프트웨어 패키지&lt;/li&gt;
-  &lt;li&gt;데이터베이스 언어라고 부르는 특별한 프로그래밍 언어를 한 개 이상 제공&lt;/li&gt;
-  &lt;li&gt;SQL은 여러 DBMS에서 제공되는 사실상의 표준 데이터베이스 언어&lt;/li&gt;
-  &lt;li&gt;컴퓨터시스템에서 DBMS의 위치
-    &lt;ul&gt;
-      &lt;li&gt;&lt;img src=&quot;/assets/img/blog/database-1-9.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;460&quot; height=&quot;460&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;데이터베이스-사용자&quot;&gt;데이터베이스 사용자&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스 사용자는 여러 부류로 나눌 수 있음&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;하드웨어&quot;&gt;하드웨어&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스는 디스크와 같은 보조 기억 장치에 저장되며, DBMS에서 원하는 정보를 찾기 위해서는 디스크의 블록들을 주기억장치로 읽어들어야 하며, 계산이나 비교 연산들을 수행하기 위해 중앙 처리 장치가 사용됨&lt;/li&gt;
-  &lt;li&gt;DBMS 자체도 주기억 장치에 적재되어 실행되어야 함&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;데이터베이스-시스템의-요구사항&quot;&gt;데이터베이스 시스템의 요구사항&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스 독립성&lt;/li&gt;
-  &lt;li&gt;효율적인 데이터 접근&lt;/li&gt;
-  &lt;li&gt;데이터에 대한 동시 접근&lt;/li&gt;
-  &lt;li&gt;백업과 회복&lt;/li&gt;
-  &lt;li&gt;중복을 줄이거나 제어하며 일관성 유지&lt;/li&gt;
-  &lt;li&gt;데이터 무결성&lt;/li&gt;
-  &lt;li&gt;데이터 보안&lt;/li&gt;
-  &lt;li&gt;쉬운 질의어&lt;/li&gt;
-  &lt;li&gt;다양한 사용자 인터페이스&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;화일시스템을-사용한-기존의-데이터-관리&quot;&gt;화일시스템을 사용한 기존의 데이터 관리&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;화일 시스템은 DBMS가 등장하지 않았을 때인 1960년대부터 사용되어 있음&lt;/li&gt;
-  &lt;li&gt;화일의 기본적인 구성요소는 순차적인 레코드들&lt;/li&gt;
-  &lt;li&gt;한 레코드는 연관된 필드들의 모임&lt;/li&gt;
-  &lt;li&gt;화일을 접근하는 방식이 응용 프로그램 내에 상세하게 표현되므로 데이터에 대한 응용 프로그램의 의존도가 높음&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;화일-시스템의-단점&quot;&gt;화일 시스템의 단점&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터가 많은 화일에 중복해서 저장됨&lt;/li&gt;
-  &lt;li&gt;다수 사용자들을 위한 동시성 제어가 제공되지 않음&lt;/li&gt;
-  &lt;li&gt;검색하려는 데이터를 쉽게 명시하는 질의어가 제공되지 않음&lt;/li&gt;
-  &lt;li&gt;보안 조치가 미흡&lt;/li&gt;
-  &lt;li&gt;회복 기능이 없음&lt;/li&gt;
-  &lt;li&gt;프로그램-데이터 독립성이 없으므로 유지보수 비용이 많이 소요됨&lt;/li&gt;
-  &lt;li&gt;화일을 검색하거나 갱신하는 절차가 상대적으로 복잡하기 때문에 프로그래머의 생산성이 낮음&lt;/li&gt;
-  &lt;li&gt;데이터의 공유와 융통성이 부족&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;dbms를-사용한-데이터베이스-관리&quot;&gt;DBMS를 사용한 데이터베이스 관리&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;여러 사용자와 응용 프로그램들이 데이터베이스를 공유&lt;/li&gt;
-  &lt;li&gt;사용자의 질의를 빠르게 수행할 수 있는 인덱스 등의 접근 경로를 DBMS가 자동적으로 선택하여 수행&lt;/li&gt;
-  &lt;li&gt;권한이 없는 사용자로부터 데이터베이스를 보호&lt;/li&gt;
-  &lt;li&gt;여러 사용자에 적합한 다양한 인터페이스 제공&lt;/li&gt;
-  &lt;li&gt;데이터간의 복잡한 관계를 표현하며, 무결성 제약조건을 DBMS가 자동적으로 유지&lt;/li&gt;
-  &lt;li&gt;시스템이 고장 나면 데이터베이스를 고장 전의 일관된 상태로 회복시킴&lt;/li&gt;
-  &lt;li&gt;프로그램에 영향을 주지 않으면서 데이터베이스 구조를 변경할 수 있음&lt;/li&gt;
-  &lt;li&gt;프로그램-데이터 독립성(Program-data independence)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;dbms의-장점&quot;&gt;DBMS의 장점&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;중복성과 불일치가 감소&lt;/strong&gt;됨&lt;/li&gt;
-  &lt;li&gt;시스템을 개발하고 &lt;strong&gt;유지하는 비용이 감소&lt;/strong&gt;됨&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;표준화&lt;/strong&gt;를 시행하기가 용이&lt;/li&gt;
-  &lt;li&gt;보안이 향상됨&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;무결성&lt;/strong&gt;이 향상됨&lt;/li&gt;
-  &lt;li&gt;조직체의 요구사항을 식별할 수 있음&lt;/li&gt;
-  &lt;li&gt;다양한 유형의 고장으로부터 데이터베이스를 회복할 수 있음&lt;/li&gt;
-  &lt;li&gt;데이터베이스의 공유와 &lt;strong&gt;동시 접근&lt;/strong&gt;이 가능함&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;dbms-선정-시-고려-사항&quot;&gt;DBMS 선정 시 고려 사항&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;기술적 요인
-    &lt;ul&gt;
-      &lt;li&gt;DBMS에 사용되고 있는 데이터 모델, DBMS가 지원하는 사용자 인터페이스, 프로그래밍 언어, 응용 개발 도구, 저장 구조, 성능, 접근 방법 등&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;경제적 요인
-    &lt;ul&gt;
-      &lt;li&gt;소프트웨어와 하드웨어 구입 비용, 유지 보수 비용, 직원들의 교육 지원 등&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;dbms의-단점&quot;&gt;DBMS의 단점&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;추가적인 하드웨어 구입 비용이 들고, DBMS 자체의 구입 비용도 상당히 비쌈&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;직원들의 교육 비용&lt;/strong&gt;도 많이 소용됨&lt;/li&gt;
-  &lt;li&gt;비밀과 프라이버시 노출 등의 단점이 존재할 수 있음&lt;/li&gt;
-  &lt;li&gt;초기의 투자 비용이 너무 클 때, 오버헤드가 너무 클 때, 응용이 단순하고 잘 정의되었으며 변경되지 않을 것으로 예상될 때, 엄격한 실시간 처리 요구사항이 있을 때, 데이터에 대한 다수 사용자의 접근이 필요하지 않을 때는 DBMS를 사용하지 않는 것이 바람직&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;데이터-모델&quot;&gt;데이터 모델&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스의 구조를 기술하는데 사용되는 개념들의 집합인 구조(데이터 타입과 관계), 이 구조 위에서 동작하는 연산자들, 무결성 제약조건들&lt;/li&gt;
-  &lt;li&gt;사용자에게 내부 저장 방식의 세세한 사항은 숨기면서 데이터에 대한 직관적인 뷰를 제공하는 동시에 이들 간의 사상을 제공&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;데이터-모델의-분류&quot;&gt;데이터 모델의 분류&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;고수준 또는 개념적 데이터 모델(Conceptual Data Model)
-    &lt;ul&gt;
-      &lt;li&gt;사람이 인식하는 것과 유사하게 데이터베이스의 전체적인 논리적 구조를 명시
-        &lt;ul&gt;
-          &lt;li&gt;ex. 엔티티-관계(ER, Entity-Relationship) 데이터 모델과 객체 지향 데이터 모델&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;표현(구현) 데이터 모델(Representation(implementation) Data Model)
-    &lt;ul&gt;
-      &lt;li&gt;최종 사용자가 이해하는 개념이면서 컴퓨터 내에서 데이터가 조작되는 방식과 멀리 떨어져 있지는 않음
-        &lt;ul&gt;
-          &lt;li&gt;ex. 계층 데이터 모델(Hierarchical Data Model), 네트워크 데이터 모델(Network Data Model), 관계 데이터 모델(Relational Data Model)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;저수준 또는 물리적인 데이터 모델(Physical Data Model)
-    &lt;ul&gt;
-      &lt;li&gt;데이터베이스에 데이터가 어떻게 저장되는가를 기술&lt;/li&gt;
-      &lt;li&gt;ex. Unfying, ISAM, VSAM 등&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;계층-dbms&quot;&gt;계층 DBMS&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;1960년대 후반에 최초의 계층 DBMS가 등장(예: IBM사의 IMS)&lt;/li&gt;
-  &lt;li&gt;트리 구조를 기반으로 하는 계층 데이터 모델을 사용한 DBMS&lt;/li&gt;
-  &lt;li&gt;계층 데이터 모델은 네트워크 데이터 모델의 특별한 사례&lt;/li&gt;
-  &lt;li&gt;장점
-    &lt;ul&gt;
-      &lt;li&gt;어떤 유형의 응용에 대해서는 빠른 속도와 높은 효율성을 제공&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;단점
-    &lt;ul&gt;
-      &lt;li&gt;어떻게 데이터를 접근하는가를 미리 응용 프로그램에 정의해야 함 -&amp;gt; 몰락의 가장 큰 원인&lt;/li&gt;
-      &lt;li&gt;데이터베이스가 생성될 때 각각의 관계를 명시적으로 정의해야 함&lt;/li&gt;
-      &lt;li&gt;레코드들이 링크로 연결되어 있으므로 레코드 구조를 변경하기 어려움
-&lt;img src=&quot;/assets/img/blog/database-1-34.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;360&quot; height=&quot;360&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;네트워크-dbms&quot;&gt;네트워크 DBMS&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;1960년대 초에 Charles Bachman이 하니웰(Honeywell)사에서 최초의 네트워크 DBMS인 IDS를 개발&lt;/li&gt;
-  &lt;li&gt;레코드들이 노드로, 레코드들 사이의 관계가 간선으로 표현되는 그래프를 기반으로 하는 네트워크 데이터 모델을 사용&lt;/li&gt;
-  &lt;li&gt;네트워크 DBMS에서도 레코드들이 링크로 연결되어 있으므로 레코드 구조를 변경하기 어려움
-&lt;img src=&quot;/assets/img/blog/database-1-36.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;360&quot; height=&quot;360&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;관계-dbms&quot;&gt;관계 DBMS&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;1970년에 E.F.Codd가 IBM 연구소에서 관계 데이터 모델을 제안&lt;/li&gt;
-  &lt;li&gt;미국 IBM 연구소에서 진행된 System R과 캘리포니아버클리애뎅서 진행된 Ingres 프로젝트&lt;/li&gt;
-  &lt;li&gt;장점
-    &lt;ul&gt;
-      &lt;li&gt;모델이 간단하여 이해하기 쉬움&lt;/li&gt;
-      &lt;li&gt;사용자는 자신이 원하는 것(what)만 명시하고, 데이터가 어디에 있는지, 어떻게 접근해야 하는지는 DBMS가 결정&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;ex) MS SQL Server, Oracle, Sybase, DB2, MySQL
-&lt;img src=&quot;/assets/img/blog/database-1-38.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;360&quot; height=&quot;360&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;객체-지향-dbms&quot;&gt;객체 지향 DBMS&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;1980년대 후반 들어 새로운 데이터 모델인 객체 지향 데이터 모델이 등장&lt;/li&gt;
-  &lt;li&gt;객체 지향 프로그래밍 패러다임을 기반으로 하는 데이터 모델&lt;/li&gt;
-  &lt;li&gt;장점
-    &lt;ul&gt;
-      &lt;li&gt;데이터와 프로그램을 그룹화하고, 복잡한 객체들을 이해하기 쉬우며, 유지와 변경이 용이함&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;ex) ONTOS, OpenODB, GemStone 등&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;객체-관계-dbms&quot;&gt;객체 관계 DBMS&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;1980년대 후반에 관계 DBMS에 객체 지향 개념을 통합한 객체 관계 데이터 모델이 제안됨&lt;/li&gt;
-  &lt;li&gt;ex) 오라클, Informaix Universal Server 등&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;dbms-언어&quot;&gt;DBMS 언어&lt;/h2&gt;
-
-&lt;h3 id=&quot;데이터-정의어ddl-data-definition-language&quot;&gt;데이터 정의어(DDL: Data Definition Language)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;사용자는 데이터 정의어를 사용하여 데이터베이스 스키마 정의&lt;/li&gt;
-  &lt;li&gt;데이터 정의어로 명시된 문장이 입력되면 DBMS는 사용자가 정의한 스키마에 대한 명세를 시스템 카탈로그 또는 데이터 사전에 저장&lt;/li&gt;
-  &lt;li&gt;데이터 정의어의 기본적인 기능
-    &lt;ul&gt;
-      &lt;li&gt;CREATE TABLE&lt;/li&gt;
-      &lt;li&gt;ALTER TABLE&lt;/li&gt;
-      &lt;li&gt;DROP TABLE&lt;/li&gt;
-      &lt;li&gt;CREATE INDEX&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;데이터-조작어dml-data-manipulate-language&quot;&gt;데이터 조작어(DML: Data Manipulate Language)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;사용자는 데이터 조작어를 사용하여 데이터베이스 내의 원하는 데이터를 검색하고, 수정하고, 삽입하고, 삭제함&lt;/li&gt;
-  &lt;li&gt;관계 DBMS에서 사용되는 SQL은 대표적인 비절차적 언어&lt;/li&gt;
-  &lt;li&gt;대부분의 데이터 조작어는 SUM, COUNT, AVG와 같은 내장 함수들을 갖고 있음&lt;/li&gt;
-  &lt;li&gt;데이터 조작어는 단말기에서 대화식으로 입력되어 수행되거나 C, 코볼 등의 고급 프로그래밍 언어로 작성된 프로그램에 내포되어 사용됨&lt;/li&gt;
-  &lt;li&gt;데이터 조작어의 기본적인 기능
-    &lt;ul&gt;
-      &lt;li&gt;SELECT&lt;/li&gt;
-      &lt;li&gt;UPDATE&lt;/li&gt;
-      &lt;li&gt;DELETE&lt;/li&gt;
-      &lt;li&gt;INSERT&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/database-1-49.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;360&quot; height=&quot;360&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;데이터-제어어dcl-data-control-language&quot;&gt;데이터 제어어(DCL: Data Control Language)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;사용자는 데이터 제어어를 사용하여 데이터베이스 트랜잭션을 명시하고 권한을 부여하거나 취소&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;dbms-사용자&quot;&gt;DBMS 사용자&lt;/h2&gt;
-
-&lt;h3 id=&quot;데이터베이스-관리자dba-database-administator&quot;&gt;데이터베이스 관리자(DBA: Database Administator)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스 관리자는 조직의 여러 부분의 상이한 요구를 만족시키기 위해 일관성 있는 데이터베이스 스키마를 생성하고 유지하는 사람&lt;/li&gt;
-  &lt;li&gt;역할
-    &lt;ul&gt;
-      &lt;li&gt;데이터베이스 스키마의 생성과 변경&lt;/li&gt;
-      &lt;li&gt;무결성 제약조건을 명시&lt;/li&gt;
-      &lt;li&gt;사용자의 권한을 허용하거나 취소하고, 사용자의 역할을 관리&lt;/li&gt;
-      &lt;li&gt;저장 구조와 접근 방법(물리적 스키마) 정의&lt;/li&gt;
-      &lt;li&gt;백업과 회복&lt;/li&gt;
-      &lt;li&gt;표준화 시행&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;응용-프로그래머&quot;&gt;응용 프로그래머&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스 위에서 특정 응용(예, 고객 관리, 인사 관리, 재고 관리 등)이나 인터페이스를 구현하는 사람&lt;/li&gt;
-  &lt;li&gt;고급 프로그래밍 언어인 C, 코볼 등으로 응용 프로그램을 개발하면서 데이터베이스를 접근하는 부분은 내포된 데이터 조작어를 사용&lt;/li&gt;
-  &lt;li&gt;이들이 작성한 프로그램은 최종 사용자들이 반복 수행하므로 &lt;strong&gt;기작성 트랜잭션(Canned transaction)&lt;/strong&gt;이라 부름&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;최종-사용자end-user&quot;&gt;최종 사용자(end user)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;질의하거나 갱신하거나 보고서를 생성하기 위해서 데이터베이스를 사용하는 사람&lt;/li&gt;
-  &lt;li&gt;최종 사용자는 다시 데이터베이스 질의어를 사용하여 매번 다른 정보를 찾는 캐주얼 사용자와 기작성 트랜잭션을 주로 반복해서 수행하는 초보 사용자로 구분&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;데이터베이스-설계자database-designer&quot;&gt;데이터베이스 설계자(Database Designer)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;ERWin 등의 CASE 도구들을 이용해서 데이터베이스 설계를 담당&lt;/li&gt;
-  &lt;li&gt;데이터베이스의 일관성을 유지하기 위해 정규화를 수행&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;오퍼레이터&quot;&gt;오퍼레이터&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;DBMS가 운영되고 있는 컴퓨터 시스템과 전산실을 관리하는 사람&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ansisparc-아키텍처와-데이터-독립성&quot;&gt;ANSI/SPARC 아키텍처와 데이터 독립성&lt;/h2&gt;
-
-&lt;h3 id=&quot;ansisparc-아키텍처&quot;&gt;ANSI/SPARC 아키텍처&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;현재의 대부분의 상용 DBMS 구현에서 사용되는 일반적인 아키텍처는 1978년에 제안된 &lt;strong&gt;ANSI/SPARC 아키텍처&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;3단계
-    &lt;ul&gt;
-      &lt;li&gt;외부 단계(external level): 각 사용자의 뷰&lt;/li&gt;
-      &lt;li&gt;개념 단계(conceptual level): 사용자 공동체의 뷰&lt;/li&gt;
-      &lt;li&gt;내부 단계(internal level): 물리적 또는 저장 뷰
-&lt;img src=&quot;/assets/img/blog/database-1-57.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;360&quot; height=&quot;360&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;외부-단계&quot;&gt;외부 단계&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스의 각 사용자가 갖는 뷰&lt;/li&gt;
-  &lt;li&gt;여러 부류의 사용자를 위해 동일한 개념 단계로부터 다수의 서로 다른 뷰가 제공될 수 있음&lt;/li&gt;
-  &lt;li&gt;일반적으로, 최종 사용자와 응용&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;update&quot;, &quot;database&quot;]" /><category term="update" /><category term="database" /><summary type="html">What’s Database System?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/blockquote&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;review&quot;, &quot;nas&quot;]" /><category term="review" /><category term="nas" /><summary type="html">나스 알아보기</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

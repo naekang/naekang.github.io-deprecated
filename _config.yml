@@ -44,7 +44,8 @@ author:
   name: Jinho Kim
   email: haul0215@gmail.com
   # # Used by `jekyll-seo-tag`:
-  github: naekang
+  social:
+    github: naekang
 
 # Add links to the sidebar.
 menu:
@@ -116,6 +117,7 @@ defaults:
   - scope:
       path: hyde/
     values:
+      comments: true
       accent_color: rgb(38,139,210)
       theme_color: rgb(38,139,210)
       accent_image:
