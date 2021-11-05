@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>자바의 정석 | Hauling-IT</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="자바의 정석" />
+<meta name="author" content="Jinho Kim" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="자바의 정석" />
+<meta property="og:description" content="자바의 정석" />
+<link rel="canonical" href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/" />
+<meta property="og:url" content="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/" />
+<meta property="og:site_name" content="Hauling-IT" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/java-main.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-04T00:00:00+09:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/java-main.jpeg" />
+<meta property="twitter:title" content="자바의 정석" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/"},"image":"http://localhost:4000/assets/img/blog/java-main.jpeg","author":{"@type":"Person","name":"Jinho Kim"},"@type":"BlogPosting","url":"http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/","description":"자바의 정석","headline":"자바의 정석","dateModified":"2021-11-04T00:00:00+09:00","datePublished":"2021-11-04T00:00:00+09:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Jinho Kim"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hauling-IT">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Hauling-IT">
+
+
+  <meta name="theme-color" content="rgb(8,46,57)">
+
+
+<meta name="generator" content="Hydejack v9.1.4" />
+
+
+<link rel="alternate" href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hauling-IT" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+<link rel="dns-prefetch" href="/assets/js/search-worker-9.1.4.js" as="worker" id="_hrefSearch">
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script");n.src=e,t&&a(n,"load",t,{once:!0});t=c.scripts[0];return t.parentNode.insertBefore(n,t),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._advertise = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2021-11-05T16:34:00+09:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.4.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-color-highlight: rgba(204,204,204,0.1);--accent-color-darkened: #b9b9b9;--theme-color: #ccc;--dark-mode-body-bg: #2d2d2d;--dark-mode-border-color: #393939}
+
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+<script>
+  window._sunrise = 6;
+  window._sunset =  18;
+  !function(e,s){var d="light-mode",o="dark-mode",a=(new Date).getHours();"matchMedia"in e&&e.matchMedia("(prefers-color-scheme)")||(o=(e=a<=e._sunrise||a>=e._sunset?o:d)==o?d:o,s.body.classList.add(e),s.body.classList.remove(o))}(window,document);
+
+</script>
+
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/">blog</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/update/">update</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/update/computer-science/">computer-science</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/update/computer-science/java-basic/">java-basic</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        <span>2021-11-04-java-basic-2</span>
+      
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-blog-update-computer-science-java-basic-java-basic-2" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        자바의 정석
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2021-11-04T00:00:00+09:00">04 Nov 2021</time> in <span>Update</span> / <a href="/blog/computer-science/" class="flip-title">computer-science</a> / <span>Java-basic</span> on <span>Computer-science</span>, <span>Java-basic</span>
+      </span>
+      
+        
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="/assets/img/blog/java-main.jpeg"
+  
+  alt="자바의 정석"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      자바의 정석
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p>자바의 정석 Chapter2</p>
+<ul id="markdown-toc">
+  <li><a href="#변수variable란" id="markdown-toc-변수variable란">변수(variable)란?</a>    <ul>
+      <li><a href="#변수의-선언과-초기화" id="markdown-toc-변수의-선언과-초기화">변수의 선언과 초기화</a></li>
+    </ul>
+  </li>
+  <li><a href="#변수의-타입" id="markdown-toc-변수의-타입">변수의 타입</a>    <ul>
+      <li><a href="#기본형과-참조형" id="markdown-toc-기본형과-참조형">기본형과 참조형</a></li>
+      <li><a href="#기본형primitive-type" id="markdown-toc-기본형primitive-type">기본형(primitive type)</a></li>
+      <li><a href="#상수와-리터럴constant--literal" id="markdown-toc-상수와-리터럴constant--literal">상수와 리터럴(constant &amp; literal)</a></li>
+      <li><a href="#형식화된-출력---printf" id="markdown-toc-형식화된-출력---printf">형식화된 출력 - printf()</a></li>
+      <li><a href="#화면에서-입력받기---scanner" id="markdown-toc-화면에서-입력받기---scanner">화면에서 입력받기 - Scanner</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="변수variable란">변수(variable)란?</h2>
+<blockquote>
+  <p>변수란, 단 하나의 값을 저장할 수 있는 메모리 공간</p>
+</blockquote>
+
+<h3 id="변수의-선언과-초기화">변수의 선언과 초기화</h3>
+<ul>
+  <li>변수 선언 방법: <code class="language-plaintext highlighter-rouge">int age;</code> - age라는 이름의 변수를 선언
+    <ul>
+      <li>변수 타입: 변수에 저장될 값의 type을 지정</li>
+      <li>변수 이름: 메모리 공간에 붙여줄 이름, 서로 구별되어야 함</li>
+    </ul>
+  </li>
+  <li>변수의 초기화(initialization): 변수를 사용하기 전에 처음으로 값을 저장하는 것
+    <ul>
+      <li>초기화 하는 이유: 메모리는 여러 프로그램이 공유하는 자원이므로 다른 프로그램에 의해 저장된 ‘알 수 없는 값(쓰레기값, Garbage Value)’가 남아있을 수 있기 때문</li>
+      <li>한 줄에 하나씩 선언하거나 타입이 같은 경우 <code class="language-plaintext highlighter-rouge">,</code>를 구분자로 한 줄에 선언 가능
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int a;
+int b;
+int x = 0;
+int y = 0;
+
+int a, b;
+int x = 0, y = 0;
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>변수에 저장된 값을 읽어오는 방법
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">year</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+  <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">14</span><span class="o">;</span>
+
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">year</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">age</span><span class="o">);</span>
+
+  <span class="n">year</span> <span class="o">=</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">2000</span><span class="o">;</span> <span class="c1">// age의 값에 2000을 더해서 변수 year에 저장</span>
+  <span class="n">age</span> <span class="o">=</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span> <span class="c1">// age 값을 1 증가</span>
+
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">year</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">age</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0
+14
+2014
+15
+</code></pre></div>    </div>
+    <ol>
+      <li>두 개의 변수 <code class="language-plaintext highlighter-rouge">age</code>, <code class="language-plaintext highlighter-rouge">year</code>을 선언하고 각각 0과 14로 초기화</li>
+      <li><code class="language-plaintext highlighter-rouge">System.out.println</code>을 통해 화면에 출력</li>
+      <li><code class="language-plaintext highlighter-rouge">age</code>에 저장된 값에 2000을 더한 다음, 결과를 <code class="language-plaintext highlighter-rouge">year</code>에 저장</li>
+      <li><code class="language-plaintext highlighter-rouge">age</code>에 저장된 값 1 증가시킨 후, <code class="language-plaintext highlighter-rouge">age</code>에 저장</li>
+    </ol>
+  </li>
+  <li>두 변수의 값 교환하기
+    <ul>
+      <li>x의 값을 위한 임시 저장소로 새로운 변수 tmp선언
+        <ol>
+          <li>변수 x에 저장된 값 tmp에 저장</li>
+          <li>변수 y에 저장된 값 x에 저장</li>
+          <li>변수 tmp에 저장된 값 y에 저장
+            <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+ <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="o">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+ <span class="kt">int</span> <span class="n">tmp</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+ <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"x:"</span> <span class="o">+</span> <span class="n">x</span> <span class="o">+</span> <span class="s">" y:"</span> <span class="o">+</span> <span class="n">y</span><span class="o">);</span>
+
+ <span class="n">tmp</span> <span class="o">=</span> <span class="n">x</span><span class="o">;</span>
+ <span class="n">x</span> <span class="o">=</span> <span class="n">y</span><span class="o">;</span>
+ <span class="n">y</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">;</span>
+
+ <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"x:"</span> <span class="o">+</span> <span class="n">x</span> <span class="o">+</span> <span class="s">" y:"</span> <span class="o">+</span> <span class="n">y</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>            </div>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x:10 y:20
+x:20 y:10
+</code></pre></div>            </div>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>변수의 명명 규칙
+    <ul>
+      <li><strong>식별자(identifier)</strong>: ‘변수의 이름’처럼 프로그래밍에서 사용하는 모든 이름
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1. 대소문자가 구분되며 길이에 제한이 없음
+  2. 예약어는 사용불가
+  3. 숫자로 시작하면 안됨
+  4. 특수문자는 '_'와 '$'만 허용
+</code></pre></div>        </div>
+      </li>
+      <li><strong>예약어(keyword, reserved word)</strong>: 프로그래밍언어의 구문에 사용되는 단어, 클래스나 변수, 메서드의 이름으로 사용 불가능
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1. 클래스 이름의 첫 글자는 항상 대문자 / 변수와 메서드 이름의 첫 글자는 항상 소문자
+  2. 여러 단어로 이루어진 이름의 단어는 첫 글자를 대문자
+  3. 상수의 이름은 모두 대문자 / 여러 단어로 이루어진 경우 '_'로 구분
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="변수의-타입">변수의 타입</h2>
+<ul>
+  <li>값(data)의 종류(type)
+    <ul>
+      <li>문자형(char)</li>
+      <li>숫자
+        <ul>
+          <li>정수형(byte, short, int, long)</li>
+          <li>실수형(float, double)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="기본형과-참조형">기본형과 참조형</h3>
+<ul>
+  <li>기본형 변수: 실제 값(data) 저장
+    <ul>
+      <li>논리형(boolean), 문자형(char), 정수형(byte, short, int, long), 실수형(float, double)</li>
+    </ul>
+  </li>
+  <li>참조형 변수: 어떤 값이 저장되어 있는 주소(memory address) 값 저장
+    <ul>
+      <li>객체의 주소 저장</li>
+      <li>기본값을 제외한 나머지 타입</li>
+      <li>C언어와 달리 참조형 변수 간 연산 불가능</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="기본형primitive-type">기본형(primitive type)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">분류</th>
+      <th style="text-align: left">타입</th>
+      <th style="text-align: left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">논리형</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">boolean</code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">true</code>와 <code class="language-plaintext highlighter-rouge">false</code> 중 하나를 값으로 가지며, 조건식과 논리적 계산에 사용</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">문자형</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">char</code></td>
+      <td style="text-align: left">문자를 저장하는데 사용되며, 하나의 문자만 저장 가능</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">정수형</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">byte</code>, <code class="language-plaintext highlighter-rouge">short</code>, <code class="language-plaintext highlighter-rouge">int</code>, <code class="language-plaintext highlighter-rouge">long</code></td>
+      <td style="text-align: left">정수를 저장하는데 사용하며, 주로 <code class="language-plaintext highlighter-rouge">int</code> 사용, <code class="language-plaintext highlighter-rouge">byte</code>는 이진데이터를 다룰 때 사용, <code class="language-plaintext highlighter-rouge">short</code>는 C언어와의 호환을 위해 추가</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">실수형</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">float</code>, <code class="language-plaintext highlighter-rouge">boolean</code></td>
+      <td style="text-align: left">실수를 저장하는데 사용되며, 주로 <code class="language-plaintext highlighter-rouge">double</code> 사용</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>각 타입마다 저장할 수 있는 값의 범위가 다르므로 저장할 값의 범위에 맞는 타입을 선택하기!
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">int</code>는 CPU가 가장 효율적으로 처리할 수 있는 타입이지만 메모리 절약을 위해서는 <code class="language-plaintext highlighter-rouge">byte</code>나 <code class="language-plaintext highlighter-rouge">short</code> 선택</li>
+    </ul>
+  </li>
+  <li>각 타입의 변수가 저장할 수 있는 값의 범위</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">자료형</th>
+      <th style="text-align: left">저장 가능한 값의 범위</th>
+      <th style="text-align: left">bit</th>
+      <th style="text-align: left">byte</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">boolean</code></td>
+      <td style="text-align: left">false, true</td>
+      <td style="text-align: left">8</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">char</code></td>
+      <td style="text-align: left">‘\u0000’ ~ ‘\uffff’ (0~2^16-1, 0~65535)</td>
+      <td style="text-align: left">16</td>
+      <td style="text-align: left">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">byte</code></td>
+      <td style="text-align: left">-128 ~ 127</td>
+      <td style="text-align: left">8</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">short</code></td>
+      <td style="text-align: left">-32,768 ~ 32,767</td>
+      <td style="text-align: left">16</td>
+      <td style="text-align: left">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">int</code></td>
+      <td style="text-align: left">-2^31 ~ 2^31 - 1</td>
+      <td style="text-align: left">32</td>
+      <td style="text-align: left">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">long</code></td>
+      <td style="text-align: left">-2^63 ~ 2^63 - 1</td>
+      <td style="text-align: left">64</td>
+      <td style="text-align: left">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">float</code></td>
+      <td style="text-align: left">1.4<em>10^-45 ~ 3.4</em>10^38</td>
+      <td style="text-align: left">32</td>
+      <td style="text-align: left">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">double</code></td>
+      <td style="text-align: left">4.9<em>10^-324 ~ 1.8</em>10^308</td>
+      <td style="text-align: left">64</td>
+      <td style="text-align: left">8</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>실수형은 정수형보다 큰 값을 표현할 수 있으나 오차가 발생할 수도 있음
+    <ul>
+      <li>보다 높은 정밀도가 필요한 경우 <code class="language-plaintext highlighter-rouge">double</code> 사용 (정밀도 15자리)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="상수와-리터럴constant--literal">상수와 리터럴(constant &amp; literal)</h3>
+<ul>
+  <li>상수: 변수와 같이 값을 저장할 수 있는 공간이지만, 한 번 저장하면 다른 값으로 변경 불가능
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">final int MAX_SPEED = 10;</code></li>
+      <li>상수는 반드시 선언과 동시에 초기화</li>
+      <li>상수의 이름은 모두 대문자, 여러 단어인 경우 <code class="language-plaintext highlighter-rouge">_</code>로 구분</li>
+    </ul>
+  </li>
+  <li>리터럴: 값을 한 번 저장하면 변경할 수 없는 저장공간이라고 정의한 상수와 구분하기 위해 리터럴이라는 용어 사용
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">final int MAX_VALUE = 100;</code> 에서 <code class="language-plaintext highlighter-rouge">MAX_VALUE</code>는 상수, 100은 리터럴</li>
+    </ul>
+  </li>
+  <li>상수가 필요한 이유
+    <ul>
+      <li>리터럴에 의미있는 이름을 붙임으로써 코드의 이해와 수정을 돕기 위해 필요</li>
+    </ul>
+  </li>
+  <li>
+    <p>리터럴의 타입과 접미사</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left">종류</th>
+          <th style="text-align: left">리터럴</th>
+          <th style="text-align: left">접미사</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left">논리형</td>
+          <td style="text-align: left">false, true</td>
+          <td style="text-align: left">없음</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">정수형</td>
+          <td style="text-align: left">123, 0b0101, 077, 0xFF, 100L</td>
+          <td style="text-align: left">L</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">실수형</td>
+          <td style="text-align: left">3.14, 3.0e8, 1.4f</td>
+          <td style="text-align: left">f, d</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">문자형</td>
+          <td style="text-align: left">‘A’, ‘1’, ‘\n’</td>
+          <td style="text-align: left">없음</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">문자열</td>
+          <td style="text-align: left">“ABC”, “123”, “true”</td>
+          <td style="text-align: left">없음</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul>
+      <li>JDK1.7 부터 정수와 리터럴 중간에 <code class="language-plaintext highlighter-rouge">_</code>를 넣을 수 있어 큰 숫자 편하게 읽을 수 있음</li>
+      <li>리터럴에 소수점이나 10의 제곱을 나타내는 기호 E 또는 e, 접미사 f, F, d, D가 있으면 실수형 리터럴로 간주</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left">자료형</th>
+          <th style="text-align: center">실수형 리터럴</th>
+          <th style="text-align: center">다른 형태의 동등한 표현</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">double</code></td>
+          <td style="text-align: center">10.</td>
+          <td style="text-align: center">10.0</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">double</code></td>
+          <td style="text-align: center">.10</td>
+          <td style="text-align: center">0.10</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">float</code></td>
+          <td style="text-align: center">10f</td>
+          <td style="text-align: center">10.0f</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">float</code></td>
+          <td style="text-align: center">3.14e3f</td>
+          <td style="text-align: center">3140.0f</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">double</code></td>
+          <td style="text-align: center">1e1</td>
+          <td style="text-align: center">10.0</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">double</code></td>
+          <td style="text-align: center">1e-3</td>
+          <td style="text-align: center">0.001</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>타입의 불일치
+    <ul>
+      <li>타입이 달라도 저장범위가 넓은 타입에 좁은 타입의 값을 저장하는 것은 허용</li>
+    </ul>
+
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="sc">'A'</span><span class="o">;</span> <span class="c1">// OK, 문자 'A'의 유니코드인 65가 변수 i에 저장</span>
+<span class="kt">long</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">123</span><span class="o">;</span> <span class="c1">// OK, int보다 long의 범위가 더 넓음</span>
+<span class="kt">double</span> <span class="n">i</span> <span class="o">=</span> <span class="mf">3.14f</span><span class="o">;</span> <span class="c1">// OK, float보다 double의 범위가 더 넓음</span>
+
+<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mh">0x123456789</span><span class="o">;</span> <span class="c1">// 에러, int타입의 범위를 넘는 값 저장</span>
+<span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="mf">3.14</span><span class="o">;</span> <span class="c1">// 에러, float타입보다 double 타입의 범위가 넓음</span>
+
+<span class="kt">byte</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">65</span><span class="o">;</span> <span class="c1">// OK, byte타입에 저장 가능한 범위의 int타입 리터럴</span>
+<span class="kt">short</span> <span class="n">s</span> <span class="o">=</span> <span class="mh">0x1234</span><span class="o">;</span> <span class="c1">// OK, short타입에 저장 가능한 범위의 int타입 리터럴</span>
+</code></pre></div>    </div>
+  </li>
+  <li>문자 리터럴과 문자열 리터럴
+    <ul>
+      <li>문자 리터럴: <code class="language-plaintext highlighter-rouge">'A'</code>와 같이 작은따옴표로 문자 하나를 감싼 것</li>
+      <li>문자열 리터럴: 두 문자 이상은 큰 따옴표로 감싸야 함</li>
+    </ul>
+
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">'J'</span><span class="o">;</span>
+<span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Java"</span><span class="o">;</span> <span class="c1">// 변수 name에 문자열 리터럴 "Java" 저장</span>
+
+<span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span> <span class="c1">// OK, 내용이 없는 빈 문자열</span>
+<span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="err">''</span><span class="o">;</span> <span class="c1">// 에러, ''안에 반드시 하나의 문자 필요</span>
+<span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">' '</span><span class="o">;</span> <span class="c1">// OK, 공백 문자(blank)로 변수 ch 초기화</span>
+
+<span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"Java"</span><span class="o">);</span> <span class="c1">// String객체 생성</span>
+
+<span class="nc">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Ja"</span> <span class="o">+</span> <span class="s">"va"</span><span class="o">;</span> <span class="c1">// name은 "Java"</span>
+<span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="mf">8.0</span><span class="o">;</span> <span class="c1">// str은 "Java8.0"</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="형식화된-출력---printf">형식화된 출력 - printf()</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">println()</code>의 경우 값을 변환하지 않고는 다른 형식으로 출력할 수 없음</li>
+  <li><code class="language-plaintext highlighter-rouge">printf()</code>는 지시자(specifier)를 통해 변수의 값을 여러 가지 형식으로 변환하여 출력 가능</li>
+  <li>
+    <p>자주 사용하는 지시자</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left">지시자</th>
+          <th style="text-align: left">설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">%b</code></td>
+          <td style="text-align: left">불리언(boolean) 형식으로 출력</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">%d</code></td>
+          <td style="text-align: left">10진(decimal) 정수의 형식으로 출력</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">%o</code></td>
+          <td style="text-align: left">8진(octal) 정수의 형식으로 출력</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">%x, %X</code></td>
+          <td style="text-align: left">16진(hexa-decimal) 정수의 형식으로 출력</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">%f</code></td>
+          <td style="text-align: left">부동 소수점(floating-point) 형식으로 출력</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">%e, %E</code></td>
+          <td style="text-align: left">지수(exponent) 표현식의 형식으로 출력</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">%c</code></td>
+          <td style="text-align: left">문자(character)로 출력</td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><code class="language-plaintext highlighter-rouge">%s</code></td>
+          <td style="text-align: left">문자열(string)으로 출력</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+  <span class="kt">byte</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+  <span class="kt">short</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
+  <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'A'</span><span class="o">;</span>
+
+  <span class="kt">int</span> <span class="n">finger</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+  <span class="kt">long</span> <span class="n">big</span> <span class="o">=</span> <span class="mi">100_000_000_000L</span><span class="o">;</span>
+  <span class="kt">long</span> <span class="n">hex</span> <span class="o">=</span> <span class="mh">0xFFFF_FFFF_FFFF_FFFF</span><span class="no">L</span><span class="o">;</span>
+
+  <span class="kt">int</span> <span class="n">octNum</span> <span class="o">=</span> <span class="mo">010</span><span class="o">;</span> <span class="c1">// 8진수 10, 10진수로 8</span>
+  <span class="kt">int</span> <span class="n">hexNum</span> <span class="o">=</span> <span class="mh">0x10</span><span class="o">;</span> <span class="c1">// 16진수 10, 10진수로 16</span>
+  <span class="kt">int</span> <span class="n">binNum</span> <span class="o">=</span> <span class="mb">0b10</span><span class="o">;</span> <span class="c1">// 2진수 10, 10진수로 2</span>
+
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"b=%d%n"</span><span class="o">,</span> <span class="n">b</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"s=%d%n"</span><span class="o">,</span> <span class="n">s</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"c=%c, %d %n"</span><span class="o">,</span> <span class="n">c</span><span class="o">,</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span><span class="n">c</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"finger=[%5d]%n"</span><span class="o">,</span> <span class="n">finger</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"finger=[%-5d]%n"</span><span class="o">,</span> <span class="n">finger</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"finger=[%05d]%n"</span><span class="o">,</span> <span class="n">finger</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"big=%d%n"</span><span class="o">,</span> <span class="n">big</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"hex=%#x%n"</span><span class="o">,</span> <span class="n">hex</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"octNum=%o, %d%n"</span><span class="o">,</span> <span class="n">octNum</span><span class="o">,</span> <span class="n">octNum</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"hexNum=%x, %d%n"</span><span class="o">,</span> <span class="n">hexNum</span><span class="o">,</span> <span class="n">hexNum</span><span class="o">);</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"binNum=%s, %d%n"</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">toBinaryString</span><span class="o">(</span><span class="n">binNum</span><span class="o">),</span> <span class="n">binNum</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>b=1
+s=2
+c=A, 65
+finger=[   10]
+finger=[10   ]
+finger=[00010]
+big=100000000000
+hex=0xffffffffffffffff
+octNum=10, 8
+hexNum=10, 16
+binNum=10, 2
+</code></pre></div></div>
+
+<h3 id="화면에서-입력받기---scanner">화면에서 입력받기 - Scanner</h3>
+<ul>
+  <li>Scanner클래스를 사용하기 위해 <code class="language-plaintext highlighter-rouge">import java.util.*;</code> 추가</li>
+  <li>Scanner클래스 객체 생성 <code class="language-plaintext highlighter-rouge">Scanner scanner = new Scanner(System.in);</code></li>
+  <li><code class="language-plaintext highlighter-rouge">nextLint()</code>메서드 호출하면 입력대기 상태에 있다가 Enter누르면 입력한 내용이 문자열로 반환
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">String input = scanner.nextLint();</code>: 입력받은 내용을 input에 저장</li>
+      <li><code class="language-plaintext highlighter-rouge">int num = Integer.parseInt(input);</code>: 입력받은 내용을 input타입의 값으로 변환</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">ScannerEx</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+    
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"두 자리 정수를 하나 입력해주세요.&gt;"</span><span class="o">);</span>
+    <span class="nc">String</span> <span class="n">input</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">input</span><span class="o">);</span> <span class="c1">// 입력받은 문자열을 숫자로 변환</span>
+    
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"입력내용: "</span> <span class="o">+</span> <span class="n">input</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"num=%d%n"</span><span class="o">,</span> <span class="n">num</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>두 자리 정수를 하나 입력해주세요.&gt;22
+입력내용: 22
+num=22
+</code></pre></div></div>
+
+  
+</article>
+
+
+
+  <clap-button class="mb6" ></clap-button>
+  
+  
+    <p class="message centered border-radius" >
+      <span style="display:block;margin-bottom:.5rem;">This is a preview of <a href="https://getclaps.app">Clap Button</a>, a new feedback and analytics tools for Hydejack, built by yours truly.</span>
+      <span style="display:block;margin-bottom:.5rem;">You can try it out on <code>localhost</code> for free, but it will be removed (together with this message) when building with <code>JEKYLL_ENV=production</code>.</span>
+      <span style="display:block;margin-bottom:.5rem;">To use Clap Button on your site, get a <a href="https://getclaps.app#pricing">subscription</a><br/>and set <code>clap_button: true</code> in your config file.</span>
+    </p>
+  
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="https://placehold.it/128x128"
+    srcset="https://placehold.it/128x128 1x,https://placehold.it/256x256 2x"
+    
+  
+  alt="<firstname> <lastname>"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Open <code class="language-plaintext highlighter-rouge">_data/authors.yml</code> to edit this text.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/<username>" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/<username>" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  <aside class="other-projects related mb0" role="complementary">  <h2>Related Posts</h2>  <div class="columns">          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/algorithm-main.png"    alt="자료구조와 알고리즘"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="flip-title">자료구조와 알고리즘</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      자바로 배우는 자료구조와 알고리즘    </p>      <a class="fill-card no-hover" href="/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" tabindex="-1"><span class="sr-only">Continue reading 자료구조와 알고리즘</span></a></article>              </div>          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/algorithm-main.png"    alt="배열"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" class="flip-title">배열</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      자바로 배우는 자료구조와 알고리즘    </p>      <a class="fill-card no-hover" href="/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" tabindex="-1"><span class="sr-only">Continue reading 배열</span></a></article>              </div>      </div></aside>
+
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" class="flip-title"><span>배열</span></a>  <time class="faded fine" datetime="2021-11-02T00:00:00+09:00">02 Nov 2021</time></li>          <li class="h4">  <a href="/blog/update/2020-07-03-introducing-hydejack-9/" class="flip-title"><span>Introducing Hydejack 9</span></a>  <time class="faded fine" datetime="2020-07-03T00:00:00+09:00">03 Jul 2020</time></li>          <li class="h4">  <a href="/blog/update/2021-02-13-whats-new-in-hydejack-9-1/" class="flip-title"><span>What’s New in Hydejack 9.1?</span></a>  <time class="faded fine" datetime="2021-02-13T00:00:00+09:00">13 Feb 2021</time></li>      </ul></aside>
+
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2021. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/CHANGELOG/">CHANGELOG</a>
+      
+    
+    </small></nav>
+  
+  
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar invert" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg " style="background:url('/assets/img/blog/jj-ying.jpg') center/cover"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/logo.png" class="avatar" alt="Hauling-IT" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Hauling-IT</h2></a>
+    
+    
+      <p class="">
+        백엔드 개발자를 향하여
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/blog/"
+          class="sidebar-nav-item "
+          
+        >
+          Blog
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/projects/"
+          class="sidebar-nav-item "
+          
+        >
+          Projects
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/resume/"
+          class="sidebar-nav-item "
+          
+        >
+          Résumé*
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/docs/"
+          class="sidebar-nav-item "
+          
+        >
+          Documentation
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/<username>" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/<username>" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.4.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.4.js" nomodule defer></script>
+  
+
+  
+
+  <script type="module">
+    if ('serviceWorker' in navigator) {
+      /**/
+      navigator.serviceWorker.getRegistration()
+        .then(r => r.unregister())
+        .catch(() => {});
+      /**/
+    }
+  </script>
+<!--<![endif]-->
+  
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <clap-config>
+    <clap-text at="1">Keep going!</clap-text>
+    <clap-text at="2">Keep going ×2!</clap-text>
+    <clap-text at="3">Give me more!</clap-text>
+    <clap-text at="5">Thank you, thank you</clap-text>
+    <clap-text at="7">Far too kind!</clap-text>
+    <clap-text at="10">Never gonna give me up?</clap-text>
+    <clap-text at="14">Never gonna let me down?</clap-text>
+    <clap-text at="20">Turn around and desert me!</clap-text>
+    <clap-text at="30">You're an addict!</clap-text>
+    <clap-text at="40">Son of a clapper!</clap-text>
+    <clap-text at="50">No way</clap-text>
+    <clap-text at="60">Go back to work!</clap-text>
+    <clap-text at="70">This is getting out of <em>hand</em></clap-text>
+    <clap-text at="80">Unbelievable</clap-text>
+    <clap-text at="90">PREPOSTEROUS</clap-text>
+    <clap-text at="100">I N S A N I T Y</clap-text>
+    <clap-text at="185"><span style="font-family:monospace">FEED ME A STRAY CAT</span></clap-text>
+  </clap-config>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+  
+  
+    <template id="_dark-mode-template">
+  <button id="_dark-mode" class="nav-btn no-hover" >
+    <span class="sr-only">Dark Mode</span>
+    <span class="icon-brightness-contrast"></span>
+  </button>
+</template>
+
+  
+  
+    <template id="_search-template">
+  <button id="_search" class="nav-btn no-hover">
+    <label class="sr-only" for="_search-input">Search</label>
+    <span class="icon-search"></span>
+  </button>
+  <div id="_search-box">
+    <div class="nav-btn">
+      <span class="icon-search"></span>
+    </div>
+    <input 
+      id="_search-input"
+      type="search"
+      class="form-control form-control-lg nav-btn"
+      placeholder="Build with JEKYLL_ENV=production to enable search."
+    />
+    <button type="reset" class="nav-btn no-hover">
+      <span class="sr-only">Close</span>
+      <span class="icon-cross"></span>
+    </button>
+  </div>
+  <div id="_hits"></div>
+</template>
+
+  
+</div>
+
+</body>
+</html>

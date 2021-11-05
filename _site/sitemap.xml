@@ -4,6 +4,22 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/</loc>
+        
+        <lastmod>2021-11-04T00:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</loc>
         
         <lastmod>2021-11-02T00:00:00+09:00</lastmod>

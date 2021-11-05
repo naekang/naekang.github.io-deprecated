@@ -1,5 +1,624 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-03T01:54:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">배열</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" rel="alternate" type="text/html" title="배열" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EB%B0%B0%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-05T16:34:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-04T00:00:00+09:00</published><updated>2021-11-04T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-2</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/">&lt;p&gt;자바의 정석 Chapter2&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#변수variable란&quot; id=&quot;markdown-toc-변수variable란&quot;&gt;변수(variable)란?&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#변수의-선언과-초기화&quot; id=&quot;markdown-toc-변수의-선언과-초기화&quot;&gt;변수의 선언과 초기화&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#변수의-타입&quot; id=&quot;markdown-toc-변수의-타입&quot;&gt;변수의 타입&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#기본형과-참조형&quot; id=&quot;markdown-toc-기본형과-참조형&quot;&gt;기본형과 참조형&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#기본형primitive-type&quot; id=&quot;markdown-toc-기본형primitive-type&quot;&gt;기본형(primitive type)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#상수와-리터럴constant--literal&quot; id=&quot;markdown-toc-상수와-리터럴constant--literal&quot;&gt;상수와 리터럴(constant &amp;amp; literal)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#형식화된-출력---printf&quot; id=&quot;markdown-toc-형식화된-출력---printf&quot;&gt;형식화된 출력 - printf()&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#화면에서-입력받기---scanner&quot; id=&quot;markdown-toc-화면에서-입력받기---scanner&quot;&gt;화면에서 입력받기 - Scanner&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;변수variable란&quot;&gt;변수(variable)란?&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;변수란, 단 하나의 값을 저장할 수 있는 메모리 공간&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;변수의-선언과-초기화&quot;&gt;변수의 선언과 초기화&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;변수 선언 방법: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int age;&lt;/code&gt; - age라는 이름의 변수를 선언
+    &lt;ul&gt;
+      &lt;li&gt;변수 타입: 변수에 저장될 값의 type을 지정&lt;/li&gt;
+      &lt;li&gt;변수 이름: 메모리 공간에 붙여줄 이름, 서로 구별되어야 함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;변수의 초기화(initialization): 변수를 사용하기 전에 처음으로 값을 저장하는 것
+    &lt;ul&gt;
+      &lt;li&gt;초기화 하는 이유: 메모리는 여러 프로그램이 공유하는 자원이므로 다른 프로그램에 의해 저장된 ‘알 수 없는 값(쓰레기값, Garbage Value)’가 남아있을 수 있기 때문&lt;/li&gt;
+      &lt;li&gt;한 줄에 하나씩 선언하거나 타입이 같은 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;,&lt;/code&gt;를 구분자로 한 줄에 선언 가능
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int a;
+int b;
+int x = 0;
+int y = 0;
+
+int a, b;
+int x = 0, y = 0;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;변수에 저장된 값을 읽어오는 방법
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// age의 값에 2000을 더해서 변수 year에 저장&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// age 값을 1 증가&lt;/span&gt;
+
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0
+14
+2014
+15
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ol&gt;
+      &lt;li&gt;두 개의 변수 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;age&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;year&lt;/code&gt;을 선언하고 각각 0과 14로 초기화&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System.out.println&lt;/code&gt;을 통해 화면에 출력&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;age&lt;/code&gt;에 저장된 값에 2000을 더한 다음, 결과를 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;year&lt;/code&gt;에 저장&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;age&lt;/code&gt;에 저장된 값 1 증가시킨 후, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;age&lt;/code&gt;에 저장&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;두 변수의 값 교환하기
+    &lt;ul&gt;
+      &lt;li&gt;x의 값을 위한 임시 저장소로 새로운 변수 tmp선언
+        &lt;ol&gt;
+          &lt;li&gt;변수 x에 저장된 값 tmp에 저장&lt;/li&gt;
+          &lt;li&gt;변수 y에 저장된 값 x에 저장&lt;/li&gt;
+          &lt;li&gt;변수 tmp에 저장된 값 y에 저장
+            &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+ &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x:&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; y:&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+ &lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+ &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x:&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; y:&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+            &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x:10 y:20
+x:20 y:10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;변수의 명명 규칙
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;식별자(identifier)&lt;/strong&gt;: ‘변수의 이름’처럼 프로그래밍에서 사용하는 모든 이름
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  1. 대소문자가 구분되며 길이에 제한이 없음
+  2. 예약어는 사용불가
+  3. 숫자로 시작하면 안됨
+  4. 특수문자는 '_'와 '$'만 허용
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;예약어(keyword, reserved word)&lt;/strong&gt;: 프로그래밍언어의 구문에 사용되는 단어, 클래스나 변수, 메서드의 이름으로 사용 불가능
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  1. 클래스 이름의 첫 글자는 항상 대문자 / 변수와 메서드 이름의 첫 글자는 항상 소문자
+  2. 여러 단어로 이루어진 이름의 단어는 첫 글자를 대문자
+  3. 상수의 이름은 모두 대문자 / 여러 단어로 이루어진 경우 '_'로 구분
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;변수의-타입&quot;&gt;변수의 타입&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;값(data)의 종류(type)
+    &lt;ul&gt;
+      &lt;li&gt;문자형(char)&lt;/li&gt;
+      &lt;li&gt;숫자
+        &lt;ul&gt;
+          &lt;li&gt;정수형(byte, short, int, long)&lt;/li&gt;
+          &lt;li&gt;실수형(float, double)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;기본형과-참조형&quot;&gt;기본형과 참조형&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;기본형 변수: 실제 값(data) 저장
+    &lt;ul&gt;
+      &lt;li&gt;논리형(boolean), 문자형(char), 정수형(byte, short, int, long), 실수형(float, double)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;참조형 변수: 어떤 값이 저장되어 있는 주소(memory address) 값 저장
+    &lt;ul&gt;
+      &lt;li&gt;객체의 주소 저장&lt;/li&gt;
+      &lt;li&gt;기본값을 제외한 나머지 타입&lt;/li&gt;
+      &lt;li&gt;C언어와 달리 참조형 변수 간 연산 불가능&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;기본형primitive-type&quot;&gt;기본형(primitive type)&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;분류&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;타입&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;논리형&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;boolean&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; 중 하나를 값으로 가지며, 조건식과 논리적 계산에 사용&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;문자형&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;char&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;문자를 저장하는데 사용되며, 하나의 문자만 저장 가능&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;정수형&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;byte&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;long&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;정수를 저장하는데 사용하며, 주로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt; 사용, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;byte&lt;/code&gt;는 이진데이터를 다룰 때 사용, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short&lt;/code&gt;는 C언어와의 호환을 위해 추가&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;실수형&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;boolean&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;실수를 저장하는데 사용되며, 주로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;double&lt;/code&gt; 사용&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;각 타입마다 저장할 수 있는 값의 범위가 다르므로 저장할 값의 범위에 맞는 타입을 선택하기!
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;는 CPU가 가장 효율적으로 처리할 수 있는 타입이지만 메모리 절약을 위해서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;byte&lt;/code&gt;나 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short&lt;/code&gt; 선택&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;각 타입의 변수가 저장할 수 있는 값의 범위&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;자료형&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;저장 가능한 값의 범위&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;bit&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;byte&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;boolean&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;false, true&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;char&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;‘\u0000’ ~ ‘\uffff’ (0~2^16-1, 0~65535)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;16&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;byte&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-128 ~ 127&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;short&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-32,768 ~ 32,767&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;16&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-2^31 ~ 2^31 - 1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;32&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;long&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-2^63 ~ 2^63 - 1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;64&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1.4&lt;em&gt;10^-45 ~ 3.4&lt;/em&gt;10^38&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;32&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;double&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4.9&lt;em&gt;10^-324 ~ 1.8&lt;/em&gt;10^308&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;64&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;실수형은 정수형보다 큰 값을 표현할 수 있으나 오차가 발생할 수도 있음
+    &lt;ul&gt;
+      &lt;li&gt;보다 높은 정밀도가 필요한 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;double&lt;/code&gt; 사용 (정밀도 15자리)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;상수와-리터럴constant--literal&quot;&gt;상수와 리터럴(constant &amp;amp; literal)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;상수: 변수와 같이 값을 저장할 수 있는 공간이지만, 한 번 저장하면 다른 값으로 변경 불가능
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;final int MAX_SPEED = 10;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;상수는 반드시 선언과 동시에 초기화&lt;/li&gt;
+      &lt;li&gt;상수의 이름은 모두 대문자, 여러 단어인 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_&lt;/code&gt;로 구분&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;리터럴: 값을 한 번 저장하면 변경할 수 없는 저장공간이라고 정의한 상수와 구분하기 위해 리터럴이라는 용어 사용
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;final int MAX_VALUE = 100;&lt;/code&gt; 에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MAX_VALUE&lt;/code&gt;는 상수, 100은 리터럴&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;상수가 필요한 이유
+    &lt;ul&gt;
+      &lt;li&gt;리터럴에 의미있는 이름을 붙임으로써 코드의 이해와 수정을 돕기 위해 필요&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;리터럴의 타입과 접미사&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;종류&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;리터럴&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;접미사&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;논리형&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;false, true&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;없음&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;정수형&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;123, 0b0101, 077, 0xFF, 100L&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;L&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;실수형&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;3.14, 3.0e8, 1.4f&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;f, d&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;문자형&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;‘A’, ‘1’, ‘\n’&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;없음&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;문자열&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;“ABC”, “123”, “true”&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;없음&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;JDK1.7 부터 정수와 리터럴 중간에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_&lt;/code&gt;를 넣을 수 있어 큰 숫자 편하게 읽을 수 있음&lt;/li&gt;
+      &lt;li&gt;리터럴에 소수점이나 10의 제곱을 나타내는 기호 E 또는 e, 접미사 f, F, d, D가 있으면 실수형 리터럴로 간주&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;자료형&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;실수형 리터럴&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;다른 형태의 동등한 표현&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;double&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;10.&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;10.0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;double&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;.10&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;0.10&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;10f&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;10.0f&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;3.14e3f&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;3140.0f&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;double&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1e1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;10.0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;double&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1e-3&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;0.001&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;타입의 불일치
+    &lt;ul&gt;
+      &lt;li&gt;타입이 달라도 저장범위가 넓은 타입에 좁은 타입의 값을 저장하는 것은 허용&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'A'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// OK, 문자 'A'의 유니코드인 65가 변수 i에 저장&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;123&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// OK, int보다 long의 범위가 더 넓음&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.14f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// OK, float보다 double의 범위가 더 넓음&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x123456789&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 에러, int타입의 범위를 넘는 값 저장&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.14&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 에러, float타입보다 double 타입의 범위가 넓음&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;65&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// OK, byte타입에 저장 가능한 범위의 int타입 리터럴&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x1234&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// OK, short타입에 저장 가능한 범위의 int타입 리터럴&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;문자 리터럴과 문자열 리터럴
+    &lt;ul&gt;
+      &lt;li&gt;문자 리터럴: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'A'&lt;/code&gt;와 같이 작은따옴표로 문자 하나를 감싼 것&lt;/li&gt;
+      &lt;li&gt;문자열 리터럴: 두 문자 이상은 큰 따옴표로 감싸야 함&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'J'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Java&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 변수 name에 문자열 리터럴 &quot;Java&quot; 저장&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// OK, 내용이 없는 빈 문자열&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 에러, ''안에 반드시 하나의 문자 필요&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// OK, 공백 문자(blank)로 변수 ch 초기화&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Java&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// String객체 생성&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Ja&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;va&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// name은 &quot;Java&quot;&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;8.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// str은 &quot;Java8.0&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;형식화된-출력---printf&quot;&gt;형식화된 출력 - printf()&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;println()&lt;/code&gt;의 경우 값을 변환하지 않고는 다른 형식으로 출력할 수 없음&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;printf()&lt;/code&gt;는 지시자(specifier)를 통해 변수의 값을 여러 가지 형식으로 변환하여 출력 가능&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;자주 사용하는 지시자&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;지시자&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%b&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;불리언(boolean) 형식으로 출력&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%d&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;10진(decimal) 정수의 형식으로 출력&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%o&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;8진(octal) 정수의 형식으로 출력&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%x, %X&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;16진(hexa-decimal) 정수의 형식으로 출력&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%f&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;부동 소수점(floating-point) 형식으로 출력&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%e, %E&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;지수(exponent) 표현식의 형식으로 출력&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%c&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;문자(character)로 출력&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%s&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;문자열(string)으로 출력&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'A'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;finger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;big&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100_000_000_000L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xFFFF_FFFF_FFFF_FFFF&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;octNum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;010&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 8진수 10, 10진수로 8&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hexNum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 16진수 10, 10진수로 16&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;binNum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mb&quot;&gt;0b10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 2진수 10, 10진수로 2&lt;/span&gt;
+
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b=%d%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;s=%d%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;c=%c, %d %n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;finger=[%5d]%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;finger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;finger=[%-5d]%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;finger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;finger=[%05d]%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;finger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;big=%d%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;big&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hex=%#x%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;octNum=%o, %d%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;octNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;octNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hexNum=%x, %d%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hexNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hexNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;binNum=%s, %d%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toBinaryString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;binNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;b=1
+s=2
+c=A, 65
+finger=[   10]
+finger=[10   ]
+finger=[00010]
+big=100000000000
+hex=0xffffffffffffffff
+octNum=10, 8
+hexNum=10, 16
+binNum=10, 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;화면에서-입력받기---scanner&quot;&gt;화면에서 입력받기 - Scanner&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Scanner클래스를 사용하기 위해 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;import java.util.*;&lt;/code&gt; 추가&lt;/li&gt;
+  &lt;li&gt;Scanner클래스 객체 생성 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scanner scanner = new Scanner(System.in);&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nextLint()&lt;/code&gt;메서드 호출하면 입력대기 상태에 있다가 Enter누르면 입력한 내용이 문자열로 반환
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String input = scanner.nextLint();&lt;/code&gt;: 입력받은 내용을 input에 저장&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int num = Integer.parseInt(input);&lt;/code&gt;: 입력받은 내용을 input타입의 값으로 변환&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ScannerEx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;두 자리 정수를 하나 입력해주세요.&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 입력받은 문자열을 숫자로 변환&lt;/span&gt;
+    
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;입력내용: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;num=%d%n&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;두 자리 정수를 하나 입력해주세요.&amp;gt;22
+입력내용: 22
+num=22
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자료구조와 알고리즘</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="alternate" type="text/html" title="자료구조와 알고리즘" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#자료구조란-무엇일까&quot; id=&quot;markdown-toc-자료구조란-무엇일까&quot;&gt;자료구조란 무엇일까?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#자료구조를-배우는-이유&quot; id=&quot;markdown-toc-자료구조를-배우는-이유&quot;&gt;자료구조를 배우는 이유&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#알고리즘이란-무엇일까&quot; id=&quot;markdown-toc-알고리즘이란-무엇일까&quot;&gt;알고리즘이란 무엇일까?&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#연습-문제&quot; id=&quot;markdown-toc-연습-문제&quot;&gt;연습 문제&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;자료구조란-무엇일까&quot;&gt;자료구조란 무엇일까?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;자료구조: 특정한 문제 및 목표를 해결하기 위해 여러 요소를 모아 조직화된 데이터를 이루는 것
+    &lt;ul&gt;
+      &lt;li&gt;선형 구조: 데이터를 일렬로 나열 / 인접 요소들 간 하나의 요소만 존재&lt;/li&gt;
+      &lt;li&gt;비선형 구조: 데이터를 계층 구조화 / 인접 요소들 간 다수의 요소들이 존재&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;자료구조를-배우는-이유&quot;&gt;자료구조를 배우는 이유&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;여러 흩어진 요소들을 하나의 조직으로 구성하고 가장 효율적인 방법으로 데이터를 관리하고 저장하기 위해&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;알고리즘이란-무엇일까&quot;&gt;알고리즘이란 무엇일까?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;주어진 문제를 해결하기 위한 일련의 과정 및 논리적인 방법&lt;/li&gt;
+  &lt;li&gt;알고리즘과 자료구조는 효율적인 결과 도출을 위해 함께 사용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;연습-문제&quot;&gt;연습 문제&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;네 개의 값 중 최소값을 찾는 메서드
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Practice01_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;minValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// min 값을 data1로 초기화&lt;/span&gt;
+
+          &lt;span class=&quot;c1&quot;&gt;// min값이 data2보다 큰 경우 min을 data2로 갱신&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+          &lt;span class=&quot;c1&quot;&gt;// min값이 data3보다 큰 경우 min을 data3으로 갱신&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+          &lt;span class=&quot;c1&quot;&gt;// min값이 data4보다 큰 경우 min을 data4로 갱신&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;중복을 포함한 다섯 개의 값 중 최댓값을 구하는 메서드
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;maxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// max값을 data1로 초기화&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;// max값이 data2보다 작은 경우 max값을 data2로 갱신&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;// max값이 data3보다 작은 경우 max값을 data3으로 갱신&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;// max값이 data4보다 작은 경우 max값을 data4로 갱신&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;// max값이 data5보다 작은 경우 max값을 data5로 갱신&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;datastructure&quot;]" /><category term="computer-science" /><category term="datastructure" /><summary type="html">자바를 이용해 자료구조와 알고리즘에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">배열</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" rel="alternate" type="text/html" title="배열" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EB%B0%B0%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#배열이란&quot; id=&quot;markdown-toc-배열이란&quot;&gt;배열이란?&lt;/a&gt;&lt;/li&gt;
@@ -95,7 +714,17 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;배열의 연산으로 특정 위치에 값을 삽입, 삭제하거나 값을 읽어오는 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;foreach&lt;/code&gt; 사용 어려움&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;datastructure&quot;]" /><category term="computer-science" /><category term="datastructure" /><summary type="html">자바를 이용해 자료구조와 알고리즘에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">디자인 패턴</title><link href="http://localhost:4000/blog/update/computer-science/design-pattern/2021-11-02-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1/" rel="alternate" type="text/html" title="디자인 패턴" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/design-pattern/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/design-pattern/2021-11-02-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1/">&lt;p&gt;디자인 패턴에 대해 알아보자&lt;/p&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;design-pattern&quot;]" /><category term="computer-science" /><category term="design-pattern" /><summary type="html">디자인 패턴에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/design-pattern-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/design-pattern-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/">&lt;p&gt;자바의 정석 Chapter1&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;datastructure&quot;]" /><category term="computer-science" /><category term="datastructure" /><summary type="html">자바를 이용해 자료구조와 알고리즘에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">디자인 패턴</title><link href="http://localhost:4000/blog/update/computer-science/design-pattern/2021-11-02-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1/" rel="alternate" type="text/html" title="디자인 패턴" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/design-pattern/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/design-pattern/2021-11-02-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1/">&lt;p&gt;디자인 패턴에 대해 알아보자&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#싱글톤-패턴singleton-pattern&quot; id=&quot;markdown-toc-싱글톤-패턴singleton-pattern&quot;&gt;싱글톤 패턴(Singleton Pattern)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;싱글톤-패턴singleton-pattern&quot;&gt;싱글톤 패턴(Singleton Pattern)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;인스턴스를 오직 한개만 만들고 그 인스턴스에 글로벌하게 접근할 수 있는 방법을 제공하는 것&lt;/li&gt;
+  &lt;li&gt;하나의 인스턴스를 메모리에 등록하여 여러 스레드가 동시에 공유해서 사용하는 등 효율을 높일 수 있다. ➜ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;동시성(concurrency)&lt;/code&gt; 문제 고려&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;design-pattern&quot;]" /><category term="computer-science" /><category term="design-pattern" /><summary type="html">디자인 패턴에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/design-pattern-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/design-pattern-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/">&lt;p&gt;자바의 정석 Chapter1&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#자바란&quot; id=&quot;markdown-toc-자바란&quot;&gt;자바란?&lt;/a&gt;    &lt;ul&gt;
@@ -113,6 +742,7 @@
       &lt;li&gt;&lt;a href=&quot;#hellojava&quot; id=&quot;markdown-toc-hellojava&quot;&gt;Hello.java&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#자주-발생하는-에러와-해결방법&quot; id=&quot;markdown-toc-자주-발생하는-에러와-해결방법&quot;&gt;자주 발생하는 에러와 해결방법&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#자바프로그램의-실행과정&quot; id=&quot;markdown-toc-자바프로그램의-실행과정&quot;&gt;자바프로그램의 실행과정&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#주석comment&quot; id=&quot;markdown-toc-주석comment&quot;&gt;주석(comment)&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -283,101 +913,17 @@
   &lt;li&gt;내부 진행 순서
     &lt;ol&gt;
       &lt;li&gt;프로그램 실행에 필요한 클래스(*.class파일) 로드&lt;/li&gt;
+      &lt;li&gt;클래스 파일 검사(파일형식, 악성코드 체크)&lt;/li&gt;
+      &lt;li&gt;지정된 클래스(Hello)에서 main(String[] args)를 호출&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자료구조와 알고리즘</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="alternate" type="text/html" title="자료구조와 알고리즘" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#자료구조란-무엇일까&quot; id=&quot;markdown-toc-자료구조란-무엇일까&quot;&gt;자료구조란 무엇일까?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자료구조를-배우는-이유&quot; id=&quot;markdown-toc-자료구조를-배우는-이유&quot;&gt;자료구조를 배우는 이유&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#알고리즘이란-무엇일까&quot; id=&quot;markdown-toc-알고리즘이란-무엇일까&quot;&gt;알고리즘이란 무엇일까?&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#연습-문제&quot; id=&quot;markdown-toc-연습-문제&quot;&gt;연습 문제&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;자료구조란-무엇일까&quot;&gt;자료구조란 무엇일까?&lt;/h2&gt;
+&lt;h3 id=&quot;주석comment&quot;&gt;주석(comment)&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;자료구조: 특정한 문제 및 목표를 해결하기 위해 여러 요소를 모아 조직화된 데이터를 이루는 것
-    &lt;ul&gt;
-      &lt;li&gt;선형 구조: 데이터를 일렬로 나열 / 인접 요소들 간 하나의 요소만 존재&lt;/li&gt;
-      &lt;li&gt;비선형 구조: 데이터를 계층 구조화 / 인접 요소들 간 다수의 요소들이 존재&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;자료구조를-배우는-이유&quot;&gt;자료구조를 배우는 이유&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;여러 흩어진 요소들을 하나의 조직으로 구성하고 가장 효율적인 방법으로 데이터를 관리하고 저장하기 위해&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;알고리즘이란-무엇일까&quot;&gt;알고리즘이란 무엇일까?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;주어진 문제를 해결하기 위한 일련의 과정 및 논리적인 방법&lt;/li&gt;
-  &lt;li&gt;알고리즘과 자료구조는 효율적인 결과 도출을 위해 함께 사용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;연습-문제&quot;&gt;연습 문제&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;네 개의 값 중 최소값을 찾는 메서드
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Practice01_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;minValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// min 값을 data1로 초기화&lt;/span&gt;
-
-          &lt;span class=&quot;c1&quot;&gt;// min값이 data2보다 큰 경우 min을 data2로 갱신&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-          &lt;span class=&quot;c1&quot;&gt;// min값이 data3보다 큰 경우 min을 data3으로 갱신&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-          &lt;span class=&quot;c1&quot;&gt;// min값이 data4보다 큰 경우 min을 data4로 갱신&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;중복을 포함한 다섯 개의 값 중 최댓값을 구하는 메서드
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;maxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// max값을 data1로 초기화&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data2보다 작은 경우 max값을 data2로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data3보다 작은 경우 max값을 data3으로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data4보다 작은 경우 max값을 data4로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data5보다 작은 경우 max값을 data5로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;datastructure&quot;]" /><category term="computer-science" /><category term="datastructure" /><summary type="html">자바를 이용해 자료구조와 알고리즘에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">기본 자료형</title><link href="http://localhost:4000/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/" rel="alternate" type="text/html" title="기본 자료형" /><published>2021-11-01T00:00:00+09:00</published><updated>2021-11-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/algorithm/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/">&lt;blockquote&gt;
+  &lt;li&gt;범위 주석: ‘/&lt;em&gt;‘와 ‘&lt;/em&gt;/’사이의 내용은 주석으로 간주&lt;/li&gt;
+  &lt;li&gt;한 줄 주석: ‘//’부터 라인 끝까지의 내용은 주석으로 간주&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">기본 자료형</title><link href="http://localhost:4000/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/" rel="alternate" type="text/html" title="기본 자료형" /><published>2021-11-01T00:00:00+09:00</published><updated>2021-11-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/algorithm/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/">&lt;blockquote&gt;
   &lt;p&gt;데이터를 어떻게 표현하느냐가 프로그래밍의 핵심이다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1380,98 +1926,4 @@
   &lt;li&gt;데이터베이스의 각 사용자가 갖는 뷰&lt;/li&gt;
   &lt;li&gt;여러 부류의 사용자를 위해 동일한 개념 단계로부터 다수의 서로 다른 뷰가 제공될 수 있음&lt;/li&gt;
   &lt;li&gt;일반적으로, 최종 사용자와 응용&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;update&quot;, &quot;database&quot;]" /><category term="update" /><category term="database" /><summary type="html">What’s Database System?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What’s New in Hydejack 9.1?</title><link href="http://localhost:4000/blog/update/2021-02-13-whats-new-in-hydejack-9-1/" rel="alternate" type="text/html" title="What’s New in Hydejack 9.1?" /><published>2021-02-13T00:00:00+09:00</published><updated>2021-02-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/whats-new-in-hydejack-9-1</id><content type="html" xml:base="http://localhost:4000/blog/update/2021-02-13-whats-new-in-hydejack-9-1/">&lt;p&gt;What’s New in Hydejack 9.1?&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#stripe-ified-design&quot; id=&quot;markdown-toc-stripe-ified-design&quot;&gt;Stripe-ified Design&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#inverted-sidebars&quot; id=&quot;markdown-toc-inverted-sidebars&quot;&gt;Inverted Sidebars&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#code-block-headers&quot; id=&quot;markdown-toc-code-block-headers&quot;&gt;Code Block Headers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#resume-download-buttons&quot; id=&quot;markdown-toc-resume-download-buttons&quot;&gt;Resume Download Buttons&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#serp-breadcrumbs&quot; id=&quot;markdown-toc-serp-breadcrumbs&quot;&gt;&lt;abbr title=&quot;Search Engine Results Page&quot;&gt;SERP&lt;/abbr&gt; Breadcrumbs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#last-modified-at&quot; id=&quot;markdown-toc-last-modified-at&quot;&gt;Last Modified At&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#clap-button-preview&quot; id=&quot;markdown-toc-clap-button-preview&quot;&gt;Clap Button Preview&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#credits&quot; id=&quot;markdown-toc-credits&quot;&gt;Credits&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;stripe-ified-design&quot;&gt;Stripe-ified Design&lt;/h2&gt;
-&lt;p&gt;Most elements now have rounded borders, making the design look more modern (dare I say “Stripe-ified”) than ever before.&lt;/p&gt;
-
-&lt;p&gt;The goal of Hydejack was always to provide a theme that looks “designed” combined the amenities of a typical Jekyll theme for coders.
-This is an important step in maintaining this goal.&lt;/p&gt;
-
-&lt;p&gt;At the same time, I’m introducing nerdy elements like &lt;a href=&quot;#serp-breadcrumbs&quot;&gt;breadcrumbs&lt;/a&gt;, that are almost ornamental in nature.
-You wouldn’t find these on other Stripe-like designs, but I think they are appealing to developer types like myself. 
-Like most additions to Hydejack, they can be disabled via configuration.&lt;/p&gt;
-
-&lt;h2 id=&quot;inverted-sidebars&quot;&gt;Inverted Sidebars&lt;/h2&gt;
-&lt;p&gt;The colors on the sidebar can now be inverted to allow brighter sidebar images. This can be enabled per-page in the fort matter:&lt;/p&gt;
-
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;invert_sidebar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;code-block-headers&quot;&gt;Code Block Headers&lt;/h2&gt;
-&lt;p&gt;Code blocks can now have headers:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// file: 'hello-world.js'&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Hello World!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Headers are added by making the first line a comment of the form &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(file|title): ['&quot;].*['&quot;]&lt;/code&gt;, e.g.:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~~~js
-// file: 'hello-world.js'
-console.log('Hello World!');
-~~~
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Code blocks with and without headers now also come with a copy button. 
-In the case of header-less code blocks, the button only shows on hover to prevent potential overlap.&lt;/p&gt;
-
-&lt;h2 id=&quot;resume-download-buttons&quot;&gt;Resume Download Buttons&lt;/h2&gt;
-&lt;p&gt;Resumes can now have download buttons:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/9.1.0-3.png&quot; alt=&quot;Download Buttons&quot; class=&quot;border lead&quot; width=&quot;1776&quot; height=&quot;258&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;figcaption&quot;&gt;Resumes can now have download buttons.&lt;/p&gt;
-
-&lt;p&gt;The documentation has been updated with a chapter on &lt;a href=&quot;/docs/basics/#downloads&quot;&gt;how to configure the buttons&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;serp-breadcrumbs&quot;&gt;&lt;abbr title=&quot;Search Engine Results Page&quot;&gt;SERP&lt;/abbr&gt; Breadcrumbs&lt;/h2&gt;
-&lt;p&gt;Added breadcrumbs above page title:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/9.1.0-2.png&quot; alt=&quot;Breadcrumbs&quot; class=&quot;border lead&quot; width=&quot;1588&quot; height=&quot;164&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;figcaption&quot;&gt;Bread crumbs are now shown above each page title.&lt;/p&gt;
-
-&lt;p&gt;Note that this requires a &lt;a href=&quot;https://qwtel.com/posts/software/urls-are-directories/&quot;&gt;directory-like URL structure&lt;/a&gt; on your entire site, 
-otherwise the intermediate links will point to nonexisting sites.&lt;/p&gt;
-
-&lt;p&gt;On a side note, Hydejack now has built-in tooltips for abbreviations like &lt;abbr title=&quot;Search Engine Results Page&quot;&gt;SERP&lt;/abbr&gt; (activated via tap/click).
-See &lt;a href=&quot;/blog/hyde/2012-02-07-example-content/#inline-html-elements&quot;&gt;Example Content&lt;/a&gt; on how to add them to your content.&lt;/p&gt;
-
-&lt;h2 id=&quot;last-modified-at&quot;&gt;Last Modified At&lt;/h2&gt;
-&lt;p&gt;Blog posts can now have a “last modified at” date in the sub title row.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/9.1.0-1.png&quot; alt=&quot;Last modified at&quot; class=&quot;border lead&quot; width=&quot;1254&quot; height=&quot;218&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Note that this depends on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;last_modified_at&lt;/code&gt; property of the page, which must be either set manually in the frontmatter (not recommended), or via a plugin like &lt;a href=&quot;https://github.com/gjtorikian/jekyll-last-modified-at&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll-last-modified-at&lt;/code&gt;&lt;/a&gt;. Note that the later is not available when building on GitHub Pages and can increase build times.&lt;/p&gt;
-
-&lt;h2 id=&quot;clap-button-preview&quot;&gt;Clap Button Preview&lt;/h2&gt;
-&lt;p&gt;I’ve been trying something new with &lt;a href=&quot;https://getclaps.app/&quot;&gt;&lt;strong&gt;getclaps.app&lt;/strong&gt;&lt;/a&gt;, a feedback and analytics tool for personal sites like those powered by Hydejack. 
-It looks like this:&lt;/p&gt;
-
-&lt;clap-button style=&quot;--clap-button-color:var(--body-color);margin:2rem auto 3rem;width:3rem;height:3rem;font-size:smaller&quot; nowave=&quot;&quot;&gt;&lt;/clap-button&gt;
-
-&lt;p&gt;It is a separate product from Hydejack and not enabled by default. Because it depends on a backend component, it requires a monthly fee. 
-If enabled, it is placed below posts and pages where the dingbat character (❖) used to be.&lt;/p&gt;
-
-&lt;p&gt;I can’t claim that this product is fully baked (feedback welcome), but I’ve been using it on my personal site and here for the last couple of months with no issues.
-For more, see &lt;a href=&quot;https://getclaps.app/&quot;&gt;the dedicated website&lt;/a&gt;.&lt;/p&gt;
-
-&lt;hr style=&quot;margin:2rem 0&quot; /&gt;
-
-&lt;p&gt;There are many more changes and bugfixes in 9.1. See the &lt;a href=&quot;/changelog/&quot; class=&quot;heading flip-title&quot;&gt;CHANGELOG&lt;/a&gt; for details.&lt;/p&gt;
-
-&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
-
-&lt;p&gt;&lt;span&gt;Photo by &lt;a href=&quot;https://unsplash.com/@jjying?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;JJ Ying&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="update" /><summary type="html">What’s New in Hydejack 9.1?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;update&quot;, &quot;database&quot;]" /><category term="update" /><category term="database" /><summary type="html">What’s Database System?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
