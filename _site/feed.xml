@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-06T00:38:08+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-08T20:33:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
 </subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-05T00:00:00+09:00</published><updated>2021-11-05T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-3</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/">&lt;p&gt;자바의 정석 Chapter2&lt;/p&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#진법&quot; id=&quot;markdown-toc-진법&quot;&gt;진법&lt;/a&gt;    &lt;ul&gt;
@@ -8,6 +8,13 @@
       &lt;li&gt;&lt;a href=&quot;#정수의-진법-변환&quot; id=&quot;markdown-toc-정수의-진법-변환&quot;&gt;정수의 진법 변환&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#실수의-진법변환&quot; id=&quot;markdown-toc-실수의-진법변환&quot;&gt;실수의 진법변환&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#음수의-2진-표현---2의-보수법&quot; id=&quot;markdown-toc-음수의-2진-표현---2의-보수법&quot;&gt;음수의 2진 표현 - 2의 보수법&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#기본형primitive-type&quot; id=&quot;markdown-toc-기본형primitive-type&quot;&gt;기본형(Primitive type)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#논리형---boolean&quot; id=&quot;markdown-toc-논리형---boolean&quot;&gt;논리형 - boolean&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#문자형---char&quot; id=&quot;markdown-toc-문자형---char&quot;&gt;문자형 - char&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#정수형---byte-short-int-long&quot; id=&quot;markdown-toc-정수형---byte-short-int-long&quot;&gt;정수형 - byte, short, int, long&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#실수형---float-double&quot; id=&quot;markdown-toc-실수형---float-double&quot;&gt;실수형 - float, double&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -100,6 +107,215 @@
       &lt;li&gt;양변에 1을 더하면 우변은 0이 되고 올림이 발생하지만 4비트를 넘기때문에 버려짐&lt;/li&gt;
       &lt;li&gt;결국에는 0이 되므로 ‘1의 보수 + 1’은 ‘2의 보수’와 같음&lt;/li&gt;
     &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;기본형primitive-type&quot;&gt;기본형(Primitive type)&lt;/h2&gt;
+
+&lt;h3 id=&quot;논리형---boolean&quot;&gt;논리형 - boolean&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;true와 false 중 하나를 저장, 기본값(default)은 false&lt;/li&gt;
+  &lt;li&gt;대답(yes/no), 스위치(on/off) 등의 논리구현에 주로 사용&lt;/li&gt;
+  &lt;li&gt;크기: 1byte&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;문자형---char&quot;&gt;문자형 - char&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;문자를 저장하기 위한 변수를 선언한 떄 사용&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;char ch = 'A';&lt;/code&gt;: 문자의 유니코드(정수)가 저장&lt;/li&gt;
+  &lt;li&gt;어떤 문자의 유니코드를 알고 싶으면 char형 변수에 저장된 값을 정수형으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;casting&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;특수 문자 다루기&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;특수문자&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;문자리터럴&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tab&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\t&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;backspace&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\b&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;form feed&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\f&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new line&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\n&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;carriage return&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\r&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;역슬래쉬(\)&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\\&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;작은따옴표&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\'&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;큰따옴표&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\&quot;&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;유니코드(16진수) 문자&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\u유니코드 (예: char a='\u0041')&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;char타입의 표현형식
+    &lt;ul&gt;
+      &lt;li&gt;char타입은 2byte(=16bit)이므로, 16자리의 2진수로 표현할 수 있는 정수의 개수인 65,536개의 코드 사용 가능&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;short타입의 표현범위: -2^15 ~ 2^15 - 1 (-32768 ~ 32767)
+char타입의 표현범위: 0 ~ 2^15 - 1 (0 ~ 65535)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;인코딩과 디코딩(encoding &amp;amp; decoding)
+    &lt;ul&gt;
+      &lt;li&gt;인코딩: 문자를 코드로 변환하는 것&lt;/li&gt;
+      &lt;li&gt;디코딩: 코드를 문자로 변환하는 것&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;아스키(ASCII, American Standard Code for Information Interchange)
+    &lt;ul&gt;
+      &lt;li&gt;128개의 문자 집합을 제공하는 7bit부호&lt;/li&gt;
+      &lt;li&gt;숫자 ‘0~9’, 영문자 ‘A~Z’와 ‘a~z’가 연속적으로 배치&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;확장 아스키(Extended ASCII)와 한글
+    &lt;ul&gt;
+      &lt;li&gt;일반적으로 데이터는 byte단위로 다뤄지는데 아스키는 7bit이므로 1bit가 남게됨&lt;/li&gt;
+      &lt;li&gt;남는 공간을 활용해 문자를 추가로 정의한 것이 확장 아스키&lt;/li&gt;
+      &lt;li&gt;새롭게 추가된 128개의 문자는 여러 국가와 기업에서 서로의 필요에 따라 다르게 정의&lt;/li&gt;
+      &lt;li&gt;ISO에서 발표한 대표적인 표준은 ‘ISO 8859-1’&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;코드 페이지(code page, cp)
+    &lt;ul&gt;
+      &lt;li&gt;확장 아스키의 256개의 문자를 어떤 숫자로 변환할 것인지 적어놓은 ‘문자 코드표’&lt;/li&gt;
+      &lt;li&gt;한글 윈도우는 ‘CP 949’, 영문 윈도우는 ‘CP 437’ 사용&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;유니코드(Unicode)
+    &lt;ul&gt;
+      &lt;li&gt;전 세계의 모든 문자를 하나의 통일된 문자집합으로 표현한 것&lt;/li&gt;
+      &lt;li&gt;유니코드 문자 셋: 유니코드에 포함시키고자 하는 문자들의 집합&lt;/li&gt;
+      &lt;li&gt;유니코드 인코딩: 유니코드 문자 셋에 번호를 붙인 것&lt;/li&gt;
+      &lt;li&gt;자바는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UTF-16&lt;/code&gt; 사용
+        &lt;ul&gt;
+          &lt;li&gt;모든 문자를 2byte의 고정크기로 표현&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;정수형---byte-short-int-long&quot;&gt;정수형 - byte, short, int, long&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;정수형의 표현형식과 범위
+&lt;img src=&quot;/assets/img/blog/java-basic-3-3.jpeg&quot; alt=&quot;10진수를 2진수로 변환하기&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;n비트로 표현할 수 있는 정수의 개수: 2^n개
+n비트로 표현할 수 있는 정수의 범위: -2^(n-1) ~ 2^(n-1) - 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;타입의 크기만 알면, 모든 정수형의 표현범위를 쉽게 계산할 수 있음&lt;/li&gt;
+  &lt;li&gt;정수형의 선택 기준
+    &lt;ul&gt;
+      &lt;li&gt;정수형 변수를 선언할 떄는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt; 타입으로 하고, int의 범위(약 ±20억)를 넘어서는 수를 다뤄야할 떄는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;long&lt;/code&gt;사용&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;정수형의 오버플로우
+    &lt;ul&gt;
+      &lt;li&gt;오버플로우(overflow): 해당 타입이 표현할 수 있는 값의 범위를 넘어서는 것&lt;/li&gt;
+      &lt;li&gt;정수형 타입이 표현할 수 있는 최대값에 1을 더하면 최소값이 되고, 최소값에서 1을 빼면 최대값이 됨&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;부호있는 정수의 오버플로우
+    &lt;ul&gt;
+      &lt;li&gt;부호없는 정수는 2진수로 ‘0000’이 될 때, 부호있는 정수는 부호비트가 0에서 1이 될 때 오버플로우가 발생
+        &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sMin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32768&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sMax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32767&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cMin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cMax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;65535&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sMin = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sMin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sMin-1 = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sMin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sMax = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sMax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sMax+1 = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sMax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;cMin = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cMin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;cMin-1 = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cMin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;cMax = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cMax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;cMax+1 = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cMax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sMin = -32768
+sMin-1 = 32767
+sMax = 32767
+sMax+1 = -32768
+cMin = 0
+cMin-1 = 65535
+cMax = 65535
+cMax+1 = 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;실수형---float-double&quot;&gt;실수형 - float, double&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;실수형의 경우 정수형과 달리 오버플로우가 발생하면 변수의 값이 무한대(infinity)가 됨&lt;/li&gt;
+  &lt;li&gt;정수형에는 없는 언더플로우(underflow) 존재 -&amp;gt; 양의 최소값보다 작은 값이 되는 경우로 변수의 값이 0이 됨&lt;/li&gt;
+  &lt;li&gt;실수형은 부호(S), 지수(E), 가수(M) 세 부분으로 구성&lt;/li&gt;
+  &lt;li&gt;실수형의 값을 출력하기 위해서는 printf메서드의 지시자 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%f&lt;/code&gt; 사용&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;실수형의 저장형식&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;기호&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;의미&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;S&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;부호(Sign bit)&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;0이면 양수, 1이면 음수&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;E&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;지수(Exponent)&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;부호있는 정수, 지수의 범위는 -127~128(float), -1023~1024(double&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;M&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;가수(Mantissa)&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;실제값을 저장하는 부분, 10진수로 7자리(float), 15자리(double)의 정밀도로 저장 가능&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/img/blog/java-basic-3-4.jpeg&quot; alt=&quot;10진수를 2진수로 변환하기&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-04T00:00:00+09:00</published><updated>2021-11-04T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-2</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-04-java-basic-2/">&lt;p&gt;자바의 정석 Chapter2&lt;/p&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
