@@ -1,5 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-09T23:17:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-09T00:00:00+09:00</published><updated>2021-11-09T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-10T19:19:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-10-java-basic-4/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-10T00:00:00+09:00</published><updated>2021-11-10T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-10-java-basic-4/">&lt;p&gt;자바의 정석 Chapter3&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#연산자operator&quot; id=&quot;markdown-toc-연산자operator&quot;&gt;연산자(Operator)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#연산자와-피연산자&quot; id=&quot;markdown-toc-연산자와-피연산자&quot;&gt;연산자와 피연산자&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#식과-대입연산자&quot; id=&quot;markdown-toc-식과-대입연산자&quot;&gt;식과 대입연산자&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#연산자의-종류&quot; id=&quot;markdown-toc-연산자의-종류&quot;&gt;연산자의 종류&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;연산자operator&quot;&gt;연산자(Operator)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;‘연산자’란 연산을 수행하는 기호&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;연산자와-피연산자&quot;&gt;연산자와 피연산자&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;연산자: 연산을 수행하는 기호(+, -, *, / 등), 연산을 수행하고 나면 항상 결과값을 반환&lt;/li&gt;
+  &lt;li&gt;피연산자: 연산자의 작업 대상(변수, 상수, 리터럴, 수식)&lt;/li&gt;
+  &lt;li&gt;‘x + 3’일 경우 ‘+’는 덧셈 연산자, ‘x’와 ‘3’은 피연산자&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;식과-대입연산자&quot;&gt;식과 대입연산자&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;식: 연산자와 피연산자를 조합하여 계산하고자하는 바를 표현한 것&lt;/li&gt;
+  &lt;li&gt;식의 평가(evaluation): 식을 계산하여 결과를 얻는 것&lt;/li&gt;
+  &lt;li&gt;식이 평가되어 나온 결과를 저장하기 위해 대입연산자(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;)를 사용하여 변수와 같이 값을 저장할 수 있는 공간에 결과를 저장해야 함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;연산자의-종류&quot;&gt;연산자의 종류&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;종류&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;산술 연산자&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+ - * / % &amp;lt;&amp;lt; &amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;사칙 연산과 나머지 연산(%)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;비교 연산자&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt; &amp;lt; &amp;gt;= &amp;lt;= == !=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;크고 작음과 같고 다름을 비교&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;논리 연산자&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&amp;amp; || ! &amp;amp; | ^ ~&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;‘그리고(AND)’와 ‘또는(OR)’으로 조건을 연결&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;대입 연산자&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;우변의 값을 좌변에 저장&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;기 타&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(type) ?: instanceof&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;형변환 연산자, 삼항 연산자, instanceof연산자&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter3 얼마전 비트마스킹 문제를 풀던 중 비트연산자에 대한 이해가 확실히 부족한 느낌이 들었다. 비트연산자 뿐아니라 연산자 자체에 대한 더 깊이있는</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-09T00:00:00+09:00</published><updated>2021-11-09T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#sql을-직접-다룰-때-발생하는-문제점&quot; id=&quot;markdown-toc-sql을-직접-다룰-때-발생하는-문제점&quot;&gt;SQL을 직접 다룰 때 발생하는 문제점&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#반복-반복-그리고-반복&quot; id=&quot;markdown-toc-반복-반복-그리고-반복&quot;&gt;반복, 반복 그리고 반복&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#sql에-의존적인-개발&quot; id=&quot;markdown-toc-sql에-의존적인-개발&quot;&gt;SQL에 의존적인 개발&lt;/a&gt;&lt;/li&gt;
@@ -11,8 +77,10 @@
       &lt;li&gt;&lt;a href=&quot;#연관관계&quot; id=&quot;markdown-toc-연관관계&quot;&gt;연관관계&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#객체-그래프-탐색&quot; id=&quot;markdown-toc-객체-그래프-탐색&quot;&gt;객체 그래프 탐색&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#비교&quot; id=&quot;markdown-toc-비교&quot;&gt;비교&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#정리&quot; id=&quot;markdown-toc-정리&quot;&gt;정리&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#jpa란-무엇인가&quot; id=&quot;markdown-toc-jpa란-무엇인가&quot;&gt;JPA란 무엇인가?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;sql을-직접-다룰-때-발생하는-문제점&quot;&gt;SQL을 직접 다룰 때 발생하는 문제점&lt;/h2&gt;
@@ -270,7 +338,56 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;비교&quot;&gt;비교&lt;/h3&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;jpa&quot;]" /><category term="computer-science" /><category term="jpa" /><summary type="html">ORM(Object-Relational Mapping)을 사용한 기술인 JPA를 통해 객체 중심 개발이 가능해지고 생산성과 유지보수가 좋아졌으며 테스트 작성 역시 편해졌다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jpa-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jpa-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-05T00:00:00+09:00</published><updated>2021-11-05T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-3</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/">&lt;p&gt;자바의 정석 Chapter2&lt;/p&gt;
+&lt;h3 id=&quot;비교&quot;&gt;비교&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스는 기본 키의 값으로 각 row 구분&lt;/li&gt;
+  &lt;li&gt;객체는 두 가지 비교 방법 존재
+    &lt;ul&gt;
+      &lt;li&gt;동일성(Identity) 비교는 == 비교 -&amp;gt; 객체 인스턴스의 주소 값 비교&lt;/li&gt;
+      &lt;li&gt;동등성(Equality) 비교는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;equals()&lt;/code&gt;를 사용하여 객체 내부 값 비교
+        &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MemberDAO&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getMember&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;memberId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;SELECT * FROM MEMBER WHERE MEMBER_ID = ?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// JDBC API , SQL 실행&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;p&gt;```java
+String memberId = “100”;
+Member member1 = memberDAO.getMember(memberId);
+Member member2 = memberDAO.getMember(memberId);&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;member1 == member2; // 다름, 호출할 때마다 새로운 인스턴스가 생성됨
+```&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;JPA와 비교
+    &lt;ul&gt;
+      &lt;li&gt;JPA는 같은 트랜잭션일 때 같은 객체가 조회되는 것을 보장
+        &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;memberId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;100&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jpa&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;memberId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jpa&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;memberId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;member1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 같음&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;정리&quot;&gt;정리&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;정교한 객체 모델링을 할수록 패러다임 불일치 문제가 더 커지며 이를 해결하기 위해 JPA가 등장&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;jpa란-무엇인가&quot;&gt;JPA란 무엇인가?&lt;/h2&gt;
+&lt;p&gt;-&lt;/p&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;jpa&quot;]" /><category term="computer-science" /><category term="jpa" /><summary type="html">ORM(Object-Relational Mapping)을 사용한 기술인 JPA를 통해 객체 중심 개발이 가능해지고 생산성과 유지보수가 좋아졌으며 테스트 작성 역시 편해졌다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jpa-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jpa-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-05T00:00:00+09:00</published><updated>2021-11-05T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-3</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/">&lt;p&gt;자바의 정석 Chapter2&lt;/p&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#진법&quot; id=&quot;markdown-toc-진법&quot;&gt;진법&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#10진법과-2진법&quot; id=&quot;markdown-toc-10진법과-2진법&quot;&gt;10진법과 2진법&lt;/a&gt;&lt;/li&gt;
@@ -1296,17 +1413,53 @@ num=22
   &lt;li&gt;자료형의 기본 값&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;| 자료형 | 기본값 |
-|:—|:—|
-| 참조 타입 | null |
-| byte | 0 |
-| short | 0 |
-| int | 0 |
-| float | 0.0f |
-| long | 0L |
-| double | 0.0 |
-| char | ‘\u0000’ |
-| boolean | false |&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;자료형&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;기본값&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;참조 타입&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;null&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;byte&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;short&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;int&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;float&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.0f&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;long&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0L&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;double&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;char&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;‘\u0000’&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;boolean&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
 &lt;ul&gt;
   &lt;li&gt;배열을 초기화 하기 위한 3가지 방법
     &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;array_init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
@@ -1847,142 +2000,4 @@ num=22
   &lt;li&gt;R: Repeatable (반복 가능하게)&lt;/li&gt;
   &lt;li&gt;S: Self-Validating (자가 검증하는)&lt;/li&gt;
   &lt;li&gt;T: Timely (적시에)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;wooahan-techcourse&quot;]" /><category term="computer-science" /><category term="wooahan-techcourse" /><summary type="html">TDD에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/tdd-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/tdd-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cache란 무엇인가</title><link href="http://localhost:4000/blog/update/computer-science/wooahan-techcourse/2021-10-31-Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/" rel="alternate" type="text/html" title="Cache란 무엇인가" /><published>2021-10-31T00:00:00+09:00</published><updated>2021-10-31T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/wooahan-techcourse/Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/wooahan-techcourse/2021-10-31-Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/">&lt;p&gt;Cache에 대해 알아보자&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#사전-지식&quot; id=&quot;markdown-toc-사전-지식&quot;&gt;사전 지식&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#메모리-계층구조&quot; id=&quot;markdown-toc-메모리-계층구조&quot;&gt;메모리 계층구조&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#캐시의-작동-방식&quot; id=&quot;markdown-toc-캐시의-작동-방식&quot;&gt;캐시의 작동 방식&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#cpu의-캐시-메모리&quot; id=&quot;markdown-toc-cpu의-캐시-메모리&quot;&gt;CPU의 캐시 메모리&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#데이터베이스&quot; id=&quot;markdown-toc-데이터베이스&quot;&gt;데이터베이스&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#cdncontent-delivery-network&quot; id=&quot;markdown-toc-cdncontent-delivery-network&quot;&gt;CDN(Content Delivery Network)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#웹-캐시&quot; id=&quot;markdown-toc-웹-캐시&quot;&gt;웹 캐시&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#브라우저-캐시&quot; id=&quot;markdown-toc-브라우저-캐시&quot;&gt;브라우저 캐시&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#redis&quot; id=&quot;markdown-toc-redis&quot;&gt;Redis&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#ehcache&quot; id=&quot;markdown-toc-ehcache&quot;&gt;EHCache&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;사전-지식&quot;&gt;사전 지식&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;메모리 계층 구조
-    &lt;ul&gt;
-      &lt;li&gt;데이터 저장 공간 ➜ 속도와 용량은 반비례&lt;/li&gt;
-      &lt;li&gt;속도가 빠를수록 용량이 작음&lt;/li&gt;
-      &lt;li&gt;용량이 클수록 속도는 느림&lt;/li&gt;
-      &lt;li&gt;속도와 용량 두마리 토끼를 다 잡기에는 비용이 많이듦&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;속도와 용량에 따라 특성에 맞게 역할을 나눠 사용&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;메모리-계층구조&quot;&gt;메모리 계층구조&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/wooahan-cache-1.png&quot; alt=&quot;메모리 계층 구조&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;파레토의 법칙 (일명 2대8의 법칙)
-    &lt;ul&gt;
-      &lt;li&gt;이탈리아 경제학자 빌프레도 파레토가 발견&lt;/li&gt;
-      &lt;li&gt;원인 중 상위 20%가 전체 결과 80%를 좌우
-        &lt;ul&gt;
-          &lt;li&gt;ex) 잘 팔리는 제품 20%가 매출의 80%를 차지, 많이 쓰이는 단어 20%가 언어 사용 빈도의 80% 차지&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;자주 쓰는 20%의 일을 가능한 몰아 넣으면 80%의 일을 효율적으로 처리할 수 있음&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;데이터 지역성의 원리
-    &lt;ul&gt;
-      &lt;li&gt;자주 쓰이는 데이터는 시간적 혹은 공간적으로 한 곳에 몰려있을 가능성이 높음&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;시간 지역성(Temporla Locality)&lt;/strong&gt;
-        &lt;ul&gt;
-          &lt;li&gt;ex) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;for(int i = 0; i &amp;lt; N; i++)&lt;/code&gt;에서 i는 for문이 끝날 때까지 사용됨&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;공간 지역성(Spatial Locality)&lt;/strong&gt;
-        &lt;ul&gt;
-          &lt;li&gt;ex) for문에서 배열에 접근할 때 해당 배열이 위치한 메모리 주소 공간의 내용은 for문이 끝날 떄까지 사용&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;순차 지역성(Sequential Locality)&lt;/strong&gt;
-        &lt;ul&gt;
-          &lt;li&gt;ex) for문에서 배열에 접근할 때 arr[0], arr[1]… 다음에 arr[2]에 접근할 확률이 높음&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;캐시의-작동-방식&quot;&gt;캐시의 작동 방식&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;원본 데이터(System-of-Record)와는 별개로 자주 쓰이는 데이터(Hot Data)들을 복사해둘 캐시공간 마련
-    &lt;ul&gt;
-      &lt;li&gt;캐시 공간은 시간 복잡도 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;O(1)&lt;/code&gt;등 낮은 시간 복잡도로 접근 가능 ex) Java-Hash&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;데이터 요청이 들어오면 원본 데이터가 담긴 곳에 접근하기 전에 캐시 내부부터 탐색&lt;/li&gt;
-  &lt;li&gt;캐시에 원하는 데이터가 없거나(Cache Miss) 너무 오래되어 최신성을 잃었으면(Expiration) 그 때 원본 데이터 공간에 접근하여 데이터를 가져오고 캐시에 해당 데이터를 복사 혹은 갱신&lt;/li&gt;
-  &lt;li&gt;캐시에 원하는 데이터가 있으면 바로 데이터를 꺼내옴(Cache Hit)&lt;/li&gt;
-  &lt;li&gt;캐시 공간은 작으므로, 공간이 부족하면 안쓰는 데이터부터 삭제 (Eviction) ex) LRU(Least Recently Used)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;cpu의-캐시-메모리&quot;&gt;CPU의 캐시 메모리&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;현재 CPU는 1초에 최고 수십억번 작동 가능&lt;/li&gt;
-  &lt;li&gt;아무리 빠른 주기억장치도 CPU를 따라가기 어려움 ➜ SRAM을 CPU에 넣어 캐시 메모리로 사용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;데이터베이스&quot;&gt;데이터베이스&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스는 쓰기보다 읽기가 많으므로 자주 요청받는 쿼리의 결과를 캐싱&lt;/li&gt;
-  &lt;li&gt;데이터베이스 자체에서 별도의 캐시 운영 ➜ JPA의 영속성 컨텍스트 역시 캐시의 일종&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;cdncontent-delivery-network&quot;&gt;CDN(Content Delivery Network)&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;세계 각지에 캐시 서버를 두어 전송속도를 높이고 부하를 분산하는 시스템&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;웹-캐시&quot;&gt;웹 캐시&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;브라우저 캐시: HTML, JS, CSS 등을 하드디스크나 메모리에 캐싱&lt;/li&gt;
-  &lt;li&gt;응답 캐시: 웹 서버의 경우 매번 내용이 같은 경우 서버에서 생성한 HTML을 캐싱&lt;/li&gt;
-  &lt;li&gt;프록시 캐시: 웹 서버 앞단의 프록시 서버에서 캐싱&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;브라우저-캐시&quot;&gt;브라우저 캐시&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;웹 서버에서 클라이언트에 보내는 HTTP 헤더에 캐시 지시자 삽입 ➜ Client Web Browser에서는 명시된 캐시 정책에 따라 캐싱&lt;/li&gt;
-  &lt;li&gt;캐시 유효 기간(max-age)이 지나도 캐시된 데이터가 바뀌지 않는 경우를 확인하기 위해 ETag라는 유효성 검사 토큰 사용&lt;/li&gt;
-  &lt;li&gt;캐시 유효 시간을 길게 잡으면서 정적 파일 업데이트를 빠르게 하기 위해 파일 이름 뒤에 별도의 토큰이나 버전 번호 추가&lt;/li&gt;
-  &lt;li&gt;캐시 정책은 웹 페이지 상황에 따라 다르게 적용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;redis&quot;&gt;Redis&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;메모리 기반 오픈소스 NoSQL DBMS의 일종&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Remote Dictionary Server&lt;/strong&gt; : Java의 HashMap&amp;lt;Key, Value&amp;gt;&lt;/li&gt;
-  &lt;li&gt;서버 재부팅 시 데이터가 사라지지 않게끔 데이터를 하드디스크에 기록 가능&lt;/li&gt;
-  &lt;li&gt;DBMS의 일종이므로 명시적으로 삭제하지 않는 한 메모리에서 데이터를 삭제하지 않음&lt;/li&gt;
-  &lt;li&gt;자체적으로 여러 자료형 지원&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ehcache&quot;&gt;EHCache&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Java의 표준 캐싱 API 명세서인 JSR-107을 따르는 오픈소스 캐시 구현체&lt;/li&gt;
-  &lt;li&gt;Spring 프레임워크나 Hibernate ORM등에서 바로 사용 가능&lt;/li&gt;
-  &lt;li&gt;Java에서 가장 널리 사용&lt;/li&gt;
-  &lt;li&gt;캐시 저장 공간을 속도에 따라 여러 등급으로 나누어 메모리 계층 구조 적용 가능&lt;/li&gt;
-  &lt;li&gt;메모리 캐시 내용을 하드디스크에 기록 가능&lt;/li&gt;
-  &lt;li&gt;대규모 서비스에서 캐시 서버 여럿을 클러스터로 묶을 수 있는 기능 제공&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;wooahan-techcourse&quot;]" /><category term="computer-science" /><category term="wooahan-techcourse" /><summary type="html">Cache에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/cache-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/cache-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;wooahan-techcourse&quot;]" /><category term="computer-science" /><category term="wooahan-techcourse" /><summary type="html">TDD에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/tdd-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/tdd-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
