@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-10T19:19:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-11T21:28:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
 </subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-10-java-basic-4/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-10T00:00:00+09:00</published><updated>2021-11-10T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-10-java-basic-4/">&lt;p&gt;자바의 정석 Chapter3&lt;/p&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#연산자operator&quot; id=&quot;markdown-toc-연산자operator&quot;&gt;연산자(Operator)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#연산자와-피연산자&quot; id=&quot;markdown-toc-연산자와-피연산자&quot;&gt;연산자와 피연산자&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#식과-대입연산자&quot; id=&quot;markdown-toc-식과-대입연산자&quot;&gt;식과 대입연산자&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#연산자의-종류&quot; id=&quot;markdown-toc-연산자의-종류&quot;&gt;연산자의 종류&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#연산자의-우선순위와-결합규칙&quot; id=&quot;markdown-toc-연산자의-우선순위와-결합규칙&quot;&gt;연산자의 우선순위와 결합규칙&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#산술-변환usual-arithmetic-conversion&quot; id=&quot;markdown-toc-산술-변환usual-arithmetic-conversion&quot;&gt;산술 변환(Usual Arithmetic Conversion)&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -65,7 +67,105 @@
       &lt;td style=&quot;text-align: center&quot;&gt;형변환 연산자, 삼항 연산자, instanceof연산자&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter3 얼마전 비트마스킹 문제를 풀던 중 비트연산자에 대한 이해가 확실히 부족한 느낌이 들었다. 비트연산자 뿐아니라 연산자 자체에 대한 더 깊이있는</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-09T00:00:00+09:00</published><updated>2021-11-09T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;피연산자의 개수에 의한 분류
+    &lt;ul&gt;
+      &lt;li&gt;피연산자의 개수가 하나면 ‘단항 연산자’&lt;/li&gt;
+      &lt;li&gt;피연산자의 개수가 두개면 ‘이항 연산자’&lt;/li&gt;
+      &lt;li&gt;피연산자의 개수가 세개면 ‘삼항 연산자’&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;연산자의-우선순위와-결합규칙&quot;&gt;연산자의 우선순위와 결합규칙&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;식&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-x + 3&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;단항 연산자가 이항 연산자에 비해 우선순위가 높기때문에 x의 부호를 바꾼 후 덧셈 수행&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x + 3 + y&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;곱셈과 나눗셈이 덧셈과 뺄셈보다 우선순위가 높음&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-x + 3 &amp;gt; y - 2&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비교 연산자보다 산술 연산자가 먼저 수행됨&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x &amp;gt; 3 &amp;amp;&amp;amp; x &amp;lt; 5&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;논리 연산자보다 비교 연산자가 먼저 수행됨&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;result = x + y * 3;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;대입 연산자는 연산자 중 가장 우선순위가 낮음&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;식&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x &amp;lt;&amp;lt; 2 + 1&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;쉬프트 연산자는 덧셈 연산자보다 우선순위가 낮음, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x &amp;lt;&amp;lt; (2 + 1)&lt;/code&gt;과 같은 결과&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data &amp;amp; 0xFF == 0&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비트 연산자는 비교 연산자보다 우선순위가 낮음, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data &amp;amp; (0xFF == 0)&lt;/code&gt;와 같은 결과&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x &amp;lt; -1 || x &amp;gt; 3 &amp;amp;&amp;amp; x &amp;lt; 5&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;논리 연산자 중 AND를 의미하는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;, &amp;amp;&amp;amp;&lt;/code&gt;가 OR을 의미하는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|, ||&lt;/code&gt;보다 우선순위가 높음, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x &amp;lt; - 1 || (x &amp;gt; 3 &amp;amp;&amp;amp; x &amp;lt; 5)&lt;/code&gt;와 같은 결과&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;연산자의 결합규칙
+    &lt;ul&gt;
+      &lt;li&gt;같은 우선순위의 연산자들이 여러 개 있는 경우, 나름대로 연산을 수행하는 규칙
+        &lt;blockquote&gt;
+          &lt;p&gt;산술 &amp;gt; 비교 &amp;gt; 논리 &amp;gt; 대입. 대입은 가장 마지막에 수행&lt;/p&gt;
+
+          &lt;p&gt;단항(1) &amp;gt; 이항(2) &amp;gt; 삼항(3)&lt;/p&gt;
+
+          &lt;p&gt;단항 연산자와 대입 연사자를 제외한 모든 연산의 진행방향은 왼쪽에서 오른쪽&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;산술-변환usual-arithmetic-conversion&quot;&gt;산술 변환(Usual Arithmetic Conversion)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;이항 연산자는 두 피연산자의 타입이 일치해야 연산 가능&lt;/li&gt;
+  &lt;li&gt;두 피연산자의 타입 같게 일치(보다 큰 타입으로 일치)
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;피연산자의 타입이 int보다 작은 타입이면 int로 변환됨
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter3 얼마전 비트마스킹 문제를 풀던 중 비트연산자에 대한 이해가 확실히 부족한 느낌이 들었다. 비트연산자 뿐아니라 연산자 자체에 대한 더 깊이있는</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-09T00:00:00+09:00</published><updated>2021-11-09T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#sql을-직접-다룰-때-발생하는-문제점&quot; id=&quot;markdown-toc-sql을-직접-다룰-때-발생하는-문제점&quot;&gt;SQL을 직접 다룰 때 발생하는 문제점&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#반복-반복-그리고-반복&quot; id=&quot;markdown-toc-반복-반복-그리고-반복&quot;&gt;반복, 반복 그리고 반복&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#sql에-의존적인-개발&quot; id=&quot;markdown-toc-sql에-의존적인-개발&quot;&gt;SQL에 의존적인 개발&lt;/a&gt;&lt;/li&gt;
@@ -80,7 +180,11 @@
       &lt;li&gt;&lt;a href=&quot;#정리&quot; id=&quot;markdown-toc-정리&quot;&gt;정리&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#jpa란-무엇인가&quot; id=&quot;markdown-toc-jpa란-무엇인가&quot;&gt;JPA란 무엇인가?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#jpa란-무엇인가&quot; id=&quot;markdown-toc-jpa란-무엇인가&quot;&gt;JPA란 무엇인가?&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#jpa-소개&quot; id=&quot;markdown-toc-jpa-소개&quot;&gt;JPA 소개&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#왜-jpa를-사용해야-하는가&quot; id=&quot;markdown-toc-왜-jpa를-사용해야-하는가&quot;&gt;왜 JPA를 사용해야 하는가?&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;sql을-직접-다룰-때-발생하는-문제점&quot;&gt;SQL을 직접 다룰 때 발생하는 문제점&lt;/h2&gt;
@@ -387,7 +491,63 @@ Member member2 = memberDAO.getMember(memberId);&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;jpa란-무엇인가&quot;&gt;JPA란 무엇인가?&lt;/h2&gt;
-&lt;p&gt;-&lt;/p&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;jpa&quot;]" /><category term="computer-science" /><category term="jpa" /><summary type="html">ORM(Object-Relational Mapping)을 사용한 기술인 JPA를 통해 객체 중심 개발이 가능해지고 생산성과 유지보수가 좋아졌으며 테스트 작성 역시 편해졌다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jpa-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jpa-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-05T00:00:00+09:00</published><updated>2021-11-05T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-3</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/">&lt;p&gt;자바의 정석 Chapter2&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;JPA(Java Persistence API)는 자바 진영의 ORM 표준 기술
+&lt;img src=&quot;/assets/img/blog/jpa-basic-1-3.jpeg&quot; alt=&quot;jpa-api&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;ORM(Object-Relational Mapping): 객체와 관계형 데이터베이스 매핑
+    &lt;ul&gt;
+      &lt;li&gt;다양한 패러다임의 불일치 문제 해결 가능&lt;/li&gt;
+      &lt;li&gt;매핑 방법만 ORM 프레임워크에 알려주면 됨&lt;/li&gt;
+      &lt;li&gt;객체지향 애플리케이션 개발에 집중할 수 있음
+&lt;img src=&quot;/assets/img/blog/jpa-basic-1-4.jpeg&quot; alt=&quot;jpa-api&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jpa-소개&quot;&gt;JPA 소개&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/jpa-basic-1-5.jpeg&quot; alt=&quot;jpa-api&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;JPA를 사용하기 위해서는 JPA를 구현한 ORM 프레임워크를 선택해야함&lt;/li&gt;
+  &lt;li&gt;JPA 버전별 특징
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JPA 1.0(JSR 220) 2006년&lt;/code&gt;: 초기 버전, 복합 키와 연관관계 기능이 부족&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JPA 2.0(JSR 317) 2009년&lt;/code&gt;: 대부분의 ORM 기능 포함, JPA Criteria 추가&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JPA 2.1(JSR 338) 2013년&lt;/code&gt;: 스토어드 프로시저 접근, 컨버터, 엔티티 그래프 기능 추가&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;왜-jpa를-사용해야-하는가&quot;&gt;왜 JPA를 사용해야 하는가?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;생산성&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;JDBC API 같은 반복적인 일을 JPA가 처리해줌&lt;/li&gt;
+      &lt;li&gt;JPA는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATE TABLE&lt;/code&gt;같은 DDL문 역시 자동 생성&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;유지보수
+    &lt;ul&gt;
+      &lt;li&gt;SQL을 직접 다루면 수정해야할 부분이 너무 많음&lt;/li&gt;
+      &lt;li&gt;JPA가 SQL과 JDbC API 코드를 대신 처리해줌&lt;/li&gt;
+      &lt;li&gt;패러다임 불일치 문제를 해결해주므로 객체지향 언어가 가진 장점들을 활용하여 유연하고 유지보수하기 좋은 도메인 모델 편리하게 설계&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;성능
+    &lt;ul&gt;
+      &lt;li&gt;JPA는 애플리케이션과 데이터베이스 사이에서 다양한 성능 최적화 기회를 제공&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;데이터 접근 추상화와 벤더 독립성
+    &lt;ul&gt;
+      &lt;li&gt;애플리케이션과 데이터베이스 사이에 추상화된 데이터 접근 계층을 제공하여 특정 데이터베이스 기술에 종속되지 않도록 함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;표준
+    &lt;ul&gt;
+      &lt;li&gt;JPA는 자바 진영의 ORM 표준 기술&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;jpa&quot;]" /><category term="computer-science" /><category term="jpa" /><summary type="html">ORM(Object-Relational Mapping)을 사용한 기술인 JPA를 통해 객체 중심 개발이 가능해지고 생산성과 유지보수가 좋아졌으며 테스트 작성 역시 편해졌다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jpa-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jpa-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-05T00:00:00+09:00</published><updated>2021-11-05T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-3</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-05-java-basic-3/">&lt;p&gt;자바의 정석 Chapter2&lt;/p&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#진법&quot; id=&quot;markdown-toc-진법&quot;&gt;진법&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#10진법과-2진법&quot; id=&quot;markdown-toc-10진법과-2진법&quot;&gt;10진법과 2진법&lt;/a&gt;&lt;/li&gt;

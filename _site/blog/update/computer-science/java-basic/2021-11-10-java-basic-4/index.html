@@ -101,7 +101,7 @@
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2021-11-10T19:19:21+09:00',
+    INDEX_KEY: 'index--2021-11-11T21:28:33+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -302,6 +302,8 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
       <li><a href="#연산자와-피연산자" id="markdown-toc-연산자와-피연산자">연산자와 피연산자</a></li>
       <li><a href="#식과-대입연산자" id="markdown-toc-식과-대입연산자">식과 대입연산자</a></li>
       <li><a href="#연산자의-종류" id="markdown-toc-연산자의-종류">연산자의 종류</a></li>
+      <li><a href="#연산자의-우선순위와-결합규칙" id="markdown-toc-연산자의-우선순위와-결합규칙">연산자의 우선순위와 결합규칙</a></li>
+      <li><a href="#산술-변환usual-arithmetic-conversion" id="markdown-toc-산술-변환usual-arithmetic-conversion">산술 변환(Usual Arithmetic Conversion)</a></li>
     </ul>
   </li>
 </ul>
@@ -363,6 +365,104 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
     </tr>
   </tbody>
 </table>
+
+<ul>
+  <li>피연산자의 개수에 의한 분류
+    <ul>
+      <li>피연산자의 개수가 하나면 ‘단항 연산자’</li>
+      <li>피연산자의 개수가 두개면 ‘이항 연산자’</li>
+      <li>피연산자의 개수가 세개면 ‘삼항 연산자’</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="연산자의-우선순위와-결합규칙">연산자의 우선순위와 결합규칙</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">식</th>
+      <th style="text-align: left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">-x + 3</code></td>
+      <td style="text-align: left">단항 연산자가 이항 연산자에 비해 우선순위가 높기때문에 x의 부호를 바꾼 후 덧셈 수행</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">x + 3 + y</code></td>
+      <td style="text-align: left">곱셈과 나눗셈이 덧셈과 뺄셈보다 우선순위가 높음</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">-x + 3 &gt; y - 2</code></td>
+      <td style="text-align: left">비교 연산자보다 산술 연산자가 먼저 수행됨</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">x &gt; 3 &amp;&amp; x &lt; 5</code></td>
+      <td style="text-align: left">논리 연산자보다 비교 연산자가 먼저 수행됨</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">result = x + y * 3;</code></td>
+      <td style="text-align: left">대입 연산자는 연산자 중 가장 우선순위가 낮음</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">식</th>
+      <th style="text-align: left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">x &lt;&lt; 2 + 1</code></td>
+      <td style="text-align: left">쉬프트 연산자는 덧셈 연산자보다 우선순위가 낮음, <code class="language-plaintext highlighter-rouge">x &lt;&lt; (2 + 1)</code>과 같은 결과</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">data &amp; 0xFF == 0</code></td>
+      <td style="text-align: left">비트 연산자는 비교 연산자보다 우선순위가 낮음, <code class="language-plaintext highlighter-rouge">data &amp; (0xFF == 0)</code>와 같은 결과</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">x &lt; -1 || x &gt; 3 &amp;&amp; x &lt; 5</code></td>
+      <td style="text-align: left">논리 연산자 중 AND를 의미하는 <code class="language-plaintext highlighter-rouge">&amp;, &amp;&amp;</code>가 OR을 의미하는 <code class="language-plaintext highlighter-rouge">|, ||</code>보다 우선순위가 높음, <code class="language-plaintext highlighter-rouge">x &lt; - 1 || (x &gt; 3 &amp;&amp; x &lt; 5)</code>와 같은 결과</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>연산자의 결합규칙
+    <ul>
+      <li>같은 우선순위의 연산자들이 여러 개 있는 경우, 나름대로 연산을 수행하는 규칙
+        <blockquote>
+          <p>산술 &gt; 비교 &gt; 논리 &gt; 대입. 대입은 가장 마지막에 수행</p>
+
+          <p>단항(1) &gt; 이항(2) &gt; 삼항(3)</p>
+
+          <p>단항 연산자와 대입 연사자를 제외한 모든 연산의 진행방향은 왼쪽에서 오른쪽</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="산술-변환usual-arithmetic-conversion">산술 변환(Usual Arithmetic Conversion)</h3>
+<ul>
+  <li>이항 연산자는 두 피연산자의 타입이 일치해야 연산 가능</li>
+  <li>두 피연산자의 타입 같게 일치(보다 큰 타입으로 일치)
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">long</span> <span class="o">+</span> <span class="kt">int</span> <span class="o">-&gt;</span> <span class="kt">long</span> <span class="o">+</span> <span class="kt">long</span> <span class="o">-&gt;</span> <span class="kt">long</span>
+<span class="kt">float</span> <span class="o">+</span> <span class="kt">int</span> <span class="o">-&gt;</span> <span class="kt">float</span> <span class="o">+</span> <span class="kt">float</span> <span class="o">-&gt;</span> <span class="kt">float</span>
+<span class="kt">double</span> <span class="o">+</span> <span class="kt">float</span> <span class="o">-&gt;</span> <span class="kt">double</span> <span class="o">+</span> <span class="kt">double</span> <span class="o">-&gt;</span> <span class="kt">double</span>
+</code></pre></div>    </div>
+  </li>
+  <li>피연산자의 타입이 int보다 작은 타입이면 int로 변환됨
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">byte</span> <span class="o">+</span> <span class="kt">short</span> <span class="o">-&gt;</span> <span class="kt">int</span> <span class="o">+</span> <span class="kt">int</span> <span class="o">-&gt;</span> <span class="kt">int</span>
+<span class="kt">char</span> <span class="o">+</span> <span class="kt">short</span> <span class="o">-&gt;</span> <span class="kt">int</span> <span class="o">+</span> <span class="kt">int</span> <span class="o">-&gt;</span> <span class="kt">int</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
   
 </article>
@@ -506,7 +606,7 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/update/computer-science/wooahan-techcourse/2021-11-01-TDD%EB%9E%80/" class="flip-title"><span>TDD란?</span></a>  <time class="faded fine" datetime="2021-11-01T00:00:00+09:00">01 Nov 2021</time></li>          <li class="h4">  <a href="/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="flip-title"><span>자료구조와 알고리즘</span></a>  <time class="faded fine" datetime="2021-11-02T00:00:00+09:00">02 Nov 2021</time></li>          <li class="h4">  <a href="/blog/update/2017-11-23-example-content-ii/" class="flip-title"><span>Example Content II</span></a>  <time class="faded fine" datetime="2017-11-23T00:00:00+09:00">23 Nov 2017</time></li>      </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/update/2012-02-07-example-content/" class="flip-title"><span>Example Content</span></a>  <time class="faded fine" datetime="2012-02-07T00:00:00+09:00">07 Feb 2012</time></li>          <li class="h4">  <a href="/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/" class="flip-title"><span>자바의 정석</span></a>  <time class="faded fine" datetime="2021-11-02T00:00:00+09:00">02 Nov 2021</time></li>          <li class="h4">  <a href="/blog/update/2020-07-03-introducing-hydejack-9/" class="flip-title"><span>Introducing Hydejack 9</span></a>  <time class="faded fine" datetime="2020-07-03T00:00:00+09:00">03 Jul 2020</time></li>      </ul></aside>
 
   
 
