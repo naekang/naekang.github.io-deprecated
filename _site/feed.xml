@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-11T21:28:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-12T15:34:39+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
 </subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-10-java-basic-4/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-10T00:00:00+09:00</published><updated>2021-11-10T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-10-java-basic-4/">&lt;p&gt;자바의 정석 Chapter3&lt;/p&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#연산자operator&quot; id=&quot;markdown-toc-연산자operator&quot;&gt;연산자(Operator)&lt;/a&gt;    &lt;ul&gt;
@@ -7,6 +7,21 @@
       &lt;li&gt;&lt;a href=&quot;#연산자의-종류&quot; id=&quot;markdown-toc-연산자의-종류&quot;&gt;연산자의 종류&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#연산자의-우선순위와-결합규칙&quot; id=&quot;markdown-toc-연산자의-우선순위와-결합규칙&quot;&gt;연산자의 우선순위와 결합규칙&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#산술-변환usual-arithmetic-conversion&quot; id=&quot;markdown-toc-산술-변환usual-arithmetic-conversion&quot;&gt;산술 변환(Usual Arithmetic Conversion)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#단항-연산자&quot; id=&quot;markdown-toc-단항-연산자&quot;&gt;단항 연산자&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#증감-연산자--&quot; id=&quot;markdown-toc-증감-연산자--&quot;&gt;증감 연산자 ++, –&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#부호-연산자---&quot; id=&quot;markdown-toc-부호-연산자---&quot;&gt;부호 연산자 +, -&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#산술-연산자&quot; id=&quot;markdown-toc-산술-연산자&quot;&gt;산술 연산자&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#사칙연산자-----&quot; id=&quot;markdown-toc-사칙연산자-----&quot;&gt;사칙연산자 +, -, *, /&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#나머지-연산자-&quot; id=&quot;markdown-toc-나머지-연산자-&quot;&gt;나머지 연산자 %&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#비교-연산자&quot; id=&quot;markdown-toc-비교-연산자&quot;&gt;비교 연산자&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#대소비교-연산자----&quot; id=&quot;markdown-toc-대소비교-연산자----&quot;&gt;대소비교 연산자 &amp;gt;, &amp;lt;, &amp;gt;=, &amp;lt;=&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#등가비교-연산자--&quot; id=&quot;markdown-toc-등가비교-연산자--&quot;&gt;등가비교 연산자 ==, !=&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -164,6 +179,140 @@
     &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;일반 산술 변환
+    &lt;ul&gt;
+      &lt;li&gt;연산 수행 직전에 발생하는 피연산자의 자동 형변환&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;단항-연산자&quot;&gt;단항 연산자&lt;/h2&gt;
+
+&lt;h3 id=&quot;증감-연산자--&quot;&gt;증감 연산자 ++, –&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;증가 연산자(++): 피연산자의 값을 1 증가시킴
+    &lt;ul&gt;
+      &lt;li&gt;전위형: 값이 참조되기 전에 증가, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++i&lt;/code&gt;
+        &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// j = ++i; 일 경우&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 증가 후에&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 참조하여 대입&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;후위형: 값이 참조된 후에 증가, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i++&lt;/code&gt;
+        &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// j = i++;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 참조하여 대입 후에&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 증가&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;감소 연산자(–): 피연산자의 값을 1 감소시킴&lt;/li&gt;
+  &lt;li&gt;식에 두 번 이상 포함된 변수에 증감연산자를 사용하는 것은 피해야함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;부호-연산자---&quot;&gt;부호 연산자 +, -&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;부호연산자 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;는 피연산자의 부호를 반대로 변경한 결과를 반환&lt;/li&gt;
+  &lt;li&gt;boolean형과 char형을 제외한 기본형에만 사용가능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;산술-연산자&quot;&gt;산술 연산자&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;사칙연산자(+, -, *, /)와 나머지 연산자(%) 존재&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;사칙연산자-----&quot;&gt;사칙연산자 +, -, *, /&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;곱셉(*), 나눗셈(/), 나머지(%) 연산자가 덧셈(+), 뺄셈(-) 연산자보다 우선순위가 높음&lt;/li&gt;
+  &lt;li&gt;피연산자가 정수형일 경우, 나누는 수로 0을 사용하면 에러 발생&lt;/li&gt;
+  &lt;li&gt;부동소수점 값인 0.0f, 0.0d로 나눌 경우 결과는 Infinity(무한대)&lt;/li&gt;
+  &lt;li&gt;크기가 작은 자료형의 변수를 큰 자료형의 변수에 저장할 때는 자동으로 형변환(casting)되지만, 반대의 경우 명시적으로 형변환 연산자를 사용해야 함&lt;/li&gt;
+  &lt;li&gt;값손실을 막기 위해 충분히 큰 자료형을 사용해야 함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;나머지-연산자-&quot;&gt;나머지 연산자 %&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;피연산자로 정수만 허용&lt;/li&gt;
+  &lt;li&gt;양수, 음수 둘 다 가능하지만 부호는 무시되고 결과 반환&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;비교-연산자&quot;&gt;비교 연산자&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;두 피연산자 비교하는데 사용&lt;/li&gt;
+  &lt;li&gt;주로 조건문과 반복문의 조건식으로 사용되며 결과는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;대소비교-연산자----&quot;&gt;대소비교 연산자 &amp;gt;, &amp;lt;, &amp;gt;=, &amp;lt;=&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;boolean을 제외한 기본형 모두에 사용가능&lt;/li&gt;
+  &lt;li&gt;참조형은 사용 불가능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;비교연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;연산결과&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;좌변 값이 크면, true 아니면 false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;좌변 값이 작으면, true 아니면 false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;좌변 값이 크거나 같으면, true 아니면 false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;좌변 값이 작거나 같으면, true 아니면 false&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;등가비교-연산자--&quot;&gt;등가비교 연산자 ==, !=&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;비교연산자&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;연산결과&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;==&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;두 값이 같으면, true 아니면 false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!=&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;두 값이 다르면, true 아니면 false&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;정수형과 달리 실수형은 근사값으로 저장
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10.0 == 10.0f&lt;/code&gt;: true&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.1 == 0.1f&lt;/code&gt;: false
+        &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// f에 0.10000000149011612로 저장&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// d에 0.10000000000000001로 저장&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;문자열의 비교
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;equlas()&lt;/code&gt; 메서드를 사용하여 비교&lt;/li&gt;
+      &lt;li&gt;객체가 달라도 내용이 같으면 true 반환&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter3 얼마전 비트마스킹 문제를 풀던 중 비트연산자에 대한 이해가 확실히 부족한 느낌이 들었다. 비트연산자 뿐아니라 연산자 자체에 대한 더 깊이있는</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-09T00:00:00+09:00</published><updated>2021-11-09T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#sql을-직접-다룰-때-발생하는-문제점&quot; id=&quot;markdown-toc-sql을-직접-다룰-때-발생하는-문제점&quot;&gt;SQL을 직접 다룰 때 발생하는 문제점&lt;/a&gt;    &lt;ul&gt;
@@ -525,24 +674,24 @@ Member member2 = memberDAO.getMember(memberId);&lt;/p&gt;
       &lt;li&gt;JPA는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATE TABLE&lt;/code&gt;같은 DDL문 역시 자동 생성&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;유지보수
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;유지보수&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;SQL을 직접 다루면 수정해야할 부분이 너무 많음&lt;/li&gt;
       &lt;li&gt;JPA가 SQL과 JDbC API 코드를 대신 처리해줌&lt;/li&gt;
       &lt;li&gt;패러다임 불일치 문제를 해결해주므로 객체지향 언어가 가진 장점들을 활용하여 유연하고 유지보수하기 좋은 도메인 모델 편리하게 설계&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;성능
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;성능&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;JPA는 애플리케이션과 데이터베이스 사이에서 다양한 성능 최적화 기회를 제공&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;데이터 접근 추상화와 벤더 독립성
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;데이터 접근 추상화와 벤더 독립성&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;애플리케이션과 데이터베이스 사이에 추상화된 데이터 접근 계층을 제공하여 특정 데이터베이스 기술에 종속되지 않도록 함&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;표준
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;표준&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;JPA는 자바 진영의 ORM 표준 기술&lt;/li&gt;
     &lt;/ul&gt;

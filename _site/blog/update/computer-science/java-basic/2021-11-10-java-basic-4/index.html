@@ -101,7 +101,7 @@
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2021-11-11T21:28:33+09:00',
+    INDEX_KEY: 'index--2021-11-12T15:34:39+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -306,6 +306,21 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
       <li><a href="#산술-변환usual-arithmetic-conversion" id="markdown-toc-산술-변환usual-arithmetic-conversion">산술 변환(Usual Arithmetic Conversion)</a></li>
     </ul>
   </li>
+  <li><a href="#단항-연산자" id="markdown-toc-단항-연산자">단항 연산자</a>    <ul>
+      <li><a href="#증감-연산자--" id="markdown-toc-증감-연산자--">증감 연산자 ++, –</a></li>
+      <li><a href="#부호-연산자---" id="markdown-toc-부호-연산자---">부호 연산자 +, -</a></li>
+    </ul>
+  </li>
+  <li><a href="#산술-연산자" id="markdown-toc-산술-연산자">산술 연산자</a>    <ul>
+      <li><a href="#사칙연산자-----" id="markdown-toc-사칙연산자-----">사칙연산자 +, -, *, /</a></li>
+      <li><a href="#나머지-연산자-" id="markdown-toc-나머지-연산자-">나머지 연산자 %</a></li>
+    </ul>
+  </li>
+  <li><a href="#비교-연산자" id="markdown-toc-비교-연산자">비교 연산자</a>    <ul>
+      <li><a href="#대소비교-연산자----" id="markdown-toc-대소비교-연산자----">대소비교 연산자 &gt;, &lt;, &gt;=, &lt;=</a></li>
+      <li><a href="#등가비교-연산자--" id="markdown-toc-등가비교-연산자--">등가비교 연산자 ==, !=</a></li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="연산자operator">연산자(Operator)</h2>
@@ -462,6 +477,140 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
 <span class="kt">char</span> <span class="o">+</span> <span class="kt">short</span> <span class="o">-&gt;</span> <span class="kt">int</span> <span class="o">+</span> <span class="kt">int</span> <span class="o">-&gt;</span> <span class="kt">int</span>
 </code></pre></div>    </div>
   </li>
+  <li>일반 산술 변환
+    <ul>
+      <li>연산 수행 직전에 발생하는 피연산자의 자동 형변환</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="단항-연산자">단항 연산자</h2>
+
+<h3 id="증감-연산자--">증감 연산자 ++, –</h3>
+<ul>
+  <li>증가 연산자(++): 피연산자의 값을 1 증가시킴
+    <ul>
+      <li>전위형: 값이 참조되기 전에 증가, <code class="language-plaintext highlighter-rouge">++i</code>
+        <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// j = ++i; 일 경우</span>
+<span class="o">++</span><span class="n">i</span><span class="o">;</span> <span class="c1">// 증가 후에</span>
+<span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span> <span class="c1">// 참조하여 대입</span>
+</code></pre></div>        </div>
+      </li>
+      <li>후위형: 값이 참조된 후에 증가, <code class="language-plaintext highlighter-rouge">i++</code>
+        <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// j = i++;</span>
+<span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span> <span class="c1">// 참조하여 대입 후에</span>
+<span class="n">i</span><span class="o">++;</span> <span class="c1">// 증가</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>감소 연산자(–): 피연산자의 값을 1 감소시킴</li>
+  <li>식에 두 번 이상 포함된 변수에 증감연산자를 사용하는 것은 피해야함</li>
+</ul>
+
+<h3 id="부호-연산자---">부호 연산자 +, -</h3>
+<ul>
+  <li>부호연산자 <code class="language-plaintext highlighter-rouge">-</code>는 피연산자의 부호를 반대로 변경한 결과를 반환</li>
+  <li>boolean형과 char형을 제외한 기본형에만 사용가능</li>
+</ul>
+
+<h2 id="산술-연산자">산술 연산자</h2>
+<ul>
+  <li>사칙연산자(+, -, *, /)와 나머지 연산자(%) 존재</li>
+</ul>
+
+<h3 id="사칙연산자-----">사칙연산자 +, -, *, /</h3>
+<ul>
+  <li>곱셉(*), 나눗셈(/), 나머지(%) 연산자가 덧셈(+), 뺄셈(-) 연산자보다 우선순위가 높음</li>
+  <li>피연산자가 정수형일 경우, 나누는 수로 0을 사용하면 에러 발생</li>
+  <li>부동소수점 값인 0.0f, 0.0d로 나눌 경우 결과는 Infinity(무한대)</li>
+  <li>크기가 작은 자료형의 변수를 큰 자료형의 변수에 저장할 때는 자동으로 형변환(casting)되지만, 반대의 경우 명시적으로 형변환 연산자를 사용해야 함</li>
+  <li>값손실을 막기 위해 충분히 큰 자료형을 사용해야 함</li>
+</ul>
+
+<h3 id="나머지-연산자-">나머지 연산자 %</h3>
+<ul>
+  <li>피연산자로 정수만 허용</li>
+  <li>양수, 음수 둘 다 가능하지만 부호는 무시되고 결과 반환</li>
+</ul>
+
+<h2 id="비교-연산자">비교 연산자</h2>
+<ul>
+  <li>두 피연산자 비교하는데 사용</li>
+  <li>주로 조건문과 반복문의 조건식으로 사용되며 결과는 <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code></li>
+</ul>
+
+<h3 id="대소비교-연산자----">대소비교 연산자 &gt;, &lt;, &gt;=, &lt;=</h3>
+<ul>
+  <li>boolean을 제외한 기본형 모두에 사용가능</li>
+  <li>참조형은 사용 불가능</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">비교연산자</th>
+      <th style="text-align: left">연산결과</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+      <td style="text-align: left">좌변 값이 크면, true 아니면 false</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td style="text-align: left">좌변 값이 작으면, true 아니면 false</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&gt;=</code></td>
+      <td style="text-align: left">좌변 값이 크거나 같으면, true 아니면 false</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&lt;=</code></td>
+      <td style="text-align: left">좌변 값이 작거나 같으면, true 아니면 false</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="등가비교-연산자--">등가비교 연산자 ==, !=</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">비교연산자</th>
+      <th style="text-align: left">연산결과</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">==</code></td>
+      <td style="text-align: left">두 값이 같으면, true 아니면 false</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">!=</code></td>
+      <td style="text-align: left">두 값이 다르면, true 아니면 false</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>정수형과 달리 실수형은 근사값으로 저장
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">10.0 == 10.0f</code>: true</li>
+      <li><code class="language-plaintext highlighter-rouge">0.1 == 0.1f</code>: false
+        <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="mf">0.1f</span><span class="o">;</span> <span class="c1">// f에 0.10000000149011612로 저장</span>
+<span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">0.1</span><span class="o">;</span> <span class="c1">// d에 0.10000000000000001로 저장</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>문자열의 비교
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">equlas()</code> 메서드를 사용하여 비교</li>
+      <li>객체가 달라도 내용이 같으면 true 반환</li>
+    </ul>
+  </li>
 </ul>
 
   
@@ -606,7 +755,7 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/update/2012-02-07-example-content/" class="flip-title"><span>Example Content</span></a>  <time class="faded fine" datetime="2012-02-07T00:00:00+09:00">07 Feb 2012</time></li>          <li class="h4">  <a href="/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/" class="flip-title"><span>자바의 정석</span></a>  <time class="faded fine" datetime="2021-11-02T00:00:00+09:00">02 Nov 2021</time></li>          <li class="h4">  <a href="/blog/update/2020-07-03-introducing-hydejack-9/" class="flip-title"><span>Introducing Hydejack 9</span></a>  <time class="faded fine" datetime="2020-07-03T00:00:00+09:00">03 Jul 2020</time></li>      </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/update/review/nas/2021-10-29-NAS-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-1%ED%83%84/" class="flip-title"><span>NAS 알아보기</span></a>  <time class="faded fine" datetime="2021-10-29T00:00:00+09:00">29 Oct 2021</time></li>          <li class="h4">  <a href="/blog/update/computer-science/wooahan-techcourse/2021-11-01-TDD%EB%9E%80/" class="flip-title"><span>TDD란?</span></a>  <time class="faded fine" datetime="2021-11-01T00:00:00+09:00">01 Nov 2021</time></li>          <li class="h4">  <a href="/blog/update/2021-02-13-whats-new-in-hydejack-9-1/" class="flip-title"><span>What’s New in Hydejack 9.1?</span></a>  <time class="faded fine" datetime="2021-02-13T00:00:00+09:00">13 Feb 2021</time></li>      </ul></aside>
 
   
 
