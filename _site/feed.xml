@@ -1,5 +1,618 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-13T23:46:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-12-java-basic-5/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-12T00:00:00+09:00</published><updated>2021-11-12T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-5</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-12-java-basic-5/">&lt;p&gt;자바의 정석 Chapter3&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-19T14:31:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">데이터베이스 설계와 ER모델</title><link href="http://localhost:4000/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/" rel="alternate" type="text/html" title="데이터베이스 설계와 ER모델" /><published>2021-11-18T00:00:00+09:00</published><updated>2021-11-18T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5</id><content type="html" xml:base="http://localhost:4000/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/">&lt;p&gt;데이터베이스 설계와 ER모델&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#데이터베이스-설계와-er모델&quot; id=&quot;markdown-toc-데이터베이스-설계와-er모델&quot;&gt;데이터베이스 설계와 ER모델&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터베이스-설계&quot; id=&quot;markdown-toc-데이터베이스-설계&quot;&gt;데이터베이스 설계&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#개념적-수준의-모델&quot; id=&quot;markdown-toc-개념적-수준의-모델&quot;&gt;개념적 수준의 모델&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터베이스-설계의-개요&quot; id=&quot;markdown-toc-데이터베이스-설계의-개요&quot;&gt;데이터베이스 설계의 개요&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#데이터베이스-설계의-주요-단계&quot; id=&quot;markdown-toc-데이터베이스-설계의-주요-단계&quot;&gt;데이터베이스 설계의 주요 단계&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;데이터베이스-설계와-er모델&quot;&gt;데이터베이스 설계와 ER모델&lt;/h2&gt;
+
+&lt;h3 id=&quot;데이터베이스-설계&quot;&gt;데이터베이스 설계&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;개념적 데이터베이스 설계와 물리적 데이터베이스 설계로 구분&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;개념적 데이터베이스 설계&lt;/strong&gt;: 실제로 데이터 베이스를 어떻게 구현할 것인지와는 다르게 독립적으로 정보 사용 모델을 개발하는 과정
+    &lt;ul&gt;
+      &lt;li&gt;조직체(실세계)의 엔테테, 관계, 프로세스, 무결성 제약조건등을 다루는  추상화 모델 구축&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;물리적 데이터베이스 설계&lt;/strong&gt;: 물리적인 저장 장치와 접근 방식을 다룸&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;엔티티&lt;/strong&gt;: 서로 구분이 되면서 조직체에서 데이터베이스에 나타내려는 객체&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;관계&lt;/strong&gt;: 두 개 이상의 엔티티들 간의 연관&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;프로세스&lt;/strong&gt;: 관련된 활동&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;무결성 제약조건&lt;/strong&gt;: 데이터의 정확성과 비즈니스 규칙&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;개념적-수준의-모델&quot;&gt;개념적 수준의 모델&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;특정 데이터 모델과 독립적으로 응용 세계를 모델링할 수 있도록 함&lt;/li&gt;
+  &lt;li&gt;데이터베이스 구조나 스키마를 하향식으로 개발할 수 있는 &lt;strong&gt;Framework&lt;/strong&gt; 제공&lt;/li&gt;
+  &lt;li&gt;인기있는 개념적 수준의 모델: &lt;strong&gt;엔티티-관계(ER: Entity-Relationship) 모델&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;ER 모델과 같은 개념적인 데이터 모델이 사상될 수 있는 다수의 구현 데이터 모델(Implementation data model)이 존재&lt;/li&gt;
+  &lt;li&gt;구현 단계에서 사용되는 세 가지 데이터 모델
+    &lt;ul&gt;
+      &lt;li&gt;관계 데이터 모델&lt;/li&gt;
+      &lt;li&gt;계층 데이터 모델&lt;/li&gt;
+      &lt;li&gt;네트워크 데이터 모델&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;데이터베이스-설계의-개요&quot;&gt;데이터베이스 설계의 개요&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;한 조직체의 운영과 목적을 지원하기 위해 데이터베이스를 생성하는 과정&lt;/li&gt;
+  &lt;li&gt;목적: 모든 주요 응용과 사용자들이 요구하는 데이터, 데이터 간의 관계를 표현&lt;/li&gt;
+  &lt;li&gt;데이터베이스 개발은 일반적인 프로젝트 라이프 사이클 과정을 따름&lt;/li&gt;
+  &lt;li&gt;훌륭한 설계: 시간의 흐름에 따른 데이터의 모든 측면을 나타냄, 데이터 항목의 중복을 최소화, 데이터베이스에 대한 효율적인 접근을 제공, 무결성 제공, 쉬운 이해&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;데이터베이스-설계의-주요-단계&quot;&gt;데이터베이스 설계의 주요 단계&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;요구사항 수집과 분석
+    &lt;ul&gt;
+      &lt;li&gt;기존의 문서 조사, 인터뷰, 설문 조사 시행&lt;/li&gt;
+      &lt;li&gt;인터뷰: 가장 흔히 사용&lt;/li&gt;
+      &lt;li&gt;설문 조사: 자유롭게 의견을 적어 내는 방식 / 주어진 질문에 답하는 방식&lt;/li&gt;
+      &lt;li&gt;요구사항에 관한 지식을 기반으로 관련 있는 엔티티들과 이들의 애트리뷰트가 무엇인지, 엔티티들의 관계 파악&lt;/li&gt;
+      &lt;li&gt;데이터 처리에 관한 요구사항에 대해 전형적인 연산들은 무엇인지, 연산들의 의미, 접근하는 데이터의 양 분석&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;개념적 설계
+    &lt;ul&gt;
+      &lt;li&gt;모든 물리적인 사항과 독립적으로, 한 조직체에서 사용되는 정보의 모델을 구축하는 과정&lt;/li&gt;
+      &lt;li&gt;사용자들의 요구사항 명세서로부터 개념적 스키마 생성&lt;/li&gt;
+      &lt;li&gt;높은 추상화 수준의 데이터 모델을 기반으로 정형적인 언어로 데이터 구조 명시&lt;/li&gt;
+      &lt;li&gt;대표적 모델: &lt;strong&gt;ER 모델&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;엔티티 타입, 관계 타입, 애트리뷰트 식별, 애트리뷰트 도메인 결정, 후보 키와 기본 키 애트리뷰트 결정&lt;/li&gt;
+      &lt;li&gt;완성된 개념적 스키마는 ER 다이어그램으로 표현&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DBMS 선정&lt;/li&gt;
+  &lt;li&gt;논리적 설계&lt;/li&gt;
+  &lt;li&gt;물리적 설계&lt;/li&gt;
+  &lt;li&gt;트랜잭션 설계&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;update&quot;, &quot;database&quot;]" /><category term="update" /><category term="database" /><summary type="html">데이터베이스 설계와 ER모델</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jj-ying.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-17-java-basic-6/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-17T00:00:00+09:00</published><updated>2021-11-17T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-6</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-17-java-basic-6/">&lt;p&gt;자바의 정석 Chapter4&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#조건문---if-switch&quot; id=&quot;markdown-toc-조건문---if-switch&quot;&gt;조건문 - if, switch&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#if문&quot; id=&quot;markdown-toc-if문&quot;&gt;if문&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#if-else문&quot; id=&quot;markdown-toc-if-else문&quot;&gt;if-else문&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#if-else-if문&quot; id=&quot;markdown-toc-if-else-if문&quot;&gt;if-else if문&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#중첩-if문&quot; id=&quot;markdown-toc-중첩-if문&quot;&gt;중첩 if문&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#switch문&quot; id=&quot;markdown-toc-switch문&quot;&gt;switch문&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#반복문---for-while-do-while&quot; id=&quot;markdown-toc-반복문---for-while-do-while&quot;&gt;반복문 - for, while, do-while&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#for문&quot; id=&quot;markdown-toc-for문&quot;&gt;for문&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#while문&quot; id=&quot;markdown-toc-while문&quot;&gt;while문&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#do-while문&quot; id=&quot;markdown-toc-do-while문&quot;&gt;do-while문&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#break문&quot; id=&quot;markdown-toc-break문&quot;&gt;break문&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#continue문&quot; id=&quot;markdown-toc-continue문&quot;&gt;continue문&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#이름-붙은-반복문&quot; id=&quot;markdown-toc-이름-붙은-반복문&quot;&gt;이름 붙은 반복문&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;조건문---if-switch&quot;&gt;조건문 - if, switch&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;처리할 경우의 수가 많은 때는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;문이 효율적이지만, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if&lt;/code&gt;문 보다 제약이 많음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;if문&quot;&gt;if문&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;가장 기본적인 조건문
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건식&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// 조건식이 true일 때 수행할 문장&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;조건식 작성시에 등가비교 연산자인 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;==&lt;/code&gt;을 사용해야 함&lt;/li&gt;
+  &lt;li&gt;블럭 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{}&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;탭(tab)으로 들여쓰기(indentation) 하기&lt;/li&gt;
+      &lt;li&gt;블럭 안에 한문장만 있을 경우 괄호 생략 가능&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;if-else문&quot;&gt;if-else문&lt;/h3&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건식&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 조건식이 참일 떄 수행될 문장&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 조건식이 거짓일 떄 수행될 문장&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;if-else-if문&quot;&gt;if-else if문&lt;/h3&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건식1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 조건식1의 연산결과가 참일 때 수행될 문장&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건식2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 조건식2의 연산결과가 참일 떄 수행될 문장&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건식3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 조건식3의 연산결과가 참일 떄 수행될 문장&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 위의 어떤 조건식도 만족하지 않을 때 수행될 문장&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;중첩-if문&quot;&gt;중첩 if문&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;if문의 블럭 내에 또 다른 if문을 포함하는 것
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건식1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// 조건식1의 연산결과가 참일 떄 수행될 문장&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건식2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// 조건식1과 조건식2가 모두 참일 떄 수행될 문장&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// 조건식1이 참이고 조건식2가 거짓일 때 수행될 문장&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// 조건식1이 거짓일 때 수행될 문장&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;중첩 if문의 경우 의미를 명확하게 하기 위해 괄호 생략 조심히 하기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;switch문&quot;&gt;switch문&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;하나의 조건식으로 많은 경우의 수를 처리할 수 있음&lt;/li&gt;
+  &lt;li&gt;순서
+    &lt;ol&gt;
+      &lt;li&gt;조건식 계산&lt;/li&gt;
+      &lt;li&gt;조건식의 결과와 일치하는 case문으로 이동&lt;/li&gt;
+      &lt;li&gt;이후 문장들 수행&lt;/li&gt;
+      &lt;li&gt;break문이나 switch문의 끝을 만나면 switch문 전체를 빠져나감
+        &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건식&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;값1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;// 조건식의 결과가 값1과 같을 경우 수행될 문장들&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;값2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;// 조건식의 결과가 값2와 같을 경우 수행될 문장들&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// switch문을 벗어남&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;// 조건식의 결과와 일치하는 case문이 없을 때 수행&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;switch문의 제약조건&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  1. switch문의 조건식 결과는 정수 또는 문자열
+  2. case문의 값은 정수 상수만 가능하며, 중복되지 않아야 함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;switch문 역시 중첩이 가능하며 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;break&lt;/code&gt;문 빼먹지 않도록 주의하기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;반복문---for-while-do-while&quot;&gt;반복문 - for, while, do-while&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;어떤 작업이 반복적으로 수행되도록 할 때&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;for문&quot;&gt;for문&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;반복 횟수를 알고있을 떄 적합
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 블럭 내의 문장 5번 반복하기&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I can do it!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;for문의 구조와 수행순서
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;초기화&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;조건식&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;증감식&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// 조건식이 참일 때 수행될 문장&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;초기화
+    &lt;ul&gt;
+      &lt;li&gt;반복문에 사용될 변수 초기화&lt;/li&gt;
+      &lt;li&gt;둘 이상의 변수가 필요할 때는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;,&lt;/code&gt;를 통해 구분&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;조건식
+    &lt;ul&gt;
+      &lt;li&gt;조건식의 값이 true이면 계속 반복, false이면 반복 중단&lt;/li&gt;
+      &lt;li&gt;무한루프에 빠지지 않도록 주의&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;증감식
+    &lt;ul&gt;
+      &lt;li&gt;반복문을 제어하는 변수의 값을 증가시키거나 감소&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;세가지 요소는 다 생략이 가능함&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;중첩 for문
+    &lt;ul&gt;
+      &lt;li&gt;for문 안에 또 다른 for문을 포함하는 것&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;향상된 for문(enhanced for statement)
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;타입&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;변수명&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;배열&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;또는&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;컬렉션&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// 반복할 모션&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 위와 아래의 결과가 같음&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;while문&quot;&gt;while문&lt;/h3&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건식&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 조건식의 연산결과가 참(true)인 동안, 반복될 문장들을 적음&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;초기화나 증감식이 필요한 경우가 아니라면 for문보다 while문이 더 적합&lt;/li&gt;
+  &lt;li&gt;while문의 조건식은 생략할 수 없음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;do-while문&quot;&gt;do-while문&lt;/h3&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 조건식의 연산결과가 참일 떄 수행될 문장&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건식&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;while문과는 반대로 블럭 수행 후 조건식 평가 -&amp;gt; 최소한 한번은 조건식 수행 보장&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;break문&quot;&gt;break문&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;주로 if문과 함께 사용되어 특정 조건이 만족되면 반복문을 벗어나는 역할
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// break문이 수행되면 이 부분은 실행되지 않고 while문을 벗어남&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// end of while&lt;/span&gt;
+
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;i=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sum=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;i=14
+sum=105
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;continue문&quot;&gt;continue문&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;continue문은 반복문 내에서만 사용 가능하며, 반복이 진행되는 도중에 continue문을 만나면 반복문의 끝으로 이동하여 다음 반복으로 넘어감&lt;/li&gt;
+  &lt;li&gt;전체 반복 중 특정조건을 만족하는 경우를 제회하고자 할 때 유용
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1
+2
+4
+5
+7
+8
+10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;이름-붙은-반복문&quot;&gt;이름 붙은 반복문&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;여러개의 중첩 반복문의 경우 break 하나만으로 완전히 벗어날 수 없음 -&amp;gt; 중첩 반복문 앞에 이름을 붙이고 break문과 continue문에 이름을 지정하여 반복을 벗어나거나 반복을 건너뛸 수 있음
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;Loop1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Loop1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Loop1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2*1=2
+2*2=4
+2*3=6
+2*4=8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter4 조건문과 반복문에 대한 공부를 해보자.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-14-jpa-basic-2/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-14T00:00:00+09:00</published><updated>2021-11-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-2</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-14-jpa-basic-2/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#이클립스-설치와-프로젝트-불러오기&quot; id=&quot;markdown-toc-이클립스-설치와-프로젝트-불러오기&quot;&gt;이클립스 설치와 프로젝트 불러오기&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#객체-매핑-시작&quot; id=&quot;markdown-toc-객체-매핑-시작&quot;&gt;객체 매핑 시작&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#persistencexml-설정&quot; id=&quot;markdown-toc-persistencexml-설정&quot;&gt;persistence.xml 설정&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#애플리케이션-개발&quot; id=&quot;markdown-toc-애플리케이션-개발&quot;&gt;애플리케이션 개발&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;이클립스-설치와-프로젝트-불러오기&quot;&gt;이클립스 설치와 프로젝트 불러오기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;책의 경우 이클립스를 사용했으나 나는 인텔리제이를 사용할 예정이다.&lt;/li&gt;
+  &lt;li&gt;자바 버전: openjdk 11.0.11&lt;/li&gt;
+  &lt;li&gt;gradle 사용&lt;/li&gt;
+  &lt;li&gt;h2 데이터베이스 사용
+    &lt;ul&gt;
+      &lt;li&gt;드라이버 클래스: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;org.h2.Driver&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;JBDC URL: jdbc:h2:tcp://localhost/~/test&lt;/li&gt;
+      &lt;li&gt;사용자명: sa&lt;/li&gt;
+      &lt;li&gt;비밀번호: 없음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;객체-매핑-시작&quot;&gt;객체 매핑 시작&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;h2 데이터베이스를 이용하여 테이블 생성
+    &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MEMBER&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;VARCHAR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;AGE&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;INTEGER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;회원 클래스 만들기
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Memeber.java&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@Entity&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@Table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;MEMBER&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;nd&quot;&gt;@Id&lt;/span&gt;
+  &lt;span class=&quot;nd&quot;&gt;@Column&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;ID&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;nd&quot;&gt;@Column&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;NAME&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getAge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setAge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;회원 클래스와 회원 테이블의 비교&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;매핑 정보&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;회원 객체&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;회원 테이블&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;클래스와 테이블&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;Member&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;MEMBER&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;기본 키&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;id&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;ID&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;필드와 칼럼&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;username&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;NAME&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;필드와 칼럼&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;age&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;AGE&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;회원 클래스에 사용된 어노테이션 분석하기
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Entity&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;테이블과 매핑한다고 JPA에 알려줌&lt;/li&gt;
+          &lt;li&gt;‘엔티티 클래스’라고 부름&lt;/li&gt;
+          &lt;li&gt;기본 생성자 필수 - 파라미터가 없는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt; 생성자 필요&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Entity(name = &quot;Member&quot;&lt;/code&gt;를 통해 JPA에서 사용할 엔티티 이름 지정 (default: 클래스 이름)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Table&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;엔티티 클래스에 매핑할 테이블 지정&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Table(name = &quot;MEMBER&quot;)&lt;/code&gt;를 통해 매핑할 테이블 이름 지정 (default: 엔티티 이름)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Id&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;엔티티 클래스의 필드를 테이블의 기본 키에 매핑&lt;/li&gt;
+          &lt;li&gt;@Id가 사용된 필드를 식별자 필드라고 함&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@GeneratedValue(stategy = Generation.Type.000)&lt;/code&gt;를 통해 자동 생성 가능
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IDENTITY&lt;/code&gt;: 기본 키 생성을 데이터베이스에 위임(=AUTO_INCREMENT)&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SEQUENCE&lt;/code&gt;: 데이터베이스 시퀀스를 사용하여 기본 키 할당&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TABLE&lt;/code&gt;: 키 생성 테이블 사용, 키 생성 전용 테이블을 만들고 이름과 값으로 사용할 컬럼을 만들어 시퀀스를 흉내냄&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AUTO&lt;/code&gt;: 선택한 데이터베이스 방언에 따라 방식 자동선택 - default 값&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Column&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;객체 필드를 컬럼에 매핑&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Column(name = &quot;NAME&quot;)&lt;/code&gt;를 통해 엔티티 클래스의 &lt;strong&gt;username&lt;/strong&gt;을 테이블의 &lt;strong&gt;NAME&lt;/strong&gt;컬럼에 매핑&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Column(nullable = false)&lt;/code&gt;를 통해 null값의 허용 여부를 결정할 수 있으나 false로 사용하는 것이 안전&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;매핑 정보가 없는 필드&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;매핑 어노테이션을 생략하면 필드명을 사용해 컬럼명으로 매핑&lt;/li&gt;
+          &lt;li&gt;대소문자를 구분하는 데이터베이스의 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Column(name = &quot;AGE&quot;)&lt;/code&gt;처럼 명시적으로 매핑해야 함&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;persistencexml-설정&quot;&gt;persistence.xml 설정&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;META-INF/persistence.xml&lt;/code&gt; 경로에 있는 경우 별도의 설정 없이 JPA가 인식 가능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- XML 네임스페이스와 버전 지정 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;persistence&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://xmlns.jcp.org/xml/ns/persistence&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;version=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2.1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 데이터베이스당 하나의 영속성 유닛 등록 --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;persistence-unit&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;jpa-basic-example&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;properties&amp;gt;&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 필수 속성 --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- JDBC 드라이버 --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;javax.persistence.jdbc.driver&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;org.h2.Driver&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 데이터베이스 접속 아이디 --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;javax.persistence.jdbc.user&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sa&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 데이터베이스 접속 비밀번호 --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;javax.persistence.jdbc.password&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 데이터베이스 접속 URL --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;javax.persistence.jdbc.url&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;jdbc:h2:tcp://localhost/~/test&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 데이터베이스 방언(dialect) 설정 --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hibernate.dialect&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;org.hibernate.dialect.H2Dialect&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 옵션 --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hibernate.show_sql&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hibernate.format_sql&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hibernate.use_sql_comments&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hibernate.id.new_generator_mappings&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!--&amp;lt;property name=&quot;hibernate.hbm2ddl.auto&quot; value=&quot;create&quot; /&amp;gt;--&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/properties&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/persistence-unit&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/persistence&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스 방언
+    &lt;ul&gt;
+      &lt;li&gt;특정 데이터베이스만의 고유한 기능&lt;/li&gt;
+      &lt;li&gt;데이터베이스가 제공하는 SQL 문법과 함수가 조금씩 다름
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;데이터 타입&lt;/strong&gt;: 가변 문자 타입으로 MySQL은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VARCHAR&lt;/code&gt;, 오라클은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VARCHAR2&lt;/code&gt; 사용&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;다른 함수명&lt;/strong&gt;: 문자열을 자르는 함수로 SQL 표준은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SUBSTRING()&lt;/code&gt;, 오라클은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SUBSTR()&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;페이징 처리&lt;/strong&gt;: MySQL은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LIMIT&lt;/code&gt;, 오라클은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ROWNUM&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;/assets/img/blog/jpa-basic-4-1.png&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;H2: org.hibernate.dialect.H2Dialect
+오라클 10g: org.hibernate.dialect.Oracle10gDialect
+MySQL: org.hiberante.dialect.MySQL5InnoDBDialect
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;애플리케이션-개발&quot;&gt;애플리케이션 개발&lt;/h3&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// JpaMain.java&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// 엔티티 매니저 팩토리 생성&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;EntityManagerFactory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Persistence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createEntityManagerFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;jpa-basic-example&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 엔티티 매니저 생성&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;EntityManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createEntityManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 트랜잭션 획득&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;EntityTransaction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getTransaction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+            &lt;span class=&quot;n&quot;&gt;tx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 트랜잭션 시작&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;logic&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 비즈니스 로직 실행&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;tx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 트랜잭션 커밋&lt;/span&gt;
+
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;tx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;rollback&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 트랜잭션 롤백&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;finally&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 엔티티 매니저 종료&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;emf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 엔티티 매니저 팩토리 종료&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;엔티티 매니저 생성
+&lt;img src=&quot;/assets/img/blog/jpa-basic-4-2.png&quot; alt=&quot;엔티티 매니저 생성&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;엔티티 매니저 팩토리 생성
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EntityManagerFactory emf = Persistence.createEntityManagerFactory(&quot;jpa-basic-example&quot;);&lt;/code&gt; : persistence.xml 설정 정보 사용하여 엔티티 매니저 팩토리 생성&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;META-INF/persistence.xml&lt;/code&gt;에서 이름이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jpa-basic-example&lt;/code&gt;인 영속성 유닛을 찾아 엔티티 매니저 팩토리 생성&lt;/li&gt;
+          &lt;li&gt;JPA 동작을 위한 객체 생성 -&amp;gt; JPA에 따라 데이터베이스 커넥션 풀 생성 : 비용이 큼&lt;/li&gt;
+          &lt;li&gt;엔티티 매니저 팩토리는 애플리케이션 전체에서 딱 한번만 생성하고 공유해서 사용해야함&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;엔티티 매니저 생성
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EntityManager em = emf.createEntityManager();&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;엔티티 매니저를 사용하여 엔티티를 데이터베이스에 등록/수정/삭제/조회 가능&lt;/li&gt;
+          &lt;li&gt;애플리케이션 개발자는 엔티티 매니저를 가상의 데이터베이스로 생각&lt;/li&gt;
+          &lt;li&gt;엔티티 매니저는 데이터베이스 커넥션과 밀접한 관계가 있으므로 스레드간에 공유하거나 재사용하면 안됨&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;종료
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.close()&lt;/code&gt; &amp;amp; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;emf.close()&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;트랜잭션 관리
+    &lt;ul&gt;
+      &lt;li&gt;JPA 사용을 위해서는 항상 트랜잭션 안에서 데이터를 변경해야 함&lt;/li&gt;
+      &lt;li&gt;트랜잭션을 시작하려면 엔티티 매니저에서 트랜잭션 API를 받아와야 함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;비즈니스 로직
+    &lt;ul&gt;
+      &lt;li&gt;회원 엔티티 하나 생성 후 등록, 수정, 삭제, 조회
+~~~java&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;~~~&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;jpa&quot;]" /><category term="computer-science" /><category term="jpa" /><summary type="html">ORM(Object-Relational Mapping)을 사용한 기술인 JPA를 통해 객체 중심 개발이 가능해지고 생산성과 유지보수가 좋아졌으며 테스트 작성 역시 편해졌다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jpa-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jpa-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-12-java-basic-5/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-12T00:00:00+09:00</published><updated>2021-11-12T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-5</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-12-java-basic-5/">&lt;p&gt;자바의 정석 Chapter3&lt;/p&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#논리-연산자&quot; id=&quot;markdown-toc-논리-연산자&quot;&gt;논리 연산자&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#논리-연산자-----&quot; id=&quot;markdown-toc-논리-연산자-----&quot;&gt;논리 연산자 - &amp;amp;&amp;amp;, ||, !&lt;/a&gt;&lt;/li&gt;
@@ -192,7 +805,7 @@ x &amp;gt;&amp;gt; n = x / 2^n
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter3 얼마전 비트마스킹 문제를 풀던 중 비트연산자에 대한 이해가 확실히 부족한 느낌이 들었다. 비트연산자 뿐아니라 연산자 자체에 대한 더 깊이있는</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-10-java-basic-4/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-10T00:00:00+09:00</published><updated>2021-11-10T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-10-java-basic-4/">&lt;p&gt;자바의 정석 Chapter3&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter3 얼마전 비트마스킹 문제를 풀던 중 비트연산자에 대한 이해가 확실히 부족한 느낌이 들었다. 비트연산자 뿐아니라 연산자 자체에 대한 더 깊이있는 이해를 위해 공부를 시작하였다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-10-java-basic-4/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-10T00:00:00+09:00</published><updated>2021-11-10T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-10-java-basic-4/">&lt;p&gt;자바의 정석 Chapter3&lt;/p&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#연산자operator&quot; id=&quot;markdown-toc-연산자operator&quot;&gt;연산자(Operator)&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#연산자와-피연산자&quot; id=&quot;markdown-toc-연산자와-피연산자&quot;&gt;연산자와 피연산자&lt;/a&gt;&lt;/li&gt;
@@ -507,7 +1120,7 @@ x &amp;gt;&amp;gt; n = x / 2^n
       &lt;li&gt;객체가 달라도 내용이 같으면 true 반환&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter3 얼마전 비트마스킹 문제를 풀던 중 비트연산자에 대한 이해가 확실히 부족한 느낌이 들었다. 비트연산자 뿐아니라 연산자 자체에 대한 더 깊이있는</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-09T00:00:00+09:00</published><updated>2021-11-09T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter3 얼마전 비트마스킹 문제를 풀던 중 비트연산자에 대한 이해가 확실히 부족한 느낌이 들었다. 비트연산자 뿐아니라 연산자 자체에 대한 더 깊이있는 이해를 위해 공부를 시작하였다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-09T00:00:00+09:00</published><updated>2021-11-09T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-09-jpa-basic-1/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#sql을-직접-다룰-때-발생하는-문제점&quot; id=&quot;markdown-toc-sql을-직접-다룰-때-발생하는-문제점&quot;&gt;SQL을 직접 다룰 때 발생하는 문제점&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#반복-반복-그리고-반복&quot; id=&quot;markdown-toc-반복-반복-그리고-반복&quot;&gt;반복, 반복 그리고 반복&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#sql에-의존적인-개발&quot; id=&quot;markdown-toc-sql에-의존적인-개발&quot;&gt;SQL에 의존적인 개발&lt;/a&gt;&lt;/li&gt;
@@ -1782,99 +2395,17 @@ binNum=10, 2
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;두 자리 정수를 하나 입력해주세요.&amp;gt;22
 입력내용: 22
 num=22
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자료구조와 알고리즘</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="alternate" type="text/html" title="자료구조와 알고리즘" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">디자인 패턴</title><link href="http://localhost:4000/blog/update/computer-science/design-pattern/2021-11-02-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1/" rel="alternate" type="text/html" title="디자인 패턴" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/design-pattern/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/design-pattern/2021-11-02-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1/">&lt;p&gt;디자인 패턴에 대해 알아보자&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#자료구조란-무엇일까&quot; id=&quot;markdown-toc-자료구조란-무엇일까&quot;&gt;자료구조란 무엇일까?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자료구조를-배우는-이유&quot; id=&quot;markdown-toc-자료구조를-배우는-이유&quot;&gt;자료구조를 배우는 이유&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#알고리즘이란-무엇일까&quot; id=&quot;markdown-toc-알고리즘이란-무엇일까&quot;&gt;알고리즘이란 무엇일까?&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#연습-문제&quot; id=&quot;markdown-toc-연습-문제&quot;&gt;연습 문제&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#싱글톤-패턴singleton-pattern&quot; id=&quot;markdown-toc-싱글톤-패턴singleton-pattern&quot;&gt;싱글톤 패턴(Singleton Pattern)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;자료구조란-무엇일까&quot;&gt;자료구조란 무엇일까?&lt;/h2&gt;
+&lt;h2 id=&quot;싱글톤-패턴singleton-pattern&quot;&gt;싱글톤 패턴(Singleton Pattern)&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;자료구조: 특정한 문제 및 목표를 해결하기 위해 여러 요소를 모아 조직화된 데이터를 이루는 것
-    &lt;ul&gt;
-      &lt;li&gt;선형 구조: 데이터를 일렬로 나열 / 인접 요소들 간 하나의 요소만 존재&lt;/li&gt;
-      &lt;li&gt;비선형 구조: 데이터를 계층 구조화 / 인접 요소들 간 다수의 요소들이 존재&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;자료구조를-배우는-이유&quot;&gt;자료구조를 배우는 이유&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;여러 흩어진 요소들을 하나의 조직으로 구성하고 가장 효율적인 방법으로 데이터를 관리하고 저장하기 위해&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;알고리즘이란-무엇일까&quot;&gt;알고리즘이란 무엇일까?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;주어진 문제를 해결하기 위한 일련의 과정 및 논리적인 방법&lt;/li&gt;
-  &lt;li&gt;알고리즘과 자료구조는 효율적인 결과 도출을 위해 함께 사용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;연습-문제&quot;&gt;연습 문제&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;네 개의 값 중 최소값을 찾는 메서드
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Practice01_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;minValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// min 값을 data1로 초기화&lt;/span&gt;
-
-          &lt;span class=&quot;c1&quot;&gt;// min값이 data2보다 큰 경우 min을 data2로 갱신&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-          &lt;span class=&quot;c1&quot;&gt;// min값이 data3보다 큰 경우 min을 data3으로 갱신&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-          &lt;span class=&quot;c1&quot;&gt;// min값이 data4보다 큰 경우 min을 data4로 갱신&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-              &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;중복을 포함한 다섯 개의 값 중 최댓값을 구하는 메서드
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;maxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// max값을 data1로 초기화&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data2보다 작은 경우 max값을 data2로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data3보다 작은 경우 max값을 data3으로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data4보다 작은 경우 max값을 data4로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// max값이 data5보다 작은 경우 max값을 data5로 갱신&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;datastructure&quot;]" /><category term="computer-science" /><category term="datastructure" /><summary type="html">자바를 이용해 자료구조와 알고리즘에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">배열</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" rel="alternate" type="text/html" title="배열" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EB%B0%B0%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
+  &lt;li&gt;인스턴스를 오직 한개만 만들고 그 인스턴스에 글로벌하게 접근할 수 있는 방법을 제공하는 것&lt;/li&gt;
+  &lt;li&gt;하나의 인스턴스를 메모리에 등록하여 여러 스레드가 동시에 공유해서 사용하는 등 효율을 높일 수 있다. ➜ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;동시성(concurrency)&lt;/code&gt; 문제 고려&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;design-pattern&quot;]" /><category term="computer-science" /><category term="design-pattern" /><summary type="html">디자인 패턴에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/design-pattern-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/design-pattern-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">배열</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" rel="alternate" type="text/html" title="배열" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EB%B0%B0%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#배열이란&quot; id=&quot;markdown-toc-배열이란&quot;&gt;배열이란?&lt;/a&gt;&lt;/li&gt;
@@ -2006,292 +2537,37 @@ num=22
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;배열의 연산으로 특정 위치에 값을 삽입, 삭제하거나 값을 읽어오는 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;foreach&lt;/code&gt; 사용 어려움&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;datastructure&quot;]" /><category term="computer-science" /><category term="datastructure" /><summary type="html">자바를 이용해 자료구조와 알고리즘에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">디자인 패턴</title><link href="http://localhost:4000/blog/update/computer-science/design-pattern/2021-11-02-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1/" rel="alternate" type="text/html" title="디자인 패턴" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/design-pattern/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/design-pattern/2021-11-02-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1/">&lt;p&gt;디자인 패턴에 대해 알아보자&lt;/p&gt;
+  &lt;li&gt;100개의 랜덤한 값을 저장한 배열에서 최솟값과 최댓값 찾기
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#싱글톤-패턴singleton-pattern&quot; id=&quot;markdown-toc-싱글톤-패턴singleton-pattern&quot;&gt;싱글톤 패턴(Singleton Pattern)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;chapter_loop_3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;nc&quot;&gt;Random&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ARRAY_LENGTH&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 
-&lt;h2 id=&quot;싱글톤-패턴singleton-pattern&quot;&gt;싱글톤 패턴(Singleton Pattern)&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;인스턴스를 오직 한개만 만들고 그 인스턴스에 글로벌하게 접근할 수 있는 방법을 제공하는 것&lt;/li&gt;
-  &lt;li&gt;하나의 인스턴스를 메모리에 등록하여 여러 스레드가 동시에 공유해서 사용하는 등 효율을 높일 수 있다. ➜ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;동시성(concurrency)&lt;/code&gt; 문제 고려&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;design-pattern&quot;]" /><category term="computer-science" /><category term="design-pattern" /><summary type="html">디자인 패턴에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/design-pattern-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/design-pattern-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/">&lt;p&gt;자바의 정석 Chapter1&lt;/p&gt;
+          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ARRAY_LENGTH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ARRAY_LENGTH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#자바란&quot; id=&quot;markdown-toc-자바란&quot;&gt;자바란?&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#자바의-역사&quot; id=&quot;markdown-toc-자바의-역사&quot;&gt;자바의 역사&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#자바언어의-특징&quot; id=&quot;markdown-toc-자바언어의-특징&quot;&gt;자바언어의 특징&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+          &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+              &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+              &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;최솟값: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;최댓값: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  최솟값: 0
+  최댓값: 99
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#jvmjava-virtual-machine&quot; id=&quot;markdown-toc-jvmjava-virtual-machine&quot;&gt;JVM(Java Virtual Machine)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자바개발환경-구축하기&quot; id=&quot;markdown-toc-자바개발환경-구축하기&quot;&gt;자바개발환경 구축하기&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#자바-개발도구jdk-설치하기&quot; id=&quot;markdown-toc-자바-개발도구jdk-설치하기&quot;&gt;자바 개발도구(JDK) 설치하기&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#java-api-문서-보는법&quot; id=&quot;markdown-toc-java-api-문서-보는법&quot;&gt;Java API 문서 보는법&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자바로-프로그램-작성하기&quot; id=&quot;markdown-toc-자바로-프로그램-작성하기&quot;&gt;자바로 프로그램 작성하기&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#hellojava&quot; id=&quot;markdown-toc-hellojava&quot;&gt;Hello.java&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#자주-발생하는-에러와-해결방법&quot; id=&quot;markdown-toc-자주-발생하는-에러와-해결방법&quot;&gt;자주 발생하는 에러와 해결방법&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#자바프로그램의-실행과정&quot; id=&quot;markdown-toc-자바프로그램의-실행과정&quot;&gt;자바프로그램의 실행과정&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#주석comment&quot; id=&quot;markdown-toc-주석comment&quot;&gt;주석(comment)&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;자바란&quot;&gt;자바란?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;썬 마이크로시스템즈(Sun Microsystems, Inc)에서 개발하여 1996년 1월에 공식적으로 발표한 객체지향 프로그래밍 언어 ➜ 2010년에 썬이 오라클(Oracle)에 인수되며 자바는 오라클사의 제품이 되었음&lt;/li&gt;
-  &lt;li&gt;운영체제에 독립적이라는 것이 가장 중요한 특징 ➜ 운영체제에 따라 프로그램을 전혀 변경하지 않고도 실행 가능&lt;/li&gt;
-  &lt;li&gt;객체지향 개념과 C++의 장점을 채택하고 잘 사용되지 않는 부분은 제외하며 이해하기 쉬운 간결한 표현이 가능하도록 했음&lt;/li&gt;
-  &lt;li&gt;풍부한 클래스 라이브러리(Java API)를 통해 프로그래밍에 필요한 요소들을 기본적으로 제공&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;자바의-역사&quot;&gt;자바의 역사&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;1991년 제임스 코슬링(James Gosling)이 만든 오크(Oak)라는 언어에서 시작
-    &lt;ul&gt;
-      &lt;li&gt;C++의 장점을 도입하고 단점을 보완&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Oak를 인터넷에 적합하도록 개발 방향을 바꾸면서 이름을 자바(Java)로 변경&lt;/li&gt;
-  &lt;li&gt;자바로 개발한 웹브라우저인 ‘핫 자바(Hot Java)’ 발표&lt;/li&gt;
-  &lt;li&gt;1996년 1월 자바 정식 버전 발표&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;자바언어의-특징&quot;&gt;자바언어의 특징&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;운영체제에 독립적&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;자바 응용프로그램은 운영체제나 하드웨어가 아닌 JVM하고만 통신하고 JVM이 자바 응용프로그램에서 전달받은 명령을 해당 운영체제가 이해할 수 있도록 변환하여 전달&lt;/li&gt;
-      &lt;li&gt;자바로 작성된 프로그램은 운영체제에 독립적이지만 JVM은 운영체제에 종속적
-        &lt;blockquote&gt;
-          &lt;p&gt;한번 작성하면, 어디서나 실행된다.(Write once, run anywhere)&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;객체지향언어&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;객체지향개념의 특징인 상속, 캡슐화, 다형성이 잘 적용됨&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;비교적 배우기 쉬움&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;연산자와 기본구문은 C++에서, 객체지향 구문은 스몰톡(small talk)에서 가져옴&lt;/li&gt;
-      &lt;li&gt;간결하고 이해하기 쉬운 코드 작성 가능&lt;/li&gt;
-      &lt;li&gt;재사용성과 유지보수 용이성 등의 장점과 간결하면서 명료한 객체지향적 설계 가능&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;자동 메모리 관리(Garbage Collection)&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;가비지컬렉터(Garbage Collector)가 자동적으로 메모리를 관리해주기 때문에 프로그래머가 따로 관리하지 않아도 됨&lt;/li&gt;
-      &lt;li&gt;참조되지 않은 객체 탐색 후 삭제 ➜ 삭제된 객체의 메모리 반환 ➜ 힙 메모리 재사용&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;네트워크와 분산처리 지원&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;다향한 네트워크 프로그래밍 라이브러리(Java API)를 통해 쉬운 개발 지원&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;멀티쓰레드 지원&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;자바의 멀티쓰레드는 시스템과 관계없이 구현가능하며, 관련 라이브러리 역시 제공&lt;/li&gt;
-      &lt;li&gt;여러 쓰레드에 대한 스케줄링(scheduling)을 자바 인터프리터가 담당&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;동적 로딩(Dynamic Loading)&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;실행 시에 모든 클래스가 로딩되는 것이 아닌 필요한 시점에 클래스 로딩&lt;/li&gt;
-      &lt;li&gt;일부 클래스가 변경되어도 비교적 적은 작업만으로 처리할 수 있는 유연한 애플리케이션 작성 가능&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;jvmjava-virtual-machine&quot;&gt;JVM(Java Virtual Machine)&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;자바를 실행하기 위한 가상 기계&lt;/li&gt;
-  &lt;li&gt;시스템 메모리를 관리하고 자바 기반 애플리케이션을 위해 이식 가능한 환경을 제공&lt;/li&gt;
-  &lt;li&gt;어떤 기기상에서 실행되고 있는 프로세스, 특히 자바 앱에 대한 리소스를 대표하고 통제하는 서버
-&lt;img src=&quot;/assets/img/blog/java-basic-jvm.jpeg&quot; alt=&quot;java애플리케이션 vs 일반 애플리케이션&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;일반 애플리케이션 코드는 OS만 거치고 하드웨어로 전달되는제 비해 Java 애플리케이션은 JVM을 거쳐야 하고 실행 시 interpret되므로 상대적으로 느림&lt;/li&gt;
-      &lt;li&gt;요즘앤 컴파일된 자바코드를 기계어로 변환해주는 JIT컴파일러와 향상된 최적화 기술로 속도의 격차를 줄임&lt;/li&gt;
-      &lt;li&gt;Java Application은 해당 OS에서 실행가능한 JVM만 있다면 OS에 상관없이 어디든 실행 가능&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;자바개발환경-구축하기&quot;&gt;자바개발환경 구축하기&lt;/h2&gt;
-
-&lt;h3 id=&quot;자바-개발도구jdk-설치하기&quot;&gt;자바 개발도구(JDK) 설치하기&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;JDK(Java Development Kit): 자바 개발 도구, JRE + 개발에 필요한 실행파일(java.exe 등)&lt;/li&gt;
-  &lt;li&gt;JRE(Java Runtime Environment): 자바실행환경, 자바로 작성된 응용프로그램이 실행되기 위한 최소환경, JVM + 클래스 라이브러리(Java API)&lt;/li&gt;
-  &lt;li&gt;JDK의 bin 디렉토리에 있는 주요 실행파일
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;javac.exe&lt;/code&gt;: 자바 컴파일러, 자바 소스코드를 바이트코드로 컴파일&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;java.exe&lt;/code&gt;: 자바 인터프리터, 컴파일러가 생성한 바이트코드를 해석하고 실행&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;javap.exe&lt;/code&gt;: 역어셈블러, 컴파일된 클래스파일을 원래의 소스로 변환&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;javadoc.exe&lt;/code&gt;: 자동 문서 생성기, 소스파일에 있는 주석(/* */)을 이용하여 Java API 문서와 같은 형식의 문서를 자동 생성함&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jar.exe&lt;/code&gt;: 압축 프로그램, 클래스 파일과 프로그램의 실행에 관련된 파일을 하나의 jar파일로 압축하거나 압축해제함&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;java-api-문서-보는법&quot;&gt;Java API 문서 보는법&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://opentutorials.org/module/516/6222&quot;&gt;Opentutorials.org&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;자바로-프로그램-작성하기&quot;&gt;자바로 프로그램 작성하기&lt;/h2&gt;
-
-&lt;h3 id=&quot;hellojava&quot;&gt;Hello.java&lt;/h3&gt;
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// main 메서드 선언부&lt;/span&gt;
-        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, world.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 화면에 글자 출력&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;Hello.java 작성 ➜ javac.exe 컴파일 ➜ Hello.class 생성 ➜ java.exe 실행 ➜ “Hello, world.”출력&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;자주-발생하는-에러와-해결방법&quot;&gt;자주 발생하는 에러와 해결방법&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cannot find symbol&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cannot resolve symbol&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;지정된 변수나 메서드를 찾을 수 없음을 의미&lt;/li&gt;
-      &lt;li&gt;선언되지 않은 변수나 메서드를 사용하거나 이름을 잘못 사용하거나 대소문자 구분을 안했을 경우&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;';'expected&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;세미콜론 ‘;’이 필요한 곳에 없음을 의미&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Exception in thread &quot;main&quot; java.lang.NoSuchMethodError: main&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;클래스 내에 main 메서드가 존재하지 않거나 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public static void main(String[] args)&lt;/code&gt;에 오타가 있는 경우&lt;/li&gt;
-      &lt;li&gt;대소문자 확인!&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: Hello&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;클래스를 찾을 수 없다는 에러&lt;/li&gt;
-      &lt;li&gt;클래스의 철자, 대소문자 확인 / 클래스파일 생성되었는지 확인&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;illegal start of expression&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;문장의 앞부분이 문법에 맞지 않음 = 문장에 문법적인 오류 존재&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class, interface, or enum expected&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;보통 괄호 {, }의 개수가 일치하지 않는 경우에 발생&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;에러 발생 시, 해당 부분의 코드를 살펴보고 이상이 없으면 주위(윗줄 또는 아랫줄) 살펴보기&lt;/p&gt;
-
-  &lt;p&gt;그래도 이상이 없으면 에러 메시지를 잊고 기본적인 부분 재확인 (에러는 사소한 것인 경우가 많음)&lt;/p&gt;
-
-  &lt;p&gt;의심이 가는 부분을 주석처리하거나 따로 떼어내서 테스트&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;자바프로그램의-실행과정&quot;&gt;자바프로그램의 실행과정&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;내부 진행 순서
-    &lt;ol&gt;
-      &lt;li&gt;프로그램 실행에 필요한 클래스(*.class파일) 로드&lt;/li&gt;
-      &lt;li&gt;클래스 파일 검사(파일형식, 악성코드 체크)&lt;/li&gt;
-      &lt;li&gt;지정된 클래스(Hello)에서 main(String[] args)를 호출&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;주석comment&quot;&gt;주석(comment)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;범위 주석: ‘/&lt;em&gt;‘와 ‘&lt;/em&gt;/’사이의 내용은 주석으로 간주&lt;/li&gt;
-  &lt;li&gt;한 줄 주석: ‘//’부터 라인 끝까지의 내용은 주석으로 간주&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">TDD란?</title><link href="http://localhost:4000/blog/update/computer-science/wooahan-techcourse/2021-11-01-TDD%EB%9E%80/" rel="alternate" type="text/html" title="TDD란?" /><published>2021-11-01T00:00:00+09:00</published><updated>2021-11-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/wooahan-techcourse/TDD%EB%9E%80</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/wooahan-techcourse/2021-11-01-TDD%EB%9E%80/">&lt;p&gt;TDD에 대해 알아보자&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#tddtest-driven-development&quot; id=&quot;markdown-toc-tddtest-driven-development&quot;&gt;TDD(Test-Driven Development)&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#기존-개발-프로세스&quot; id=&quot;markdown-toc-기존-개발-프로세스&quot;&gt;기존 개발 프로세스&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#tdd-프로세스&quot; id=&quot;markdown-toc-tdd-프로세스&quot;&gt;TDD 프로세스&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#tdd-사용-이유&quot; id=&quot;markdown-toc-tdd-사용-이유&quot;&gt;TDD 사용 이유&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#tdd는-설계방법론인가&quot; id=&quot;markdown-toc-tdd는-설계방법론인가&quot;&gt;TDD는 설계방법론인가?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#tdd가-실패하는-이유&quot; id=&quot;markdown-toc-tdd가-실패하는-이유&quot;&gt;TDD가 실패하는 이유&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#테스트-범위에-따른-분류&quot; id=&quot;markdown-toc-테스트-범위에-따른-분류&quot;&gt;테스트 범위에 따른 분류&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#단위-테스트의-목적&quot; id=&quot;markdown-toc-단위-테스트의-목적&quot;&gt;단위 테스트의 목적&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#좋은-단위-테스트---first-법칙&quot; id=&quot;markdown-toc-좋은-단위-테스트---first-법칙&quot;&gt;좋은 단위 테스트 - FIRST 법칙&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;tddtest-driven-development&quot;&gt;TDD(Test-Driven Development)&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;테스트 코드를 먼저 만들고, 실제 프로덕션 코드를 만드는 개발 방법&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;기존-개발-프로세스&quot;&gt;기존 개발 프로세스&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;설계 ➜ 개발(코드 작성) ➜ 테스트(코드 작성) ➜ 설계 수정&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;tdd-프로세스&quot;&gt;TDD 프로세스&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;설계 ➜ 테스트(코드 작성) ➜ 설계 작성 ➜ 개발(코드 수정)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;tdd-사용-이유&quot;&gt;TDD 사용 이유&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;리팩토링이 편하며 변화에 대한 두려움을 줄여줌&lt;/li&gt;
-  &lt;li&gt;디버깅 시간 감소&lt;/li&gt;
-  &lt;li&gt;동작하는 문서로써의 역할 수행&lt;/li&gt;
-  &lt;li&gt;테스트 커버리지가 높아짐&lt;/li&gt;
-  &lt;li&gt;오버 엔지니어링 방지&lt;/li&gt;
-  &lt;li&gt;설계에 대한 빠른 피드백 가능&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;tdd는-설계방법론인가&quot;&gt;TDD는 설계방법론인가?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;높은 응집을 유도하지 않음&lt;/li&gt;
-  &lt;li&gt;단일 책임 원칙과 인터페이스 분리 원칙 위배에 어떤 신호도 주지 않음&lt;/li&gt;
-  &lt;li&gt;인터페이스 일관성 도출 X&lt;/li&gt;
-  &lt;li&gt;리팩토링 단계는 좋은 구조를 안내하거나 갖도록 강제하지 않음&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;tdd가-실패하는-이유&quot;&gt;TDD가 실패하는 이유&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;코드가 이루고자 하는 가치나 기능을 테스트하는 것이 아니라 기능을 어떻게 구현하고 있는지를 테스트&lt;/li&gt;
-  &lt;li&gt;결국 테스트 케이스들이 구현체와 결합도가 높아짐&lt;/li&gt;
-  &lt;li&gt;구현체들을 리팩토링하면 결합된 테스트 케이스들이 모두 깨져버림&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;테스트-범위에-따른-분류&quot;&gt;테스트 범위에 따른 분류&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;통합 테스트: 여러 작업 단위가 연계된 워크플로우를 테스트하기 위한 수단(객체 간, 서비스 간, 시스템 간)&lt;/li&gt;
-  &lt;li&gt;기능 테스트: 공개된 API의 가장 바깥쪽에 해당하는 코드 검사(Controller 호출, Security, http)&lt;/li&gt;
-  &lt;li&gt;부하 테스트: 주어진 단위 시간 동안 애플리케이션이 얼마나 많은 요청을 처리할 수 있는지 검사&lt;/li&gt;
-  &lt;li&gt;인수 테스트: 고객 또는 대리인이 정의되어진 모든 목적에 부합되는지 확인해보고 하는 검사&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;단위-테스트의-목적&quot;&gt;단위 테스트의 목적&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;문제점 신속히 발견&lt;/li&gt;
-  &lt;li&gt;쉬운 변경&lt;/li&gt;
-  &lt;li&gt;품질 향상&lt;/li&gt;
-  &lt;li&gt;코드의 문제화(Sample Code)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;좋은-단위-테스트---first-법칙&quot;&gt;좋은 단위 테스트 - FIRST 법칙&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;F: Fast (빠르게)&lt;/li&gt;
-  &lt;li&gt;I: Independent (독립적으로)&lt;/li&gt;
-  &lt;li&gt;R: Repeatable (반복 가능하게)&lt;/li&gt;
-  &lt;li&gt;S: Self-Validating (자가 검증하는)&lt;/li&gt;
-  &lt;li&gt;T: Timely (적시에)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;wooahan-techcourse&quot;]" /><category term="computer-science" /><category term="wooahan-techcourse" /><summary type="html">TDD에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/tdd-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/tdd-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;datastructure&quot;]" /><category term="computer-science" /><category term="datastructure" /><summary type="html">자바를 이용해 자료구조와 알고리즘에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
