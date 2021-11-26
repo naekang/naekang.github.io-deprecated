@@ -1,5 +1,376 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-22T23:00:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">데이터베이스 설계와 ER모델</title><link href="http://localhost:4000/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/" rel="alternate" type="text/html" title="데이터베이스 설계와 ER모델" /><published>2021-11-18T00:00:00+09:00</published><updated>2021-11-18T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5</id><content type="html" xml:base="http://localhost:4000/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/">&lt;p&gt;데이터베이스 설계와 ER모델&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-26T17:40:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-24T00:00:00+09:00</published><updated>2021-11-24T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-3</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#엔티티-매니저-팩토리와-엔티티-매니저&quot; id=&quot;markdown-toc-엔티티-매니저-팩토리와-엔티티-매니저&quot;&gt;엔티티 매니저 팩토리와 엔티티 매니저&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#영속성-컨텍스트란&quot; id=&quot;markdown-toc-영속성-컨텍스트란&quot;&gt;영속성 컨텍스트란?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#엔티티의-생명주기&quot; id=&quot;markdown-toc-엔티티의-생명주기&quot;&gt;엔티티의 생명주기&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#영속성-컨텍스트의-특징&quot; id=&quot;markdown-toc-영속성-컨텍스트의-특징&quot;&gt;영속성 컨텍스트의 특징&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#엔티티-조회&quot; id=&quot;markdown-toc-엔티티-조회&quot;&gt;엔티티 조회&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#동일성과-동등성&quot; id=&quot;markdown-toc-동일성과-동등성&quot;&gt;동일성과 동등성&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#엔티티-등록&quot; id=&quot;markdown-toc-엔티티-등록&quot;&gt;엔티티 등록&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#엔티티-수정&quot; id=&quot;markdown-toc-엔티티-수정&quot;&gt;엔티티 수정&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#엔티티-삭제&quot; id=&quot;markdown-toc-엔티티-삭제&quot;&gt;엔티티 삭제&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#플러시flush&quot; id=&quot;markdown-toc-플러시flush&quot;&gt;플러시(flush())&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#플러시-모드-옵션&quot; id=&quot;markdown-toc-플러시-모드-옵션&quot;&gt;플러시 모드 옵션&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#준영속&quot; id=&quot;markdown-toc-준영속&quot;&gt;준영속&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#엔티티를-준영속-상태로-전환-detach&quot; id=&quot;markdown-toc-엔티티를-준영속-상태로-전환-detach&quot;&gt;엔티티를 준영속 상태로 전환: detach()&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#영속성-컨텍스트-초기화-clear&quot; id=&quot;markdown-toc-영속성-컨텍스트-초기화-clear&quot;&gt;영속성 컨텍스트 초기화: clear()&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#영속성-컨텍스트-종료-close&quot; id=&quot;markdown-toc-영속성-컨텍스트-종료-close&quot;&gt;영속성 컨텍스트 종료: close()&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#준영속-상태의-특징&quot; id=&quot;markdown-toc-준영속-상태의-특징&quot;&gt;준영속 상태의 특징&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#병합-merge&quot; id=&quot;markdown-toc-병합-merge&quot;&gt;병합: merge()&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;엔티티-매니저-팩토리와-엔티티-매니저&quot;&gt;엔티티 매니저 팩토리와 엔티티 매니저&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;데이터베이스를 하나만 사용하는 애플리케이션은 일반적으로 하나의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EntityManagerFactory&lt;/code&gt; 생성 - 커넥션 풀을 형성하는데 비용이 많이 들기 때문&lt;/li&gt;
+  &lt;li&gt;후에는 필요할 때마다 엔티티 매니저 팩토리에서 엔티티 매니저를 생성하면 됨&lt;/li&gt;
+  &lt;li&gt;엔티티 매니저 팩토리는 여러 스레드가 동시에 접근해도 안전하므로 서로 다른 스레드 간에 공유해도 되지만, 엔티티 매니저는 여러 스레드가 동시에 접근하면 동시성 문제가 발생하므로 스레드 간에 절대 공유하면 안됨
+&lt;img src=&quot;/assets/img/blog/jpa-basic-3-1.png&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;영속성-컨텍스트란&quot;&gt;영속성 컨텍스트란?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;영속성 컨텍스트(Persistence Context)&lt;/strong&gt;: 엔티티를 영구 저장하는 환경&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.persist&lt;/code&gt;: 엔티티 매니저를 사용하여 회원 엔티티를 영속성 컨텍스트에 저장하는 코드&lt;/li&gt;
+  &lt;li&gt;영속성 컨텍스트는 엔티티 매니저를 생성할 때 하나 만들어지며 엔티티 매니저를 통해 영속성 컨텍스트에 접근할 수 있고 관리할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;엔티티의-생명주기&quot;&gt;엔티티의 생명주기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;비영속(new/transient)&lt;/code&gt;: 영속성 컨텍스트와 전혀 관계가 없는 상태
+    &lt;ul&gt;
+      &lt;li&gt;엔티티 객체를 생성했으나 아직 저장하지 않았기 때문에 영속성 컨텍스트나 데이터베이스와 관련이 없음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;영속(managed)&lt;/code&gt;: 영속성 컨텍스트에 저장된 상태
+    &lt;ul&gt;
+      &lt;li&gt;영속성 컨텍스트가 관리하는 엔티티를 영속 상태라 함&lt;/li&gt;
+      &lt;li&gt;결국 영속 상태는 영속성 컨텍스트에 의해 관리된다는 뜻&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;준영속(detached)&lt;/code&gt;: 영속성 컨텍스트에 저장되었다가 분리된 상태
+    &lt;ul&gt;
+      &lt;li&gt;영속성 컨텍스트를 관리하던 영속 상태의 엔티티를 영속성 컨텍스트가 관리하지 않는 경우 준영속 상태가 됨&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.detach()&lt;/code&gt; 호출 or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.close()&lt;/code&gt;를 호출해 영속성 컨텍스트 닫는 경우 or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.close()&lt;/code&gt;를 호출해 영속성 컨텍스트 초기화 하는 경우&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;삭제(removed)&lt;/code&gt;: 삭제된 상태
+    &lt;ul&gt;
+      &lt;li&gt;엔티티를 영속성 컨텍스트와 데이터베이스에서 삭제&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/jpa-basic-3-2.jpeg&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;영속성-컨텍스트의-특징&quot;&gt;영속성 컨텍스트의 특징&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;영속성 컨텍스트와 식별자 값
+    &lt;ul&gt;
+      &lt;li&gt;영속성 컨텍스트는 엔티티를 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Id&lt;/code&gt;와 같은 식별자 값으로 구분하므로 반드시 있어야 함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;영속성 컨텍스트와 데이터베이스 저장
+    &lt;ul&gt;
+      &lt;li&gt;JPA는 보통 트랜잭션을 커밋하는 순간 영속성 컨텍스트에 새로 저장된 엔티티를 데이터베이스에 반영하며 이것을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flush&lt;/code&gt;라 함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;영속성 컨텍스트가 엔티티를 관리하면 얻는 장점
+    &lt;ul&gt;
+      &lt;li&gt;1차 캐시&lt;/li&gt;
+      &lt;li&gt;동일성 보장&lt;/li&gt;
+      &lt;li&gt;트랜잭션을 지원하는 쓰기 지연&lt;/li&gt;
+      &lt;li&gt;변경 감지&lt;/li&gt;
+      &lt;li&gt;지연 로딩&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;엔티티-조회&quot;&gt;엔티티 조회&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;1차 캐시&lt;/strong&gt;: 영속성 컨텍스트가 갖고 있는 내부 캐시&lt;/li&gt;
+  &lt;li&gt;영속성 컨텍스트 내부에 Map이 있는데 키는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Id&lt;/code&gt;로 매핑한 식별자이고 값은 엔티티 인스턴스&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 엔티티를 생성한 상태(비영속)&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;member1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;회원1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 엔티티를 영속&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;persist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/jpa-basic-3-3.jpeg&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;엔티티 조회&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;member1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.find&lt;/code&gt;를 호출하면 먼저 1차 캐시에서 엔티티를 찾고 만약 없다면 데이터베이스에서 조회&lt;/li&gt;
+  &lt;li&gt;1차 캐시를 통해 성능상 이점을 누릴 수 있음&lt;/li&gt;
+  &lt;li&gt;엔티티의 동일성 보장&lt;/li&gt;
+  &lt;li&gt;JPA는 1차 캐시를 통해 반복 가능한 읽기(REPEATABLE READ) 등급의 트랜잭션 격리 수준을 데이터베이스가 아닌 애플리케이션 차원에서 제공&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;동일성과-동등성&quot;&gt;동일성과 동등성&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;동일성(identity)&lt;/strong&gt;: 실제 인스턴스가 같음. 따라서 참조 값을 비교하는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;==&lt;/code&gt;비교의 값이 같음&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;동등성(equality)&lt;/strong&gt;: 실제 인스턴스는 다를 수 있으나 인스턴스가 가지고 있는 값이 같음. 자바에서 동등성 비교는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;equals()&lt;/code&gt;메소드&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;엔티티-등록&quot;&gt;엔티티 등록&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;엔티티 매니저를 사용해 엔티티를 영속성 컨텍스트에 등록&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;EntityManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createEntityManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;EntityTransaction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transaction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getTransaction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 엔티티 매니저는 데이터 변경 시 트랜잭션을 시작해야 함&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;transaction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [트랜잭션] 시작&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;persist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;memberA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;persist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;memberB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 여기까지 INSERT SQL을 데이터베이스로 보내지 않음&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 커밋하는 순간 SQL을 보냄&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;transaction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [트랜잭션] 커밋&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;엔티티 매니저는 트랜잭션 커밋 직전까지 데이터베이스에 엔티티를 저장하지 않고 내부 쿼리 저장소에 INSERT SQL을 모아둠 = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;트랜잭션을 지원하는 쓰기 지연(transactional write-behind)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;트랜잭션을 지원하는 쓰기 지연이 가능한 이유
+    &lt;ul&gt;
+      &lt;li&gt;등록 쿼리를 바로 데이터베이스에 전달해도 트랜잭션을 커밋하지 않으면 소용이 없음&lt;/li&gt;
+      &lt;li&gt;어떻게든 커밋 직전에만 데이터베이스에 SQL을 전달하면 되므로 쓰기 지연이 가능해짐&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;엔티티-수정&quot;&gt;엔티티 수정&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;SQL 수정 쿼리의 문제점
+    &lt;ul&gt;
+      &lt;li&gt;수정 쿼리가 많아지며 비즈니스 로직을 분석하기 위해 SQL을 계속해서 확인해야 함&lt;/li&gt;
+      &lt;li&gt;결국 직, 간접적으로 비즈니스 로직이 SQL에 의존하게 됨&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;변경 감지
+    &lt;ul&gt;
+      &lt;li&gt;JPA로 수정 시 단순히 엔티티를 조회해서 데이터만 변경하면 됨&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.update()&lt;/code&gt;같은 메소드는 없음&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;변경 감지&lt;/strong&gt;란 엔티티의 변경사항을 데이터베이스에 자동으로 반영하는 기능&lt;/li&gt;
+      &lt;li&gt;JPA는 엔티티를 영속성 컨텍스트에 보관할 때, 최초 상태를 복사하여 저장 = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;스냅샷&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;변경 감지는 영속성 컨텍스트가 관리하는 영속 상태의 엔티티에만 적용됨&lt;/li&gt;
+      &lt;li&gt;JPA의 기본 전략은 엔티티의 모든 필드를 업데이트
+        &lt;ul&gt;
+          &lt;li&gt;단점: 데이터베이스에 보내는 데이터 전송량 증가&lt;/li&gt;
+          &lt;li&gt;장점
+            &lt;ul&gt;
+              &lt;li&gt;모든 필드 사용 시 수정 쿼리가 항상 같으므로 로딩 시점에 수정 쿼리를 미리 생성해두고 재사용 가능&lt;/li&gt;
+              &lt;li&gt;데이터베이스에 동일 쿼리를 보내면 이전에 한 번 파싱된 쿼리를 재사용할 수 있음&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;필드가 많거나 저장되는 내용이 너무 클 경우는 하이버네이트 확장 기능을 사용하여 동적으로 UPDATE SQL 생성 = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@org.hibernate.annotations.DynamicUpdate&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;데이터 저장시 데이터가 존재하는 필드만으로 INSERT SQL을 동적으로 생성하는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@DynamicInsert&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;엔티티-삭제&quot;&gt;엔티티 삭제&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;먼저 삭제 대상 엔티티 조회&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;memberA&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;memberA&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 삭제 대상 엔티티 조회&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;memberA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 엔티티 삭제&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;이렇게 삭제된 엔티티는 재사용하지 말고 자연스럽게 가비지 컬렉션의 대상이 되도록 두는 것이 좋음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;플러시flush&quot;&gt;플러시(flush())&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;영속성 컨텍스트의 변경 내용을 데이터베이스에 반영&lt;/li&gt;
+  &lt;li&gt;구체적인 순서
+    &lt;ol&gt;
+      &lt;li&gt;변경 감지가 동작하여 영속성 컨텍스트에 있는 모든 엔티티를 스냅샷과 비교해서 수정된 엔티티를 찾음. 수정된 엔티티는 수정 쿼리를 만들어 쓰기 지연 SQL 저장소에 등록&lt;/li&gt;
+      &lt;li&gt;쓰기 지연 SQL 저장소의 쿼리를 데이터베이스에 전송 (등록, 수정, 삭제 쿼리)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;영속성 컨텍스트 플러시 방법
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.flush()&lt;/code&gt; 직접 호출
+        &lt;ul&gt;
+          &lt;li&gt;테스트나 다른 프레임워크와 JPA를 함께 사용할 때를 제외하고 거의 사용하지 않음&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;트랜잭션 커밋 시 플러시 자동 호출
+        &lt;ul&gt;
+          &lt;li&gt;트랜잭션을 커밋하기 전에 꼭 플러시를 호출해서 영속성 컨텍스트의 변경 내용을 데이터베이스에 반영해야 함&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;JPQL 쿼리 실행 시 플러시 자동 호출
+        &lt;ul&gt;
+          &lt;li&gt;영속 상태에 있는 것들은 아직 데이터 베이스에 없으므로 쿼리를 통한 조회가 불가능함. 이런 문제를 해결하기 위해 JPQL을 실행할 때에도 플러시를 자동으로 호출함&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;플러시-모드-옵션&quot;&gt;플러시 모드 옵션&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FlushModeType.AUTO&lt;/code&gt;: 커밋이나 쿼리를 실행할 때 플러시(DEFAULT)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FlushModeType.COMMIT&lt;/code&gt;: 커밋할 때만 플러시&lt;/li&gt;
+  &lt;li&gt;플러시라는 이름으로 인해 영속성 컨텍스트에 보관된 엔티티를 지우는 것이 아니라 영속성 컨텍스트의 변경 내용을 데이터베이스에 동기화하는 것이 플러시&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;준영속&quot;&gt;준영속&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;영속성 컨텍스트가 관리하는 영속 상태의 엔티티가 영속성 컨텍스트에서 분리된(detached) 것으로 준영속 상태의 엔티티는 영속성 컨텍스트가 제공하는 기능을 사용할 수 없음&lt;/li&gt;
+  &lt;li&gt;준영속 상태로 만드는 방법
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.detach(entity)&lt;/code&gt;: 특정 엔티티만 준영속 상태로 전환&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.clear()&lt;/code&gt;: 영속성 컨텍스트를 완전히 초기화&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;em.close()&lt;/code&gt;: 영속성 컨텍스트를 종료&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;엔티티를-준영속-상태로-전환-detach&quot;&gt;엔티티를 준영속 상태로 전환: detach()&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;이 메소드를 호출하는 순간 1차 캐시부터 쓰기 지연 SQL 저장소까지 해당 엔티티를 관리하기 위한 모든 정보 제거&lt;/li&gt;
+  &lt;li&gt;영속 상태: 영속성 컨텍스트로부터 관리(managed)되는 상태&lt;/li&gt;
+  &lt;li&gt;준영속 상테: 형속성 컨텍스트로부터 분리(detached)된 상태&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;영속성-컨텍스트-초기화-clear&quot;&gt;영속성 컨텍스트 초기화: clear()&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;영속성 컨텍스트를 초기화해서 해당 영속성 컨텍스트의 모든 엔티티를 준영속 상태로 만듦&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;영속성-컨텍스트-종료-close&quot;&gt;영속성 컨텍스트 종료: close()&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;영속성 컨텍스트를 종료하면 해당 영속성 컨텍스트가 관리하던 영속 상태의 엔티티가 모두 준영속 상태가 됨&lt;/li&gt;
+  &lt;li&gt;개발자가 직접 준영속 상태로 만드는 일은 드물다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;준영속-상태의-특징&quot;&gt;준영속 상태의 특징&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;거의 비영속 상태에 가까움
+    &lt;ul&gt;
+      &lt;li&gt;1차 캐시, 쓰기 지연, 변경 감지, 지연 로딩을 포함한 영속성 컨텍스트가 제공하는 어떤 기능도 동작하지 않음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;식별자 값을 가지고 있음
+    &lt;ul&gt;
+      &lt;li&gt;비영속 상태는 식별자 값이 없을 수도 있으나 준영속 상태는 이미 한 번 영속 상태인 적이 있었으므로 식별자 값이 있음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;지연 로딩을 할 수 없음
+    &lt;ul&gt;
+      &lt;li&gt;지연 로딩(Lazy loading): 실제 객체 대신 프록시 객체를 로딩해두고 해당 객체를 실제 사용할 때 영속성 컨텍스트를 통해 데이터를 불러오는 방법&lt;/li&gt;
+      &lt;li&gt;준영속 상태의 경우 더이상 영속성 컨텍스트가 더이상 관리하지 않으므로 지연 로딩 시 문제 발생&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;병합-merge&quot;&gt;병합: merge()&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;준영속 상태의 엔티티를 다시 영속 상태로 변경하기 위함&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;merge()&lt;/code&gt; 메소드는 준영속 상태의 엔티티를 받아 새로운 영속 상태의 엔티티를 반환&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Mergemain&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EntityManagerFactory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Persistence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createEntityManagerFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;jpabook&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;createMember&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;memberA&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;회원1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 준영속 상태의 member 엔티티 반환&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;회원명변경&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 준영속 상태에서 변경&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;mergeMember&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// &lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;createMember&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//== 영속성 컨텍스트1 시작 ==//&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;EntityManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createEntityManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;EntityTransaction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tx1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getTransaction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;tx1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;em1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;persist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;tx1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;em1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 영속성 컨텍스트1 종료, member엔티티는 준영속 상태가 됨&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//== 영속성 컨텍스트1 종료 ==//&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;mergeMember&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;c1&quot;&gt;//== 영속성 컨텍스트2 시작 ==//&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;EntityManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createEntityManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;EntityTransaction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tx2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getTransaction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;tx2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mergeMember&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;tx2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// 준영속 상태&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;member = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// 영속 상태&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mergeMember = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mergeMember&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getUsername&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;em2 contains member = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;em2 contains mergeMember = &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;em2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mergeMember&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;em1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//== 영속성 컨텍스트2 종료 ==//&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;member = 회원명변경
+mergeMember = 회원명변경
+em2 contains member = false
+em2 contains mergeMember = true
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;merge()의 동작 방식
+    &lt;ol&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;merge()&lt;/code&gt; 실행&lt;/li&gt;
+      &lt;li&gt;파라미터로 넘어온 준영속 엔티티의 식별자 값으로 1차 캐시에서 엔티티 조회, 1차 캐시에 엔티티가 없으면 데이터베이스에서 엔티티를 조회하고 1차 캐시에 저장&lt;/li&gt;
+      &lt;li&gt;조회한 영속 엔티티에 member엔티티 값을 채워 넣음&lt;/li&gt;
+      &lt;li&gt;mergemember 반환&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;비영속 병합
+    &lt;ul&gt;
+      &lt;li&gt;병합(merge)은 비영속 엔티티도 영속 상태로 만들 수 있음&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;save or update&lt;/code&gt; 기능 수행&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;jpa&quot;]" /><category term="computer-science" /><category term="jpa" /><summary type="html">JPA가 제공하는 기능은 크게 엔티티와 테이블을 매핑하는 설계 부분과 매핑한 엔티티를 실제 사용하는 부분으로 나눌 수 있으며 이 장에서는 매핑한 엔티티를 엔티티 매니저를 통해 어떻게 사용하는지 알아본다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jpa-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jpa-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">데이터베이스 설계와 ER모델</title><link href="http://localhost:4000/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/" rel="alternate" type="text/html" title="데이터베이스 설계와 ER모델" /><published>2021-11-18T00:00:00+09:00</published><updated>2021-11-18T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5</id><content type="html" xml:base="http://localhost:4000/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/">&lt;p&gt;데이터베이스 설계와 ER모델&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#데이터베이스-설계와-er모델&quot; id=&quot;markdown-toc-데이터베이스-설계와-er모델&quot;&gt;데이터베이스 설계와 ER모델&lt;/a&gt;    &lt;ul&gt;
@@ -2436,179 +2807,203 @@ binNum=10, 2
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;두 자리 정수를 하나 입력해주세요.&amp;gt;22
 입력내용: 22
 num=22
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">디자인 패턴</title><link href="http://localhost:4000/blog/update/computer-science/design-pattern/2021-11-02-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1/" rel="alternate" type="text/html" title="디자인 패턴" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/design-pattern/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/design-pattern/2021-11-02-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-1/">&lt;p&gt;디자인 패턴에 대해 알아보자&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/">&lt;p&gt;자바의 정석 Chapter1&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#싱글톤-패턴singleton-pattern&quot; id=&quot;markdown-toc-싱글톤-패턴singleton-pattern&quot;&gt;싱글톤 패턴(Singleton Pattern)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;싱글톤-패턴singleton-pattern&quot;&gt;싱글톤 패턴(Singleton Pattern)&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;인스턴스를 오직 한개만 만들고 그 인스턴스에 글로벌하게 접근할 수 있는 방법을 제공하는 것&lt;/li&gt;
-  &lt;li&gt;하나의 인스턴스를 메모리에 등록하여 여러 스레드가 동시에 공유해서 사용하는 등 효율을 높일 수 있다. ➜ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;동시성(concurrency)&lt;/code&gt; 문제 고려&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;design-pattern&quot;]" /><category term="computer-science" /><category term="design-pattern" /><summary type="html">디자인 패턴에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/design-pattern-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/design-pattern-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">배열</title><link href="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/" rel="alternate" type="text/html" title="배열" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/datastructure/%EB%B0%B0%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/datastructure/2021-11-02-%EB%B0%B0%EC%97%B4/">&lt;p&gt;자바를 이용해 자료구조와 알고리즘에 대해 알아보자&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#배열이란&quot; id=&quot;markdown-toc-배열이란&quot;&gt;배열이란?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#배열의-선언&quot; id=&quot;markdown-toc-배열의-선언&quot;&gt;배열의 선언&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#배열의-생성과-초기화&quot; id=&quot;markdown-toc-배열의-생성과-초기화&quot;&gt;배열의 생성과 초기화&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#배열의-반복문&quot; id=&quot;markdown-toc-배열의-반복문&quot;&gt;배열의 반복문&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;배열이란&quot;&gt;배열이란?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;배열: 데이터 타입이 같은 여러 변수들을 모아 묶어 놓은 것&lt;/li&gt;
-  &lt;li&gt;변수의 양이 많아질수록 배열을 사용하는 것이 가독성 측면이나 코드 작성 효율성 측면에서 좋음&lt;/li&gt;
-  &lt;li&gt;배열 선언 방식: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int[] arr = new int[10001];&lt;/code&gt; // 10001개의 int 타입을 저장하는 배열 생성&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;배열의-선언&quot;&gt;배열의 선언&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;배열을 이루는 요소
-    &lt;ul&gt;
-      &lt;li&gt;배열을 구성하는 자료형&lt;/li&gt;
-      &lt;li&gt;배열의 이름&lt;/li&gt;
-      &lt;li&gt;배열의 길이: 음수를 제외한 양수와 0만 사용 가능, 음수를 사용하면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NegativeArraySizeException&lt;/code&gt;에러 발생&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#자바란&quot; id=&quot;markdown-toc-자바란&quot;&gt;자바란?&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#자바의-역사&quot; id=&quot;markdown-toc-자바의-역사&quot;&gt;자바의 역사&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#자바언어의-특징&quot; id=&quot;markdown-toc-자바언어의-특징&quot;&gt;자바언어의 특징&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;기본 자료형(Primitive type)과 참조 자료형(Reference type) 모두 배열 구성 가능&lt;/li&gt;
-  &lt;li&gt;방식
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// (1) 자료형[] 변수명 - 개인적으로 조금 더 선호&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// (2) 자료형 변수명[]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;li&gt;&lt;a href=&quot;#jvmjava-virtual-machine&quot; id=&quot;markdown-toc-jvmjava-virtual-machine&quot;&gt;JVM(Java Virtual Machine)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#자바개발환경-구축하기&quot; id=&quot;markdown-toc-자바개발환경-구축하기&quot;&gt;자바개발환경 구축하기&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#자바-개발도구jdk-설치하기&quot; id=&quot;markdown-toc-자바-개발도구jdk-설치하기&quot;&gt;자바 개발도구(JDK) 설치하기&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#java-api-문서-보는법&quot; id=&quot;markdown-toc-java-api-문서-보는법&quot;&gt;Java API 문서 보는법&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#자바로-프로그램-작성하기&quot; id=&quot;markdown-toc-자바로-프로그램-작성하기&quot;&gt;자바로 프로그램 작성하기&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#hellojava&quot; id=&quot;markdown-toc-hellojava&quot;&gt;Hello.java&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#자주-발생하는-에러와-해결방법&quot; id=&quot;markdown-toc-자주-발생하는-에러와-해결방법&quot;&gt;자주 발생하는 에러와 해결방법&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#자바프로그램의-실행과정&quot; id=&quot;markdown-toc-자바프로그램의-실행과정&quot;&gt;자바프로그램의 실행과정&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#주석comment&quot; id=&quot;markdown-toc-주석comment&quot;&gt;주석(comment)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;배열의-생성과-초기화&quot;&gt;배열의 생성과 초기화&lt;/h2&gt;
+&lt;h2 id=&quot;자바란&quot;&gt;자바란?&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int[] arr;&lt;/code&gt;배열을 선언하면 arr라는 메모리 공간이 할당되고 메모리 주소값을 갖는 형태&lt;/li&gt;
-  &lt;li&gt;참조형 변수는 초기화 없이 선언하면 null값을 가짐&lt;/li&gt;
-  &lt;li&gt;배열의 시작은 index 0부터 시작&lt;/li&gt;
-  &lt;li&gt;자료형의 기본 값&lt;/li&gt;
+  &lt;li&gt;썬 마이크로시스템즈(Sun Microsystems, Inc)에서 개발하여 1996년 1월에 공식적으로 발표한 객체지향 프로그래밍 언어 ➜ 2010년에 썬이 오라클(Oracle)에 인수되며 자바는 오라클사의 제품이 되었음&lt;/li&gt;
+  &lt;li&gt;운영체제에 독립적이라는 것이 가장 중요한 특징 ➜ 운영체제에 따라 프로그램을 전혀 변경하지 않고도 실행 가능&lt;/li&gt;
+  &lt;li&gt;객체지향 개념과 C++의 장점을 채택하고 잘 사용되지 않는 부분은 제외하며 이해하기 쉬운 간결한 표현이 가능하도록 했음&lt;/li&gt;
+  &lt;li&gt;풍부한 클래스 라이브러리(Java API)를 통해 프로그래밍에 필요한 요소들을 기본적으로 제공&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;자료형&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;기본값&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;참조 타입&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;null&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;byte&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;short&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;int&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;float&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;0.0f&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;long&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;0L&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;double&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;0.0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;char&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;‘\u0000’&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;boolean&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;false&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
+&lt;h3 id=&quot;자바의-역사&quot;&gt;자바의 역사&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;배열을 초기화 하기 위한 3가지 방법
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;array_init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 선언과 동시에 0으로 초기화&lt;/span&gt;
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 배열 생성 시, 크기를 지정하지 않고 저장할 요소만 명시&lt;/span&gt;
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 저장할 요소만 명시&lt;/span&gt;
+  &lt;li&gt;1991년 제임스 코슬링(James Gosling)이 만든 오크(Oak)라는 언어에서 시작
+    &lt;ul&gt;
+      &lt;li&gt;C++의 장점을 도입하고 단점을 보완&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Oak를 인터넷에 적합하도록 개발 방향을 바꾸면서 이름을 자바(Java)로 변경&lt;/li&gt;
+  &lt;li&gt;자바로 개발한 웹브라우저인 ‘핫 자바(Hot Java)’ 발표&lt;/li&gt;
+  &lt;li&gt;1996년 1월 자바 정식 버전 발표&lt;/li&gt;
+&lt;/ul&gt;
 
-          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;arr1: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;, length: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;arr2: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;, length: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;arr3: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;, length: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+&lt;h3 id=&quot;자바언어의-특징&quot;&gt;자바언어의 특징&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;운영체제에 독립적&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;자바 응용프로그램은 운영체제나 하드웨어가 아닌 JVM하고만 통신하고 JVM이 자바 응용프로그램에서 전달받은 명령을 해당 운영체제가 이해할 수 있도록 변환하여 전달&lt;/li&gt;
+      &lt;li&gt;자바로 작성된 프로그램은 운영체제에 독립적이지만 JVM은 운영체제에 종속적
+        &lt;blockquote&gt;
+          &lt;p&gt;한번 작성하면, 어디서나 실행된다.(Write once, run anywhere)&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;객체지향언어&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;객체지향개념의 특징인 상속, 캡슐화, 다형성이 잘 적용됨&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;비교적 배우기 쉬움&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;연산자와 기본구문은 C++에서, 객체지향 구문은 스몰톡(small talk)에서 가져옴&lt;/li&gt;
+      &lt;li&gt;간결하고 이해하기 쉬운 코드 작성 가능&lt;/li&gt;
+      &lt;li&gt;재사용성과 유지보수 용이성 등의 장점과 간결하면서 명료한 객체지향적 설계 가능&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;자동 메모리 관리(Garbage Collection)&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;가비지컬렉터(Garbage Collector)가 자동적으로 메모리를 관리해주기 때문에 프로그래머가 따로 관리하지 않아도 됨&lt;/li&gt;
+      &lt;li&gt;참조되지 않은 객체 탐색 후 삭제 ➜ 삭제된 객체의 메모리 반환 ➜ 힙 메모리 재사용&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;네트워크와 분산처리 지원&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;다향한 네트워크 프로그래밍 라이브러리(Java API)를 통해 쉬운 개발 지원&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;멀티쓰레드 지원&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;자바의 멀티쓰레드는 시스템과 관계없이 구현가능하며, 관련 라이브러리 역시 제공&lt;/li&gt;
+      &lt;li&gt;여러 쓰레드에 대한 스케줄링(scheduling)을 자바 인터프리터가 담당&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;동적 로딩(Dynamic Loading)&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;실행 시에 모든 클래스가 로딩되는 것이 아닌 필요한 시점에 클래스 로딩&lt;/li&gt;
+      &lt;li&gt;일부 클래스가 변경되어도 비교적 적은 작업만으로 처리할 수 있는 유연한 애플리케이션 작성 가능&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  arr1: [0], length: 1
-  arr2: [1, 2, 3], length: 3
-  arr3: [1, 2, 3, 4, 5], length: 5
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+&lt;h2 id=&quot;jvmjava-virtual-machine&quot;&gt;JVM(Java Virtual Machine)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;자바를 실행하기 위한 가상 기계&lt;/li&gt;
+  &lt;li&gt;시스템 메모리를 관리하고 자바 기반 애플리케이션을 위해 이식 가능한 환경을 제공&lt;/li&gt;
+  &lt;li&gt;어떤 기기상에서 실행되고 있는 프로세스, 특히 자바 앱에 대한 리소스를 대표하고 통제하는 서버
+&lt;img src=&quot;/assets/img/blog/java-basic-jvm.jpeg&quot; alt=&quot;java애플리케이션 vs 일반 애플리케이션&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;일반 애플리케이션 코드는 OS만 거치고 하드웨어로 전달되는제 비해 Java 애플리케이션은 JVM을 거쳐야 하고 실행 시 interpret되므로 상대적으로 느림&lt;/li&gt;
+      &lt;li&gt;요즘앤 컴파일된 자바코드를 기계어로 변환해주는 JIT컴파일러와 향상된 최적화 기술로 속도의 격차를 줄임&lt;/li&gt;
+      &lt;li&gt;Java Application은 해당 OS에서 실행가능한 JVM만 있다면 OS에 상관없이 어디든 실행 가능&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;배열의-반복문&quot;&gt;배열의 반복문&lt;/h2&gt;
+&lt;h2 id=&quot;자바개발환경-구축하기&quot;&gt;자바개발환경 구축하기&lt;/h2&gt;
+
+&lt;h3 id=&quot;자바-개발도구jdk-설치하기&quot;&gt;자바 개발도구(JDK) 설치하기&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;for문, while문, do-while문, foreach문&lt;/li&gt;
-  &lt;li&gt;배열의 index값은 &lt;strong&gt;0&lt;/strong&gt;부터 시작&lt;/li&gt;
-  &lt;li&gt;배열의 크기를 벗어난 index로 접근시 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ArrayIndexOutOfBoundsException&lt;/code&gt;이 발생하므로 이 오류가 나온다면 천천히 배열의 크기부터 찾아보기!&lt;/li&gt;
-  &lt;li&gt;foreach: 첨자 변수 대신 배열의 요소를 저장할 변수를 선언하고 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:&lt;/code&gt;으로 순회할 배열의 참조 변수를 선언
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;studentNumber&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;학생 번호: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;studentNumber&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  학생 번호: 1
-  학생 번호: 2
-  학생 번호: 3
-  학생 번호: 4
-  학생 번호: 5
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;li&gt;JDK(Java Development Kit): 자바 개발 도구, JRE + 개발에 필요한 실행파일(java.exe 등)&lt;/li&gt;
+  &lt;li&gt;JRE(Java Runtime Environment): 자바실행환경, 자바로 작성된 응용프로그램이 실행되기 위한 최소환경, JVM + 클래스 라이브러리(Java API)&lt;/li&gt;
+  &lt;li&gt;JDK의 bin 디렉토리에 있는 주요 실행파일
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;javac.exe&lt;/code&gt;: 자바 컴파일러, 자바 소스코드를 바이트코드로 컴파일&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;java.exe&lt;/code&gt;: 자바 인터프리터, 컴파일러가 생성한 바이트코드를 해석하고 실행&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;javap.exe&lt;/code&gt;: 역어셈블러, 컴파일된 클래스파일을 원래의 소스로 변환&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;javadoc.exe&lt;/code&gt;: 자동 문서 생성기, 소스파일에 있는 주석(/* */)을 이용하여 Java API 문서와 같은 형식의 문서를 자동 생성함&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jar.exe&lt;/code&gt;: 압축 프로그램, 클래스 파일과 프로그램의 실행에 관련된 파일을 하나의 jar파일로 압축하거나 압축해제함&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;배열의 연산으로 특정 위치에 값을 삽입, 삭제하거나 값을 읽어오는 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;foreach&lt;/code&gt; 사용 어려움&lt;/li&gt;
-  &lt;li&gt;100개의 랜덤한 값을 저장한 배열에서 최솟값과 최댓값 찾기
-    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/ul&gt;
 
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;chapter_loop_3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;nc&quot;&gt;Random&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-          &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ARRAY_LENGTH&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;h3 id=&quot;java-api-문서-보는법&quot;&gt;Java API 문서 보는법&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://opentutorials.org/module/516/6222&quot;&gt;Opentutorials.org&lt;/a&gt;&lt;/p&gt;
 
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ARRAY_LENGTH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ARRAY_LENGTH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-              &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;h2 id=&quot;자바로-프로그램-작성하기&quot;&gt;자바로 프로그램 작성하기&lt;/h2&gt;
 
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;h3 id=&quot;hellojava&quot;&gt;Hello.java&lt;/h3&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// main 메서드 선언부&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, world.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 화면에 글자 출력&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Hello.java 작성 ➜ javac.exe 컴파일 ➜ Hello.class 생성 ➜ java.exe 실행 ➜ “Hello, world.”출력&lt;/li&gt;
+&lt;/ul&gt;
 
-          &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-              &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                  &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-              &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                  &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-              &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;최솟값: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;최댓값: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  최솟값: 0
-  최댓값: 99
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+&lt;h3 id=&quot;자주-발생하는-에러와-해결방법&quot;&gt;자주 발생하는 에러와 해결방법&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cannot find symbol&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cannot resolve symbol&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;지정된 변수나 메서드를 찾을 수 없음을 의미&lt;/li&gt;
+      &lt;li&gt;선언되지 않은 변수나 메서드를 사용하거나 이름을 잘못 사용하거나 대소문자 구분을 안했을 경우&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;datastructure&quot;]" /><category term="computer-science" /><category term="datastructure" /><summary type="html">자바를 이용해 자료구조와 알고리즘에 대해 알아보자</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/algorithm-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/algorithm-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;';'expected&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;세미콜론 ‘;’이 필요한 곳에 없음을 의미&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Exception in thread &quot;main&quot; java.lang.NoSuchMethodError: main&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;클래스 내에 main 메서드가 존재하지 않거나 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public static void main(String[] args)&lt;/code&gt;에 오타가 있는 경우&lt;/li&gt;
+      &lt;li&gt;대소문자 확인!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: Hello&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;클래스를 찾을 수 없다는 에러&lt;/li&gt;
+      &lt;li&gt;클래스의 철자, 대소문자 확인 / 클래스파일 생성되었는지 확인&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;illegal start of expression&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;문장의 앞부분이 문법에 맞지 않음 = 문장에 문법적인 오류 존재&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class, interface, or enum expected&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;보통 괄호 {, }의 개수가 일치하지 않는 경우에 발생&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;에러 발생 시, 해당 부분의 코드를 살펴보고 이상이 없으면 주위(윗줄 또는 아랫줄) 살펴보기&lt;/p&gt;
+
+  &lt;p&gt;그래도 이상이 없으면 에러 메시지를 잊고 기본적인 부분 재확인 (에러는 사소한 것인 경우가 많음)&lt;/p&gt;
+
+  &lt;p&gt;의심이 가는 부분을 주석처리하거나 따로 떼어내서 테스트&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;자바프로그램의-실행과정&quot;&gt;자바프로그램의 실행과정&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;내부 진행 순서
+    &lt;ol&gt;
+      &lt;li&gt;프로그램 실행에 필요한 클래스(*.class파일) 로드&lt;/li&gt;
+      &lt;li&gt;클래스 파일 검사(파일형식, 악성코드 체크)&lt;/li&gt;
+      &lt;li&gt;지정된 클래스(Hello)에서 main(String[] args)를 호출&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;주석comment&quot;&gt;주석(comment)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;범위 주석: ‘/&lt;em&gt;‘와 ‘&lt;/em&gt;/’사이의 내용은 주석으로 간주&lt;/li&gt;
+  &lt;li&gt;한 줄 주석: ‘//’부터 라인 끝까지의 내용은 주석으로 간주&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>자바 ORM 표준 JPA 프로그래밍 | Hauling-IT</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="자바 ORM 표준 JPA 프로그래밍" />
+<meta name="author" content="Jinho Kim" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="자바 ORM 표준 JPA 프로그래밍" />
+<meta property="og:description" content="자바 ORM 표준 JPA 프로그래밍" />
+<link rel="canonical" href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/" />
+<meta property="og:url" content="http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/" />
+<meta property="og:site_name" content="Hauling-IT" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/jpa-main.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-24T00:00:00+09:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/jpa-main.png" />
+<meta property="twitter:title" content="자바 ORM 표준 JPA 프로그래밍" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/"},"image":"http://localhost:4000/assets/img/blog/jpa-main.png","author":{"@type":"Person","name":"Jinho Kim"},"@type":"BlogPosting","url":"http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/","description":"자바 ORM 표준 JPA 프로그래밍","headline":"자바 ORM 표준 JPA 프로그래밍","dateModified":"2021-11-24T00:00:00+09:00","datePublished":"2021-11-24T00:00:00+09:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Jinho Kim"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hauling-IT">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Hauling-IT">
+
+
+  <meta name="theme-color" content="rgb(8,46,57)">
+
+
+<meta name="generator" content="Hydejack v9.1.4" />
+
+
+<link rel="alternate" href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hauling-IT" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+<link rel="dns-prefetch" href="/assets/js/search-worker-9.1.4.js" as="worker" id="_hrefSearch">
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script");n.src=e,t&&a(n,"load",t,{once:!0});t=c.scripts[0];return t.parentNode.insertBefore(n,t),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._advertise = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2021-11-26T17:40:59+09:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.4.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-color-highlight: rgba(204,204,204,0.1);--accent-color-darkened: #b9b9b9;--theme-color: #ccc;--dark-mode-body-bg: #2d2d2d;--dark-mode-border-color: #393939}
+
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+<script>
+  window._sunrise = 6;
+  window._sunset =  18;
+  !function(e,s){var d="light-mode",o="dark-mode",a=(new Date).getHours();"matchMedia"in e&&e.matchMedia("(prefers-color-scheme)")||(o=(e=a<=e._sunrise||a>=e._sunset?o:d)==o?d:o,s.body.classList.add(e),s.body.classList.remove(o))}(window,document);
+
+</script>
+
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/">blog</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/update/">update</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/update/computer-science/">computer-science</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/update/computer-science/jpa/">jpa</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        <span>2021-11-24-jpa-basic-3</span>
+      
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-blog-update-computer-science-jpa-jpa-basic-3" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        자바 ORM 표준 JPA 프로그래밍
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2021-11-24T00:00:00+09:00">24 Nov 2021</time> in <span>Update</span> / <a href="/blog/computer-science/" class="flip-title">computer-science</a> / <a href="/blog/jpa/" class="flip-title">jpa</a> on <span>Computer-science</span>, <span>Jpa</span>
+      </span>
+      
+        
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="/assets/img/blog/jpa-main.png"
+  
+  alt="자바 ORM 표준 JPA 프로그래밍"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      자바 ORM 표준 JPA 프로그래밍
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <ul id="markdown-toc">
+  <li><a href="#엔티티-매니저-팩토리와-엔티티-매니저" id="markdown-toc-엔티티-매니저-팩토리와-엔티티-매니저">엔티티 매니저 팩토리와 엔티티 매니저</a></li>
+  <li><a href="#영속성-컨텍스트란" id="markdown-toc-영속성-컨텍스트란">영속성 컨텍스트란?</a></li>
+  <li><a href="#엔티티의-생명주기" id="markdown-toc-엔티티의-생명주기">엔티티의 생명주기</a></li>
+  <li><a href="#영속성-컨텍스트의-특징" id="markdown-toc-영속성-컨텍스트의-특징">영속성 컨텍스트의 특징</a>    <ul>
+      <li><a href="#엔티티-조회" id="markdown-toc-엔티티-조회">엔티티 조회</a>        <ul>
+          <li><a href="#동일성과-동등성" id="markdown-toc-동일성과-동등성">동일성과 동등성</a></li>
+        </ul>
+      </li>
+      <li><a href="#엔티티-등록" id="markdown-toc-엔티티-등록">엔티티 등록</a></li>
+      <li><a href="#엔티티-수정" id="markdown-toc-엔티티-수정">엔티티 수정</a></li>
+      <li><a href="#엔티티-삭제" id="markdown-toc-엔티티-삭제">엔티티 삭제</a></li>
+    </ul>
+  </li>
+  <li><a href="#플러시flush" id="markdown-toc-플러시flush">플러시(flush())</a>    <ul>
+      <li><a href="#플러시-모드-옵션" id="markdown-toc-플러시-모드-옵션">플러시 모드 옵션</a></li>
+    </ul>
+  </li>
+  <li><a href="#준영속" id="markdown-toc-준영속">준영속</a>    <ul>
+      <li><a href="#엔티티를-준영속-상태로-전환-detach" id="markdown-toc-엔티티를-준영속-상태로-전환-detach">엔티티를 준영속 상태로 전환: detach()</a></li>
+      <li><a href="#영속성-컨텍스트-초기화-clear" id="markdown-toc-영속성-컨텍스트-초기화-clear">영속성 컨텍스트 초기화: clear()</a></li>
+      <li><a href="#영속성-컨텍스트-종료-close" id="markdown-toc-영속성-컨텍스트-종료-close">영속성 컨텍스트 종료: close()</a></li>
+      <li><a href="#준영속-상태의-특징" id="markdown-toc-준영속-상태의-특징">준영속 상태의 특징</a></li>
+      <li><a href="#병합-merge" id="markdown-toc-병합-merge">병합: merge()</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="엔티티-매니저-팩토리와-엔티티-매니저">엔티티 매니저 팩토리와 엔티티 매니저</h2>
+<ul>
+  <li>데이터베이스를 하나만 사용하는 애플리케이션은 일반적으로 하나의 <code class="language-plaintext highlighter-rouge">EntityManagerFactory</code> 생성 - 커넥션 풀을 형성하는데 비용이 많이 들기 때문</li>
+  <li>후에는 필요할 때마다 엔티티 매니저 팩토리에서 엔티티 매니저를 생성하면 됨</li>
+  <li>엔티티 매니저 팩토리는 여러 스레드가 동시에 접근해도 안전하므로 서로 다른 스레드 간에 공유해도 되지만, 엔티티 매니저는 여러 스레드가 동시에 접근하면 동시성 문제가 발생하므로 스레드 간에 절대 공유하면 안됨
+<img src="/assets/img/blog/jpa-basic-3-1.png" alt="데이터베이스 방언" class="border lead" width="480" height="480" loading="lazy" /></li>
+</ul>
+
+<h2 id="영속성-컨텍스트란">영속성 컨텍스트란?</h2>
+<ul>
+  <li><strong>영속성 컨텍스트(Persistence Context)</strong>: 엔티티를 영구 저장하는 환경</li>
+  <li><code class="language-plaintext highlighter-rouge">em.persist</code>: 엔티티 매니저를 사용하여 회원 엔티티를 영속성 컨텍스트에 저장하는 코드</li>
+  <li>영속성 컨텍스트는 엔티티 매니저를 생성할 때 하나 만들어지며 엔티티 매니저를 통해 영속성 컨텍스트에 접근할 수 있고 관리할 수 있음</li>
+</ul>
+
+<h2 id="엔티티의-생명주기">엔티티의 생명주기</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">비영속(new/transient)</code>: 영속성 컨텍스트와 전혀 관계가 없는 상태
+    <ul>
+      <li>엔티티 객체를 생성했으나 아직 저장하지 않았기 때문에 영속성 컨텍스트나 데이터베이스와 관련이 없음</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">영속(managed)</code>: 영속성 컨텍스트에 저장된 상태
+    <ul>
+      <li>영속성 컨텍스트가 관리하는 엔티티를 영속 상태라 함</li>
+      <li>결국 영속 상태는 영속성 컨텍스트에 의해 관리된다는 뜻</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">준영속(detached)</code>: 영속성 컨텍스트에 저장되었다가 분리된 상태
+    <ul>
+      <li>영속성 컨텍스트를 관리하던 영속 상태의 엔티티를 영속성 컨텍스트가 관리하지 않는 경우 준영속 상태가 됨</li>
+      <li><code class="language-plaintext highlighter-rouge">em.detach()</code> 호출 or <code class="language-plaintext highlighter-rouge">em.close()</code>를 호출해 영속성 컨텍스트 닫는 경우 or <code class="language-plaintext highlighter-rouge">em.close()</code>를 호출해 영속성 컨텍스트 초기화 하는 경우</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">삭제(removed)</code>: 삭제된 상태
+    <ul>
+      <li>엔티티를 영속성 컨텍스트와 데이터베이스에서 삭제</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/assets/img/blog/jpa-basic-3-2.jpeg" alt="데이터베이스 방언" class="border lead" width="480" height="480" loading="lazy" /></p>
+
+<h2 id="영속성-컨텍스트의-특징">영속성 컨텍스트의 특징</h2>
+<ul>
+  <li>영속성 컨텍스트와 식별자 값
+    <ul>
+      <li>영속성 컨텍스트는 엔티티를 <code class="language-plaintext highlighter-rouge">@Id</code>와 같은 식별자 값으로 구분하므로 반드시 있어야 함</li>
+    </ul>
+  </li>
+  <li>영속성 컨텍스트와 데이터베이스 저장
+    <ul>
+      <li>JPA는 보통 트랜잭션을 커밋하는 순간 영속성 컨텍스트에 새로 저장된 엔티티를 데이터베이스에 반영하며 이것을 <code class="language-plaintext highlighter-rouge">flush</code>라 함</li>
+    </ul>
+  </li>
+  <li>영속성 컨텍스트가 엔티티를 관리하면 얻는 장점
+    <ul>
+      <li>1차 캐시</li>
+      <li>동일성 보장</li>
+      <li>트랜잭션을 지원하는 쓰기 지연</li>
+      <li>변경 감지</li>
+      <li>지연 로딩</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="엔티티-조회">엔티티 조회</h3>
+<ul>
+  <li><strong>1차 캐시</strong>: 영속성 컨텍스트가 갖고 있는 내부 캐시</li>
+  <li>영속성 컨텍스트 내부에 Map이 있는데 키는 <code class="language-plaintext highlighter-rouge">@Id</code>로 매핑한 식별자이고 값은 엔티티 인스턴스</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 엔티티를 생성한 상태(비영속)</span>
+<span class="nc">Member</span> <span class="n">member</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Member</span><span class="o">();</span>
+<span class="n">member</span><span class="o">.</span><span class="na">setId</span><span class="o">(</span><span class="s">"member1"</span><span class="o">);</span>
+<span class="n">member</span><span class="o">.</span><span class="na">setUsername</span><span class="o">(</span><span class="s">"회원1"</span><span class="o">);</span>
+
+<span class="c1">// 엔티티를 영속</span>
+<span class="n">em</span><span class="o">.</span><span class="na">persist</span><span class="o">(</span><span class="n">member</span><span class="o">);</span>
+</code></pre></div></div>
+
+<p><img src="/assets/img/blog/jpa-basic-3-3.jpeg" alt="데이터베이스 방언" class="border lead" width="480" height="480" loading="lazy" /></p>
+<ul>
+  <li>엔티티 조회</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Member</span> <span class="n">member</span> <span class="o">=</span> <span class="n">em</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="nc">Member</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"member1"</span><span class="o">);</span>
+</code></pre></div></div>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">em.find</code>를 호출하면 먼저 1차 캐시에서 엔티티를 찾고 만약 없다면 데이터베이스에서 조회</li>
+  <li>1차 캐시를 통해 성능상 이점을 누릴 수 있음</li>
+  <li>엔티티의 동일성 보장</li>
+  <li>JPA는 1차 캐시를 통해 반복 가능한 읽기(REPEATABLE READ) 등급의 트랜잭션 격리 수준을 데이터베이스가 아닌 애플리케이션 차원에서 제공</li>
+</ul>
+
+<h4 id="동일성과-동등성">동일성과 동등성</h4>
+<ul>
+  <li><strong>동일성(identity)</strong>: 실제 인스턴스가 같음. 따라서 참조 값을 비교하는 <code class="language-plaintext highlighter-rouge">==</code>비교의 값이 같음</li>
+  <li><strong>동등성(equality)</strong>: 실제 인스턴스는 다를 수 있으나 인스턴스가 가지고 있는 값이 같음. 자바에서 동등성 비교는 <code class="language-plaintext highlighter-rouge">equals()</code>메소드</li>
+</ul>
+
+<h3 id="엔티티-등록">엔티티 등록</h3>
+<ul>
+  <li>엔티티 매니저를 사용해 엔티티를 영속성 컨텍스트에 등록</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">EntityManager</span> <span class="n">em</span> <span class="o">=</span> <span class="n">emf</span><span class="o">.</span><span class="na">createEntityManager</span><span class="o">();</span>
+<span class="nc">EntityTransaction</span> <span class="n">transaction</span> <span class="o">=</span> <span class="n">em</span><span class="o">.</span><span class="na">getTransaction</span><span class="o">();</span>
+<span class="c1">// 엔티티 매니저는 데이터 변경 시 트랜잭션을 시작해야 함</span>
+<span class="n">transaction</span><span class="o">.</span><span class="na">begin</span><span class="o">();</span> <span class="c1">// [트랜잭션] 시작</span>
+
+<span class="n">em</span><span class="o">.</span><span class="na">persist</span><span class="o">(</span><span class="n">memberA</span><span class="o">);</span>
+<span class="n">em</span><span class="o">.</span><span class="na">persist</span><span class="o">(</span><span class="n">memberB</span><span class="o">);</span>
+<span class="c1">// 여기까지 INSERT SQL을 데이터베이스로 보내지 않음</span>
+
+<span class="c1">// 커밋하는 순간 SQL을 보냄</span>
+<span class="n">transaction</span><span class="o">.</span><span class="na">commit</span><span class="o">();</span> <span class="c1">// [트랜잭션] 커밋</span>
+</code></pre></div></div>
+<ul>
+  <li>엔티티 매니저는 트랜잭션 커밋 직전까지 데이터베이스에 엔티티를 저장하지 않고 내부 쿼리 저장소에 INSERT SQL을 모아둠 = <code class="language-plaintext highlighter-rouge">트랜잭션을 지원하는 쓰기 지연(transactional write-behind)</code></li>
+  <li>트랜잭션을 지원하는 쓰기 지연이 가능한 이유
+    <ul>
+      <li>등록 쿼리를 바로 데이터베이스에 전달해도 트랜잭션을 커밋하지 않으면 소용이 없음</li>
+      <li>어떻게든 커밋 직전에만 데이터베이스에 SQL을 전달하면 되므로 쓰기 지연이 가능해짐</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="엔티티-수정">엔티티 수정</h3>
+<ul>
+  <li>SQL 수정 쿼리의 문제점
+    <ul>
+      <li>수정 쿼리가 많아지며 비즈니스 로직을 분석하기 위해 SQL을 계속해서 확인해야 함</li>
+      <li>결국 직, 간접적으로 비즈니스 로직이 SQL에 의존하게 됨</li>
+    </ul>
+  </li>
+  <li>변경 감지
+    <ul>
+      <li>JPA로 수정 시 단순히 엔티티를 조회해서 데이터만 변경하면 됨</li>
+      <li><code class="language-plaintext highlighter-rouge">em.update()</code>같은 메소드는 없음</li>
+      <li><strong>변경 감지</strong>란 엔티티의 변경사항을 데이터베이스에 자동으로 반영하는 기능</li>
+      <li>JPA는 엔티티를 영속성 컨텍스트에 보관할 때, 최초 상태를 복사하여 저장 = <code class="language-plaintext highlighter-rouge">스냅샷</code></li>
+      <li>변경 감지는 영속성 컨텍스트가 관리하는 영속 상태의 엔티티에만 적용됨</li>
+      <li>JPA의 기본 전략은 엔티티의 모든 필드를 업데이트
+        <ul>
+          <li>단점: 데이터베이스에 보내는 데이터 전송량 증가</li>
+          <li>장점
+            <ul>
+              <li>모든 필드 사용 시 수정 쿼리가 항상 같으므로 로딩 시점에 수정 쿼리를 미리 생성해두고 재사용 가능</li>
+              <li>데이터베이스에 동일 쿼리를 보내면 이전에 한 번 파싱된 쿼리를 재사용할 수 있음</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>필드가 많거나 저장되는 내용이 너무 클 경우는 하이버네이트 확장 기능을 사용하여 동적으로 UPDATE SQL 생성 = <code class="language-plaintext highlighter-rouge">@org.hibernate.annotations.DynamicUpdate</code></li>
+      <li>데이터 저장시 데이터가 존재하는 필드만으로 INSERT SQL을 동적으로 생성하는 <code class="language-plaintext highlighter-rouge">@DynamicInsert</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="엔티티-삭제">엔티티 삭제</h3>
+<ul>
+  <li>먼저 삭제 대상 엔티티 조회</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Member</span> <span class="n">memberA</span> <span class="o">=</span> <span class="n">em</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="nc">Member</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"memberA"</span><span class="o">);</span> <span class="c1">// 삭제 대상 엔티티 조회</span>
+<span class="n">em</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">memberA</span><span class="o">);</span> <span class="c1">// 엔티티 삭제</span>
+</code></pre></div></div>
+<ul>
+  <li>이렇게 삭제된 엔티티는 재사용하지 말고 자연스럽게 가비지 컬렉션의 대상이 되도록 두는 것이 좋음</li>
+</ul>
+
+<h2 id="플러시flush">플러시(flush())</h2>
+<ul>
+  <li>영속성 컨텍스트의 변경 내용을 데이터베이스에 반영</li>
+  <li>구체적인 순서
+    <ol>
+      <li>변경 감지가 동작하여 영속성 컨텍스트에 있는 모든 엔티티를 스냅샷과 비교해서 수정된 엔티티를 찾음. 수정된 엔티티는 수정 쿼리를 만들어 쓰기 지연 SQL 저장소에 등록</li>
+      <li>쓰기 지연 SQL 저장소의 쿼리를 데이터베이스에 전송 (등록, 수정, 삭제 쿼리)</li>
+    </ol>
+  </li>
+  <li>영속성 컨텍스트 플러시 방법
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">em.flush()</code> 직접 호출
+        <ul>
+          <li>테스트나 다른 프레임워크와 JPA를 함께 사용할 때를 제외하고 거의 사용하지 않음</li>
+        </ul>
+      </li>
+      <li>트랜잭션 커밋 시 플러시 자동 호출
+        <ul>
+          <li>트랜잭션을 커밋하기 전에 꼭 플러시를 호출해서 영속성 컨텍스트의 변경 내용을 데이터베이스에 반영해야 함</li>
+        </ul>
+      </li>
+      <li>JPQL 쿼리 실행 시 플러시 자동 호출
+        <ul>
+          <li>영속 상태에 있는 것들은 아직 데이터 베이스에 없으므로 쿼리를 통한 조회가 불가능함. 이런 문제를 해결하기 위해 JPQL을 실행할 때에도 플러시를 자동으로 호출함</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="플러시-모드-옵션">플러시 모드 옵션</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">FlushModeType.AUTO</code>: 커밋이나 쿼리를 실행할 때 플러시(DEFAULT)</li>
+  <li><code class="language-plaintext highlighter-rouge">FlushModeType.COMMIT</code>: 커밋할 때만 플러시</li>
+  <li>플러시라는 이름으로 인해 영속성 컨텍스트에 보관된 엔티티를 지우는 것이 아니라 영속성 컨텍스트의 변경 내용을 데이터베이스에 동기화하는 것이 플러시</li>
+</ul>
+
+<h2 id="준영속">준영속</h2>
+<ul>
+  <li>영속성 컨텍스트가 관리하는 영속 상태의 엔티티가 영속성 컨텍스트에서 분리된(detached) 것으로 준영속 상태의 엔티티는 영속성 컨텍스트가 제공하는 기능을 사용할 수 없음</li>
+  <li>준영속 상태로 만드는 방법
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">em.detach(entity)</code>: 특정 엔티티만 준영속 상태로 전환</li>
+      <li><code class="language-plaintext highlighter-rouge">em.clear()</code>: 영속성 컨텍스트를 완전히 초기화</li>
+      <li><code class="language-plaintext highlighter-rouge">em.close()</code>: 영속성 컨텍스트를 종료</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="엔티티를-준영속-상태로-전환-detach">엔티티를 준영속 상태로 전환: detach()</h3>
+<ul>
+  <li>이 메소드를 호출하는 순간 1차 캐시부터 쓰기 지연 SQL 저장소까지 해당 엔티티를 관리하기 위한 모든 정보 제거</li>
+  <li>영속 상태: 영속성 컨텍스트로부터 관리(managed)되는 상태</li>
+  <li>준영속 상테: 형속성 컨텍스트로부터 분리(detached)된 상태</li>
+</ul>
+
+<h3 id="영속성-컨텍스트-초기화-clear">영속성 컨텍스트 초기화: clear()</h3>
+<ul>
+  <li>영속성 컨텍스트를 초기화해서 해당 영속성 컨텍스트의 모든 엔티티를 준영속 상태로 만듦</li>
+</ul>
+
+<h3 id="영속성-컨텍스트-종료-close">영속성 컨텍스트 종료: close()</h3>
+<ul>
+  <li>영속성 컨텍스트를 종료하면 해당 영속성 컨텍스트가 관리하던 영속 상태의 엔티티가 모두 준영속 상태가 됨</li>
+  <li>개발자가 직접 준영속 상태로 만드는 일은 드물다.</li>
+</ul>
+
+<h3 id="준영속-상태의-특징">준영속 상태의 특징</h3>
+<ul>
+  <li>거의 비영속 상태에 가까움
+    <ul>
+      <li>1차 캐시, 쓰기 지연, 변경 감지, 지연 로딩을 포함한 영속성 컨텍스트가 제공하는 어떤 기능도 동작하지 않음</li>
+    </ul>
+  </li>
+  <li>식별자 값을 가지고 있음
+    <ul>
+      <li>비영속 상태는 식별자 값이 없을 수도 있으나 준영속 상태는 이미 한 번 영속 상태인 적이 있었으므로 식별자 값이 있음</li>
+    </ul>
+  </li>
+  <li>지연 로딩을 할 수 없음
+    <ul>
+      <li>지연 로딩(Lazy loading): 실제 객체 대신 프록시 객체를 로딩해두고 해당 객체를 실제 사용할 때 영속성 컨텍스트를 통해 데이터를 불러오는 방법</li>
+      <li>준영속 상태의 경우 더이상 영속성 컨텍스트가 더이상 관리하지 않으므로 지연 로딩 시 문제 발생</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="병합-merge">병합: merge()</h3>
+<ul>
+  <li>준영속 상태의 엔티티를 다시 영속 상태로 변경하기 위함</li>
+  <li><code class="language-plaintext highlighter-rouge">merge()</code> 메소드는 준영속 상태의 엔티티를 받아 새로운 영속 상태의 엔티티를 반환</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Mergemain</span> <span class="o">{</span>
+  
+  <span class="kd">static</span> <span class="nc">EntityManagerFactory</span> <span class="n">emf</span> <span class="o">=</span> <span class="nc">Persistence</span><span class="o">.</span><span class="na">createEntityManagerFactory</span><span class="o">(</span><span class="s">"jpabook"</span><span class="o">);</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    
+    <span class="nc">Member</span> <span class="n">member</span> <span class="o">=</span> <span class="n">createMember</span><span class="o">(</span><span class="s">"memberA"</span><span class="o">,</span> <span class="s">"회원1"</span><span class="o">);</span> <span class="c1">// 준영속 상태의 member 엔티티 반환</span>
+
+    <span class="n">member</span><span class="o">.</span><span class="na">setUsername</span><span class="o">(</span><span class="s">"회원명변경"</span><span class="o">);</span> <span class="c1">// 준영속 상태에서 변경</span>
+
+    <span class="n">mergeMember</span><span class="o">(</span><span class="n">member</span><span class="o">);</span> <span class="c1">// </span>
+  <span class="o">}</span>
+
+  <span class="kd">static</span> <span class="nc">Member</span> <span class="nf">createMember</span><span class="o">(</span><span class="nc">String</span> <span class="n">id</span><span class="o">,</span> <span class="nc">String</span> <span class="n">username</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">//== 영속성 컨텍스트1 시작 ==//</span>
+    <span class="nc">EntityManager</span> <span class="n">em1</span> <span class="o">=</span> <span class="n">emf</span><span class="o">.</span><span class="na">createEntityManager</span><span class="o">();</span>
+    <span class="nc">EntityTransaction</span> <span class="n">tx1</span> <span class="o">=</span> <span class="n">em1</span><span class="o">.</span><span class="na">getTransaction</span><span class="o">();</span>
+    <span class="n">tx1</span><span class="o">.</span><span class="na">begin</span><span class="o">();</span>
+
+    <span class="nc">Member</span> <span class="n">member</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Member</span><span class="o">();</span>
+    <span class="n">member</span><span class="o">.</span><span class="na">setId</span><span class="o">(</span><span class="n">id</span><span class="o">);</span>
+    <span class="n">member</span><span class="o">.</span><span class="na">setUsername</span><span class="o">(</span><span class="n">username</span><span class="o">);</span>
+
+    <span class="n">em1</span><span class="o">.</span><span class="na">persist</span><span class="o">(</span><span class="n">member</span><span class="o">);</span>
+    <span class="n">tx1</span><span class="o">.</span><span class="na">commit</span><span class="o">();</span>
+
+    <span class="n">em1</span><span class="o">.</span><span class="na">close</span><span class="o">();</span> <span class="c1">// 영속성 컨텍스트1 종료, member엔티티는 준영속 상태가 됨</span>
+    <span class="c1">//== 영속성 컨텍스트1 종료 ==//</span>
+
+    <span class="k">return</span> <span class="n">member</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">static</span> <span class="kt">void</span> <span class="nf">mergeMember</span><span class="o">(</span><span class="nc">Member</span> <span class="n">member</span><span class="o">)</span> <span class="o">{</span>
+     <span class="c1">//== 영속성 컨텍스트2 시작 ==//</span>
+    <span class="nc">EntityManager</span> <span class="n">em2</span> <span class="o">=</span> <span class="n">emf</span><span class="o">.</span><span class="na">createEntityManager</span><span class="o">();</span>
+    <span class="nc">EntityTransaction</span> <span class="n">tx2</span> <span class="o">=</span> <span class="n">em1</span><span class="o">.</span><span class="na">getTransaction</span><span class="o">();</span>
+    
+    <span class="n">tx2</span><span class="o">.</span><span class="na">begin</span><span class="o">();</span>
+    <span class="nc">Member</span> <span class="n">mergeMember</span> <span class="o">=</span> <span class="n">em2</span><span class="o">.</span><span class="na">merge</span><span class="o">(</span><span class="n">member</span><span class="o">);</span>
+    <span class="n">tx2</span><span class="o">.</span><span class="na">commit</span><span class="o">();</span>
+
+    <span class="c1">// 준영속 상태</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"member = "</span> <span class="o">+</span> <span class="n">member</span><span class="o">.</span><span class="na">getUsername</span><span class="o">());</span>
+
+    <span class="c1">// 영속 상태</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"mergeMember = "</span> <span class="o">+</span> <span class="n">mergeMember</span><span class="o">().</span><span class="na">getUsername</span><span class="o">());</span>
+
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"em2 contains member = "</span> <span class="o">+</span> <span class="n">em2</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="n">member</span><span class="o">));</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"em2 contains mergeMember = "</span> <span class="o">+</span> <span class="n">em2</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="n">mergeMember</span><span class="o">));</span>
+
+    <span class="n">em1</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="c1">//== 영속성 컨텍스트2 종료 ==//</span>
+
+    <span class="k">return</span> <span class="n">member</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>member = 회원명변경
+mergeMember = 회원명변경
+em2 contains member = false
+em2 contains mergeMember = true
+</code></pre></div></div>
+<ul>
+  <li>merge()의 동작 방식
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">merge()</code> 실행</li>
+      <li>파라미터로 넘어온 준영속 엔티티의 식별자 값으로 1차 캐시에서 엔티티 조회, 1차 캐시에 엔티티가 없으면 데이터베이스에서 엔티티를 조회하고 1차 캐시에 저장</li>
+      <li>조회한 영속 엔티티에 member엔티티 값을 채워 넣음</li>
+      <li>mergemember 반환</li>
+    </ol>
+  </li>
+  <li>비영속 병합
+    <ul>
+      <li>병합(merge)은 비영속 엔티티도 영속 상태로 만들 수 있음</li>
+      <li><code class="language-plaintext highlighter-rouge">save or update</code> 기능 수행</li>
+    </ul>
+  </li>
+</ul>
+
+  
+</article>
+
+
+
+  <clap-button class="mb6" ></clap-button>
+  
+  
+    <p class="message centered border-radius" >
+      <span style="display:block;margin-bottom:.5rem;">This is a preview of <a href="https://getclaps.app">Clap Button</a>, a new feedback and analytics tools for Hydejack, built by yours truly.</span>
+      <span style="display:block;margin-bottom:.5rem;">You can try it out on <code>localhost</code> for free, but it will be removed (together with this message) when building with <code>JEKYLL_ENV=production</code>.</span>
+      <span style="display:block;margin-bottom:.5rem;">To use Clap Button on your site, get a <a href="https://getclaps.app#pricing">subscription</a><br/>and set <code>clap_button: true</code> in your config file.</span>
+    </p>
+  
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="https://placehold.it/128x128"
+    srcset="https://placehold.it/128x128 1x,https://placehold.it/256x256 2x"
+    
+  
+  alt="Jinho Kim"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>I want to be a Java Back-End Developer.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/naekang" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://instagram.com/jj1no/" title="Instagram" class="no-mark-external">
+      <span class="icon-instagram"></span>
+      <span class="sr-only">Instagram</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  <aside class="other-projects related mb0" role="complementary">  <h2>Related Posts</h2>  <div class="columns">          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/jj-ying.jpg"    alt="데이터베이스 설계와 ER모델"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/" class="flip-title">데이터베이스 설계와 ER모델</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      데이터베이스 수업 5장 ppt 내용.    </p>      <a class="fill-card no-hover" href="/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/" tabindex="-1"><span class="sr-only">Continue reading 데이터베이스 설계와 ER모델</span></a></article>              </div>          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/update/computer-science/java-basic/2021-11-17-java-basic-6/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/java-main.jpeg"    alt="자바의 정석"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/update/computer-science/java-basic/2021-11-17-java-basic-6/" class="flip-title">자바의 정석</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      자바의 정석    </p>      <a class="fill-card no-hover" href="/blog/update/computer-science/java-basic/2021-11-17-java-basic-6/" tabindex="-1"><span class="sr-only">Continue reading 자바의 정석</span></a></article>              </div>      </div></aside>
+
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/update/computer-science/wooahan-techcourse/2021-10-31-Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/" class="flip-title"><span>Cache란 무엇인가</span></a>  <time class="faded fine" datetime="2021-10-31T00:00:00+09:00">31 Oct 2021</time></li>          <li class="h4">  <a href="/blog/update/database/2021-10-28-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-1%EC%9E%A5/" class="flip-title"><span>What’s Database System?</span></a>  <time class="faded fine" datetime="2021-10-28T00:00:00+09:00">28 Oct 2021</time></li>          <li class="h4">  <a href="/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/" class="flip-title"><span>자바의 정석</span></a>  <time class="faded fine" datetime="2021-11-02T00:00:00+09:00">02 Nov 2021</time></li>      </ul></aside>
+
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2021. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/CHANGELOG/">CHANGELOG</a>
+      
+    
+    </small></nav>
+  
+  
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar invert" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg " style="background:url('/assets/img/blog/jj-ying.jpg') center/cover"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/logo.png" class="avatar" alt="Hauling-IT" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Hauling-IT</h2></a>
+    
+    
+      <p class="">
+        백엔드 개발자를 향하여
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/blog/"
+          class="sidebar-nav-item "
+          
+        >
+          Blog
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/projects/"
+          class="sidebar-nav-item "
+          
+        >
+          Projects
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/resume/"
+          class="sidebar-nav-item "
+          
+        >
+          Résumé*
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/docs/"
+          class="sidebar-nav-item "
+          
+        >
+          Documentation
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/naekang" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://instagram.com/jj1no/" title="Instagram" class="no-mark-external">
+      <span class="icon-instagram"></span>
+      <span class="sr-only">Instagram</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.4.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.4.js" nomodule defer></script>
+  
+
+  
+  <script>!function(w, d) {
+    w.ga=w.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+    /**/
+      ga('create', 'UA-212303898-1', 'auto');
+    /**/
+
+    var pushStateEl = d.getElementById('_pushState');
+    var timeoutId;
+    pushStateEl.addEventListener('hy-push-state-load', function() {
+      w.clearTimeout(timeoutId);
+      timeoutId = w.setTimeout(function() {
+        ga('set', 'page', w.location.pathname);
+        ga('send', 'pageview');
+      }, 500);
+    });
+
+    d.addEventListener('hy--cookies-ok', function () {
+      w.ga(function(tracker) {
+        w.ga("set", "anonymizeIp", undefined);
+        localStorage && localStorage.setItem("ga--client-id", tracker.get("clientId"));
+      });
+    });
+
+    w.loadJSDeferred('https://www.google-analytics.com/analytics.js');
+  }(window, document);</script>
+
+
+  <script type="module">
+    if ('serviceWorker' in navigator) {
+      /**/
+      navigator.serviceWorker.getRegistration()
+        .then(r => r.unregister())
+        .catch(() => {});
+      /**/
+    }
+  </script>
+<!--<![endif]-->
+  
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <clap-config>
+    <clap-text at="1">Keep going!</clap-text>
+    <clap-text at="2">Keep going ×2!</clap-text>
+    <clap-text at="3">Give me more!</clap-text>
+    <clap-text at="5">Thank you, thank you</clap-text>
+    <clap-text at="7">Far too kind!</clap-text>
+    <clap-text at="10">Never gonna give me up?</clap-text>
+    <clap-text at="14">Never gonna let me down?</clap-text>
+    <clap-text at="20">Turn around and desert me!</clap-text>
+    <clap-text at="30">You're an addict!</clap-text>
+    <clap-text at="40">Son of a clapper!</clap-text>
+    <clap-text at="50">No way</clap-text>
+    <clap-text at="60">Go back to work!</clap-text>
+    <clap-text at="70">This is getting out of <em>hand</em></clap-text>
+    <clap-text at="80">Unbelievable</clap-text>
+    <clap-text at="90">PREPOSTEROUS</clap-text>
+    <clap-text at="100">I N S A N I T Y</clap-text>
+    <clap-text at="185"><span style="font-family:monospace">FEED ME A STRAY CAT</span></clap-text>
+  </clap-config>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+  
+  
+    <template id="_dark-mode-template">
+  <button id="_dark-mode" class="nav-btn no-hover" >
+    <span class="sr-only">Dark Mode</span>
+    <span class="icon-brightness-contrast"></span>
+  </button>
+</template>
+
+  
+  
+    <template id="_search-template">
+  <button id="_search" class="nav-btn no-hover">
+    <label class="sr-only" for="_search-input">Search</label>
+    <span class="icon-search"></span>
+  </button>
+  <div id="_search-box">
+    <div class="nav-btn">
+      <span class="icon-search"></span>
+    </div>
+    <input 
+      id="_search-input"
+      type="search"
+      class="form-control form-control-lg nav-btn"
+      placeholder="Build with JEKYLL_ENV=production to enable search."
+    />
+    <button type="reset" class="nav-btn no-hover">
+      <span class="sr-only">Close</span>
+      <span class="icon-cross"></span>
+    </button>
+  </div>
+  <div id="_hits"></div>
+</template>
+
+  
+</div>
+
+</body>
+</html>
