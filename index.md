@@ -4,14 +4,10 @@ title: Hauling-IT
 sitemap: false
 ---
 
-Thank you for visiting Hauling-IT blog! 🎉
+안녕하세요! Hauling-IT 블로그를 운영하는 Naekang입니다. 🎉
+자바 기반의 백엔드 개발자가 되기 위해 공부중입니다. 혹시 블로그 내용을 보고 잘못된 부분이나 궁금한 부분이 있으실 경우 `rlawlsgh6306@gmail.com`으로 문의 부탁드립니다!
 
-More than one year ago I was looking for a blogging platform but couldn't find it:
-One that would let me write posts in markdown with my own editor,
-one that didn't look awful buy modern design standards, and one that felt snappy on a mobile phone.
-That and more is now Hydejack. I hope you enjoy it [as much as I do](https://qwtel.com/).
-
-## First Steps
+<!-- ## First Steps
 Start by reading the [Documentation]{:.heading.flip-title}.
 Specifically, the chapters below should be relevant now:
 
@@ -44,4 +40,4 @@ containing example content:
 [documentation]: docs/README.md
 [install]: docs/install.md
 [upgrade]: docs/upgrade.md
-[config]: docs/config.md
+[config]: docs/config.md -->
