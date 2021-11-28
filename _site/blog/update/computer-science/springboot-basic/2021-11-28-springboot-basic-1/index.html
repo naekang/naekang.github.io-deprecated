@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>스프링부트 프로젝트 생성하기 | Hauling-IT</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="스프링부트 프로젝트 생성하기" />
+<meta name="author" content="Jinho Kim" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="자바 ORM 표준 JPA 프로그래밍" />
+<meta property="og:description" content="자바 ORM 표준 JPA 프로그래밍" />
+<link rel="canonical" href="http://localhost:4000/blog/update/computer-science/springboot-basic/2021-11-28-springboot-basic-1/" />
+<meta property="og:url" content="http://localhost:4000/blog/update/computer-science/springboot-basic/2021-11-28-springboot-basic-1/" />
+<meta property="og:site_name" content="Hauling-IT" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/springboot-main.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-28T00:00:00+09:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/springboot-main.png" />
+<meta property="twitter:title" content="스프링부트 프로젝트 생성하기" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/update/computer-science/springboot-basic/2021-11-28-springboot-basic-1/"},"image":"http://localhost:4000/assets/img/blog/springboot-main.png","author":{"@type":"Person","name":"Jinho Kim"},"@type":"BlogPosting","url":"http://localhost:4000/blog/update/computer-science/springboot-basic/2021-11-28-springboot-basic-1/","description":"자바 ORM 표준 JPA 프로그래밍","headline":"스프링부트 프로젝트 생성하기","dateModified":"2021-11-28T00:00:00+09:00","datePublished":"2021-11-28T00:00:00+09:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Jinho Kim"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hauling-IT">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Hauling-IT">
+
+
+  <meta name="theme-color" content="rgb(8,46,57)">
+
+
+<meta name="generator" content="Hydejack v9.1.4" />
+
+
+<link rel="alternate" href="http://localhost:4000/blog/update/computer-science/springboot-basic/2021-11-28-springboot-basic-1/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hauling-IT" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+<link rel="dns-prefetch" href="/assets/js/search-worker-9.1.4.js" as="worker" id="_hrefSearch">
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script");n.src=e,t&&a(n,"load",t,{once:!0});t=c.scripts[0];return t.parentNode.insertBefore(n,t),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._advertise = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2021-11-29T00:03:40+09:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.4.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-color-highlight: rgba(204,204,204,0.1);--accent-color-darkened: #b9b9b9;--theme-color: #ccc;--dark-mode-body-bg: #2d2d2d;--dark-mode-border-color: #393939}
+
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+<script>
+  window._sunrise = 6;
+  window._sunset =  18;
+  !function(e,s){var d="light-mode",o="dark-mode",a=(new Date).getHours();"matchMedia"in e&&e.matchMedia("(prefers-color-scheme)")||(o=(e=a<=e._sunrise||a>=e._sunset?o:d)==o?d:o,s.body.classList.add(e),s.body.classList.remove(o))}(window,document);
+
+</script>
+
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/">blog</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/update/">update</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/update/computer-science/">computer-science</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/blog/update/computer-science/springboot-basic/">springboot-basic</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        <span>2021-11-28-springboot-basic-1</span>
+      
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-blog-update-computer-science-springboot-basic-springboot-basic-1" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        스프링부트 프로젝트 생성하기
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2021-11-28T00:00:00+09:00">28 Nov 2021</time> in <span>Update</span> / <a href="/blog/computer-science/" class="flip-title">computer-science</a> / <a href="/blog/springboot-basic/" class="flip-title">springboot-basic</a> on <span>Computer-science</span>, <span>Springboot-basic</span>
+      </span>
+      
+        
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="/assets/img/blog/springboot-main.png"
+  
+  alt="스프링부트 프로젝트 생성하기"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      자바 ORM 표준 JPA 프로그래밍
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <ul id="markdown-toc">
+  <li><a href="#프로젝트-개발환경" id="markdown-toc-프로젝트-개발환경">프로젝트 개발환경</a></li>
+  <li><a href="#spring-initializr-홈페이지를-통해-프로젝트-생성하기" id="markdown-toc-spring-initializr-홈페이지를-통해-프로젝트-생성하기">Spring initializr 홈페이지를 통해 프로젝트 생성하기</a>    <ul>
+      <li><a href="#1-spring-initializr-접속" id="markdown-toc-1-spring-initializr-접속">1. Spring Initializr 접속</a></li>
+      <li><a href="#2-project에서-빌드-관리-도구-선택하기" id="markdown-toc-2-project에서-빌드-관리-도구-선택하기">2. Project에서 빌드 관리 도구 선택하기</a></li>
+      <li><a href="#3-language-선택---java-kotlin-groovy" id="markdown-toc-3-language-선택---java-kotlin-groovy">3. language 선택 - <strong>Java</strong>, Kotlin, Groovy</a></li>
+      <li><a href="#4-spring-boot-버전-선택" id="markdown-toc-4-spring-boot-버전-선택">4. Spring Boot 버전 선택</a></li>
+      <li><a href="#5-밑에-있는-3개의-버튼-중-generate-버튼-누르기" id="markdown-toc-5-밑에-있는-3개의-버튼-중-generate-버튼-누르기">5. 밑에 있는 3개의 버튼 중 <strong>GENERATE</strong> 버튼 누르기</a></li>
+      <li><a href="#6-다운로드-된-zip-파일을-압축-해제하고-intellij에서-해당-폴더-열기" id="markdown-toc-6-다운로드-된-zip-파일을-압축-해제하고-intellij에서-해당-폴더-열기">6. 다운로드 된 zip 파일을 압축 해제하고 IntelliJ에서 해당 폴더 열기</a></li>
+    </ul>
+  </li>
+  <li><a href="#intellij-내부에서-프로젝트-생성하기" id="markdown-toc-intellij-내부에서-프로젝트-생성하기">IntelliJ 내부에서 프로젝트 생성하기</a>    <ul>
+      <li><a href="#1-메뉴바---파일---새로-만들기---프로젝트" id="markdown-toc-1-메뉴바---파일---새로-만들기---프로젝트">1. 메뉴바 -&gt; 파일 -&gt; 새로 만들기 -&gt; 프로젝트</a></li>
+      <li><a href="#2-새-프로젝트에서-spring-initializr을-누르고-웹페이지와-같은-방법으로-생성" id="markdown-toc-2-새-프로젝트에서-spring-initializr을-누르고-웹페이지와-같은-방법으로-생성">2. 새 프로젝트에서 Spring Initializr을 누르고 웹페이지와 같은 방법으로 생성</a></li>
+      <li><a href="#3-버전-및-dependency를-생성한-후-완료" id="markdown-toc-3-버전-및-dependency를-생성한-후-완료">3. 버전 및 Dependency를 생성한 후 완료</a></li>
+      <li><a href="#4-프로젝트-설정에-들어가서-환경-설정-변경하기" id="markdown-toc-4-프로젝트-설정에-들어가서-환경-설정-변경하기">4. 프로젝트 설정에 들어가서 환경 설정 변경하기</a></li>
+      <li><a href="#5-설정-변경이-완료되었으면-src---main---java-패키지-가장-하위에-있는-application에-들어가-실행하기" id="markdown-toc-5-설정-변경이-완료되었으면-src---main---java-패키지-가장-하위에-있는-application에-들어가-실행하기">5. 설정 변경이 완료되었으면 src - main - java 패키지 가장 하위에 있는 Application에 들어가 실행하기</a></li>
+      <li><a href="#6-실행이-정상적으로-될-경우-다음과-같은-화면이-나오게-됨" id="markdown-toc-6-실행이-정상적으로-될-경우-다음과-같은-화면이-나오게-됨">6. 실행이 정상적으로 될 경우 다음과 같은 화면이 나오게 됨</a></li>
+      <li><a href="#7-localhost8080에-접속하였을-때-다음과-같은-화면이-나온다면-정상적으로-완료된-것임" id="markdown-toc-7-localhost8080에-접속하였을-때-다음과-같은-화면이-나온다면-정상적으로-완료된-것임">7. localhost:8080에 접속하였을 때 다음과 같은 화면이 나온다면 정상적으로 완료된 것임</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="프로젝트-개발환경">프로젝트 개발환경</h2>
+<ul>
+  <li>MacBook Pro 16” 2019</li>
+  <li>OS: macOS Monterey 12.0.1</li>
+  <li>Java Version: 11</li>
+  <li>IDE: IntelliJ IDEA Ultimate 2021.2.3</li>
+</ul>
+
+<h2 id="spring-initializr-홈페이지를-통해-프로젝트-생성하기">Spring initializr 홈페이지를 통해 프로젝트 생성하기</h2>
+<h3 id="1-spring-initializr-접속">1. <a href="https://start.spring.io/">Spring Initializr</a> 접속</h3>
+<h3 id="2-project에서-빌드-관리-도구-선택하기">2. Project에서 빌드 관리 도구 선택하기</h3>
+<ul>
+  <li><strong>빌드 관리 도구</strong>
+    <ul>
+      <li>프로젝트 내부의 Java 코드와 각종 xml, properties, jar 파일들을 JVM이나 WAS가 인식할 수 있도록 패키징 해주는 빌드 과정 == 빌드 자동화 도구</li>
+      <li>프로젝트 생성, 테스트 빌드, 배포 등의 작업을 위한 전용 프로그램</li>
+      <li>필요한 라이브러리들을 종류와 버전, 종속성 정보를 명시함으로써 자동으로 다운로드 해주고 간편히 관리해주는 도구</li>
+    </ul>
+  </li>
+  <li><strong>Maven</strong>
+    <ul>
+      <li>Java용 프로젝트 관리도구로 Apache의 Ant 대안으로 만들어짐</li>
+      <li><code class="language-plaintext highlighter-rouge">pom.xml</code> 파일에 명시</li>
+      <li>Maven은 외부저장소에서 필요한 라이브러리와 플러그인들을 다운로드 한 후, 로컬시스템의 캐시에 모두 저장</li>
+    </ul>
+
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&gt;</span>
+<span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-data-jpa<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>2.2.4.RELEASE<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Gradle</strong>
+    <ul>
+      <li>Apache Maven과 Apache Ant에서 볼 수 있는 개념들을 사용하는 대안으로 나온 프로젝트 빌드 관리 툴</li>
+      <li>Groovy언어를 사용한 Domain-specific-language 사용</li>
+      <li>multi-project 빌드를 도울 수 있도록 디자인</li>
+    </ul>
+
+    <div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dependencies</span> <span class="o">{</span> 
+  <span class="c1">// This dependency is found on compile classpath of this component and consumers. </span>
+  <span class="n">compile</span> <span class="s1">'com.google.guava:guava:22.0'</span> 
+
+  <span class="c1">// Use JUnit test framework </span>
+  <span class="n">testCompile</span> <span class="s1">'junit:junit:4.12'</span> 
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="3-language-선택---java-kotlin-groovy">3. language 선택 - <strong>Java</strong>, Kotlin, Groovy</h3>
+
+<h3 id="4-spring-boot-버전-선택">4. Spring Boot 버전 선택</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">SNAPSHOT</code>: 아직 개발단계임</li>
+  <li><code class="language-plaintext highlighter-rouge">GA</code>: 테스트가 완료된 정식 릴리즈 버전으로 안정적으로 운영되어야 하는 프로젝트에서 사용</li>
+  <li><code class="language-plaintext highlighter-rouge">RC</code>: 베타 버전, 기능은 픽스되었으나 안정성은 보장할 수 없음</li>
+  <li><code class="language-plaintext highlighter-rouge">M</code>: 테스트 버전, 기능이 픽스되지 않아 구현될때마다 테스트 버전이 릴리즈 될 수 있음</li>
+  <li><strong>Project Metadata</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Group</code>: 프로젝트를 정의하는 고유한 식별자 정보 / 기업의 도메인 명
+        <ul>
+          <li>일반적으로 Java의 패키지 네이밍을 따름</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">Artifact</code>: jar 파일에서 버전 정보를 뺀 이름으로 소문자를 사용 / 빌드 결과물 이름</li>
+      <li><code class="language-plaintext highlighter-rouge">Name</code>: 프로젝트 이름</li>
+      <li><code class="language-plaintext highlighter-rouge">Description</code>: 프로젝트에 대한 설명</li>
+      <li><code class="language-plaintext highlighter-rouge">Package name</code>: 패키지 이름</li>
+      <li><code class="language-plaintext highlighter-rouge">Packaging</code>: 배포 형태 선택
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">JAR (Java Archive)</code>
+            <ul>
+              <li>Java 애플리케이션이 동작할 수 있도록 자바 프로젝트를 압축한 파일</li>
+              <li>Class (Java리소스, 속성 파일), 라이브러리 파일 포함</li>
+              <li>JRE(Java Runtime Environment)만 있어도 실행 가능(<code class="language-plaintext highlighter-rouge">java -jar 프로젝트명.jar</code>)</li>
+            </ul>
+          </li>
+          <li><code class="language-plaintext highlighter-rouge">WAR (Web Application Archive)</code>
+            <ul>
+              <li>Servlet / JSP 컨테이너에 배치할 수 있는 웹 애플리케이션 압축파일 포맷</li>
+              <li>웹 관련 자원 포함 (JSP, Servlet, JAR, Class, XML, HTML, Javascript)</li>
+              <li>사전 정의된 구조 사용 (WEB-INF, META-INF)</li>
+              <li>별도의 웹서버 or 웹 컨테치너(WAS) 필요</li>
+              <li>즉, JAR파일의 일종으로 웹 애플리케이션 전체를 패키징하기 위한 JAR 파일</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">Java</code>: 자바 버전 선택 (8, <strong>11</strong>, 17)</li>
+    </ul>
+  </li>
+  <li><strong>Dependencies</strong>
+    <ul>
+      <li>ADD… 버튼 누르기</li>
+      <li>필요한 Dependency 검색 후 추가하기 (ex. Spring Web)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="5-밑에-있는-3개의-버튼-중-generate-버튼-누르기">5. 밑에 있는 3개의 버튼 중 <strong>GENERATE</strong> 버튼 누르기</h3>
+
+<h3 id="6-다운로드-된-zip-파일을-압축-해제하고-intellij에서-해당-폴더-열기">6. 다운로드 된 zip 파일을 압축 해제하고 IntelliJ에서 해당 폴더 열기</h3>
+
+<h2 id="intellij-내부에서-프로젝트-생성하기">IntelliJ 내부에서 프로젝트 생성하기</h2>
+
+<h3 id="1-메뉴바---파일---새로-만들기---프로젝트">1. 메뉴바 -&gt; 파일 -&gt; 새로 만들기 -&gt; 프로젝트</h3>
+<p><img src="/assets/img/blog/springboot-basic-1-1.png" alt="데이터베이스 방언" class="border lead" width="480" height="480" loading="lazy" /></p>
+
+<h3 id="2-새-프로젝트에서-spring-initializr을-누르고-웹페이지와-같은-방법으로-생성">2. 새 프로젝트에서 Spring Initializr을 누르고 웹페이지와 같은 방법으로 생성</h3>
+<p><img src="/assets/img/blog/springboot-basic-1-2.png" alt="데이터베이스 방언" class="border lead" width="480" height="480" loading="lazy" /></p>
+
+<h3 id="3-버전-및-dependency를-생성한-후-완료">3. 버전 및 Dependency를 생성한 후 완료</h3>
+<p><img src="/assets/img/blog/springboot-basic-1-3.png" alt="데이터베이스 방언" class="border lead" width="480" height="480" loading="lazy" /></p>
+
+<h3 id="4-프로젝트-설정에-들어가서-환경-설정-변경하기">4. 프로젝트 설정에 들어가서 환경 설정 변경하기</h3>
+<ul>
+  <li>단축키: cmd + , (Mac)</li>
+  <li>빌드 및 실행 모두 IntelliJ로 변경</li>
+  <li>Gradle JVM을 본인 버전에 맞게 변경
+<img src="/assets/img/blog/springboot-basic-1-4.png" alt="데이터베이스 방언" class="border lead" width="480" height="480" loading="lazy" /></li>
+</ul>
+
+<h3 id="5-설정-변경이-완료되었으면-src---main---java-패키지-가장-하위에-있는-application에-들어가-실행하기">5. 설정 변경이 완료되었으면 src - main - java 패키지 가장 하위에 있는 Application에 들어가 실행하기</h3>
+<p><img src="/assets/img/blog/springboot-basic-1-5.png" alt="데이터베이스 방언" class="border lead" width="480" height="480" loading="lazy" /></p>
+
+<h3 id="6-실행이-정상적으로-될-경우-다음과-같은-화면이-나오게-됨">6. 실행이 정상적으로 될 경우 다음과 같은 화면이 나오게 됨</h3>
+<p><img src="/assets/img/blog/springboot-basic-1-6.png" alt="데이터베이스 방언" class="border lead" width="480" height="480" loading="lazy" /></p>
+
+<h3 id="7-localhost8080에-접속하였을-때-다음과-같은-화면이-나온다면-정상적으로-완료된-것임">7. localhost:8080에 접속하였을 때 다음과 같은 화면이 나온다면 정상적으로 완료된 것임</h3>
+<p><img src="/assets/img/blog/springboot-basic-1-7.png" alt="데이터베이스 방언" class="border lead" width="480" height="480" loading="lazy" /></p>
+
+  
+</article>
+
+
+
+  <clap-button class="mb6" ></clap-button>
+  
+  
+    <p class="message centered border-radius" >
+      <span style="display:block;margin-bottom:.5rem;">This is a preview of <a href="https://getclaps.app">Clap Button</a>, a new feedback and analytics tools for Hydejack, built by yours truly.</span>
+      <span style="display:block;margin-bottom:.5rem;">You can try it out on <code>localhost</code> for free, but it will be removed (together with this message) when building with <code>JEKYLL_ENV=production</code>.</span>
+      <span style="display:block;margin-bottom:.5rem;">To use Clap Button on your site, get a <a href="https://getclaps.app#pricing">subscription</a><br/>and set <code>clap_button: true</code> in your config file.</span>
+    </p>
+  
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="https://placehold.it/128x128"
+    srcset="https://placehold.it/128x128 1x,https://placehold.it/256x256 2x"
+    
+  
+  alt="Jinho Kim"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>I want to be a Java Back-End Developer.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/naekang" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://instagram.com/jj1no/" title="Instagram" class="no-mark-external">
+      <span class="icon-instagram"></span>
+      <span class="sr-only">Instagram</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  <aside class="other-projects related mb0" role="complementary">  <h2>Related Posts</h2>  <div class="columns">          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/jpa-main.png"    alt="자바 ORM 표준 JPA 프로그래밍"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/" class="flip-title">자바 ORM 표준 JPA 프로그래밍</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      자바 ORM 표준 JPA 프로그래밍    </p>      <a class="fill-card no-hover" href="/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/" tabindex="-1"><span class="sr-only">Continue reading 자바 ORM 표준 JPA 프로그래밍</span></a></article>              </div>          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/jj-ying.jpg"    alt="데이터베이스 설계와 ER모델"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/" class="flip-title">데이터베이스 설계와 ER모델</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      데이터베이스 수업 5장 ppt 내용.    </p>      <a class="fill-card no-hover" href="/blog/update/database/2021-11-18-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-5/" tabindex="-1"><span class="sr-only">Continue reading 데이터베이스 설계와 ER모델</span></a></article>              </div>      </div></aside>
+
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/update/review/nas/2021-10-29-NAS-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-1%ED%83%84/" class="flip-title"><span>NAS 알아보기</span></a>  <time class="faded fine" datetime="2021-10-29T00:00:00+09:00">29 Oct 2021</time></li>          <li class="h4">  <a href="/blog/update/computer-science/wooahan-techcourse/2021-10-31-Cache%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/" class="flip-title"><span>Cache란 무엇인가</span></a>  <time class="faded fine" datetime="2021-10-31T00:00:00+09:00">31 Oct 2021</time></li>          <li class="h4">  <a href="/blog/update/computer-science/algorithm/2021-11-01-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EC%9E%90%EB%A3%8C%ED%98%95/" class="flip-title"><span>기본 자료형</span></a>  <time class="faded fine" datetime="2021-11-01T00:00:00+09:00">01 Nov 2021</time></li>      </ul></aside>
+
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2021. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/CHANGELOG/">CHANGELOG</a>
+      
+    
+    </small></nav>
+  
+  
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar invert" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg " style="background:url('/assets/img/blog/jj-ying.jpg') center/cover"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/logo.png" class="avatar" alt="Hauling-IT" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Hauling-IT</h2></a>
+    
+    
+      <p class="">
+        백엔드 개발자를 향하여
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/blog/"
+          class="sidebar-nav-item "
+          
+        >
+          Blog
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/projects/"
+          class="sidebar-nav-item "
+          
+        >
+          Projects
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/resume/"
+          class="sidebar-nav-item "
+          
+        >
+          Résumé*
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/docs/"
+          class="sidebar-nav-item "
+          
+        >
+          Documentation
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/naekang" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://instagram.com/jj1no/" title="Instagram" class="no-mark-external">
+      <span class="icon-instagram"></span>
+      <span class="sr-only">Instagram</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.4.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.4.js" nomodule defer></script>
+  
+
+  
+  <script>!function(w, d) {
+    w.ga=w.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+    /**/
+      ga('create', 'UA-212303898-1', 'auto');
+    /**/
+
+    var pushStateEl = d.getElementById('_pushState');
+    var timeoutId;
+    pushStateEl.addEventListener('hy-push-state-load', function() {
+      w.clearTimeout(timeoutId);
+      timeoutId = w.setTimeout(function() {
+        ga('set', 'page', w.location.pathname);
+        ga('send', 'pageview');
+      }, 500);
+    });
+
+    d.addEventListener('hy--cookies-ok', function () {
+      w.ga(function(tracker) {
+        w.ga("set", "anonymizeIp", undefined);
+        localStorage && localStorage.setItem("ga--client-id", tracker.get("clientId"));
+      });
+    });
+
+    w.loadJSDeferred('https://www.google-analytics.com/analytics.js');
+  }(window, document);</script>
+
+
+  <script type="module">
+    if ('serviceWorker' in navigator) {
+      /**/
+      navigator.serviceWorker.getRegistration()
+        .then(r => r.unregister())
+        .catch(() => {});
+      /**/
+    }
+  </script>
+<!--<![endif]-->
+  
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <clap-config>
+    <clap-text at="1">Keep going!</clap-text>
+    <clap-text at="2">Keep going ×2!</clap-text>
+    <clap-text at="3">Give me more!</clap-text>
+    <clap-text at="5">Thank you, thank you</clap-text>
+    <clap-text at="7">Far too kind!</clap-text>
+    <clap-text at="10">Never gonna give me up?</clap-text>
+    <clap-text at="14">Never gonna let me down?</clap-text>
+    <clap-text at="20">Turn around and desert me!</clap-text>
+    <clap-text at="30">You're an addict!</clap-text>
+    <clap-text at="40">Son of a clapper!</clap-text>
+    <clap-text at="50">No way</clap-text>
+    <clap-text at="60">Go back to work!</clap-text>
+    <clap-text at="70">This is getting out of <em>hand</em></clap-text>
+    <clap-text at="80">Unbelievable</clap-text>
+    <clap-text at="90">PREPOSTEROUS</clap-text>
+    <clap-text at="100">I N S A N I T Y</clap-text>
+    <clap-text at="185"><span style="font-family:monospace">FEED ME A STRAY CAT</span></clap-text>
+  </clap-config>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+  
+  
+    <template id="_dark-mode-template">
+  <button id="_dark-mode" class="nav-btn no-hover" >
+    <span class="sr-only">Dark Mode</span>
+    <span class="icon-brightness-contrast"></span>
+  </button>
+</template>
+
+  
+  
+    <template id="_search-template">
+  <button id="_search" class="nav-btn no-hover">
+    <label class="sr-only" for="_search-input">Search</label>
+    <span class="icon-search"></span>
+  </button>
+  <div id="_search-box">
+    <div class="nav-btn">
+      <span class="icon-search"></span>
+    </div>
+    <input 
+      id="_search-input"
+      type="search"
+      class="form-control form-control-lg nav-btn"
+      placeholder="Build with JEKYLL_ENV=production to enable search."
+    />
+    <button type="reset" class="nav-btn no-hover">
+      <span class="sr-only">Close</span>
+      <span class="icon-cross"></span>
+    </button>
+  </div>
+  <div id="_hits"></div>
+</template>
+
+  
+</div>
+
+</body>
+</html>

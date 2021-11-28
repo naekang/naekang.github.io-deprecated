@@ -1,5 +1,160 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-26T17:47:31+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-24T00:00:00+09:00</published><updated>2021-11-24T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-3</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-29T00:03:40+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hauling-IT</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><entry><title type="html">스프링부트 프로젝트 생성하기</title><link href="http://localhost:4000/blog/update/computer-science/springboot-basic/2021-11-28-springboot-basic-1/" rel="alternate" type="text/html" title="스프링부트 프로젝트 생성하기" /><published>2021-11-28T00:00:00+09:00</published><updated>2021-11-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/springboot-basic/springboot-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/springboot-basic/2021-11-28-springboot-basic-1/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#프로젝트-개발환경&quot; id=&quot;markdown-toc-프로젝트-개발환경&quot;&gt;프로젝트 개발환경&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#spring-initializr-홈페이지를-통해-프로젝트-생성하기&quot; id=&quot;markdown-toc-spring-initializr-홈페이지를-통해-프로젝트-생성하기&quot;&gt;Spring initializr 홈페이지를 통해 프로젝트 생성하기&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-spring-initializr-접속&quot; id=&quot;markdown-toc-1-spring-initializr-접속&quot;&gt;1. Spring Initializr 접속&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-project에서-빌드-관리-도구-선택하기&quot; id=&quot;markdown-toc-2-project에서-빌드-관리-도구-선택하기&quot;&gt;2. Project에서 빌드 관리 도구 선택하기&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#3-language-선택---java-kotlin-groovy&quot; id=&quot;markdown-toc-3-language-선택---java-kotlin-groovy&quot;&gt;3. language 선택 - &lt;strong&gt;Java&lt;/strong&gt;, Kotlin, Groovy&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#4-spring-boot-버전-선택&quot; id=&quot;markdown-toc-4-spring-boot-버전-선택&quot;&gt;4. Spring Boot 버전 선택&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#5-밑에-있는-3개의-버튼-중-generate-버튼-누르기&quot; id=&quot;markdown-toc-5-밑에-있는-3개의-버튼-중-generate-버튼-누르기&quot;&gt;5. 밑에 있는 3개의 버튼 중 &lt;strong&gt;GENERATE&lt;/strong&gt; 버튼 누르기&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#6-다운로드-된-zip-파일을-압축-해제하고-intellij에서-해당-폴더-열기&quot; id=&quot;markdown-toc-6-다운로드-된-zip-파일을-압축-해제하고-intellij에서-해당-폴더-열기&quot;&gt;6. 다운로드 된 zip 파일을 압축 해제하고 IntelliJ에서 해당 폴더 열기&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#intellij-내부에서-프로젝트-생성하기&quot; id=&quot;markdown-toc-intellij-내부에서-프로젝트-생성하기&quot;&gt;IntelliJ 내부에서 프로젝트 생성하기&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-메뉴바---파일---새로-만들기---프로젝트&quot; id=&quot;markdown-toc-1-메뉴바---파일---새로-만들기---프로젝트&quot;&gt;1. 메뉴바 -&amp;gt; 파일 -&amp;gt; 새로 만들기 -&amp;gt; 프로젝트&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-새-프로젝트에서-spring-initializr을-누르고-웹페이지와-같은-방법으로-생성&quot; id=&quot;markdown-toc-2-새-프로젝트에서-spring-initializr을-누르고-웹페이지와-같은-방법으로-생성&quot;&gt;2. 새 프로젝트에서 Spring Initializr을 누르고 웹페이지와 같은 방법으로 생성&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#3-버전-및-dependency를-생성한-후-완료&quot; id=&quot;markdown-toc-3-버전-및-dependency를-생성한-후-완료&quot;&gt;3. 버전 및 Dependency를 생성한 후 완료&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#4-프로젝트-설정에-들어가서-환경-설정-변경하기&quot; id=&quot;markdown-toc-4-프로젝트-설정에-들어가서-환경-설정-변경하기&quot;&gt;4. 프로젝트 설정에 들어가서 환경 설정 변경하기&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#5-설정-변경이-완료되었으면-src---main---java-패키지-가장-하위에-있는-application에-들어가-실행하기&quot; id=&quot;markdown-toc-5-설정-변경이-완료되었으면-src---main---java-패키지-가장-하위에-있는-application에-들어가-실행하기&quot;&gt;5. 설정 변경이 완료되었으면 src - main - java 패키지 가장 하위에 있는 Application에 들어가 실행하기&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#6-실행이-정상적으로-될-경우-다음과-같은-화면이-나오게-됨&quot; id=&quot;markdown-toc-6-실행이-정상적으로-될-경우-다음과-같은-화면이-나오게-됨&quot;&gt;6. 실행이 정상적으로 될 경우 다음과 같은 화면이 나오게 됨&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#7-localhost8080에-접속하였을-때-다음과-같은-화면이-나온다면-정상적으로-완료된-것임&quot; id=&quot;markdown-toc-7-localhost8080에-접속하였을-때-다음과-같은-화면이-나온다면-정상적으로-완료된-것임&quot;&gt;7. localhost:8080에 접속하였을 때 다음과 같은 화면이 나온다면 정상적으로 완료된 것임&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;프로젝트-개발환경&quot;&gt;프로젝트 개발환경&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;MacBook Pro 16” 2019&lt;/li&gt;
+  &lt;li&gt;OS: macOS Monterey 12.0.1&lt;/li&gt;
+  &lt;li&gt;Java Version: 11&lt;/li&gt;
+  &lt;li&gt;IDE: IntelliJ IDEA Ultimate 2021.2.3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;spring-initializr-홈페이지를-통해-프로젝트-생성하기&quot;&gt;Spring initializr 홈페이지를 통해 프로젝트 생성하기&lt;/h2&gt;
+&lt;h3 id=&quot;1-spring-initializr-접속&quot;&gt;1. &lt;a href=&quot;https://start.spring.io/&quot;&gt;Spring Initializr&lt;/a&gt; 접속&lt;/h3&gt;
+&lt;h3 id=&quot;2-project에서-빌드-관리-도구-선택하기&quot;&gt;2. Project에서 빌드 관리 도구 선택하기&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;빌드 관리 도구&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;프로젝트 내부의 Java 코드와 각종 xml, properties, jar 파일들을 JVM이나 WAS가 인식할 수 있도록 패키징 해주는 빌드 과정 == 빌드 자동화 도구&lt;/li&gt;
+      &lt;li&gt;프로젝트 생성, 테스트 빌드, 배포 등의 작업을 위한 전용 프로그램&lt;/li&gt;
+      &lt;li&gt;필요한 라이브러리들을 종류와 버전, 종속성 정보를 명시함으로써 자동으로 다운로드 해주고 간편히 관리해주는 도구&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Maven&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Java용 프로젝트 관리도구로 Apache의 Ant 대안으로 만들어짐&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pom.xml&lt;/code&gt; 파일에 명시&lt;/li&gt;
+      &lt;li&gt;Maven은 외부저장소에서 필요한 라이브러리와 플러그인들을 다운로드 한 후, 로컬시스템의 캐시에 모두 저장&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.boot&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-boot-starter-data-jpa&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.2.4.RELEASE&lt;span class=&quot;nt&quot;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Gradle&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Apache Maven과 Apache Ant에서 볼 수 있는 개념들을 사용하는 대안으로 나온 프로젝트 빌드 관리 툴&lt;/li&gt;
+      &lt;li&gt;Groovy언어를 사용한 Domain-specific-language 사용&lt;/li&gt;
+      &lt;li&gt;multi-project 빌드를 도울 수 있도록 디자인&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-groovy highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+  &lt;span class=&quot;c1&quot;&gt;// This dependency is found on compile classpath of this component and consumers. &lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.google.guava:guava:22.0'&lt;/span&gt; 
+
+  &lt;span class=&quot;c1&quot;&gt;// Use JUnit test framework &lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;testCompile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'junit:junit:4.12'&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-language-선택---java-kotlin-groovy&quot;&gt;3. language 선택 - &lt;strong&gt;Java&lt;/strong&gt;, Kotlin, Groovy&lt;/h3&gt;
+
+&lt;h3 id=&quot;4-spring-boot-버전-선택&quot;&gt;4. Spring Boot 버전 선택&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SNAPSHOT&lt;/code&gt;: 아직 개발단계임&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GA&lt;/code&gt;: 테스트가 완료된 정식 릴리즈 버전으로 안정적으로 운영되어야 하는 프로젝트에서 사용&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RC&lt;/code&gt;: 베타 버전, 기능은 픽스되었으나 안정성은 보장할 수 없음&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M&lt;/code&gt;: 테스트 버전, 기능이 픽스되지 않아 구현될때마다 테스트 버전이 릴리즈 될 수 있음&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Project Metadata&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Group&lt;/code&gt;: 프로젝트를 정의하는 고유한 식별자 정보 / 기업의 도메인 명
+        &lt;ul&gt;
+          &lt;li&gt;일반적으로 Java의 패키지 네이밍을 따름&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Artifact&lt;/code&gt;: jar 파일에서 버전 정보를 뺀 이름으로 소문자를 사용 / 빌드 결과물 이름&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Name&lt;/code&gt;: 프로젝트 이름&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Description&lt;/code&gt;: 프로젝트에 대한 설명&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Package name&lt;/code&gt;: 패키지 이름&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Packaging&lt;/code&gt;: 배포 형태 선택
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JAR (Java Archive)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Java 애플리케이션이 동작할 수 있도록 자바 프로젝트를 압축한 파일&lt;/li&gt;
+              &lt;li&gt;Class (Java리소스, 속성 파일), 라이브러리 파일 포함&lt;/li&gt;
+              &lt;li&gt;JRE(Java Runtime Environment)만 있어도 실행 가능(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;java -jar 프로젝트명.jar&lt;/code&gt;)&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WAR (Web Application Archive)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Servlet / JSP 컨테이너에 배치할 수 있는 웹 애플리케이션 압축파일 포맷&lt;/li&gt;
+              &lt;li&gt;웹 관련 자원 포함 (JSP, Servlet, JAR, Class, XML, HTML, Javascript)&lt;/li&gt;
+              &lt;li&gt;사전 정의된 구조 사용 (WEB-INF, META-INF)&lt;/li&gt;
+              &lt;li&gt;별도의 웹서버 or 웹 컨테치너(WAS) 필요&lt;/li&gt;
+              &lt;li&gt;즉, JAR파일의 일종으로 웹 애플리케이션 전체를 패키징하기 위한 JAR 파일&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Java&lt;/code&gt;: 자바 버전 선택 (8, &lt;strong&gt;11&lt;/strong&gt;, 17)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dependencies&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;ADD… 버튼 누르기&lt;/li&gt;
+      &lt;li&gt;필요한 Dependency 검색 후 추가하기 (ex. Spring Web)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5-밑에-있는-3개의-버튼-중-generate-버튼-누르기&quot;&gt;5. 밑에 있는 3개의 버튼 중 &lt;strong&gt;GENERATE&lt;/strong&gt; 버튼 누르기&lt;/h3&gt;
+
+&lt;h3 id=&quot;6-다운로드-된-zip-파일을-압축-해제하고-intellij에서-해당-폴더-열기&quot;&gt;6. 다운로드 된 zip 파일을 압축 해제하고 IntelliJ에서 해당 폴더 열기&lt;/h3&gt;
+
+&lt;h2 id=&quot;intellij-내부에서-프로젝트-생성하기&quot;&gt;IntelliJ 내부에서 프로젝트 생성하기&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-메뉴바---파일---새로-만들기---프로젝트&quot;&gt;1. 메뉴바 -&amp;gt; 파일 -&amp;gt; 새로 만들기 -&amp;gt; 프로젝트&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/springboot-basic-1-1.png&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-새-프로젝트에서-spring-initializr을-누르고-웹페이지와-같은-방법으로-생성&quot;&gt;2. 새 프로젝트에서 Spring Initializr을 누르고 웹페이지와 같은 방법으로 생성&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/springboot-basic-1-2.png&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-버전-및-dependency를-생성한-후-완료&quot;&gt;3. 버전 및 Dependency를 생성한 후 완료&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/springboot-basic-1-3.png&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-프로젝트-설정에-들어가서-환경-설정-변경하기&quot;&gt;4. 프로젝트 설정에 들어가서 환경 설정 변경하기&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;단축키: cmd + , (Mac)&lt;/li&gt;
+  &lt;li&gt;빌드 및 실행 모두 IntelliJ로 변경&lt;/li&gt;
+  &lt;li&gt;Gradle JVM을 본인 버전에 맞게 변경
+&lt;img src=&quot;/assets/img/blog/springboot-basic-1-4.png&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5-설정-변경이-완료되었으면-src---main---java-패키지-가장-하위에-있는-application에-들어가-실행하기&quot;&gt;5. 설정 변경이 완료되었으면 src - main - java 패키지 가장 하위에 있는 Application에 들어가 실행하기&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/springboot-basic-1-5.png&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;6-실행이-정상적으로-될-경우-다음과-같은-화면이-나오게-됨&quot;&gt;6. 실행이 정상적으로 될 경우 다음과 같은 화면이 나오게 됨&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/springboot-basic-1-6.png&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;7-localhost8080에-접속하였을-때-다음과-같은-화면이-나온다면-정상적으로-완료된-것임&quot;&gt;7. localhost:8080에 접속하였을 때 다음과 같은 화면이 나온다면 정상적으로 완료된 것임&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/springboot-basic-1-7.png&quot; alt=&quot;데이터베이스 방언&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;springboot-basic&quot;]" /><category term="computer-science" /><category term="springboot-basic" /><summary type="html">스프링부트를 이용하여 프로젝트를 생성하는 2가지 방법에 대해 알아본다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/springboot-main.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/springboot-main.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바 ORM 표준 JPA 프로그래밍</title><link href="http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/" rel="alternate" type="text/html" title="자바 ORM 표준 JPA 프로그래밍" /><published>2021-11-24T00:00:00+09:00</published><updated>2021-11-24T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/jpa/jpa-basic-3</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/jpa/2021-11-24-jpa-basic-3/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#엔티티-매니저-팩토리와-엔티티-매니저&quot; id=&quot;markdown-toc-엔티티-매니저-팩토리와-엔티티-매니저&quot;&gt;엔티티 매니저 팩토리와 엔티티 매니저&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#영속성-컨텍스트란&quot; id=&quot;markdown-toc-영속성-컨텍스트란&quot;&gt;영속성 컨텍스트란?&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#엔티티의-생명주기&quot; id=&quot;markdown-toc-엔티티의-생명주기&quot;&gt;엔티티의 생명주기&lt;/a&gt;&lt;/li&gt;
@@ -2807,203 +2962,4 @@ binNum=10, 2
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;두 자리 정수를 하나 입력해주세요.&amp;gt;22
 입력내용: 22
 num=22
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">자바의 정석</title><link href="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/" rel="alternate" type="text/html" title="자바의 정석" /><published>2021-11-02T00:00:00+09:00</published><updated>2021-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/update/computer-science/java-basic/java-basic-1</id><content type="html" xml:base="http://localhost:4000/blog/update/computer-science/java-basic/2021-11-02-java-basic-1/">&lt;p&gt;자바의 정석 Chapter1&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#자바란&quot; id=&quot;markdown-toc-자바란&quot;&gt;자바란?&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#자바의-역사&quot; id=&quot;markdown-toc-자바의-역사&quot;&gt;자바의 역사&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#자바언어의-특징&quot; id=&quot;markdown-toc-자바언어의-특징&quot;&gt;자바언어의 특징&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#jvmjava-virtual-machine&quot; id=&quot;markdown-toc-jvmjava-virtual-machine&quot;&gt;JVM(Java Virtual Machine)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자바개발환경-구축하기&quot; id=&quot;markdown-toc-자바개발환경-구축하기&quot;&gt;자바개발환경 구축하기&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#자바-개발도구jdk-설치하기&quot; id=&quot;markdown-toc-자바-개발도구jdk-설치하기&quot;&gt;자바 개발도구(JDK) 설치하기&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#java-api-문서-보는법&quot; id=&quot;markdown-toc-java-api-문서-보는법&quot;&gt;Java API 문서 보는법&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자바로-프로그램-작성하기&quot; id=&quot;markdown-toc-자바로-프로그램-작성하기&quot;&gt;자바로 프로그램 작성하기&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#hellojava&quot; id=&quot;markdown-toc-hellojava&quot;&gt;Hello.java&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#자주-발생하는-에러와-해결방법&quot; id=&quot;markdown-toc-자주-발생하는-에러와-해결방법&quot;&gt;자주 발생하는 에러와 해결방법&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#자바프로그램의-실행과정&quot; id=&quot;markdown-toc-자바프로그램의-실행과정&quot;&gt;자바프로그램의 실행과정&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#주석comment&quot; id=&quot;markdown-toc-주석comment&quot;&gt;주석(comment)&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;자바란&quot;&gt;자바란?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;썬 마이크로시스템즈(Sun Microsystems, Inc)에서 개발하여 1996년 1월에 공식적으로 발표한 객체지향 프로그래밍 언어 ➜ 2010년에 썬이 오라클(Oracle)에 인수되며 자바는 오라클사의 제품이 되었음&lt;/li&gt;
-  &lt;li&gt;운영체제에 독립적이라는 것이 가장 중요한 특징 ➜ 운영체제에 따라 프로그램을 전혀 변경하지 않고도 실행 가능&lt;/li&gt;
-  &lt;li&gt;객체지향 개념과 C++의 장점을 채택하고 잘 사용되지 않는 부분은 제외하며 이해하기 쉬운 간결한 표현이 가능하도록 했음&lt;/li&gt;
-  &lt;li&gt;풍부한 클래스 라이브러리(Java API)를 통해 프로그래밍에 필요한 요소들을 기본적으로 제공&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;자바의-역사&quot;&gt;자바의 역사&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;1991년 제임스 코슬링(James Gosling)이 만든 오크(Oak)라는 언어에서 시작
-    &lt;ul&gt;
-      &lt;li&gt;C++의 장점을 도입하고 단점을 보완&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Oak를 인터넷에 적합하도록 개발 방향을 바꾸면서 이름을 자바(Java)로 변경&lt;/li&gt;
-  &lt;li&gt;자바로 개발한 웹브라우저인 ‘핫 자바(Hot Java)’ 발표&lt;/li&gt;
-  &lt;li&gt;1996년 1월 자바 정식 버전 발표&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;자바언어의-특징&quot;&gt;자바언어의 특징&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;운영체제에 독립적&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;자바 응용프로그램은 운영체제나 하드웨어가 아닌 JVM하고만 통신하고 JVM이 자바 응용프로그램에서 전달받은 명령을 해당 운영체제가 이해할 수 있도록 변환하여 전달&lt;/li&gt;
-      &lt;li&gt;자바로 작성된 프로그램은 운영체제에 독립적이지만 JVM은 운영체제에 종속적
-        &lt;blockquote&gt;
-          &lt;p&gt;한번 작성하면, 어디서나 실행된다.(Write once, run anywhere)&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;객체지향언어&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;객체지향개념의 특징인 상속, 캡슐화, 다형성이 잘 적용됨&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;비교적 배우기 쉬움&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;연산자와 기본구문은 C++에서, 객체지향 구문은 스몰톡(small talk)에서 가져옴&lt;/li&gt;
-      &lt;li&gt;간결하고 이해하기 쉬운 코드 작성 가능&lt;/li&gt;
-      &lt;li&gt;재사용성과 유지보수 용이성 등의 장점과 간결하면서 명료한 객체지향적 설계 가능&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;자동 메모리 관리(Garbage Collection)&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;가비지컬렉터(Garbage Collector)가 자동적으로 메모리를 관리해주기 때문에 프로그래머가 따로 관리하지 않아도 됨&lt;/li&gt;
-      &lt;li&gt;참조되지 않은 객체 탐색 후 삭제 ➜ 삭제된 객체의 메모리 반환 ➜ 힙 메모리 재사용&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;네트워크와 분산처리 지원&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;다향한 네트워크 프로그래밍 라이브러리(Java API)를 통해 쉬운 개발 지원&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;멀티쓰레드 지원&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;자바의 멀티쓰레드는 시스템과 관계없이 구현가능하며, 관련 라이브러리 역시 제공&lt;/li&gt;
-      &lt;li&gt;여러 쓰레드에 대한 스케줄링(scheduling)을 자바 인터프리터가 담당&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;동적 로딩(Dynamic Loading)&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;실행 시에 모든 클래스가 로딩되는 것이 아닌 필요한 시점에 클래스 로딩&lt;/li&gt;
-      &lt;li&gt;일부 클래스가 변경되어도 비교적 적은 작업만으로 처리할 수 있는 유연한 애플리케이션 작성 가능&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;jvmjava-virtual-machine&quot;&gt;JVM(Java Virtual Machine)&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;자바를 실행하기 위한 가상 기계&lt;/li&gt;
-  &lt;li&gt;시스템 메모리를 관리하고 자바 기반 애플리케이션을 위해 이식 가능한 환경을 제공&lt;/li&gt;
-  &lt;li&gt;어떤 기기상에서 실행되고 있는 프로세스, 특히 자바 앱에 대한 리소스를 대표하고 통제하는 서버
-&lt;img src=&quot;/assets/img/blog/java-basic-jvm.jpeg&quot; alt=&quot;java애플리케이션 vs 일반 애플리케이션&quot; class=&quot;border lead&quot; width=&quot;480&quot; height=&quot;480&quot; loading=&quot;lazy&quot; /&gt;
-    &lt;ul&gt;
-      &lt;li&gt;일반 애플리케이션 코드는 OS만 거치고 하드웨어로 전달되는제 비해 Java 애플리케이션은 JVM을 거쳐야 하고 실행 시 interpret되므로 상대적으로 느림&lt;/li&gt;
-      &lt;li&gt;요즘앤 컴파일된 자바코드를 기계어로 변환해주는 JIT컴파일러와 향상된 최적화 기술로 속도의 격차를 줄임&lt;/li&gt;
-      &lt;li&gt;Java Application은 해당 OS에서 실행가능한 JVM만 있다면 OS에 상관없이 어디든 실행 가능&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;자바개발환경-구축하기&quot;&gt;자바개발환경 구축하기&lt;/h2&gt;
-
-&lt;h3 id=&quot;자바-개발도구jdk-설치하기&quot;&gt;자바 개발도구(JDK) 설치하기&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;JDK(Java Development Kit): 자바 개발 도구, JRE + 개발에 필요한 실행파일(java.exe 등)&lt;/li&gt;
-  &lt;li&gt;JRE(Java Runtime Environment): 자바실행환경, 자바로 작성된 응용프로그램이 실행되기 위한 최소환경, JVM + 클래스 라이브러리(Java API)&lt;/li&gt;
-  &lt;li&gt;JDK의 bin 디렉토리에 있는 주요 실행파일
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;javac.exe&lt;/code&gt;: 자바 컴파일러, 자바 소스코드를 바이트코드로 컴파일&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;java.exe&lt;/code&gt;: 자바 인터프리터, 컴파일러가 생성한 바이트코드를 해석하고 실행&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;javap.exe&lt;/code&gt;: 역어셈블러, 컴파일된 클래스파일을 원래의 소스로 변환&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;javadoc.exe&lt;/code&gt;: 자동 문서 생성기, 소스파일에 있는 주석(/* */)을 이용하여 Java API 문서와 같은 형식의 문서를 자동 생성함&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jar.exe&lt;/code&gt;: 압축 프로그램, 클래스 파일과 프로그램의 실행에 관련된 파일을 하나의 jar파일로 압축하거나 압축해제함&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;java-api-문서-보는법&quot;&gt;Java API 문서 보는법&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://opentutorials.org/module/516/6222&quot;&gt;Opentutorials.org&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;자바로-프로그램-작성하기&quot;&gt;자바로 프로그램 작성하기&lt;/h2&gt;
-
-&lt;h3 id=&quot;hellojava&quot;&gt;Hello.java&lt;/h3&gt;
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// main 메서드 선언부&lt;/span&gt;
-        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, world.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 화면에 글자 출력&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;Hello.java 작성 ➜ javac.exe 컴파일 ➜ Hello.class 생성 ➜ java.exe 실행 ➜ “Hello, world.”출력&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;자주-발생하는-에러와-해결방법&quot;&gt;자주 발생하는 에러와 해결방법&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cannot find symbol&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cannot resolve symbol&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;지정된 변수나 메서드를 찾을 수 없음을 의미&lt;/li&gt;
-      &lt;li&gt;선언되지 않은 변수나 메서드를 사용하거나 이름을 잘못 사용하거나 대소문자 구분을 안했을 경우&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;';'expected&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;세미콜론 ‘;’이 필요한 곳에 없음을 의미&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Exception in thread &quot;main&quot; java.lang.NoSuchMethodError: main&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;클래스 내에 main 메서드가 존재하지 않거나 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public static void main(String[] args)&lt;/code&gt;에 오타가 있는 경우&lt;/li&gt;
-      &lt;li&gt;대소문자 확인!&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: Hello&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;클래스를 찾을 수 없다는 에러&lt;/li&gt;
-      &lt;li&gt;클래스의 철자, 대소문자 확인 / 클래스파일 생성되었는지 확인&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;illegal start of expression&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;문장의 앞부분이 문법에 맞지 않음 = 문장에 문법적인 오류 존재&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class, interface, or enum expected&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;보통 괄호 {, }의 개수가 일치하지 않는 경우에 발생&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;에러 발생 시, 해당 부분의 코드를 살펴보고 이상이 없으면 주위(윗줄 또는 아랫줄) 살펴보기&lt;/p&gt;
-
-  &lt;p&gt;그래도 이상이 없으면 에러 메시지를 잊고 기본적인 부분 재확인 (에러는 사소한 것인 경우가 많음)&lt;/p&gt;
-
-  &lt;p&gt;의심이 가는 부분을 주석처리하거나 따로 떼어내서 테스트&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;자바프로그램의-실행과정&quot;&gt;자바프로그램의 실행과정&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;내부 진행 순서
-    &lt;ol&gt;
-      &lt;li&gt;프로그램 실행에 필요한 클래스(*.class파일) 로드&lt;/li&gt;
-      &lt;li&gt;클래스 파일 검사(파일형식, 악성코드 체크)&lt;/li&gt;
-      &lt;li&gt;지정된 클래스(Hello)에서 main(String[] args)를 호출&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;주석comment&quot;&gt;주석(comment)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;범위 주석: ‘/&lt;em&gt;‘와 ‘&lt;/em&gt;/’사이의 내용은 주석으로 간주&lt;/li&gt;
-  &lt;li&gt;한 줄 주석: ‘//’부터 라인 끝까지의 내용은 주석으로 간주&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jinho Kim</name><email>haul0215@gmail.com</email></author><category term="[&quot;computer-science&quot;, &quot;java-basic&quot;]" /><category term="computer-science" /><category term="java-basic" /><summary type="html">자바의 정석 Chapter2 어떤 프로그래밍 언어를 시작하든 가장 기본적으로 배우는 부분이 변수 &amp;amp; 자료형 파트이다. 내용 역시 비슷한 부분들이 많다. 그래서 알게모르게 넘어가는 부분이 많은데 사실 알고리즘을 포함한 다른 프로그래밍을 하기 위해서 가장 기초적인 부분인만큼 조금 더 자세히 공부해볼 예정이다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/java-main.jpeg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/java-main.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
