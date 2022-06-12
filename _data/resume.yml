@@ -1,0 +1,100 @@
+# If you have a `resume.json` file, copy it into `_data` and delete this file.
+# If you don't have a JSON Resume you can just edit this YAML file instead.
+# See also: <https://jsonresume.org/>.
+basics:
+  name: "Jinho Kim"
+  label: "Junior Back-end Developer"
+  picture: "https://via.placeholder.com/240x240"
+  email: "rlawlsgh6306@gmail.com"
+  phone: "Secret"
+  website: "https://hauling-it.com"
+  summary: >
+    Richard hails from Tulsa.
+    He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!)
+    Before starting Pied Piper, he worked for Hooli as a part time software developer.
+    While his work focuses on applied information theory,
+    mostly optimizing lossless compression schema of both the length-limited and adaptive variants,
+    his non-work interests range widely,
+    everything from quantum computing to chaos theory.
+    He could tell you about it, but THAT would NOT be a “length-limited” conversation!
+    Open `_data/resume.yml` to edit this text.
+  profiles:
+    - network: "Github"
+      username: "naekang"
+      url: "https://github.com/naekang"
+    - network: "LinkedIn"
+      username: "Jinho Kim"
+      url: "https://www.linkedin.com/in/jinho-kim-b065b0207/"
+work:
+  - company: "COSWEAL"
+    position: "기업부설연구소 인턴"
+    website: "http://cosweal.com/"
+    startDate: "2021-07-01"
+    endDate: "2022-02-28"
+    summary: >
+      Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
+      consistently fielded high Weisman Scores™ that are not merely competitive,
+      but approach the theoretical limit of lossless compression.
+    highlights:
+      - 광고대상 추천 알고리즘 개발
+        - 공공데이터 수집 및 테스트용 알고리즘 개발
+      - 광고 대상 추천 웹사이트 개발에 참여
+        - `Ruby On Rails`로 개발
+        - Zeplin의 디자인 시안을 참고하여 CSS 작업
+  - company: "KUSITMS"
+    position: "24, 25기 학회원"
+    website: ""
+    startDate: "2021-09-01"
+    endDate: "2022-05-28"
+    summary: >
+      큐시즘 2기수 동안 개발 팀원으로 활동하였다.
+      게이미피케이션을 활용한 테스트마케팅 홈페이지 기획 및 개발
+
+    highlights:
+      -
+# volunteer:
+#   - organization: "CoderDojo"
+#     position: "Teacher"
+#     website: "https://coderdojo.com/"
+#     startDate: "2012-01-01"
+#     endDate: "2013-01-01"
+#     summary: "Global movement of free coding clubs for young people."
+#     highlights:
+#       - "Awarded 'Teacher of the Month'"
+education:
+  - institution: "University Of Seoul (서울시립대학교)"
+    area: "Computer Science (컴퓨터과학부)"
+    studyType: "학사"
+    startDate: "2017-03-02"
+    endDate: ""
+    gpa: ""
+skills:
+  - name: "Java Web Development"
+    level: "Master"
+    keywords:
+      - "Java"
+      - "Spring Boot"
+      - "MySQL"
+  - name: "Python Web Development"
+    level: "Beginner"
+    keywords:
+      - "Python"
+      - "FastAPI"
+tools:
+  - name: "Git"
+    level: "Master"
+languages:
+  - language: "Korean"
+    fluency: "Native speaker"
+  - language: "English"
+    fluency: "Elementary proficiency"
+interests:
+  - name: "Shoes"
+    keywords:
+      - "Nike"
+      - "New Balance"
+# references:
+#   - name: "Erlich Bachman"
+#     reference: >
+#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+#       Company proved that he will be a valuable addition to any company.

@@ -1,15 +1,12 @@
 ---
 layout: page
 title: Thank You!
-sitemap: false
+sitemap: true
 ---
 
-Thank you for buying the PRO version of Hydejack! 🎉
+Hauling-IT 블로그를 방문해주셔서 감사합니다! 🎉
 
-More than one year ago I was looking for a blogging platform but couldn't find it:
-One that would let me write posts in markdown with my own editor,
-one that didn't look awful buy modern design standards, and one that felt snappy on a mobile phone.
-That and more is now Hydejack. I hope you enjoy it [as much as I do](https://qwtel.com/).
+잘못된 정보가 있다면 언제든지 문의해주세요!
 
 ## First Steps
 Start by reading the [Documentation]{:.heading.flip-title}.

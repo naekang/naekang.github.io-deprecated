@@ -17,6 +17,8 @@ group :jekyll_plugins do
   gem "github-pages"
   gem "jekyll-include-cache"
   gem "jekyll-compose"
+  gem "jekyll-avatar"
+  gem "kramdown-math-katex"
 end
 
 gem 'wdm' if Gem.win_platform?
