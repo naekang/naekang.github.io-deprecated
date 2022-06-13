@@ -18,24 +18,24 @@
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>What’s New in Hydejack 9.1? | Hauling-IT</title>
+<title>[운영체제] 프로세스와 스레드의 차이 | Hauling-IT</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="What’s New in Hydejack 9.1?" />
+<meta property="og:title" content="[운영체제] 프로세스와 스레드의 차이" />
 <meta name="author" content="Jinho Kim" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Version 9.1 provides minor design changes, new features, and closes multiple issues." />
-<meta property="og:description" content="Version 9.1 provides minor design changes, new features, and closes multiple issues." />
-<link rel="canonical" href="http://localhost:4000/blog/computer-science/2021-02-13-whats-new-in-hydejack-9-1/" />
-<meta property="og:url" content="http://localhost:4000/blog/computer-science/2021-02-13-whats-new-in-hydejack-9-1/" />
+<meta name="description" content="면접 단골 질문으로 나오는 운영체제의 프로세스와 스레드의 차이에 대해 알아보자." />
+<meta property="og:description" content="면접 단골 질문으로 나오는 운영체제의 프로세스와 스레드의 차이에 대해 알아보자." />
+<link rel="canonical" href="http://localhost:4000/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" />
+<meta property="og:url" content="http://localhost:4000/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" />
 <meta property="og:site_name" content="Hauling-IT" />
-<meta property="og:image" content="http://localhost:4000/assets/img/blog/jj-ying.jpg" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/os/process&thread.jpeg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-02-13T00:00:00+09:00" />
+<meta property="article:published_time" content="2022-06-13T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/jj-ying.jpg" />
-<meta property="twitter:title" content="What’s New in Hydejack 9.1?" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/os/process&thread.jpeg" />
+<meta property="twitter:title" content="[운영체제] 프로세스와 스레드의 차이" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jinho Kim"},"dateModified":"2021-02-13T00:00:00+09:00","datePublished":"2021-02-13T00:00:00+09:00","description":"Version 9.1 provides minor design changes, new features, and closes multiple issues.","headline":"What’s New in Hydejack 9.1?","image":"http://localhost:4000/assets/img/blog/jj-ying.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/computer-science/2021-02-13-whats-new-in-hydejack-9-1/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Jinho Kim"},"url":"http://localhost:4000/blog/computer-science/2021-02-13-whats-new-in-hydejack-9-1/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jinho Kim"},"dateModified":"2022-06-13T00:00:00+09:00","datePublished":"2022-06-13T00:00:00+09:00","description":"면접 단골 질문으로 나오는 운영체제의 프로세스와 스레드의 차이에 대해 알아보자.","headline":"[운영체제] 프로세스와 스레드의 차이","image":"http://localhost:4000/assets/img/blog/os/process&thread.jpeg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Jinho Kim"},"url":"http://localhost:4000/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -63,7 +63,7 @@
 <meta name="generator" content="Hydejack v9.1.6" />
 
 
-<link rel="alternate" href="http://localhost:4000/blog/computer-science/2021-02-13-whats-new-in-hydejack-9-1/" hreflang="en">
+<link rel="alternate" href="http://localhost:4000/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" hreflang="en">
 
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hauling-IT" />
 
@@ -205,7 +205,16 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
       <li>
         
           <span>/</span>
-          <span>2021-02-13-whats-new-in-hydejack-9-1</span>
+          
+          
+          <a href="/blog/computer-science/os/">os</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2022-06-13-difference-between-process-and-thread</span>
         
       </li>
     
@@ -222,18 +231,18 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
 
 
 
-<article id="post-blog-computer-science-whats-new-in-hydejack-9-1" class="page post mb6" role="article">
+<article id="post-blog-computer-science-os-difference-between-process-and-thread" class="page post mb6" role="article">
   <header>
     <h1 class="post-title flip-project-title">
       
-        What’s New in Hydejack 9.1?
+        [운영체제] 프로세스와 스레드의 차이
       
     </h1>
 
     <div class="post-date">
       
       <span class="ellipsis mr1">
-        <time datetime="2021-02-13T00:00:00+09:00">13 Feb 2021</time> in <span>Computer-science</span> on <span>Computer-science</span>, <span>Os</span>
+        <time datetime="2022-06-13T00:00:00+09:00">13 Jun 2022</time> in <span>Computer-science</span> / <span>Os</span> on <span>Computer-science</span>, <span>Os</span>
       </span>
       
         
@@ -249,9 +258,9 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
 
 <img
   
-    src="/assets/img/blog/jj-ying.jpg"
+    src="/assets/img/blog/os/process&thread.jpeg"
   
-  alt="What’s New in Hydejack 9.1?"
+  alt="[운영체제] 프로세스와 스레드의 차이"
   
   
   width="864"
@@ -270,7 +279,7 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
 
   
     <p class="note-sm" >
-      Version 9.1 provides minor design changes, new features, and closes multiple issues.
+      면접 단골 질문으로 나오는 운영체제의 프로세스와 스레드의 차이에 대해 알아보자.
 
     </p>
   
@@ -279,101 +288,63 @@ html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-c
   </header>
 
   
-    <p>What’s New in Hydejack 9.1?</p>
+    <p>프로세스와 스레드의 차이에 대해 알아보자.</p>
 
 <ul id="markdown-toc">
-  <li><a href="#stripe-ified-design" id="markdown-toc-stripe-ified-design">Stripe-ified Design</a></li>
-  <li><a href="#inverted-sidebars" id="markdown-toc-inverted-sidebars">Inverted Sidebars</a></li>
-  <li><a href="#code-block-headers" id="markdown-toc-code-block-headers">Code Block Headers</a></li>
-  <li><a href="#resume-download-buttons" id="markdown-toc-resume-download-buttons">Resume Download Buttons</a></li>
-  <li><a href="#serp-breadcrumbs" id="markdown-toc-serp-breadcrumbs"><abbr title="Search Engine Results Page">SERP</abbr> Breadcrumbs</a></li>
-  <li><a href="#last-modified-at" id="markdown-toc-last-modified-at">Last Modified At</a></li>
-  <li><a href="#clap-button-preview" id="markdown-toc-clap-button-preview">Clap Button Preview</a></li>
-  <li><a href="#credits" id="markdown-toc-credits">Credits</a></li>
+  <li><a href="#process-프로세스" id="markdown-toc-process-프로세스">Process (프로세스)</a></li>
+  <li><a href="#thread-스레드" id="markdown-toc-thread-스레드">Thread (스레드)</a></li>
+  <li><a href="#multi-process-멀티-프로세스" id="markdown-toc-multi-process-멀티-프로세스">Multi Process (멀티 프로세스)</a></li>
+  <li><a href="#multi-thread-멀티-스레드" id="markdown-toc-multi-thread-멀티-스레드">Multi Thread (멀티 스레드)</a></li>
 </ul>
 
-<h2 id="stripe-ified-design">Stripe-ified Design</h2>
-<p>Most elements now have rounded borders, making the design look more modern (dare I say “Stripe-ified”) than ever before.</p>
+<h2 id="process-프로세스">Process (프로세스)</h2>
+<blockquote>
+  <p>프로그램이 메모리 위에 적재되어 운영체제로부터 자원을 할당받는 주체</p>
+</blockquote>
 
-<p>The goal of Hydejack was always to provide a theme that looks “designed” combined the amenities of a typical Jekyll theme for coders.
-This is an important step in maintaining this goal.</p>
+<ul>
+  <li>각 프로세스는 별도의 주소 공간에서 실행되며 다른 프로세스의 변수나 자료구조에 접근이 불가능하다.</li>
+  <li>기본적으로 프로세스는 최소 1개의 스레드를 갖는다.</li>
+  <li>여러 프로세스가 실행될 수 있다. = <strong>멀티태스킹</strong></li>
+</ul>
 
-<p>At the same time, I’m introducing nerdy elements like <a href="#serp-breadcrumbs">breadcrumbs</a>, that are almost ornamental in nature.
-You wouldn’t find these on other Stripe-like designs, but I think they are appealing to developer types like myself. 
-Like most additions to Hydejack, they can be disabled via configuration.</p>
+<h2 id="thread-스레드">Thread (스레드)</h2>
+<blockquote>
+  <p>프로세스 내에서 실행되는 여러 흐름의 단위</p>
+</blockquote>
 
-<h2 id="inverted-sidebars">Inverted Sidebars</h2>
-<p>The colors on the sidebar can now be inverted to allow brighter sidebar images. This can be enabled per-page in the fort matter:</p>
+<ul>
+  <li>스레드는 프로세스 내에서 Stack만 할당받고 Code, Data, Heap 영역은 공유한다.</li>
+  <li>프로세스는 다른 프로세스의 메모리에 직접 접근할 수 없다.</li>
+  <li>하나의 프로세스 내에 여러 스레드가 존재할 수 있다. = <strong>멀티스레드</strong></li>
+</ul>
 
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">invert_sidebar</span><span class="pi">:</span> <span class="no">true</span>
-</code></pre></div></div>
+<h2 id="multi-process-멀티-프로세스">Multi Process (멀티 프로세스)</h2>
+<blockquote>
+  <p>하나의 응용 프로그램을 여러 프로세스로 구성하여 각 프로세스가 하나의 태스크를 처리하도록 하는 것</p>
+</blockquote>
 
-<h2 id="code-block-headers">Code Block Headers</h2>
-<p>Code blocks can now have headers:</p>
+<ul>
+  <li>프로세스마다 처리하는 테스크가 다르기 떄문에 하나의 프로세스에 문제가 발생해도 다른 프로세스는 영향을 받지 않는다.</li>
+  <li>Context Switching 과정에서 오버헤드가 발생할 수 있다.
+    <ul>
+      <li>Context Switching: CPU가 다른 프로세스를 수행하도록 새로운 프로세스의 상태 또는 Context를 교체하는 작업</li>
+    </ul>
+  </li>
+</ul>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// file: 'hello-world.js'</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello World!</span><span class="dl">'</span><span class="p">);</span>
-</code></pre></div></div>
+<h2 id="multi-thread-멀티-스레드">Multi Thread (멀티 스레드)</h2>
+<blockquote>
+  <p>하나의 응용 프로그램을 여러 스레드로 구성하고 각 스레드로 하여금 하나의 작업을 처리하도록 하는 것</p>
+</blockquote>
 
-<p>Headers are added by making the first line a comment of the form <code class="language-plaintext highlighter-rouge">(file|title): ['"].*['"]</code>, e.g.:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~js
-// file: 'hello-world.js'
-console.log('Hello World!');
-~~~
-</code></pre></div></div>
-
-<p>Code blocks with and without headers now also come with a copy button. 
-In the case of header-less code blocks, the button only shows on hover to prevent potential overlap.</p>
-
-<h2 id="resume-download-buttons">Resume Download Buttons</h2>
-<p>Resumes can now have download buttons:</p>
-
-<p><img src="/assets/img/blog/9.1.0-3.png" alt="Download Buttons" class="border lead" width="1776" height="258" loading="lazy" /></p>
-
-<p class="figcaption">Resumes can now have download buttons.</p>
-
-<p>The documentation has been updated with a chapter on <a href="/docs/basics/#downloads">how to configure the buttons</a>.</p>
-
-<h2 id="serp-breadcrumbs"><abbr title="Search Engine Results Page">SERP</abbr> Breadcrumbs</h2>
-<p>Added breadcrumbs above page title:</p>
-
-<p><img src="/assets/img/blog/9.1.0-2.png" alt="Breadcrumbs" class="border lead" width="1588" height="164" loading="lazy" /></p>
-
-<p class="figcaption">Bread crumbs are now shown above each page title.</p>
-
-<p>Note that this requires a <a href="https://qwtel.com/posts/software/urls-are-directories/">directory-like URL structure</a> on your entire site, 
-otherwise the intermediate links will point to nonexisting sites.</p>
-
-<p>On a side note, Hydejack now has built-in tooltips for abbreviations like <abbr title="Search Engine Results Page">SERP</abbr> (activated via tap/click).
-See <a href="/blog/hyde/2012-02-07-example-content/#inline-html-elements">Example Content</a> on how to add them to your content.</p>
-
-<h2 id="last-modified-at">Last Modified At</h2>
-<p>Blog posts can now have a “last modified at” date in the sub title row.</p>
-
-<p><img src="/assets/img/blog/9.1.0-1.png" alt="Last modified at" class="border lead" width="1254" height="218" loading="lazy" /></p>
-
-<p>Note that this depends on the <code class="language-plaintext highlighter-rouge">last_modified_at</code> property of the page, which must be either set manually in the frontmatter (not recommended), or via a plugin like <a href="https://github.com/gjtorikian/jekyll-last-modified-at"><code class="language-plaintext highlighter-rouge">jekyll-last-modified-at</code></a>. Note that the later is not available when building on GitHub Pages and can increase build times.</p>
-
-<h2 id="clap-button-preview">Clap Button Preview</h2>
-<p>I’ve been trying something new with <a href="https://getclaps.app/"><strong>getclaps.app</strong></a>, a feedback and analytics tool for personal sites like those powered by Hydejack.</p>
-
-<!-- <clap-button style="--clap-button-color:var(--body-color);margin:2rem auto 3rem;width:3rem;height:3rem;font-size:smaller" nowave></clap-button> -->
-
-<p>It is a separate product from Hydejack and not enabled by default. Because it depends on a backend component, it requires a monthly fee. 
-If enabled, it is placed below posts and pages where the dingbat character (❖) used to be.</p>
-
-<p>I can’t claim that this product is fully baked (feedback welcome), but I’ve been using it on my personal site and here for the last couple of months with no issues.
-For more, see <a href="https://getclaps.app/">the dedicated website</a>.</p>
-
-<hr style="margin:2rem 0" />
-
-<p>There are many more changes and bugfixes in 9.1. See the <a href="/CHANGELOG/" class="heading flip-title">CHANGELOG</a> for details.</p>
-
-<h2 id="credits">Credits</h2>
-
-<p><span>Photo by <a href="https://unsplash.com/@jjying?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">JJ Ying</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
-
+<ul>
+  <li>프로세스를 생성하는 과정에서 자원을 할당하는 시스템 콜을 줄임으로써 자원을 효율적으로 관리할 수 있다.</li>
+  <li>시스템 자원 소모가 줄어들고 스레드간 작업량이 작아 Context Switching이 빨라 시스템 처리량이 증가한다.</li>
+  <li>다른 프로세스에서 스레드를 제어할 수 없다.</li>
+  <li>하나의 스레드에 문제가 생기면 전체 프로세스가 영향을 받는다.</li>
+  <li>스레드 간 자원 공유는 전역변수를 사용하기 때문에 충돌이 발생할 수 있다. = <strong>동기화 문제</strong></li>
+</ul>
 
   
 </article>
@@ -501,7 +472,7 @@ For more, see <a href="https://getclaps.app/">the dedicated website</a>.</p>
     
 
 
-  <aside class="other-projects related mb0" role="complementary">  <h2>Related Posts</h2>  <div class="columns">          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/os/process&thread.jpeg"    alt="[운영체제] 프로세스와 스레드의 차이"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" class="flip-title">[운영체제] 프로세스와 스레드의 차이</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      면접 단골 질문으로 나오는 운영체제의 프로세스와 스레드의 차이에 대해 알아보자.    </p>      <a class="fill-card no-hover" href="/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" tabindex="-1"><span class="sr-only">Continue reading [운영체제] 프로세스와 스레드의 차이</span></a></article>              </div>          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/computer-science/2020-07-03-introducing-hydejack-9/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/jeremy-bishop@0,5x.jpg"        sizes="(min-width:86em)27.5rem,(min-width:54em)24.5rem,(min-width:42em)21.5rem,42rem"    alt="Introducing Hydejack 9"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/computer-science/2020-07-03-introducing-hydejack-9/" class="flip-title">Introducing Hydejack 9</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.    </p>      <a class="fill-card no-hover" href="/blog/computer-science/2020-07-03-introducing-hydejack-9/" tabindex="-1"><span class="sr-only">Continue reading Introducing Hydejack 9</span></a></article>              </div>      </div></aside>
+  <aside class="other-projects related mb0" role="complementary">  <h2>Related Posts</h2>  <div class="columns">          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/computer-science/2021-02-13-whats-new-in-hydejack-9-1/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/jj-ying.jpg"    alt="What’s New in Hydejack 9.1?"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/computer-science/2021-02-13-whats-new-in-hydejack-9-1/" class="flip-title">What’s New in Hydejack 9.1?</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      Version 9.1 provides minor design changes, new features, and closes multiple issues.    </p>      <a class="fill-card no-hover" href="/blog/computer-science/2021-02-13-whats-new-in-hydejack-9-1/" tabindex="-1"><span class="sr-only">Continue reading What’s New in Hydejack 9.1?</span></a></article>              </div>          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/computer-science/2020-07-03-introducing-hydejack-9/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/jeremy-bishop@0,5x.jpg"        sizes="(min-width:86em)27.5rem,(min-width:54em)24.5rem,(min-width:42em)21.5rem,42rem"    alt="Introducing Hydejack 9"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/computer-science/2020-07-03-introducing-hydejack-9/" class="flip-title">Introducing Hydejack 9</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.    </p>      <a class="fill-card no-hover" href="/blog/computer-science/2020-07-03-introducing-hydejack-9/" tabindex="-1"><span class="sr-only">Continue reading Introducing Hydejack 9</span></a></article>              </div>      </div></aside>
 
   
 
@@ -509,7 +480,7 @@ For more, see <a href="https://getclaps.app/">the dedicated website</a>.</p>
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" class="flip-title"><span>[운영체제] 프로세스와 스레드의 차이</span></a>  <time class="faded fine" datetime="2022-06-13T00:00:00+09:00">13 Jun 2022</time></li>          <li class="h4">  <a href="/blog/review/2012-02-07-example-content/" class="flip-title"><span>Example Content</span></a>  <time class="faded fine" datetime="2012-02-07T00:00:00+09:00">07 Feb 2012</time></li>          <li class="h4">  <a href="/blog/review/2017-11-23-example-content-ii/" class="flip-title"><span>Example Content II</span></a>  <time class="faded fine" datetime="2017-11-23T00:00:00+09:00">23 Nov 2017</time></li>      </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/review/2017-11-23-example-content-ii/" class="flip-title"><span>Example Content II</span></a>  <time class="faded fine" datetime="2017-11-23T00:00:00+09:00">23 Nov 2017</time></li>          <li class="h4">  <a href="/blog/computer-science/2018-06-01-example-content-iii/" class="flip-title"><span>Example Content III</span></a>  <time class="faded fine" datetime="2018-06-01T00:00:00+09:00">01 Jun 2018</time></li>          <li class="h4">  <a href="/blog/computer-science/2021-02-13-whats-new-in-hydejack-9-1/" class="flip-title"><span>What’s New in Hydejack 9.1?</span></a>  <time class="faded fine" datetime="2021-02-13T00:00:00+09:00">13 Feb 2021</time></li>      </ul></aside>
 
   
 
