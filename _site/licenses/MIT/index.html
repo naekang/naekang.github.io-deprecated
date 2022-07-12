@@ -39,6 +39,8 @@
   
 
   
+    <meta name="keywords" content="programming,it,review,sheos">
+  
 
 
 
@@ -73,6 +75,8 @@
 
 
 
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
 
 <link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
 
@@ -99,7 +103,7 @@
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2022-06-13T19:27:56+09:00',
+    INDEX_KEY: 'index--2022-07-13T00:30:52+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -436,6 +440,33 @@ SOFTWARE.</p>
   
 
   
+  <script>!function(w, d) {
+    w.ga=w.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+    /**/
+      ga('create', 'UA-212303898-1', 'auto');
+    /**/
+
+    var pushStateEl = d.getElementById('_pushState');
+    var timeoutId;
+    pushStateEl.addEventListener('hy-push-state-load', function() {
+      w.clearTimeout(timeoutId);
+      timeoutId = w.setTimeout(function() {
+        ga('set', 'page', w.location.pathname);
+        ga('send', 'pageview');
+      }, 500);
+    });
+
+    d.addEventListener('hy--cookies-ok', function () {
+      w.ga(function(tracker) {
+        w.ga("set", "anonymizeIp", undefined);
+        localStorage && localStorage.setItem("ga--client-id", tracker.get("clientId"));
+      });
+    });
+
+    w.loadJSDeferred('https://www.google-analytics.com/analytics.js');
+  }(window, document);</script>
+
 
   <script type="module">
     if ('serviceWorker' in navigator) {
