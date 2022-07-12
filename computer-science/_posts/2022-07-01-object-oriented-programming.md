@@ -21,12 +21,11 @@ invert_sidebar: true
 * toc
 {:toc}
 
-
-## 절차지향 프로그래밍
 ![Full-width image](../../assets/img/blog/oop/popvsoop.png){:.lead width="800" height="100"}
 POP vs OOP
 {:.figure}
 
+## 절차지향 프로그래밍
 - 순서도처럼 절차적으로 코드를 구성하는 것을 말한다.
 - 모듈이나 함수를 순서에 맞게 단계적으로 실행하게 된다.
 - 장점
@@ -37,10 +36,6 @@ POP vs OOP
 
 
 ## 객체지향 프로그래밍
-![Full-width image](../../assets/img/blog/oop/popvsoop.png){:.lead width="800" height="100"}
-POP vs OOP
-{:.figure}
-
 - 기능이 아닌 객체가 중심이 되어 객체를 도출하고 각각의 역할을 정의하는 것에 초점을 맞춘다.
 - 장점
   - 코드 재사용이 가능하다.
