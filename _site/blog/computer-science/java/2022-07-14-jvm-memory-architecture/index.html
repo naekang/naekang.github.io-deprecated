@@ -13,31 +13,29 @@
 
 
 
-  <meta name="robots" content="noindex">
-
 
 
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>CS-Roadmap | Hauling-IT</title>
+<title>[Java] JVM의 메모리 구조 | Hauling-IT</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="CS-Roadmap" />
+<meta property="og:title" content="[Java] JVM의 메모리 구조" />
 <meta name="author" content="Jinho Kim" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="컴퓨터과학부 학생들이 각자 공부하는 것을 로드맵으로 작성하고, 공유할 수 있는 커뮤니티 사이트" />
-<meta property="og:description" content="컴퓨터과학부 학생들이 각자 공부하는 것을 로드맵으로 작성하고, 공유할 수 있는 커뮤니티 사이트" />
-<link rel="canonical" href="http://localhost:4000/projects/cs-roadmap/" />
-<meta property="og:url" content="http://localhost:4000/projects/cs-roadmap/" />
+<meta name="description" content="JVM 메모리 구조에 대해 알아보자." />
+<meta property="og:description" content="JVM 메모리 구조에 대해 알아보자." />
+<link rel="canonical" href="http://localhost:4000/blog/computer-science/java/2022-07-14-jvm-memory-architecture/" />
+<meta property="og:url" content="http://localhost:4000/blog/computer-science/java/2022-07-14-jvm-memory-architecture/" />
 <meta property="og:site_name" content="Hauling-IT" />
-<meta property="og:image" content="http://localhost:4000/assets/img/projects/csroadmap.png" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/jvm/java.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-07-13T00:20:21+09:00" />
+<meta property="article:published_time" content="2022-07-14T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/img/projects/csroadmap.png" />
-<meta property="twitter:title" content="CS-Roadmap" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/jvm/java.png" />
+<meta property="twitter:title" content="[Java] JVM의 메모리 구조" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jinho Kim"},"dateModified":"2022-07-13T00:20:21+09:00","datePublished":"2022-07-13T00:20:21+09:00","description":"컴퓨터과학부 학생들이 각자 공부하는 것을 로드맵으로 작성하고, 공유할 수 있는 커뮤니티 사이트","headline":"CS-Roadmap","image":{"srcset":{"1920w":"/assets/img/projects/csroadmap.png","960w":"/assets/img/projects/csroadmap@0,5x.png","480w":"/assets/img/projects/csroadmap@0,25x.png"},"url":"http://localhost:4000/assets/img/projects/csroadmap.png","@type":"imageObject"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Jinho Kim"},"url":"http://localhost:4000/projects/cs-roadmap/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jinho Kim"},"dateModified":"2022-07-14T00:00:00+09:00","datePublished":"2022-07-14T00:00:00+09:00","description":"JVM 메모리 구조에 대해 알아보자.","headline":"[Java] JVM의 메모리 구조","image":"http://localhost:4000/assets/img/blog/jvm/java.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/computer-science/java/2022-07-14-jvm-memory-architecture/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Jinho Kim"},"url":"http://localhost:4000/blog/computer-science/java/2022-07-14-jvm-memory-architecture/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -49,7 +47,7 @@
 
 
 
-  <meta name="theme-color" content="#193747">
+  <meta name="theme-color" content="#ccc">
 
 
 <meta charset="utf-8">
@@ -67,7 +65,7 @@
 <meta name="generator" content="Hydejack v9.1.6" />
 
 
-<link rel="alternate" href="http://localhost:4000/projects/cs-roadmap/" hreflang="en">
+<link rel="alternate" href="http://localhost:4000/blog/computer-science/java/2022-07-14-jvm-memory-architecture/" hreflang="en">
 
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hauling-IT" />
 
@@ -108,7 +106,7 @@
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2022-07-13T00:30:52+09:00',
+    INDEX_KEY: 'index--2022-07-15T23:09:23+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -132,7 +130,7 @@
 
   <style id="_pageStyle">
 
-html{--accent-color: #4fb1ba;--accent-color-faded: rgba(79,177,186,0.5);--accent-color-highlight: rgba(79,177,186,0.1);--accent-color-darkened: #409ba3;--theme-color: #193747;--dark-mode-body-bg: #2a2d2f;--dark-mode-border-color: #363a3d}
+html{--accent-color: #ccc;--accent-color-faded: rgba(204,204,204,0.5);--accent-color-highlight: rgba(204,204,204,0.1);--accent-color-darkened: #b9b9b9;--theme-color: #ccc;--dark-mode-body-bg: #2d2d2d;--dark-mode-border-color: #393939}
 
 </style>
 
@@ -182,7 +180,7 @@ html{--accent-color: #4fb1ba;--accent-color-faded: rgba(79,177,186,0.5);--accent
 
   <main
   id="_main"
-  class="content layout-project"
+  class="content layout-post"
   role="main"
 >
   <nav id="breadcrumbs" class="screen-only"><ul>
@@ -195,14 +193,32 @@ html{--accent-color: #4fb1ba;--accent-color-faded: rgba(79,177,186,0.5);--accent
           <span>/</span>
           
           
-          <a href="/projects/">projects</a>
+          <a href="/blog/">blog</a>
         
       </li>
     
       <li>
         
           <span>/</span>
-          <span>cs-roadmap</span>
+          
+          
+          <a href="/blog/computer-science/">computer-science</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/blog/computer-science/java/">java</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2022-07-14-jvm-memory-architecture</span>
         
       </li>
     
@@ -219,135 +235,141 @@ html{--accent-color: #4fb1ba;--accent-color-faded: rgba(79,177,186,0.5);--accent
 
 
 
-<article
-  id="project"
-  class="page mb6"
-  role="article"
-  vocab="http://schema.org/" typeof="CreativeWork" resource="#project"
-  >
+<article id="post-blog-computer-science-java-jvm-memory-architecture" class="page post mb6" role="article">
   <header>
-    <h1 class="page-title" property="name">CS-Roadmap</h1>
+    <h1 class="post-title flip-project-title">
+      
+        [Java] JVM의 메모리 구조
+      
+    </h1>
 
-    <p class="post-date heading">
+    <div class="post-date">
+      
       <span class="ellipsis mr1">
-        
-
-        
-          <a href="/projects/" class="flip-title" property="genre">Projects</a>
-        
-
-        
-          |
-          <time datetime="2022-07-13T00:20:21+09:00">2022</time>
-          
-        
+        <time datetime="2022-07-14T00:00:00+09:00">14 Jul 2022</time> in <span>Computer-science</span> / <span>Java</span> on <span>Computer-science</span>, <span>Java</span>
       </span>
-
-      <span class="ellipsis ml1">
-        <span class="sr-only">| Links:</span>
-        <span class="icon-link" title="Links"></span>
-        
-          <a class="external" href="https://cs-roadmap.com/" property="sameAs">Link</a>
-          
-        
-      </span>
-    </p>
-
-    
-    <div class="img-wrapper lead aspect-ratio sixteen-nine ">
       
         
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
 
 
 <img
   
-    src="/assets/img/projects/csroadmap.png"
-    srcset="/assets/img/projects/csroadmap.png 1920w,/assets/img/projects/csroadmap@0,5x.png 960w,/assets/img/projects/csroadmap@0,25x.png 480w"
-    sizes="(min-width:90em)48rem,(min-width:54em)42rem,(min-width:42em)38rem,100vw"
+    src="/assets/img/blog/jvm/java.png"
   
-  alt="CS-Roadmap"
+  alt="[Java] JVM의 메모리 구조"
   
-  property="image"
+  
   width="864"
   height="486"
   loading="lazy"
 />
 
+        </div>
       
-    </div>
+      
+    
 
     
 
 
 
   
-    <p class="note-sm" property="description">
-      컴퓨터과학부 학생들이 각자 공부하는 것을 로드맵으로 작성하고, 공유할 수 있는 커뮤니티 사이트
+    <p class="note-sm" >
+      JVM 메모리 구조에 대해 알아보자.
 
     </p>
   
 
 
-    <meta property="disambiguatingDescription" content="A Community site to share a roadmap for computer science students."/>
   </header>
 
-  <h2 id="참여자">참여자</h2>
+  
+    <p>JVM의 메모리 구조에 대해 알아보자.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"><a href="https://github.com/Pilse"><img src="https://avatars.githubusercontent.com/u/71018111?v=4" width="100" /></a></th>
-      <th style="text-align: center"><a href="https://github.com/ki7348"><img src="https://avatars.githubusercontent.com/u/76692479?v=4" width="100" /></a></th>
-      <th style="text-align: center"><a href="https://github.com/Dongdong351"><img src="https://avatars.githubusercontent.com/u/70210412?v=4" width="100" /></a></th>
-      <th style="text-align: center"><a href="https://github.com/UOSCS"><img src="https://avatars.githubusercontent.com/u/67647794?v=4" width="100" /></a></th>
-      <th style="text-align: center"><a href="https://github.com/naekang"><img src="https://avatars.githubusercontent.com/u/66901361?v=4" width="100" /></a></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">[FE] Pilse</td>
-      <td style="text-align: center">[FE] ki7348</td>
-      <td style="text-align: center">[FE] Dongdong351</td>
-      <td style="text-align: center">[BE] UOSCS</td>
-      <td style="text-align: center">[BE] naekang</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="프로젝트-시작-배경">프로젝트 시작 배경</h2>
-<p>개발자로 성장하기 위해 어떤 공부를 해야할지 몰라하는 동기들의 고민을 듣고 이런 고민을 해결하고 해결법을 널리 알리기 위한 목적으로 시작하였다.</p>
-
-<h2 id="cs-roadmap의-주요-기능">CS-Roadmap의 주요 기능</h2>
-<ul>
-  <li>자신만의 로드맵 작성</li>
-  <li>작성한 로드맵 공유 및 게시글에 첨부하여 토론 가능</li>
-  <li>깃허브 연동을 통해 자주 사용하는 언어 확인 가능</li>
+<ul id="markdown-toc">
+  <li><a href="#jvmjava-virtual-machine-이란" id="markdown-toc-jvmjava-virtual-machine-이란">JVM(Java Virtual Machine) 이란?</a></li>
+  <li><a href="#jvm의-메모리-구조" id="markdown-toc-jvm의-메모리-구조">JVM의 메모리 구조</a></li>
+  <li><a href="#코드로-알아보기" id="markdown-toc-코드로-알아보기">코드로 알아보기</a></li>
 </ul>
 
-<h2 id="기술-스택">기술 스택</h2>
+<h2 id="jvmjava-virtual-machine-이란">JVM(Java Virtual Machine) 이란?</h2>
+<p class="figure"><img src="/assets/img/blog/jvm/jvmos.png" alt="Full-width image" class="lead" width="800" height="100" />
+General Application VS Java Application</p>
 <ul>
-  <li>Java, Spring Boot, Mysql, Redis, Docker</li>
+  <li>자바 가상 머신</li>
+  <li>시스템 메모리 관리</li>
+  <li>자바 기반 애플리케이션을 위해 이식 가능한 환경 제공</li>
 </ul>
 
-<h2 id="담당-기능">담당 기능</h2>
+<h2 id="jvm의-메모리-구조">JVM의 메모리 구조</h2>
 <ul>
-  <li>회원 가입 시 이메일 인증 및 회원 탈퇴 기능 구현
+  <li>응용프로그램이 시작하면, JVM은 시스템으로부터 메모리를 할당받고 JVM은 용도에 따라 메모리를 3개의 영역으로 나누어 관리</li>
+</ul>
+
+<p class="figure"><img src="/assets/img/blog/jvm/jvmarea.png" alt="Full-width image" class="lead" width="800" height="100" />
+JVM Runtime Area</p>
+
+<ol>
+  <li>메서드 영역(method area)
     <ul>
-      <li>이메일 인증 시 인증코드를 데이터베이스에 저장하는 것 보다 만료 시간을 설정하고 데이터베이스에 접근을 최소화할 수 있는 Redis를 사용하여 구현</li>
+      <li>프로그램 실행 중 사용된 클래스의 클래스파일(*.class)을 읽어 분석하고 클래스 데이터 저장</li>
+      <li>클래스 변수(class variable)도 함께 생성</li>
     </ul>
   </li>
-  <li>로드맵 작성 및 수정 기능 담당</li>
-  <li>게시글에 로드맵 첨부, 저장 및 이어 만들기 기능 구현</li>
-</ul>
+  <li>힙(heap)
+    <ul>
+      <li>인스턴스가 생성되는 공간 = 인스턴스 변수(instance variable)들이 생성되는 공간</li>
+    </ul>
+  </li>
+  <li>호출 스택(call stack)
+    <ul>
+      <li>메서드 작업에 필요한 메모리 공간 제공</li>
+      <li>메서드가 작업을 수행하는 동안 지역변수 (매개변수 포함)들과 연산의 중간결과 등 저장</li>
+      <li>메서드 작업 종료 시 할당되었던 메모리공간은 반환되어 비워짐</li>
+      <li>호출스택의 가장 위에 있는 메서드가 현재 실행중인 메서드이다.</li>
+    </ul>
+  </li>
+</ol>
 
-<h2 id="프로젝트-후기">프로젝트 후기</h2>
-<ul>
-  <li>Spring Boot를 활용하여 만든 첫 프로젝트였다. 백엔드 담당 팀원과 기술적인 격차가 있었으나 서로 도움이 되도록 노력했고 잘 마무리할 수 있었다.</li>
-  <li>처음엔 기능을 위주로 코드를 짜다보니 알 수 없는 에러들을 많이 만나게 되었고 이로 인해 디버깅과 에러 처리의 중요성에 대해 알게되었다.</li>
-  <li>TDD에 대해서 들어봤으나 막상 프로젝트할 때에는 적용을 하지 못하였다. 이번 프로젝트를 통해 테스트 코드를 짜고 이 테스트 코드를 통과할 수 있는 로직을 짜는 TDD에 대해 알게 되었고 차후 테스트 코드 작성까지 진행할 예정이다.</li>
-</ul>
+<h2 id="코드로-알아보기">코드로 알아보기</h2>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">CallStackTest</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">firstMethod</span><span class="o">();</span>
+    <span class="o">}</span>
 
+    <span class="kd">static</span> <span class="kt">void</span> <span class="nf">firstMethod</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">secondMethod</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">static</span> <span class="kt">void</span> <span class="nf">secondMethod</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">prinln</span><span class="o">(</span><span class="s">"secondMethod()"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 실행결과
+secondMethod()
+</code></pre></div></div>
+
+<ol>
+  <li>JVM에 의해 main메서드가 호출되어 호출스택에 main메서드를 위한 메모리공간이 할당되고 main메서드의 코드가 수행되기 시작한다.</li>
+  <li>main메서드에서 firstMethod()를 호출 -&gt; 이때 main 메서드는 아직 끝난상태가 아니기때문에 호출스택에 대기상태로 남아있다.</li>
+  <li>firstMethod()에서 secondMethod() 호출 -&gt; 호출 스택에 main 메서드와 firstMethod()는 대기 상태로 남아있다.</li>
+  <li>secondMethod()에서 println()을 호출</li>
+  <li>println()이 완료 된 후로부터 println() -&gt; secondMethod() -&gt; firstMethod() -&gt; main메서드 순으로 호출 스택에서 비워지게 된다.</li>
+</ol>
+
+  
 </article>
+
 
 
   <hr class="dingbat related mb6" />
@@ -471,12 +493,49 @@ html{--accent-color: #4fb1ba;--accent-color-faded: rgba(79,177,186,0.5);--accent
     
 
 
-  <aside class="other-projects related mb4" role="complementary">  <h2>Other Projects</h2>  <div class="columns">              <div class="column column-1-2">        <article  class="project-card"  vocab="http://schema.org/" typeof="CreativeWork" resource="/projects/whereisuos/#project"  >  <meta property="name" content="어디시립"/>  <meta property="image" content="/assets/img/projects/whereisuos.png"/>  <a href="/projects/whereisuos/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img ">              <img      src="/assets/img/projects/whereisuos.png"    srcset="/assets/img/projects/whereisuos.png 1920w,/assets/img/projects/whereisuos.png 960w,/assets/img/projects/whereisuos.png 480w"    sizes="(min-width:86em)27.5rem,(min-width:54em)24.5rem,(min-width:42em)21.5rem,42rem"    alt="어디시립"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/projects/whereisuos/" class="flip-title" property="mainEntityOfPage">어디시립</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      A mobile application that provide information on University of Seoul campus.    </p>      <a class="fill-card no-hover" href="/projects/whereisuos/" tabindex="-1"><span class="sr-only">Continue reading 어디시립</span></a></article>      </div>                  <div class="column column-1-2">        <article  class="project-card"  vocab="http://schema.org/" typeof="CreativeWork" resource="/projects/kolympic/#project"  >  <meta property="name" content="Kolympic"/>  <meta property="image" content="/assets/img/projects/kolympic.png"/>  <a href="/projects/kolympic/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img ">              <img      src="/assets/img/projects/kolympic.png"    srcset="/assets/img/projects/kolympic.png 1920w,/assets/img/projects/kolympic@0,5x.png 960w,/assets/img/projects/kolympic@0,25x.png 480w"    sizes="(min-width:86em)27.5rem,(min-width:54em)24.5rem,(min-width:42em)21.5rem,42rem"    alt="Kolympic"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/projects/kolympic/" class="flip-title" property="mainEntityOfPage">Kolympic</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      A website that visualizes Olympic Records    </p>      <a class="fill-card no-hover" href="/projects/kolympic/" tabindex="-1"><span class="sr-only">Continue reading Kolympic</span></a></article>      </div>      </div></aside>
+  <aside class="other-projects related mb0" role="complementary">  <h2>Related Posts</h2>  <div class="columns">          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/computer-science/oop/2022-07-01-object-oriented-programming/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/oop/popvsoop.png"    alt="[객체지향] 객체지향 프로그래밍에 대한 이해"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/computer-science/oop/2022-07-01-object-oriented-programming/" class="flip-title">[객체지향] 객체지향 프로그래밍에 대한 이해</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      객체지향 프로그래밍에 대해 심도있게 연구해보자.    </p>      <a class="fill-card no-hover" href="/blog/computer-science/oop/2022-07-01-object-oriented-programming/" tabindex="-1"><span class="sr-only">Continue reading [객체지향] 객체지향 프로그래밍에 대한 이해</span></a></article>              </div>          <div class="column column-1-2">                  <article class="project-card">  <a href="/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" class="no-hover no-print-link flip-project" tabindex="-1">    <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">              <img      src="/assets/img/blog/os/process&thread.jpeg"    alt="[운영체제] 프로세스와 스레드의 차이"      width="864"  height="486"  loading="lazy"/>          </div>  </a>  <h3 class="project-card-title flip-project-title">    <a href="/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" class="flip-title">[운영체제] 프로세스와 스레드의 차이</a>  </h3>      <p class="project-card-text fine" property="disambiguatingDescription">      면접 단골 질문으로 나오는 운영체제의 프로세스와 스레드의 차이에 대해 알아보자.    </p>      <a class="fill-card no-hover" href="/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" tabindex="-1"><span class="sr-only">Continue reading [운영체제] 프로세스와 스레드의 차이</span></a></article>              </div>      </div></aside>
 
   
 
   
     
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Random Posts</h2>  <ul class="related-posts">          <li class="h4">  <a href="/blog/computer-science/os/2022-06-13-difference-between-process-and-thread/" class="flip-title"><span>[운영체제] 프로세스와 스레드의 차이</span></a>  <time class="faded fine" datetime="2022-06-13T00:00:00+09:00">13 Jun 2022</time></li>          <li class="h4">  <a href="/blog/review/2017-11-23-example-content-ii/" class="flip-title"><span>Example Content II</span></a>  <time class="faded fine" datetime="2017-11-23T00:00:00+09:00">23 Nov 2017</time></li>          <li class="h4">  <a href="/blog/review/2012-02-07-example-content/" class="flip-title"><span>Example Content</span></a>  <time class="faded fine" datetime="2012-02-07T00:00:00+09:00">07 Feb 2012</time></li>      </ul></aside>
+
+  
+
+  
+    
+<aside class="comments related" role="complementary">
+  <h2 class="hr-bottom">Comments</h2>
+  
+
+<div id="disqus_thread"></div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<script>!function(w, d) {
+  if (d.getElementById("disqus_thread")) {
+    if (w.DISQUS) {
+      w.DISQUS.reset({
+        reload: true,
+        config() {
+          this.page.url = w.location.href;
+          this.page.title = d.title;
+        },
+      });
+    } else {
+      w.disqus_config = function disqusConfig() {
+        this.page.url = w.location.href;
+        this.page.title = d.title;
+      };
+      w.loadJSDeferred(d.getElementById("_hrefDisqus").href + '/embed.js');
+    }
+  }
+}(window, document);</script>
+
+
+</aside>
+
 
   
 
@@ -520,13 +579,13 @@ html{--accent-color: #4fb1ba;--accent-color-faded: rgba(79,177,186,0.5);--accent
   noscroll
   
 >
-  <header id="_sidebar" class="sidebar" role="banner">
+  <header id="_sidebar" class="sidebar invert" role="banner">
     
 
 
 
 
-<div class="sidebar-bg " style="background:#193747"></div>
+<div class="sidebar-bg " style="background:url('/assets/img/blog/jj-ying.jpg') center/cover"></div>
 
     <div class="sidebar-sticky">
   <div class="sidebar-about">
